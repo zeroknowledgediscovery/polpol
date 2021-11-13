@@ -1,0 +1,18 @@
+gssvar,s,q,r
+spkcom,allowed,allowed,allowed
+libcom,not remove,not remove,remove
+colmil,not allowed,not allowed,allowed
+libmslm,not remove,not remove,remove
+gunlaw,oppose,favor,oppose
+grass,legal,legal,not legal
+pray,once a day,lt once a week,several times a day
+conlabor,hardly any,only some,hardly any
+abnomore,yes,yes,yes
+abhlth,yes,yes,no
+pillok,nan,disagree,disagree
+owngun,no,no,yes
+rowngun,nan,no,no
+viruses,nan,False,False
+prayfreq,nan,every week,less than once a year
+religint,nan,agree,agree
+comfort,nan,agree,disagree

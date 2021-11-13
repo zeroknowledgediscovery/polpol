@@ -41,7 +41,7 @@ class Hypothesis(object):
 #    detailed_labels=False):
 
     def __init__(self,
-                qnet_orchestrator=None,
+                #qnet_orchestrator=None,
                 # quantizer=None,
                 # quantizer_mapfile=None,
                  model_path=None,
@@ -54,13 +54,13 @@ class Hypothesis(object):
         self.time_end = None
 
         self.model_path = model_path
-        self.qnet_orchestrator = qnet_orchestrator
+        #self.qnet_orchestrator = qnet_orchestrator
 
         # self.quantizer = quantizer
 
         #if all(v is None for v in[qnet_orchestrator,quantizer,quantizer_mapfile]):
-        if qnet_orchestrator == None:
-            raise Exception('qnet_orchestrator must be provided to Hypothesis')
+        #if qnet_orchestrator == None:
+            #raise Exception('qnet_orchestrator must be provided to Hypothesis')
 
         #if self.qnet_orchestrator is not None:
             #self.quantizer = self.qnet_orchestrator.quantizer

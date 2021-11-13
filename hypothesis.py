@@ -1,4 +1,4 @@
-import pygraphviz as pgv
+#import pygraphviz as pgv
 import networkx as nx
 import numpy as np
 import re
@@ -10,6 +10,7 @@ import pandas as pd
 import glob
 from tqdm import tqdm
 warnings.filterwarnings('ignore')
+
 
 class Hypothesis(object):
     """Generate and analyze hypotheses from models inferred.  Assume biomes_timestamp format is biome_timestamp.
@@ -40,10 +41,10 @@ class Hypothesis(object):
 #    detailed_labels=False):
 
     def __init__(self,
-                 qnet_,orchestrator=None,
+                qnet_orchestrator=None,
                 # quantizer=None,
                 # quantizer_mapfile=None,
-                 model_path=None
+                 model_path=None,
                  no_self_loops=True,
                  causal_constraint=0,
                  total_samples=100,
@@ -57,9 +58,8 @@ class Hypothesis(object):
 
         # self.quantizer = quantizer
 
-
         #if all(v is None for v in[qnet_orchestrator,quantizer,quantizer_mapfile]):
-        if qnet_orchestrator == None
+        if qnet_orchestrator == None:
             raise Exception('qnet_orchestrator must be provided to Hypothesis')
 
         #if self.qnet_orchestrator is not None:
@@ -115,7 +115,6 @@ class Hypothesis(object):
         dy=dy/dy.sum()
         return dy.values
 
-
     def leaf_output_on_subgraph(self,nodeset):
         """Find the mean and sample standard deviation of output
            in leafnodes reachable from nodeset, along with fraction of samples
@@ -166,7 +165,6 @@ class Hypothesis(object):
         mu_X,sigma_X=self.getNumeric_at_leaf(prob,frac)
         return (mu_X,sigma_X),SUM
 
-
     def getHypothesisSlice(self,nid):
         """Generating impact of node nid with source label prefix. Note that there can be multiple
            nodes in the tree with label that match with the source label prefix.
@@ -211,7 +209,6 @@ class Hypothesis(object):
         RF.index=['x', 'y','sigmay']
         return RF
 
-
     def createTargetList(self,
                       source,
                       target,
@@ -242,7 +239,6 @@ class Hypothesis(object):
             raise Exception('self.model_path is not set')
         return decision_trees_
 
-
     def get_lowlevel(self,
             source,
             target,
@@ -268,11 +264,11 @@ class Hypothesis(object):
         # can we do this in parallel
         for tree in decision_trees:
             self.TGT = os.path.basename(tree).replace('.dot','')
-            gv = pgv.AGraph(tree,
-                            strict=False,
-                            directed=True)
+            #gv = pgv.AGraph(tree,
+                            #strict=False,
+                            #directed=True)
 
-            self.decision_tree = nx.DiGraph(gv)
+            #self.decision_tree = nx.DiGraph(gv)
             self.time_start = time_start
             self.time_end = time_end
 
@@ -319,7 +315,6 @@ class Hypothesis(object):
                 ignore_index = True)
         return
 
-
     def get(self,
             source=None,
             target=None,
@@ -359,7 +354,6 @@ class Hypothesis(object):
 
         return
 
-
     def to_csv(self, *args, **kwargs):
         """Output csv of hypotheses inferred. Arguments are passed to pandas.DataFrame.to_csv()
         Args:
@@ -368,7 +362,6 @@ class Hypothesis(object):
         Returns:
         """
         self.hypotheses.to_csv(*args, **kwargs)
-
 
     def to_dot(self,filename='tmp.dot',
                hypotheses=None,
@@ -404,7 +397,6 @@ class Hypothesis(object):
 
         return
 
-
     def getAlpha(self,dataframe_x_y_sigmay,N=500):
         """Carryout regression to estimate   \( \\alpha \). Given mean and variance of each y observation, we
            increase the number of pints by drawing N samples from a normal distribution of mean y and std dev sigma_y.
@@ -431,7 +423,6 @@ class Hypothesis(object):
         lr=stats.linregress(RES.x,RES.y)
         return lr.slope,lr.pvalue
 
-
     def get_vector_from_dict(self,str_alph_val):
         """Calculate a probability distribution from string representation of
            alphabet : value read from decision tree models
@@ -448,9 +439,7 @@ class Hypothesis(object):
         for i in dict_label_float:
             prob_dist[self.LABELS[i]] = dict_label_float[i]
 
-
         return prob_dist/prob_dist.sum()
-
 
     def trim_hypothesis(self,alternate_hypothesis_dataframe):
         """Compate current hypothesis dataframe with alternate_hypothesis_dataframe
@@ -462,6 +451,5 @@ class Hypothesis(object):
         df=self.hypotheses.copy()
 
         #df.set_index(['src','tgt']).merge
-
 
         return df

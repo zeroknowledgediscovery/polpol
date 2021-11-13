@@ -1,2 +1,0 @@
-# polpol
-Political Polarization

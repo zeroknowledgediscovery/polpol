@@ -1,0 +1,16 @@
+gssvar,s,q,r
+colmil,nan,not allowed,allowed
+libmil,nan,remove,remove
+libhomo,nan,not remove,not remove
+libmslm,nan,remove,remove
+reliten,no religion,strong,no religion
+pray,never,several times a day,once a day
+abhlth,nan,no,yes
+abrape,nan,no,yes
+polabuse,no,no,yes
+owngun,nan,no,yes
+viruses,nan,True,False
+godchnge,nan,"believe now, always have","don't believe now, used to"
+prayfreq,nan,several times a week,several times a year
+religcon,nan,not agree/dsagre,not agree/dsagre
+comfort,nan,strongly agree,strongly disagree

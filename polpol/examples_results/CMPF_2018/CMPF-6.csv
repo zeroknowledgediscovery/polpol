@@ -1,0 +1,17 @@
+gssvar,s,q,r
+spkcom,not allowed,not allowed,allowed
+colcom,fired,not fired,not fired
+colmil,not allowed,not allowed,allowed
+libmslm,remove,remove,remove
+gunlaw,favor,favor,oppose
+pray,once a week,lt once a week,once a day
+prayer,nan,approve,disapprove
+abdefect,yes,yes,yes
+abnomore,no,no,yes
+absingle,no,no,no
+pillok,nan,agree,strongly disagree
+owngun,no,no,yes
+rowngun,nan,no,yes
+intmil,nan,very interested,very interested
+abpoorw,nan,always wrong,not wrong at all
+religint,nan,agree,agree

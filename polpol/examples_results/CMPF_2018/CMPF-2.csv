@@ -1,0 +1,22 @@
+gssvar,s,q,r
+spkcom,not allowed,allowed,allowed
+libcom,not remove,not remove,remove
+spkmil,allowed,not allowed,allowed
+colmil,not allowed,not allowed,not allowed
+libmil,not remove,not remove,remove
+libmslm,remove,not remove,remove
+gunlaw,oppose,favor,oppose
+pray,several times a day,several times a day,several times a day
+bible,inspired word,inspired word,other
+abnomore,no,no,no
+abpoor,no,yes,yes
+absingle,no,yes,no
+abany,no,yes,no
+owngun,no,no,yes
+shotgun,no,no,no
+intmil,moderately interested,very interested,not at all interested
+godchnge,"believe now, always have","don't believe now, never h","don't believe now, never h"
+prayfreq,several times a week,every week,2-3 times a month
+religcon,strongly agree,agree,disagree
+religint,strongly agree,agree,not agree/dsagre
+comfort,strongly agree,agree,neither agree nor disagree

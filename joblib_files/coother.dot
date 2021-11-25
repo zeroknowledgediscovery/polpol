@@ -1,8 +1,0 @@
-graph Tree {
-node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
-graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
-edge [fontname=helvetica, color=black] ;
-0 [label="pentecostal
-Prob: assembly of god:0.1 christian scientist:0.1 christian; central christian:0.1 evangelical, evangelist:0.1 jehovah's witnesses:0.1 mennonite:0.1 mormon:0.1 pentecostal:0.2 unitarian, universalist:0.1 united church of christ:0.1 wesleyan:0.1
-Frac: 1.0", fillcolor="#aab0bb"] ;
-{rank = same;}}

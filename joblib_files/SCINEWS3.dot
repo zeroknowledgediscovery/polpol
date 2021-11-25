@@ -1,8 +1,0 @@
-graph Tree {
-node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
-graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
-edge [fontname=helvetica, color=black] ;
-0 [label="search engine (google, bing)
-Prob: don't know:0.0 electronic books & reports:0.0 government site:0.0 news site:0.0 no answer:0.0 online magazines:0.1 online newspapers:0.3 other:0.1 science site:0.1 search engine (google, bing):0.4 wikipedia:0.0
-Frac: 1.0", fillcolor="#ab8df1"] ;
-{rank = same;}}

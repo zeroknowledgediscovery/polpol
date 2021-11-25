@@ -1,8 +1,0 @@
-graph Tree {
-node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
-graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
-edge [fontname=helvetica, color=black] ;
-0 [label="child, unsp
-Prob: adopted child:0.1 biological child:0.1 child, unsp:0.4 grandchild, great grandchild:0.3 other relative:0.0 parent:0.0 parent-in-law:0.0 son (daughter)-in-law:0.0 stepchild:0.0
-Frac: 1.0", fillcolor="#9ae985"] ;
-{rank = same;}}

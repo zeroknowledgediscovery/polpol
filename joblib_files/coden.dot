@@ -1,8 +1,0 @@
-graph Tree {
-node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
-graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
-edge [fontname=helvetica, color=black] ;
-0 [label="no denomination
-Prob: am baptist asso:0.0 am lutheran:0.0 baptist-dk which:0.1 episcopal:0.0 evangelical luth:0.0 lutheran-dk which:0.1 lutheran-mo synod:0.0 methodist-dk which:0.0 nat bapt conv usa:0.0 no denomination:0.2 other baptists:0.0 other-specify:0.2 presbyterian-dk wh:0.0 southern baptist:0.2 united methodist:0.0
-Frac: 1.0", fillcolor="#be8ac6"] ;
-{rank = same;}}

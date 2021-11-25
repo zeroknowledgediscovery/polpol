@@ -1,8 +1,0 @@
-graph Tree {
-node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
-graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
-edge [fontname=helvetica, color=black] ;
-0 [label="r is not homosexual/gay
-Prob: r is homosexual/gay:0.0 r is not homosexual/gay:0.9 r sexual orientation uncertain:0.1
-Frac: 1.0", fillcolor="#62ebc7"] ;
-{rank = same;}}

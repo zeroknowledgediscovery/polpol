@@ -1,8 +1,0 @@
-graph Tree {
-node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
-graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
-edge [fontname=helvetica, color=black] ;
-0 [label="more than 3 years ago
-Prob: more than 12 months ago but within the past 3 years:0.0 more than 3 years ago:0.8 more than 30 days ago but within the past 12 months:0.1 within the past 30 days:0.0
-Frac: 1.0", fillcolor="#70f66d"] ;
-{rank = same;}}

@@ -1,0 +1,62 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="very serious
+Prob: not at all serious:0.0 not very serious:0.0 somewhat serious:0.1 very serious:0.9
+Frac: 0.077", fillcolor="#e869ff"] ;
+1 [label="imprvown", fillcolor="#d37bfc"] ;
+2 [label="very serious
+Prob: not at all serious:0.0 not very serious:0.0 somewhat serious:0.3 very serious:0.7
+Frac: 0.138", fillcolor="#c786fb"] ;
+3 [label="vigversn", fillcolor="#c78ce8"] ;
+4 [label="somewhat serious
+Prob: not at all serious:0.0 not very serious:0.1 somewhat serious:0.5 very serious:0.4
+Frac: 0.066", fillcolor="#97b7e4"] ;
+5 [label="upsdowns", fillcolor="#9ebdbf"] ;
+6 [label="not very serious
+Prob: not at all serious:0.1 not very serious:0.4 somewhat serious:0.2 very serious:0.3
+Frac: 0.095", fillcolor="#a3c1a5"] ;
+7 [label="hurtself", fillcolor="#c491e3"] ;
+8 [label="very serious
+Prob: not at all serious:0.0 not very serious:0.0 somewhat serious:0.0 very serious:0.9
+Frac: 0.081", fillcolor="#f65dfc"] ;
+9 [label="decmoney", fillcolor="#ce86ec"] ;
+10 [label="very serious
+Prob: not at all serious:0.0 not very serious:0.1 somewhat serious:0.2 very serious:0.6
+Frac: 0.066", fillcolor="#c88de7"] ;
+11 [label="hlpequip", fillcolor="#c290ea"] ;
+12 [label="very serious
+Prob: not at all serious:0.0 not very serious:0.1 somewhat serious:0.3 very serious:0.6
+Frac: 0.144", fillcolor="#bf92eb"] ;
+13 [label="imprvtrt", fillcolor="#c88cea"] ;
+14 [label="very serious
+Prob: not at all serious:0.0 not very serious:0.1 somewhat serious:0.3 very serious:0.6
+Frac: 0.118", fillcolor="#c38cf2"] ;
+15 [label="hurtoth", fillcolor="#cc89e9"] ;
+16 [label="very serious
+Prob: not at all serious:0.2 not very serious:0.2 somewhat serious:0.2 very serious:0.4
+Frac: 0.075", fillcolor="#c2a4c1"] ;
+17 [label="mentlill", fillcolor="#d088e5"] ;
+18 [label="very serious
+Prob: not at all serious:0.0 not very serious:0.0 somewhat serious:0.2 very serious:0.8
+Frac: 0.14", fillcolor="#d878f8"] ;
+1 -- 0 [label=" not likely at all",penwidth=3] ;
+1 -- 2 [label=" somewhat likely\n somewhat unlikely\n very likely",penwidth=3] ;
+3 -- 1 [label=" b",penwidth=3] ;
+3 -- 7 [label=" c\n d",penwidth=3] ;
+5 -- 4 [label=" not at all likely\n somewhat likely",penwidth=3] ;
+5 -- 6 [label=" not very likely\n very likely",penwidth=3] ;
+7 -- 5 [label=" not very likely",penwidth=3] ;
+7 -- 9 [label=" not likely at all\n somewhat likely\n very likely",penwidth=3] ;
+9 -- 8 [label=" not able at all",penwidth=3] ;
+9 -- 13 [label=" not very able\n somewhat able\n very able",penwidth=3] ;
+11 -- 10 [label=" not at all true\n somewhat true",penwidth=3] ;
+11 -- 12 [label=" not too true\n very true",penwidth=3] ;
+13 -- 11 [label=" somewhat likely",penwidth=3] ;
+13 -- 15 [label=" not likely at all\n somewhat unlikely\n very likely",penwidth=3] ;
+15 -- 14 [label=" not very likely",penwidth=3] ;
+15 -- 17 [label=" not likely at all\n somewhat likely\n very likely",penwidth=3] ;
+17 -- 16 [label=" not at all likely\n not very likely",penwidth=3] ;
+17 -- 18 [label=" somewhat likely\n very likely",penwidth=3] ;
+{rank = same;}}

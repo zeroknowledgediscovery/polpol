@@ -1,0 +1,68 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="too little
+Prob: about right:0.5 too little:0.5 too much:0.0
+Frac: 0.05", fillcolor="#aad991"] ;
+1 [label="polviews", fillcolor="#a8d894"] ;
+2 [label="about right
+Prob: about right:0.5 too little:0.4 too much:0.1
+Frac: 0.257", fillcolor="#b5d08e"] ;
+3 [label="partyid", fillcolor="#a8d894"] ;
+4 [label="about right
+Prob: about right:0.5 too little:0.4 too much:0.1
+Frac: 0.113", fillcolor="#afd78e"] ;
+5 [label="ABHELP2", fillcolor="#97e19b"] ;
+6 [label="too little
+Prob: about right:0.2 too little:0.8 too much:0.0
+Frac: 0.102", fillcolor="#7deda9"] ;
+7 [label="natenrgy", fillcolor="#b6d28c"] ;
+8 [label="about right
+Prob: about right:0.7 too little:0.2 too much:0.1
+Frac: 0.068", fillcolor="#d6c579"] ;
+9 [label="realinc", fillcolor="#caca7f"] ;
+10 [label="about right
+Prob: about right:0.5 too little:0.4 too much:0.1
+Frac: 0.03", fillcolor="#b0d58e"] ;
+11 [label="SEI10", fillcolor="#c6ca84"] ;
+12 [label="about right
+Prob: about right:0.7 too little:0.2 too much:0.1
+Frac: 0.035", fillcolor="#d4c07f"] ;
+13 [label="SEI10EDUC", fillcolor="#c5c985"] ;
+14 [label="about right
+Prob: about right:0.5 too little:0.4 too much:0.1
+Frac: 0.149", fillcolor="#b5cf90"] ;
+15 [label="natroad", fillcolor="#c4ca85"] ;
+16 [label="about right
+Prob: about right:0.8 too little:0.2 too much:0.0
+Frac: 0.032", fillcolor="#d6cf6f"] ;
+17 [label="meovrwrk", fillcolor="#d3c67a"] ;
+18 [label="about right
+Prob: about right:0.7 too little:0.2 too much:0.1
+Frac: 0.111", fillcolor="#d2c37e"] ;
+19 [label="natpark", fillcolor="#b6d08e"] ;
+20 [label="about right
+Prob: about right:0.4 too little:0.3 too much:0.4
+Frac: 0.053", fillcolor="#b8abb0"] ;
+1 -- 0 [label=" slghtly conservative",penwidth=3] ;
+1 -- 3 [label=" conservative\n extremely liberal\n extrmly conservative\n liberal\n moderate\n slightly liberal",penwidth=3] ;
+3 -- 2 [label=" not str democrat\n strong republican\n other party\n independent\n not str republican",penwidth=3] ;
+3 -- 5 [label=" ind,near dem\n ind,near rep\n strong democrat",penwidth=3] ;
+5 -- 4 [label=" no",penwidth=3] ;
+5 -- 6 [label=" yes",penwidth=3] ;
+7 -- 1 [label=" too little",penwidth=3] ;
+7 -- 11 [label=" about right\n too much",penwidth=3] ;
+9 -- 8 [label=" c",penwidth=3] ;
+9 -- 10 [label=" b\n d\n e",penwidth=3] ;
+11 -- 9 [label=" b",penwidth=3] ;
+11 -- 13 [label=" c\n d\n e",penwidth=3] ;
+13 -- 12 [label=" b",penwidth=3] ;
+13 -- 15 [label=" c\n d\n e",penwidth=3] ;
+15 -- 14 [label=" too little",penwidth=3] ;
+15 -- 17 [label=" about right\n too much",penwidth=3] ;
+17 -- 16 [label=" agree",penwidth=3] ;
+17 -- 18 [label=" disagree\n neither agree nor disagree\n strongly agree\n strongly disagree",penwidth=3] ;
+19 -- 7 [label=" about right\n too little",penwidth=3] ;
+19 -- 20 [label=" too much",penwidth=3] ;
+{rank = same;}}

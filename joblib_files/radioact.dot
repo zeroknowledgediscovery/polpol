@@ -1,0 +1,32 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="False
+Prob: False:0.9 True:0.1
+Frac: 0.078", fillcolor="#e6c76e"] ;
+1 [label="VOTE12", fillcolor="#edc566"] ;
+2 [label="False
+Prob: False:0.9 True:0.1
+Frac: 0.374", fillcolor="#eec465"] ;
+3 [label="viruses", fillcolor="#e3c770"] ;
+4 [label="False
+Prob: False:0.8 True:0.2
+Frac: 0.322", fillcolor="#d5cb7e"] ;
+5 [label="worde", fillcolor="#d8ca7b"] ;
+6 [label="True
+Prob: False:0.4 True:0.6
+Frac: 0.082", fillcolor="#94dbbf"] ;
+7 [label="born", fillcolor="#b4d39f"] ;
+8 [label="False
+Prob: False:0.7 True:0.3
+Frac: 0.144", fillcolor="#c6cf8d"] ;
+1 -- 0 [label=" did not vote",penwidth=3] ;
+1 -- 2 [label=" ineligible\n voted",penwidth=3] ;
+3 -- 1 [label=" False",penwidth=3] ;
+3 -- 4 [label=" True",penwidth=3] ;
+5 -- 3 [label=" correct",penwidth=3] ;
+5 -- 7 [label=" incorrect",penwidth=3] ;
+7 -- 6 [label=" no",penwidth=3] ;
+7 -- 8 [label=" yes",penwidth=3] ;
+{rank = same;}}

@@ -1,0 +1,20 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="biological child
+Prob: adopted child:0.0 biological child:0.9 brother, sister:0.0 child of non-relative:0.0 child, unsp:0.0 cousin:0.0 friend:0.0 grandchild, great grandchild:0.0 niece or nephew:0.0 other non-rlative:0.0 other relative:0.0 parent:0.0 parent-in-law:0.0 partner,girl(boy)friend:0.0 roommate, housemate:0.0 sibling-in-law:0.0 son (daughter)-in-law:0.0 stepchild:0.1 uncle or aunt:0.0
+Frac: 0.252", fillcolor="#fdef5a"] ;
+1 [label="RELSP3", fillcolor="#c6ea6a"] ;
+2 [label="roommate, housemate
+Prob: adopted child:0.0 biological child:0.0 brother, sister:0.2 child of non-relative:0.0 child, unsp:0.0 cousin:0.0 friend:0.0 grandchild, great grandchild:0.0 niece or nephew:0.0 other non-rlative:0.1 other relative:0.1 parent:0.0 parent-in-law:0.0 partner,girl(boy)friend:0.0 roommate, housemate:0.4 sibling-in-law:0.1 son (daughter)-in-law:0.0 stepchild:0.0 uncle or aunt:0.0
+Frac: 0.08", fillcolor="#da9dcc"] ;
+3 [label="RELATE3", fillcolor="#b3e970"] ;
+4 [label="child, unsp
+Prob: adopted child:0.0 biological child:0.1 brother, sister:0.0 child of non-relative:0.0 child, unsp:0.8 cousin:0.0 friend:0.0 grandchild, great grandchild:0.0 niece or nephew:0.0 other non-rlative:0.0 other relative:0.0 parent:0.0 parent-in-law:0.0 partner,girl(boy)friend:0.0 roommate, housemate:0.0 sibling-in-law:0.0 son (daughter)-in-law:0.0 stepchild:0.0 uncle or aunt:0.0
+Frac: 0.668", fillcolor="#aff265"] ;
+1 -- 0 [label=" biological child",penwidth=3] ;
+1 -- 3 [label=" adopted child\n brother, sister (full, half, or step sibling\n child of non-relative\n child, not specified\n cousin\n grandchild, great-grandchild\n niece or nephew\n other non-relative (employee, boarder)\n parent\n parent-in-law\n roommate, housemate\n sibling-in-law\n son-in-law, daughter-in-law\n stepchild",penwidth=3] ;
+3 -- 2 [label=" non-relative\n other relative",penwidth=3] ;
+3 -- 4 [label=" child\n grand or great-grandchild\n parent or parent-in-law\n son or daughter-in-law",penwidth=3] ;
+{rank = same;}}

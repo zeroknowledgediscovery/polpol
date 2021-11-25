@@ -1,0 +1,50 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="e
+Prob: c:0.0 d:0.0 e:1.0
+Frac: 0.17", fillcolor="#c155ff"] ;
+1 [label="intcntct", fillcolor="#e091a3"] ;
+2 [label="c
+Prob: c:1.0 d:0.0 e:0.0
+Frac: 0.028", fillcolor="#fbc257"] ;
+3 [label="ABSTATE1", fillcolor="#fac05a"] ;
+4 [label="c
+Prob: c:0.9 d:0.0 e:0.0
+Frac: 0.045", fillcolor="#f9bf5b"] ;
+5 [label="majorcol", fillcolor="#fbc158"] ;
+6 [label="c
+Prob: c:1.0 d:0.0 e:0.0
+Frac: 0.351", fillcolor="#fac258"] ;
+7 [label="hhtype", fillcolor="#fbc157"] ;
+8 [label="c
+Prob: c:1.0 d:0.0 e:0.0
+Frac: 0.041", fillcolor="#fbc058"] ;
+9 [label="HHTYPE1", fillcolor="#fcc157"] ;
+10 [label="c
+Prob: c:1.0 d:0.0 e:0.0
+Frac: 0.048", fillcolor="#fdc156"] ;
+11 [label="intyrs", fillcolor="#fcc156"] ;
+12 [label="c
+Prob: c:1.0 d:0.0 e:0.0
+Frac: 0.035", fillcolor="#fcc256"] ;
+13 [label="vissci", fillcolor="#e79d90"] ;
+14 [label="e
+Prob: c:0.0 d:0.0 e:1.0
+Frac: 0.282", fillcolor="#c056fd"] ;
+1 -- 0 [label=" b\n d",penwidth=3] ;
+1 -- 13 [label=" c\n e",penwidth=3] ;
+3 -- 2 [label=" easy\n hard",penwidth=3] ;
+3 -- 4 [label=" neither easy nor hard\n very easy\n very hard",penwidth=3] ;
+5 -- 3 [label=" aviation, aeronatics\n social work\n environment science/studies\n journalism\n english\n criminology/criminal justice\n tv, film\n physical education\n social sciences\n educational administration\n marketing\n child development\n nursing\n mechanics/machine trade\n art\n foreign language\n urban and regional planning\n comm. disorders\n electronics\n accounting/bookkeeping\n dentistry\n human services\n philosophy\n medicine\n communications/speech\n anthropolgy\n theology\n theater arts\n chemistry\n veterinary medicine\n socology",penwidth=3] ;
+5 -- 7 [label=" allied health\n architecture\n biology\n business administration\n computer science\n counseling\n economics\n education\n engineering\n finance\n fine arts\n food science/nutrition/culinary arts\n general sciences\n geology\n health\n history\n industrial relations\n information technology\n law\n liberal arts\n mathmatics\n music\n other\n other vocational\n pharmacy\n physics\n political science\n psychology\n visual arts/graphic design",penwidth=3] ;
+7 -- 6 [label=" 1adlt,0kids\n 3adlts,0mar,rel,0kids\n 2as,ntmar,ntrel,opsex,1+ks\n 4+adlts,0mar,0kids\n 4+adlts,2mar,1+kids\n 2adlts,dkmar,0kids\n 3adlts,1mar,rel,ntrel,0kids\n 3adlts,2mar,rel,0kids\n 2as,ntmar,ntrel,smsex,0ks\n 2adlts,ntmar,dkrel,0kids\n 2adlts,mar,1+kids\n 2adlts,ntmar,dkrel,1+kids\n 4+adlts,3mar,0kids\n 4+adlts,4+mar,1+kids\n 2adlts,ntmar,rel,0kids\n 3adlts,1mar,rel,rel,0kids\n 2adlts,mar,0kids\n 3adlts,0mar,ntrel,1+kids\n 3adlts,0mar,ntrel,0kids",penwidth=3] ;
+7 -- 9 [label=" 1adlt,1+kids\n 2adlts,dkmar,1+kids\n 2adlts,ntmar,rel,1+kids\n 2as,ntmar,ntrel,opsex,0ks\n 2as,ntmar,ntrel,smsex,1+ks\n 3adlts,0mar,ntrel,rel,0kids\n 3adlts,0mar,ntrel,rel,1+kids\n 3adlts,0mar,rel,1+kids\n 3adlts,0mar,sp,rel,0kids\n 3adlts,1mar,ntrel,0kids\n 3adlts,2mar,ntrel,rel,0kids\n 3adlts,2mar,rel,1+kids\n 3adlts,2mar,sp,rel,0kids\n 3adlts,2mar,sp,rel,1+kids\n 3adlts,3mar,sp,rel,1+kids\n 4+adlts,0mar,1+kids\n 4+adlts,1mar,0kids\n 4+adlts,2mar,0kids\n 4+adlts,4+mar,0kids",penwidth=3] ;
+9 -- 8 [label=" non-family w children\n married couple, no children\n unsure w children",penwidth=3] ;
+9 -- 11 [label=" cohab couple, no children\n married couple w children\n non-family, no children\n other fam., no children\n other family w children\n single parent\n unsure, no children",penwidth=3] ;
+11 -- 10 [label=" 12\n 2\n 4\n 7\n 3\n 11\n 14\n 5\n 1\n 6",penwidth=3] ;
+11 -- 12 [label=" 0\n 10\n 15\n 21\n 23\n 8\n 9",penwidth=3] ;
+13 -- 5 [label=" c\n d",penwidth=3] ;
+13 -- 14 [label=" e",penwidth=3] ;
+{rank = same;}}

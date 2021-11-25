@@ -1,0 +1,50 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="somewhat likely
+Prob: somewhat likely:0.5 somewhat unlikely:0.4 very likely:0.1 very unlikely:0.1
+Frac: 0.206", fillcolor="#bbd36d"] ;
+1 [label="discaff", fillcolor="#b8c589"] ;
+2 [label="somewhat unlikely
+Prob: somewhat likely:0.4 somewhat unlikely:0.4 very likely:0.1 very unlikely:0.2
+Frac: 0.113", fillcolor="#bac87d"] ;
+3 [label="scifrom", fillcolor="#b5cb83"] ;
+4 [label="somewhat likely
+Prob: somewhat likely:0.4 somewhat unlikely:0.3 very likely:0.2 very unlikely:0.1
+Frac: 0.072", fillcolor="#adcf8b"] ;
+5 [label="wrkwayup", fillcolor="#b8c191"] ;
+6 [label="somewhat likely
+Prob: somewhat likely:0.4 somewhat unlikely:0.2 very likely:0.2 very unlikely:0.2
+Frac: 0.269", fillcolor="#bac199"] ;
+7 [label="abpoorw", fillcolor="#b9bf95"] ;
+8 [label="very unlikely
+Prob: somewhat likely:0.2 somewhat unlikely:0.2 very likely:0.1 very unlikely:0.6
+Frac: 0.067", fillcolor="#d594bd"] ;
+9 [label="famvswk", fillcolor="#b8bc92"] ;
+10 [label="somewhat unlikely
+Prob: somewhat likely:0.3 somewhat unlikely:0.4 very likely:0.1 very unlikely:0.2
+Frac: 0.071", fillcolor="#b3c78c"] ;
+11 [label="SATJOB1", fillcolor="#b1c688"] ;
+12 [label="somewhat unlikely
+Prob: somewhat likely:0.2 somewhat unlikely:0.5 very likely:0.0 very unlikely:0.3
+Frac: 0.073", fillcolor="#afc08d"] ;
+13 [label="hhtype", fillcolor="#b0c686"] ;
+14 [label="somewhat unlikely
+Prob: somewhat likely:0.3 somewhat unlikely:0.4 very likely:0.1 very unlikely:0.2
+Frac: 0.13", fillcolor="#b0ca82"] ;
+1 -- 0 [label=" somewhat likely",penwidth=3] ;
+1 -- 5 [label=" not very likely\n very likely",penwidth=3] ;
+3 -- 2 [label=" other\n government agencies\n books other printed material\n newspapers\n the internet",penwidth=3] ;
+3 -- 4 [label=" family\n friends colleagues\n magazines\n radio\n tv",penwidth=3] ;
+5 -- 3 [label=" agree somewhat",penwidth=3] ;
+5 -- 7 [label=" agree strongly\n disagree somewhat\n disagree strongly\n neither agree nor disagree",penwidth=3] ;
+7 -- 6 [label=" always wrong",penwidth=3] ;
+7 -- 9 [label=" almost always wrong\n not wrong at all\n wrong only sometimes",penwidth=3] ;
+9 -- 8 [label=" never\n often",penwidth=3] ;
+9 -- 11 [label=" rarely\n sometimes",penwidth=3] ;
+11 -- 10 [label=" somewhat satisfied",penwidth=3] ;
+11 -- 13 [label=" not at all satisfied\n not too satisfied\n very satisfied",penwidth=3] ;
+13 -- 12 [label=" 1adlt,0kids\n 2as,ntmar,ntrel,opsex,1+ks\n 1adlt,1+kids",penwidth=3] ;
+13 -- 14 [label=" 2adlts,dkmar,0kids\n 2adlts,mar,0kids\n 2adlts,mar,1+kids\n 2adlts,ntmar,rel,0kids\n 2adlts,ntmar,rel,1+kids\n 2as,ntmar,ntrel,opsex,0ks\n 2as,ntmar,ntrel,smsex,0ks\n 3adlts,0mar,ntrel,rel,0kids\n 3adlts,0mar,ntrel,rel,1+kids\n 3adlts,0mar,rel,0kids\n 3adlts,2mar,rel,0kids\n 3adlts,2mar,rel,1+kids\n 3adlts,2mar,sp,rel,0kids\n 3adlts,2mar,sp,rel,1+kids\n 4+adlts,0mar,0kids\n 4+adlts,2mar,0kids\n 4+adlts,2mar,1+kids\n 4+adlts,4+mar,1+kids",penwidth=3] ;
+{rank = same;}}

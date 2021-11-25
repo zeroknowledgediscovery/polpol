@@ -1,0 +1,32 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="somewhat agree
+Prob: somewhat agree:0.6 somewhat disagree:0.0 strongly agree:0.3 strongly disagree:0.0
+Frac: 0.072", fillcolor="#c5cd8e"] ;
+1 [label="natactive", fillcolor="#68e5ea"] ;
+2 [label="strongly agree
+Prob: somewhat agree:0.1 somewhat disagree:0.0 strongly agree:0.9 strongly disagree:0.0
+Frac: 0.109", fillcolor="#61e8f3"] ;
+3 [label="coop", fillcolor="#61e7f1"] ;
+4 [label="strongly agree
+Prob: somewhat agree:0.1 somewhat disagree:0.0 strongly agree:0.9 strongly disagree:0.0
+Frac: 0.136", fillcolor="#66e6eb"] ;
+5 [label="RELHHD2", fillcolor="#61e7f1"] ;
+6 [label="strongly agree
+Prob: somewhat agree:0.1 somewhat disagree:0.0 strongly agree:0.9 strongly disagree:0.0
+Frac: 0.069", fillcolor="#61e5f5"] ;
+7 [label="hispanic", fillcolor="#60e7f2"] ;
+8 [label="strongly agree
+Prob: somewhat agree:0.1 somewhat disagree:0.0 strongly agree:0.9 strongly disagree:0.0
+Frac: 0.614", fillcolor="#60e8f2"] ;
+1 -- 0 [label=" somewhat agree",penwidth=3] ;
+1 -- 3 [label=" strongly agree\n strongly disagree",penwidth=3] ;
+3 -- 2 [label=" cooperative",penwidth=3] ;
+3 -- 5 [label=" friendly,interested\n hostile\n restless,impatient",penwidth=3] ;
+5 -- 4 [label=" parent-in-law\n child,natural or adopted,stepchild\n parent\n partner,fiance-e-,boyfriend,girlfriend,etc",penwidth=3] ;
+5 -- 7 [label=" brother,sister-full,half, or step sibling-\n cousin\n grandchild,great-granchild\n niece or nephew\n roommate,housemate\n spouse",penwidth=3] ;
+7 -- 6 [label=" spanish\n equadorian\n salvadorian\n cuban\n nicaraguan\n central american\n columbian\n mexican, mexican american, chicano/a\n honduran\n guatemalan\n hispanic\n south american",penwidth=3] ;
+7 -- 8 [label=" dominican\n not hispanic\n puerto rican",penwidth=3] ;
+{rank = same;}}

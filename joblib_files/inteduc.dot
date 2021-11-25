@@ -1,0 +1,38 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="moderately interested
+Prob: moderately interested:0.5 not at all interested:0.1 very interested:0.4
+Frac: 0.082", fillcolor="#cf9ba9"] ;
+1 [label="natheal", fillcolor="#d28cb6"] ;
+2 [label="very interested
+Prob: moderately interested:0.4 not at all interested:0.1 very interested:0.6
+Frac: 0.409", fillcolor="#d288b9"] ;
+3 [label="intfarm", fillcolor="#cc97b0"] ;
+4 [label="moderately interested
+Prob: moderately interested:0.5 not at all interested:0.2 very interested:0.3
+Frac: 0.176", fillcolor="#cfae97"] ;
+5 [label="happy", fillcolor="#c3a9a7"] ;
+6 [label="very interested
+Prob: moderately interested:0.2 not at all interested:0.3 very interested:0.5
+Frac: 0.056", fillcolor="#b09fc4"] ;
+7 [label="intecon", fillcolor="#b3a3bd"] ;
+8 [label="very interested
+Prob: moderately interested:0.3 not at all interested:0.3 very interested:0.4
+Frac: 0.073", fillcolor="#b6a6b7"] ;
+9 [label="intfarm", fillcolor="#cc92b6"] ;
+10 [label="very interested
+Prob: moderately interested:0.3 not at all interested:0.1 very interested:0.7
+Frac: 0.204", fillcolor="#ca7ecb"] ;
+1 -- 0 [label=" about right",penwidth=3] ;
+1 -- 2 [label=" too little\n too much",penwidth=3] ;
+3 -- 1 [label=" moderately interested",penwidth=3] ;
+3 -- 5 [label=" not at all interested",penwidth=3] ;
+5 -- 4 [label=" pretty happy",penwidth=3] ;
+5 -- 7 [label=" not too happy\n very happy",penwidth=3] ;
+7 -- 6 [label=" moderately interested",penwidth=3] ;
+7 -- 8 [label=" not at all interested\n very interested",penwidth=3] ;
+9 -- 3 [label=" moderately interested\n not at all interested",penwidth=3] ;
+9 -- 10 [label=" very interested",penwidth=3] ;
+{rank = same;}}

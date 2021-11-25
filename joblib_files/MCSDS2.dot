@@ -1,0 +1,32 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="False
+Prob: False:0.9 True:0.1
+Frac: 0.298", fillcolor="#e8c66b"] ;
+1 [label="MCSDS3", fillcolor="#d1cc82"] ;
+2 [label="False
+Prob: False:0.6 True:0.4
+Frac: 0.101", fillcolor="#b9d29a"] ;
+3 [label="degree", fillcolor="#c5cf8e"] ;
+4 [label="False
+Prob: False:0.7 True:0.3
+Frac: 0.131", fillcolor="#cecc85"] ;
+5 [label="sprtprsn", fillcolor="#c8ce8b"] ;
+6 [label="False
+Prob: False:0.7 True:0.3
+Frac: 0.113", fillcolor="#cccd87"] ;
+7 [label="VOTE12", fillcolor="#c9ce8a"] ;
+8 [label="False
+Prob: False:0.7 True:0.3
+Frac: 0.357", fillcolor="#c8ce8b"] ;
+1 -- 0 [label=" False",penwidth=3] ;
+1 -- 5 [label=" True",penwidth=3] ;
+3 -- 2 [label=" bachelor\n graduate",penwidth=3] ;
+3 -- 4 [label=" high school\n junior college\n lt high school",penwidth=3] ;
+5 -- 3 [label=" modeate spirtual",penwidth=3] ;
+5 -- 7 [label=" not spiritual\n slight spiritual\n very spiritual",penwidth=3] ;
+7 -- 6 [label=" did not vote",penwidth=3] ;
+7 -- 8 [label=" ineligible\n voted",penwidth=3] ;
+{rank = same;}}

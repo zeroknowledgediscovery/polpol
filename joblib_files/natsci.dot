@@ -1,0 +1,68 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="too little
+Prob: about right:0.2 too little:0.7 too much:0.0
+Frac: 0.122", fillcolor="#82e7aa"] ;
+1 [label="ABSTATE2", fillcolor="#9ddc9a"] ;
+2 [label="too little
+Prob: about right:0.4 too little:0.6 too much:0.0
+Frac: 0.066", fillcolor="#9fe292"] ;
+3 [label="exptext", fillcolor="#a4d996"] ;
+4 [label="too little
+Prob: about right:0.4 too little:0.5 too much:0.1
+Frac: 0.067", fillcolor="#a9d19a"] ;
+5 [label="exptext", fillcolor="#a5d996"] ;
+6 [label="about right
+Prob: about right:0.6 too little:0.4 too much:0.0
+Frac: 0.045", fillcolor="#b4dc84"] ;
+7 [label="advfront", fillcolor="#a5d896"] ;
+8 [label="about right
+Prob: about right:0.6 too little:0.4 too much:0.1
+Frac: 0.07", fillcolor="#bcd285"] ;
+9 [label="natroad", fillcolor="#a3d899"] ;
+10 [label="too little
+Prob: about right:0.2 too little:0.7 too much:0.1
+Frac: 0.084", fillcolor="#82e6ac"] ;
+11 [label="natmass", fillcolor="#98daa1"] ;
+12 [label="about right
+Prob: about right:0.5 too little:0.4 too much:0.1
+Frac: 0.09", fillcolor="#aecf96"] ;
+13 [label="natenrgy", fillcolor="#b0d193"] ;
+14 [label="too little
+Prob: about right:0.4 too little:0.5 too much:0.1
+Frac: 0.039", fillcolor="#a6d797"] ;
+15 [label="natspac", fillcolor="#c6c489"] ;
+16 [label="about right
+Prob: about right:0.7 too little:0.2 too much:0.0
+Frac: 0.045", fillcolor="#d2cc76"] ;
+17 [label="fepresch", fillcolor="#d1c57d"] ;
+18 [label="about right
+Prob: about right:0.7 too little:0.2 too much:0.1
+Frac: 0.233", fillcolor="#d1c47f"] ;
+19 [label="natpark", fillcolor="#c9c388"] ;
+20 [label="about right
+Prob: about right:0.5 too little:0.3 too much:0.2
+Frac: 0.139", fillcolor="#b9bd9d"] ;
+1 -- 0 [label=" make it easier",penwidth=3] ;
+1 -- 5 [label=" make it harder\n stay the same as now",penwidth=3] ;
+3 -- 2 [label=" correct vague reason",penwidth=3] ;
+3 -- 4 [label=" correct wrong reason\n wrong don t know\n wrong other reason",penwidth=3] ;
+5 -- 3 [label=" correct wrong reason\n wrong don t know\n wrong other reason\n correct vague reason",penwidth=3] ;
+5 -- 7 [label=" correct control group\n correct don t know\n no answer\n wrong reservations about control group\n wrong reservations about sample",penwidth=3] ;
+7 -- 6 [label=" agree",penwidth=3] ;
+7 -- 9 [label=" disagree\n strongly agree\n strongly disagree",penwidth=3] ;
+9 -- 8 [label=" about right",penwidth=3] ;
+9 -- 11 [label=" too little\n too much",penwidth=3] ;
+11 -- 10 [label=" too little",penwidth=3] ;
+11 -- 12 [label=" about right\n too much",penwidth=3] ;
+13 -- 1 [label=" too little",penwidth=3] ;
+13 -- 15 [label=" about right\n too much",penwidth=3] ;
+15 -- 14 [label=" too little",penwidth=3] ;
+15 -- 19 [label=" about right\n too much",penwidth=3] ;
+17 -- 16 [label=" agree",penwidth=3] ;
+17 -- 18 [label=" disagree\n strongly agree\n strongly disagree",penwidth=3] ;
+19 -- 17 [label=" about right",penwidth=3] ;
+19 -- 20 [label=" too little\n too much",penwidth=3] ;
+{rank = same;}}

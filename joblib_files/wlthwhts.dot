@@ -1,0 +1,38 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="c
+Prob: c:1.0 e:0.0
+Frac: 0.196", fillcolor="#ffc155"] ;
+1 [label="intage", fillcolor="#fec155"] ;
+2 [label="c
+Prob: c:1.0 e:0.0
+Frac: 0.22", fillcolor="#ffc155"] ;
+3 [label="RELIG16", fillcolor="#fec155"] ;
+4 [label="c
+Prob: c:1.0 e:0.0
+Frac: 0.033", fillcolor="#ffc155"] ;
+5 [label="quallife", fillcolor="#fec155"] ;
+6 [label="c
+Prob: c:1.0 e:0.0
+Frac: 0.034", fillcolor="#ffc155"] ;
+7 [label="quallife", fillcolor="#fec155"] ;
+8 [label="c
+Prob: c:1.0 e:0.0
+Frac: 0.066", fillcolor="#fdc156"] ;
+9 [label="wlthblks", fillcolor="#b2d3a1"] ;
+10 [label="e
+Prob: c:0.0 e:1.0
+Frac: 0.451", fillcolor="#56eafd"] ;
+1 -- 0 [label=" 28\n 31\n 43\n 42\n 20\n 75\n 54\n 61\n 62\n 58\n 50\n 68\n 67\n 69\n 78\n 73\n 55\n 44\n 39\n 33",penwidth=3] ;
+1 -- 3 [label=" 26\n 27\n 29\n 35\n 36\n 37\n 38\n 40\n 45\n 46\n 47\n 48\n 49\n 51\n 52\n 53\n 56\n 57\n 59\n 60\n 63\n 64\n 65\n 66\n 71\n 72\n 74\n 77\n 81\n 85",penwidth=3] ;
+3 -- 2 [label=" protestant\n christian\n native american\n none",penwidth=3] ;
+3 -- 5 [label=" buddhism\n catholic\n hinduism\n jewish\n moslem/islam\n orthodox-christian\n other",penwidth=3] ;
+5 -- 4 [label=" excellent",penwidth=3] ;
+5 -- 7 [label=" fair\n good\n poor\n very good",penwidth=3] ;
+7 -- 6 [label=" good",penwidth=3] ;
+7 -- 8 [label=" fair\n poor\n very good",penwidth=3] ;
+9 -- 1 [label=" c",penwidth=3] ;
+9 -- 10 [label=" e",penwidth=3] ;
+{rank = same;}}

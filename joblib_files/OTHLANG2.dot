@@ -1,0 +1,8 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="spanish
+Prob: arabic:0.0 aramaic:0.0 bicol:0.0 burmese:0.0 chinese:0.0 creole:0.0 dari:0.0 english:0.0 french:0.1 german:0.1 gujarati:0.0 hebrew:0.0 hindi:0.0 hungarian:0.0 italian:0.0 japanese:0.0 kannada:0.0 latin:0.0 malaysian:0.0 marathi:0.0 navajo:0.0 oremagna:0.0 pashtu:0.0 patois:0.0 portuguese:0.0 romanian:0.0 russian:0.0 sanskrit:0.0 serbian:0.0 sign language:0.1 slovak:0.0 spanish:0.2 swahili:0.0 swedish:0.0 tagalog:0.0 turkish:0.0 ukranian:0.0 vietnamese:0.0
+Frac: 1.0", fillcolor="#b5b5b2"] ;
+{rank = same;}}

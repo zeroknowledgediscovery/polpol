@@ -1,0 +1,56 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="c
+Prob: c:1.0 e:0.0
+Frac: 0.061", fillcolor="#ffc155"] ;
+1 [label="HHTYPE1", fillcolor="#e6c76d"] ;
+2 [label="c
+Prob: c:0.7 e:0.3
+Frac: 0.053", fillcolor="#cbcd88"] ;
+3 [label="HHTYPE1", fillcolor="#ebc568"] ;
+4 [label="c
+Prob: c:0.9 e:0.1
+Frac: 0.058", fillcolor="#e9c66a"] ;
+5 [label="babies", fillcolor="#b3d3a0"] ;
+6 [label="e
+Prob: c:0.4 e:0.6
+Frac: 0.123", fillcolor="#99daba"] ;
+7 [label="HHTYPE1", fillcolor="#e6c76d"] ;
+8 [label="c
+Prob: c:1.0 e:0.0
+Frac: 0.401", fillcolor="#fdc156"] ;
+9 [label="HHTYPE1", fillcolor="#ebc568"] ;
+10 [label="c
+Prob: c:1.0 e:0.0
+Frac: 0.028", fillcolor="#fbc158"] ;
+11 [label="hhtype", fillcolor="#fdc156"] ;
+12 [label="c
+Prob: c:1.0 e:0.0
+Frac: 0.212", fillcolor="#fdc156"] ;
+13 [label="hhtype", fillcolor="#f7c25c"] ;
+14 [label="c
+Prob: c:0.7 e:0.3
+Frac: 0.028", fillcolor="#c8ce8b"] ;
+15 [label="hhtype", fillcolor="#f6c35d"] ;
+16 [label="c
+Prob: c:0.9 e:0.1
+Frac: 0.035", fillcolor="#ecc567"] ;
+1 -- 0 [label=" cohab couple, no children",penwidth=3] ;
+1 -- 2 [label=" single parent\n unsure, no children",penwidth=3] ;
+3 -- 1 [label=" single parent\n cohab couple, no children\n unsure, no children",penwidth=3] ;
+3 -- 9 [label=" cohab couple w children\n married couple w children\n married couple, no children\n non-family w children\n non-family, no children\n other fam., no children\n other family w children\n single adult\n unsure w children",penwidth=3] ;
+5 -- 4 [label=" d",penwidth=3] ;
+5 -- 6 [label=" c\n e",penwidth=3] ;
+7 -- 5 [label=" married couple w children",penwidth=3] ;
+7 -- 8 [label=" cohab couple w children\n married couple, no children",penwidth=3] ;
+9 -- 7 [label=" married couple w children\n cohab couple w children\n married couple, no children",penwidth=3] ;
+9 -- 15 [label=" non-family w children\n non-family, no children\n other fam., no children\n other family w children\n single adult\n unsure w children",penwidth=3] ;
+11 -- 10 [label=" 2adlts,ntmar,dkrel,1+kids\n 3adlts,1mar,rel,ntrel,0kids\n 2adlts,ntmar,rel,0kids",penwidth=3] ;
+11 -- 12 [label=" 1adlt,0kids\n 3adlts,0mar,ntrel,0kids\n 3adlts,0mar,ntrel,1+kids\n 3adlts,0mar,ntrel,rel,1+kids\n 4+adlts,0mar,1+kids",penwidth=3] ;
+13 -- 11 [label=" 1adlt,0kids\n 4+adlts,0mar,1+kids\n 3adlts,0mar,ntrel,1+kids\n 2adlts,ntmar,dkrel,1+kids\n 3adlts,1mar,rel,ntrel,0kids\n 3adlts,0mar,ntrel,rel,1+kids\n 3adlts,0mar,ntrel,0kids\n 2adlts,ntmar,rel,0kids",penwidth=3] ;
+13 -- 14 [label=" 2adlts,dkmar,1+kids\n 2adlts,ntmar,rel,1+kids\n 3adlts,0mar,ntrel,rel,0kids\n 3adlts,1mar,ntrel,0kids",penwidth=3] ;
+15 -- 13 [label=" 3adlts,1mar,rel,ntrel,0kids\n 2adlts,dkmar,1+kids\n 2adlts,ntmar,dkrel,1+kids\n 3adlts,0mar,ntrel,rel,1+kids\n 3adlts,0mar,ntrel,rel,0kids\n 3adlts,0mar,ntrel,1+kids\n 4+adlts,0mar,1+kids\n 2adlts,ntmar,rel,1+kids\n 3adlts,0mar,ntrel,0kids\n 1adlt,0kids\n 2adlts,ntmar,rel,0kids\n 3adlts,1mar,ntrel,0kids",penwidth=3] ;
+15 -- 16 [label=" 2as,ntmar,ntrel,smsex,0ks\n 2as,ntmar,ntrel,smsex,1+ks\n 3adlts,0mar,rel,0kids\n 3adlts,0mar,rel,1+kids",penwidth=3] ;
+{rank = same;}}

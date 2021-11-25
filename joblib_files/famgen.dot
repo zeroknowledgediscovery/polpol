@@ -1,0 +1,56 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="1 gen
+Prob: 1 gen:1.0 2 gens, children:0.0 2 gens, grandchldrn:0.0 2 gens, parents:0.0 3 gens, chld, par:0.0 3 gens, grandchldrn:0.0 4 gens:0.0
+Frac: 0.071", fillcolor="#fcc256"] ;
+1 [label="RELHHD2", fillcolor="#fcc759"] ;
+2 [label="1 gen
+Prob: 1 gen:0.9 2 gens, children:0.0 2 gens, grandchldrn:0.0 2 gens, parents:0.0 3 gens, chld, par:0.0 3 gens, grandchldrn:0.0 4 gens:0.0
+Frac: 0.31", fillcolor="#fec158"] ;
+3 [label="hhtype", fillcolor="#fdc85a"] ;
+4 [label="2 gens, children
+Prob: 1 gen:0.2 2 gens, children:0.7 2 gens, grandchldrn:0.0 2 gens, parents:0.0 3 gens, chld, par:0.0 3 gens, grandchldrn:0.0 4 gens:0.0
+Frac: 0.072", fillcolor="#f7e664"] ;
+5 [label="hhtype", fillcolor="#f8d75f"] ;
+6 [label="2 gens, children
+Prob: 1 gen:0.0 2 gens, children:1.0 2 gens, grandchldrn:0.0 2 gens, parents:0.0 3 gens, chld, par:0.0 3 gens, grandchldrn:0.0 4 gens:0.0
+Frac: 0.08", fillcolor="#fdfb58"] ;
+7 [label="rplace", fillcolor="#faf65e"] ;
+8 [label="2 gens, children
+Prob: 1 gen:0.0 2 gens, children:0.9 2 gens, grandchldrn:0.0 2 gens, parents:0.0 3 gens, chld, par:0.0 3 gens, grandchldrn:0.0 4 gens:0.0
+Frac: 0.03", fillcolor="#fbf65e"] ;
+9 [label="parelkid", fillcolor="#f8f361"] ;
+10 [label="2 gens, children
+Prob: 1 gen:0.0 2 gens, children:0.9 2 gens, grandchldrn:0.0 2 gens, parents:0.0 3 gens, chld, par:0.0 3 gens, grandchldrn:0.0 4 gens:0.0
+Frac: 0.142", fillcolor="#f8f362"] ;
+11 [label="RELATE3", fillcolor="#f2ed66"] ;
+12 [label="2 gens, children
+Prob: 1 gen:0.2 2 gens, children:0.6 2 gens, grandchldrn:0.1 2 gens, parents:0.2 3 gens, chld, par:0.0 3 gens, grandchldrn:0.0 4 gens:0.0
+Frac: 0.033", fillcolor="#d9f273"] ;
+13 [label="HHTYPE1", fillcolor="#dcd47a"] ;
+14 [label="1 gen
+Prob: 1 gen:0.6 2 gens, children:0.1 2 gens, grandchldrn:0.1 2 gens, parents:0.1 3 gens, chld, par:0.0 3 gens, grandchldrn:0.1 4 gens:0.0
+Frac: 0.061", fillcolor="#ddc47e"] ;
+15 [label="hompop", fillcolor="#f9d35d"] ;
+16 [label="1 gen
+Prob: 1 gen:1.0 2 gens, children:0.0 2 gens, grandchldrn:0.0 2 gens, parents:0.0 3 gens, chld, par:0.0 3 gens, grandchldrn:0.0 4 gens:0.0
+Frac: 0.202", fillcolor="#ffc055"] ;
+1 -- 0 [label=" grandchild,great-granchild\n roommate,housemate\n cousin\n other relative-great-aunt,grandniece,etc.-\n son-in-law,daughter-in-law\n parent\n partner,fiance-e-,boyfriend,girlfriend,etc\n niece or nephew",penwidth=3] ;
+1 -- 3 [label=" brother,sister-full,half, or step sibling-\n child,natural or adopted,stepchild\n spouse",penwidth=3] ;
+3 -- 2 [label=" 3adlts,0mar,sp,rel,0kids\n 2adlts,ntmar,dkrel,1+kids\n 3adlts,1mar,rel,rel,0kids\n 2adlts,mar,0kids\n 3adlts,2mar,rel,0kids\n 4+adlts,4+mar,1+kids\n 4+adlts,1mar,0kids\n 3adlts,3mar,sp,rel,1+kids\n 3adlts,1mar,rel,ntrel,0kids",penwidth=3] ;
+3 -- 4 [label=" 1adlt,1+kids\n 2adlts,dkmar,0kids\n 2adlts,dkmar,1+kids\n 3adlts,2mar,sp,rel,1+kids\n 3adlts,3mar,sp,rel,0kids",penwidth=3] ;
+5 -- 1 [label=" 3adlts,1mar,rel,rel,0kids\n 3adlts,0mar,sp,rel,0kids\n 2adlts,ntmar,dkrel,1+kids\n 2adlts,mar,0kids\n 3adlts,2mar,sp,rel,1+kids\n 3adlts,2mar,rel,0kids\n 2as,ntmar,ntrel,opsex,0ks\n 4+adlts,4+mar,1+kids\n 2adlts,dkmar,0kids\n 3adlts,3mar,sp,rel,1+kids\n 3adlts,1mar,ntrel,0kids\n 1adlt,1+kids\n 3adlts,1mar,rel,ntrel,0kids\n 4+adlts,1mar,0kids\n 2adlts,dkmar,1+kids\n 3adlts,3mar,sp,rel,0kids",penwidth=3] ;
+5 -- 11 [label=" 2adlts,mar,1+kids\n 2adlts,ntmar,dkrel,0kids\n 2adlts,ntmar,rel,0kids\n 2adlts,ntmar,rel,1+kids\n 2as,ntmar,ntrel,opsex,1+ks\n 2as,ntmar,ntrel,smsex,0ks\n 2as,ntmar,ntrel,smsex,1+ks\n 3adlts,0mar,ntrel,0kids\n 3adlts,0mar,ntrel,1+kids\n 3adlts,0mar,ntrel,rel,0kids\n 3adlts,0mar,ntrel,rel,1+kids\n 3adlts,0mar,rel,0kids\n 3adlts,0mar,rel,1+kids\n 3adlts,2mar,ntrel,rel,0kids\n 3adlts,2mar,rel,1+kids\n 3adlts,2mar,sp,rel,0kids\n 4+adlts,0mar,0kids\n 4+adlts,0mar,1+kids\n 4+adlts,2mar,0kids\n 4+adlts,2mar,1+kids\n 4+adlts,3mar,0kids\n 4+adlts,4+mar,0kids",penwidth=3] ;
+7 -- 6 [label=" spouse",penwidth=3] ;
+7 -- 9 [label=" child\n grand or great-grandchild\n head of household\n non-relative\n other relative\n parent or parent-in-law\n son or daughter-in-law",penwidth=3] ;
+9 -- 8 [label=" jewish\n other\n protestant",penwidth=3] ;
+9 -- 10 [label=" buddhism\n catholic\n christian\n hinduism",penwidth=3] ;
+11 -- 7 [label=" child",penwidth=3] ;
+11 -- 13 [label=" grand or great-grandchild\n non-relative\n other relative\n parent or parent-in-law\n son or daughter-in-law",penwidth=3] ;
+13 -- 12 [label=" other fam., no children",penwidth=3] ;
+13 -- 14 [label=" cohab couple w children\n married couple w children\n married couple, no children\n non-family w children\n non-family, no children\n other family w children\n unsure w children\n unsure, no children",penwidth=3] ;
+15 -- 5 [label=" 4\n 3\n 2\n 9\n 5\n 8\n 6\n 7\n 10",penwidth=3] ;
+15 -- 16 [label=" 1\n 11",penwidth=3] ;
+{rank = same;}}

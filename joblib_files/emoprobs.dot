@@ -1,0 +1,98 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="b
+Prob: b:0.6 c:0.4 d:0.0 e:0.0
+Frac: 0.066", fillcolor="#bcdb5a"] ;
+1 [label="safetywk", fillcolor="#c2d65d"] ;
+2 [label="b
+Prob: b:0.5 c:0.4 d:0.0 e:0.0
+Frac: 0.028", fillcolor="#bdd75f"] ;
+3 [label="hlpequip", fillcolor="#c5d45e"] ;
+4 [label="b
+Prob: b:0.6 c:0.4 d:0.0 e:0.0
+Frac: 0.119", fillcolor="#c7d35e"] ;
+5 [label="hlthmntl", fillcolor="#9de26b"] ;
+6 [label="c
+Prob: b:0.4 c:0.5 d:0.0 e:0.0
+Frac: 0.034", fillcolor="#aae25d"] ;
+7 [label="satsoc", fillcolor="#c1d85c"] ;
+8 [label="b
+Prob: b:0.6 c:0.3 d:0.0 e:0.0
+Frac: 0.075", fillcolor="#cbd35b"] ;
+9 [label="unhappy", fillcolor="#93e56f"] ;
+10 [label="c
+Prob: b:0.3 c:0.6 d:0.1 e:0.0
+Frac: 0.037", fillcolor="#9ae861"] ;
+11 [label="quallife", fillcolor="#8deb66"] ;
+12 [label="c
+Prob: b:0.1 c:0.8 d:0.1 e:0.0
+Frac: 0.044", fillcolor="#75f36a"] ;
+13 [label="cntctpar", fillcolor="#8bec67"] ;
+14 [label="c
+Prob: b:0.3 c:0.6 d:0.1 e:0.0
+Frac: 0.033", fillcolor="#9de563"] ;
+15 [label="threaten", fillcolor="#90ea66"] ;
+16 [label="c
+Prob: b:0.2 c:0.7 d:0.1 e:0.0
+Frac: 0.14", fillcolor="#8deb66"] ;
+17 [label="fatigue", fillcolor="#8be772"] ;
+18 [label="c
+Prob: b:0.1 c:0.5 d:0.3 e:0.2
+Frac: 0.062", fillcolor="#85d9a0"] ;
+19 [label="happy", fillcolor="#88e875"] ;
+20 [label="c
+Prob: b:0.1 c:0.6 d:0.2 e:0.1
+Frac: 0.053", fillcolor="#7dea81"] ;
+21 [label="slpprblm", fillcolor="#89eb6c"] ;
+22 [label="c
+Prob: b:0.2 c:0.6 d:0.1 e:0.0
+Frac: 0.036", fillcolor="#8ce972"] ;
+23 [label="healthissp", fillcolor="#8cea69"] ;
+24 [label="c
+Prob: b:0.1 c:0.8 d:0.1 e:0.0
+Frac: 0.04", fillcolor="#81f065"] ;
+25 [label="healthissp", fillcolor="#8deb65"] ;
+26 [label="c
+Prob: b:0.3 c:0.6 d:0.1 e:0.0
+Frac: 0.031", fillcolor="#9ce464"] ;
+27 [label="famgen", fillcolor="#8beb68"] ;
+28 [label="c
+Prob: b:0.2 c:0.7 d:0.1 e:0.0
+Frac: 0.168", fillcolor="#8aec68"] ;
+29 [label="ratepain", fillcolor="#8be579"] ;
+30 [label="c
+Prob: b:0.1 c:0.4 d:0.2 e:0.4
+Frac: 0.035", fillcolor="#a7baaf"] ;
+1 -- 0 [label=" agree",penwidth=3] ;
+1 -- 3 [label=" disagree\n strongly agree\n strongly disagree",penwidth=3] ;
+3 -- 2 [label=" not too true\n somewhat true",penwidth=3] ;
+3 -- 4 [label=" not at all true\n very true",penwidth=3] ;
+5 -- 1 [label=" excellent",penwidth=3] ;
+5 -- 9 [label=" fair\n good\n poor\n very good",penwidth=3] ;
+7 -- 6 [label=" good",penwidth=3] ;
+7 -- 8 [label=" excellent\n fair\n poor\n very good",penwidth=3] ;
+9 -- 7 [label=" never",penwidth=3] ;
+9 -- 17 [label=" often\n rarely\n sometimes\n very often",penwidth=3] ;
+11 -- 10 [label=" excellent",penwidth=3] ;
+11 -- 13 [label=" fair\n good\n poor\n very good",penwidth=3] ;
+13 -- 12 [label=" less often\n never\n once a week\n daily\n several times a week\n once a month\n the parent i have contact with most frequently lives with me",penwidth=3] ;
+13 -- 15 [label="  two to three times a month\n my parents are no longer alive\n several times a year",penwidth=3] ;
+15 -- 14 [label=" a few times a year\n less than once a year",penwidth=3] ;
+15 -- 16 [label=" a few times a month\n almost every day\n at least once a week\n never",penwidth=3] ;
+17 -- 11 [label=" mild",penwidth=3] ;
+17 -- 29 [label=" moderate\n none\n severe\n very severe",penwidth=3] ;
+19 -- 18 [label=" not too happy",penwidth=3] ;
+19 -- 21 [label=" pretty happy\n very happy",penwidth=3] ;
+21 -- 20 [label=" often",penwidth=3] ;
+21 -- 27 [label=" never\n rarely\n sometimes",penwidth=3] ;
+23 -- 22 [label=" excellent\n fair",penwidth=3] ;
+23 -- 25 [label=" good\n poor\n very good",penwidth=3] ;
+25 -- 24 [label=" good",penwidth=3] ;
+25 -- 26 [label=" poor\n very good",penwidth=3] ;
+27 -- 23 [label=" 2 gens, grandchldrn\n 2 gens, children\n 3 gens, grandchldrn",penwidth=3] ;
+27 -- 28 [label=" 1 gen\n 2 gens, parents\n 3 gens, chld, par\n 4 gens",penwidth=3] ;
+29 -- 19 [label=" b\n c\n d",penwidth=3] ;
+29 -- 30 [label=" e",penwidth=3] ;
+{rank = same;}}

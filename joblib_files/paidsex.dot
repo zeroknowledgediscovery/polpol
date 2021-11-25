@@ -1,0 +1,14 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="not selected
+Prob: had sex for pay:0.0 not selected:1.0
+Frac: 0.518", fillcolor="#57eafc"] ;
+1 [label="partners", fillcolor="#58eafb"] ;
+2 [label="not selected
+Prob: had sex for pay:0.0 not selected:1.0
+Frac: 0.482", fillcolor="#58eafb"] ;
+1 -- 0 [label=" 2 partners\n 4 partners",penwidth=3] ;
+1 -- 2 [label=" 1 partner\n 21-100 partners\n 3 partners\n 5-10 partners",penwidth=3] ;
+{rank = same;}}

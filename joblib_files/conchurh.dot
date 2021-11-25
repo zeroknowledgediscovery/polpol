@@ -1,0 +1,74 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="no confidence at all
+Prob: a great deal of confidence:0.0 complete confidence:0.0 no confidence at all:0.4 some confidence:0.3 very little confidence:0.2
+Frac: 0.063", fillcolor="#83a3f9"] ;
+1 [label="feelrel", fillcolor="#a796c2"] ;
+2 [label="some confidence
+Prob: a great deal of confidence:0.1 complete confidence:0.0 no confidence at all:0.2 some confidence:0.3 very little confidence:0.3
+Frac: 0.057", fillcolor="#9e91e3"] ;
+3 [label="christns", fillcolor="#ae93b7"] ;
+4 [label="some confidence
+Prob: a great deal of confidence:0.3 complete confidence:0.0 no confidence at all:0.0 some confidence:0.4 very little confidence:0.2
+Frac: 0.064", fillcolor="#b37dc8"] ;
+5 [label="christns", fillcolor="#b294ac"] ;
+6 [label="a great deal of confidence
+Prob: a great deal of confidence:0.4 complete confidence:0.1 no confidence at all:0.0 some confidence:0.4 very little confidence:0.0
+Frac: 0.175", fillcolor="#b29ca2"] ;
+7 [label="feelrel", fillcolor="#a286c9"] ;
+8 [label="a great deal of confidence
+Prob: a great deal of confidence:0.5 complete confidence:0.1 no confidence at all:0.0 some confidence:0.4 very little confidence:0.0
+Frac: 0.067", fillcolor="#b391a6"] ;
+9 [label="churhpow", fillcolor="#b98faa"] ;
+10 [label="a great deal of confidence
+Prob: a great deal of confidence:0.4 complete confidence:0.1 no confidence at all:0.0 some confidence:0.3 very little confidence:0.2
+Frac: 0.062", fillcolor="#bf8caf"] ;
+11 [label="conbiz", fillcolor="#9f7ccd"] ;
+12 [label="some confidence
+Prob: a great deal of confidence:0.3 complete confidence:0.0 no confidence at all:0.0 some confidence:0.6 very little confidence:0.1
+Frac: 0.117", fillcolor="#9d81c1"] ;
+13 [label="miracles", fillcolor="#9578d2"] ;
+14 [label="some confidence
+Prob: a great deal of confidence:0.1 complete confidence:0.0 no confidence at all:0.0 some confidence:0.6 very little confidence:0.2
+Frac: 0.107", fillcolor="#8c6ee6"] ;
+15 [label="concong", fillcolor="#9978d6"] ;
+16 [label="some confidence
+Prob: a great deal of confidence:0.1 complete confidence:0.1 no confidence at all:0.1 some confidence:0.5 very little confidence:0.2
+Frac: 0.079", fillcolor="#9986d8"] ;
+17 [label="concong", fillcolor="#9c78d9"] ;
+18 [label="some confidence
+Prob: a great deal of confidence:0.2 complete confidence:0.0 no confidence at all:0.0 some confidence:0.6 very little confidence:0.2
+Frac: 0.081", fillcolor="#9f6ddc"] ;
+19 [label="jews", fillcolor="#9d72d9"] ;
+20 [label="some confidence
+Prob: a great deal of confidence:0.2 complete confidence:0.1 no confidence at all:0.0 some confidence:0.5 very little confidence:0.2
+Frac: 0.052", fillcolor="#a577d2"] ;
+21 [label="marwht", fillcolor="#9c76d7"] ;
+22 [label="some confidence
+Prob: a great deal of confidence:0.2 complete confidence:0.0 no confidence at all:0.0 some confidence:0.6 very little confidence:0.2
+Frac: 0.075", fillcolor="#9775db"] ;
+1 -- 0 [label=" extreme non-rel",penwidth=3] ;
+1 -- 3 [label=" very non-rel\n very religious",penwidth=3] ;
+3 -- 2 [label=" neither positive nor negative\n somewhat negative",penwidth=3] ;
+3 -- 5 [label=" somewhat positive\n very negative\n very positive",penwidth=3] ;
+5 -- 4 [label=" somewhat positive",penwidth=3] ;
+5 -- 6 [label=" very negative\n very positive",penwidth=3] ;
+7 -- 1 [label=" very non-rel\n extreme non-rel\n very religious",penwidth=3] ;
+7 -- 11 [label=" extreme relgious\n not rel or non\n somewhat non-rel\n somwhat relgious",penwidth=3] ;
+9 -- 8 [label=" right amount pwr",penwidth=3] ;
+9 -- 10 [label=" far too litl pwr\n far too much pwr\n too little power\n too much power",penwidth=3] ;
+11 -- 9 [label=" a great deal of confidence",penwidth=3] ;
+11 -- 15 [label=" complete confidence\n no confidence at all\n some confidence\n very little confidence",penwidth=3] ;
+13 -- 12 [label=" yes, definitely",penwidth=3] ;
+13 -- 14 [label=" no, definitely not\n no, probably not\n yes, probably",penwidth=3] ;
+15 -- 13 [label=" a great deal of confidence\n some confidence",penwidth=3] ;
+15 -- 17 [label=" complete confidence\n no confidence at all\n very little confidence",penwidth=3] ;
+17 -- 16 [label=" complete confidence\n no confidence at all",penwidth=3] ;
+17 -- 19 [label=" very little confidence",penwidth=3] ;
+19 -- 18 [label=" neither positive nor negative",penwidth=3] ;
+19 -- 21 [label=" somewhat negative\n somewhat positive\n very negative\n very positive",penwidth=3] ;
+21 -- 20 [label=" neither favor nor oppose",penwidth=3] ;
+21 -- 22 [label=" favor\n oppose\n strongly favor\n strongly oppose",penwidth=3] ;
+{rank = same;}}

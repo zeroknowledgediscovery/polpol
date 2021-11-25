@@ -1,0 +1,56 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="yes
+Prob: no:0.1 yes:0.9
+Frac: 0.067", fillcolor="#5ee8f5"] ;
+1 [label="spvtrfair", fillcolor="#5de8f6"] ;
+2 [label="yes
+Prob: no:0.0 yes:1.0
+Frac: 0.118", fillcolor="#56eafd"] ;
+3 [label="hlploan", fillcolor="#5de8f6"] ;
+4 [label="yes
+Prob: no:0.1 yes:0.9
+Frac: 0.126", fillcolor="#63e7f0"] ;
+5 [label="educ", fillcolor="#5de8f6"] ;
+6 [label="yes
+Prob: no:0.0 yes:1.0
+Frac: 0.084", fillcolor="#5ce9f7"] ;
+7 [label="dofirst", fillcolor="#58eafb"] ;
+8 [label="yes
+Prob: no:0.0 yes:1.0
+Frac: 0.065", fillcolor="#55ebff"] ;
+9 [label="hompop", fillcolor="#55eafe"] ;
+10 [label="yes
+Prob: no:0.0 yes:1.0
+Frac: 0.065", fillcolor="#55ebff"] ;
+11 [label="hompop", fillcolor="#55eafe"] ;
+12 [label="yes
+Prob: no:0.0 yes:1.0
+Frac: 0.244", fillcolor="#55eafe"] ;
+13 [label="hompop", fillcolor="#55eafe"] ;
+14 [label="yes
+Prob: no:0.0 yes:1.0
+Frac: 0.067", fillcolor="#55ebff"] ;
+15 [label="dateintv", fillcolor="#55eafe"] ;
+16 [label="yes
+Prob: no:0.0 yes:1.0
+Frac: 0.163", fillcolor="#55ebff"] ;
+1 -- 0 [label=" not at all true\n not too true\n somewhat true",penwidth=3] ;
+1 -- 3 [label=" very true",penwidth=3] ;
+3 -- 2 [label=" other persons\n other organizations\n public services\n family members or close friends",penwidth=3] ;
+3 -- 4 [label=" no person or organization\n non-profit or religious organizations\n private companies",penwidth=3] ;
+5 -- 1 [label=" c",penwidth=3] ;
+5 -- 6 [label=" a\n b\n d\n e",penwidth=3] ;
+7 -- 5 [label=" go to a spiritual or a natural healer for help\n join a self-help group where people with similar problems help each other\n go to a psychiatrist for help\n talk to a minister, priest, rabbi or other religious leader\n go to a therapist, or counselor, like a psychologist, social worker, or other mental health professional for help\n go to a general medical doctor for help\n check into a mental hospital",penwidth=3] ;
+7 -- 15 [label=" talk to family and friends about it",penwidth=3] ;
+9 -- 8 [label=" 4",penwidth=3] ;
+9 -- 11 [label=" 1\n 11\n 2\n 5\n 6\n 7",penwidth=3] ;
+11 -- 10 [label=" 1",penwidth=3] ;
+11 -- 12 [label=" 11\n 2\n 5\n 6\n 7",penwidth=3] ;
+13 -- 9 [label=" 4\n 7\n 6\n 1\n 11\n 2\n 5",penwidth=3] ;
+13 -- 14 [label=" 3",penwidth=3] ;
+15 -- 13 [label=" 824\n 922\n 530\n 725\n 430\n 507\n 428\n 616\n 1019\n 617\n 607\n 810\n 531\n 422\n 703\n 807\n 520\n 721\n 509\n 715\n 515\n 606\n 625\n 1009\n 712\n 421\n 702\n 416\n 1017\n 913\n 514\n 427\n 909\n 1030\n 426\n 727\n 614\n 610\n 519\n 1001\n 418\n 719\n 803\n 1029\n 420\n 522\n 926\n 506\n 626\n 1003\n 722\n 801\n 927\n 930\n 521\n 524\n 417\n 822\n 605\n 706\n 816\n 511\n 505\n 510\n 918\n 620\n 929\n 911\n 724\n 419\n 628\n 921\n 604\n 518\n 618\n 718\n 624\n 516\n 914\n 615\n 629\n 601\n 622\n 804\n 729\n 820\n 504\n 1002\n 619\n 713\n 611\n 910\n 806\n 731\n 701\n 512\n 603\n 1012\n 627\n 630\n 424\n 613\n 501\n 508\n 705\n 609\n 723\n 815\n 413\n 608\n 920",penwidth=3] ;
+15 -- 16 [label=" 1008\n 1010\n 1013\n 1014\n 1024\n 1031\n 1101\n 414\n 415\n 423\n 425\n 429\n 502\n 503\n 517\n 523\n 525\n 526\n 527\n 528\n 529\n 602\n 612\n 621\n 623\n 709\n 714\n 716\n 720\n 730\n 802\n 808\n 809\n 811\n 813\n 817\n 825\n 901\n 904\n 906\n 912\n 915\n 923\n 924",penwidth=3] ;
+{rank = same;}}

@@ -1,0 +1,146 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="hispanic
+Prob: asian:0.0 black:0.0 hispanic:1.0 two or more race:0.0 white:0.0
+Frac: 0.054", fillcolor="#56fdff"] ;
+1 [label="inthisp", fillcolor="#e277e9"] ;
+2 [label="white
+Prob: asian:0.0 black:0.0 hispanic:0.0 two or more race:0.0 white:1.0
+Frac: 0.029", fillcolor="#fb58ff"] ;
+3 [label="intage", fillcolor="#fc57ff"] ;
+4 [label="white
+Prob: asian:0.0 black:0.0 hispanic:0.0 two or more race:0.0 white:1.0
+Frac: 0.037", fillcolor="#fc57ff"] ;
+5 [label="intid", fillcolor="#fc57fe"] ;
+6 [label="white
+Prob: asian:0.0 black:0.0 hispanic:0.0 two or more race:0.0 white:1.0
+Frac: 0.035", fillcolor="#ff55ff"] ;
+7 [label="intid", fillcolor="#fa5afd"] ;
+8 [label="white
+Prob: asian:0.0 black:0.0 hispanic:0.0 two or more race:0.0 white:0.9
+Frac: 0.04", fillcolor="#f65efc"] ;
+9 [label="intid", fillcolor="#fc57fe"] ;
+10 [label="white
+Prob: asian:0.0 black:0.0 hispanic:0.0 two or more race:0.0 white:1.0
+Frac: 0.069", fillcolor="#ff55ff"] ;
+11 [label="intid", fillcolor="#fc57fe"] ;
+12 [label="white
+Prob: asian:0.0 black:0.0 hispanic:0.0 two or more race:0.0 white:1.0
+Frac: 0.033", fillcolor="#ff55ff"] ;
+13 [label="intid", fillcolor="#fb59fd"] ;
+14 [label="white
+Prob: asian:0.0 black:0.1 hispanic:0.0 two or more race:0.0 white:0.9
+Frac: 0.048", fillcolor="#fa5ff5"] ;
+15 [label="intid", fillcolor="#f65ff9"] ;
+16 [label="white
+Prob: asian:0.0 black:0.0 hispanic:0.0 two or more race:0.0 white:0.9
+Frac: 0.034", fillcolor="#f660f9"] ;
+17 [label="intid", fillcolor="#f65df9"] ;
+18 [label="white
+Prob: asian:0.0 black:0.0 hispanic:0.0 two or more race:0.0 white:0.9
+Frac: 0.031", fillcolor="#f65bf8"] ;
+19 [label="intid", fillcolor="#f360fb"] ;
+20 [label="white
+Prob: asian:0.0 black:0.0 hispanic:0.1 two or more race:0.0 white:0.9
+Frac: 0.035", fillcolor="#ee65ff"] ;
+21 [label="intid", fillcolor="#f75dfa"] ;
+22 [label="white
+Prob: asian:0.0 black:0.0 hispanic:0.0 two or more race:0.0 white:1.0
+Frac: 0.038", fillcolor="#ff55ff"] ;
+23 [label="intid", fillcolor="#f95bfb"] ;
+24 [label="white
+Prob: asian:0.0 black:0.0 hispanic:0.0 two or more race:0.0 white:1.0
+Frac: 0.069", fillcolor="#ff55ff"] ;
+25 [label="INTRACE1", fillcolor="#e775e3"] ;
+26 [label="black
+Prob: asian:0.1 black:0.9 hispanic:0.0 two or more race:0.0 white:0.0
+Frac: 0.036", fillcolor="#bff35c"] ;
+27 [label="intid", fillcolor="#b3e680"] ;
+28 [label="black
+Prob: asian:0.0 black:0.6 hispanic:0.2 two or more race:0.0 white:0.2
+Frac: 0.054", fillcolor="#aed99a"] ;
+29 [label="intid", fillcolor="#aee090"] ;
+30 [label="black
+Prob: asian:0.1 black:0.7 hispanic:0.2 two or more race:0.0 white:0.1
+Frac: 0.03", fillcolor="#aeed7e"] ;
+31 [label="intid", fillcolor="#a7d092"] ;
+32 [label="two or more race
+Prob: asian:0.0 black:0.3 hispanic:0.0 two or more race:0.6 white:0.1
+Frac: 0.037", fillcolor="#8088cb"] ;
+33 [label="intage", fillcolor="#ea6fe8"] ;
+34 [label="white
+Prob: asian:0.0 black:0.1 hispanic:0.0 two or more race:0.0 white:0.9
+Frac: 0.028", fillcolor="#f766ee"] ;
+35 [label="intage", fillcolor="#fc59fa"] ;
+36 [label="white
+Prob: asian:0.0 black:0.0 hispanic:0.0 two or more race:0.0 white:1.0
+Frac: 0.068", fillcolor="#ff55ff"] ;
+37 [label="intid", fillcolor="#f664f0"] ;
+38 [label="white
+Prob: asian:0.0 black:0.1 hispanic:0.0 two or more race:0.0 white:0.9
+Frac: 0.03", fillcolor="#f465f5"] ;
+39 [label="intid", fillcolor="#f666f1"] ;
+40 [label="white
+Prob: asian:0.0 black:0.1 hispanic:0.0 two or more race:0.0 white:0.9
+Frac: 0.032", fillcolor="#f766ed"] ;
+41 [label="intid", fillcolor="#f06de7"] ;
+42 [label="white
+Prob: asian:0.0 black:0.2 hispanic:0.0 two or more race:0.0 white:0.7
+Frac: 0.045", fillcolor="#e778db"] ;
+43 [label="intid", fillcolor="#f762f2"] ;
+44 [label="white
+Prob: asian:0.0 black:0.0 hispanic:0.0 two or more race:0.0 white:1.0
+Frac: 0.051", fillcolor="#fc5af9"] ;
+45 [label="intid", fillcolor="#f162f3"] ;
+46 [label="white
+Prob: asian:0.0 black:0.0 hispanic:0.0 two or more race:0.3 white:0.7
+Frac: 0.038", fillcolor="#cc5ffc"] ;
+1 -- 0 [label=" mexican, mexican american, chicano/a",penwidth=3] ;
+1 -- 33 [label=" cuban\n not hispanic\n other, not specified\n puerto rican",penwidth=3] ;
+3 -- 2 [label=" 60\n 56\n 63\n 52",penwidth=3] ;
+3 -- 4 [label=" 38\n 39\n 55\n 75\n 81",penwidth=3] ;
+5 -- 3 [label=" 72\n 67\n 12\n 11\n 68\n 60\n 92\n 133\n 44\n 110",penwidth=3] ;
+5 -- 9 [label=" 106\n 109\n 111\n 117\n 124\n 137\n 138\n 24\n 28\n 33\n 39\n 5\n 56\n 75\n 77\n 81\n 84",penwidth=3] ;
+7 -- 6 [label=" 33\n 24\n 81\n 56\n 137\n 138",penwidth=3] ;
+7 -- 8 [label=" 117\n 124\n 28\n 75\n 84",penwidth=3] ;
+9 -- 7 [label=" 24\n 138\n 81\n 75\n 33\n 124\n 84\n 137\n 56\n 28\n 117",penwidth=3] ;
+9 -- 10 [label=" 106\n 109\n 111\n 39\n 5\n 77",penwidth=3] ;
+11 -- 5 [label=" 11\n 72\n 124\n 133\n 77\n 137\n 68\n 84\n 24\n 75\n 110\n 111\n 44\n 109\n 138\n 28\n 106\n 67\n 92\n 56\n 117\n 60\n 33\n 12\n 5\n 81\n 39",penwidth=3] ;
+11 -- 12 [label=" 102\n 108\n 127\n 94",penwidth=3] ;
+13 -- 11 [label=" 39\n 94\n 67\n 133\n 109\n 28\n 33\n 44\n 108\n 11\n 81\n 110\n 72\n 84\n 77\n 68\n 12\n 60\n 102\n 5\n 124\n 56\n 138\n 75\n 127\n 92\n 106\n 137\n 117\n 111\n 24",penwidth=3] ;
+13 -- 23 [label=" 1\n 10\n 100\n 101\n 103\n 105\n 107\n 112\n 113\n 114\n 118\n 119\n 123\n 126\n 135\n 139\n 18\n 20\n 21\n 22\n 3\n 30\n 34\n 40\n 42\n 43\n 47\n 48\n 49\n 57\n 58\n 61\n 7\n 74\n 78\n 80\n 88\n 89\n 9\n 91\n 97\n 99",penwidth=3] ;
+15 -- 14 [label=" 58\n 49\n 119\n 107\n 57\n 47\n 9\n 135\n 40\n 112",penwidth=3] ;
+15 -- 19 [label=" 101\n 105\n 114\n 118\n 123\n 139\n 18\n 21\n 22\n 3\n 34\n 42\n 43\n 74\n 78\n 88\n 89",penwidth=3] ;
+17 -- 16 [label=" 3\n 21\n 88\n 43\n 139\n 18",penwidth=3] ;
+17 -- 18 [label=" 118\n 123\n 22\n 74\n 89",penwidth=3] ;
+19 -- 17 [label=" 21\n 18\n 88\n 74\n 3\n 123\n 89\n 139\n 43\n 22\n 118",penwidth=3] ;
+19 -- 20 [label=" 101\n 105\n 114\n 34\n 42\n 78",penwidth=3] ;
+21 -- 15 [label=" 107\n 58\n 123\n 135\n 78\n 139\n 57\n 89\n 21\n 74\n 112\n 114\n 40\n 105\n 18\n 22\n 101\n 49\n 9\n 43\n 118\n 47\n 3\n 119\n 42\n 88\n 34",penwidth=3] ;
+21 -- 22 [label=" 1\n 103\n 126\n 91",penwidth=3] ;
+23 -- 21 [label=" 47\n 103\n 118\n 34\n 42\n 40\n 119\n 78\n 123\n 114\n 88\n 1\n 43\n 3\n 49\n 91\n 74\n 112\n 9\n 89\n 139\n 58\n 126\n 101\n 18\n 105\n 107\n 21\n 135\n 22\n 57",penwidth=3] ;
+23 -- 24 [label=" 10\n 100\n 113\n 20\n 30\n 48\n 61\n 7\n 80\n 97\n 99",penwidth=3] ;
+25 -- 13 [label=" other pacific islander\n white",penwidth=3] ;
+25 -- 31 [label=" american indian\n asian indian\n black or african\n chinese\n filipino\n some other race",penwidth=3] ;
+27 -- 26 [label=" 69\n 61\n 126\n 120\n 66\n 58\n 88\n 136\n 37\n 122",penwidth=3] ;
+27 -- 29 [label=" 115\n 117\n 123\n 125\n 133\n 19\n 2\n 21\n 25\n 29\n 34\n 46\n 5\n 72\n 73\n 76\n 83",penwidth=3] ;
+29 -- 28 [label=" 29\n 21\n 73\n 133\n 125",penwidth=3] ;
+29 -- 30 [label=" 115\n 117\n 123\n 19\n 2\n 25\n 34\n 46\n 5\n 72\n 76\n 83",penwidth=3] ;
+31 -- 27 [label=" 123\n 69\n 46\n 136\n 88\n 25\n 2\n 72\n 34\n 61\n 120\n 19\n 5\n 83\n 66\n 133\n 122\n 117\n 37\n 73\n 58\n 125\n 115\n 126\n 29\n 21\n 76",penwidth=3] ;
+31 -- 32 [label=" 10\n 131\n 23\n 26\n 36\n 41\n 63\n 84\n 89\n 97",penwidth=3] ;
+33 -- 25 [label=" 29\n 52\n 55\n 54\n 63\n 74\n 53\n 71\n 58\n 77\n 60\n 56\n 39\n 40\n 38\n 42\n 44\n 81\n 20\n 75\n 68\n 50\n 35\n 67\n 64\n 45\n 65\n 43\n 28\n 66\n 46",penwidth=3] ;
+33 -- 45 [label=" 24\n 26\n 31\n 33\n 37\n 47\n 48\n 49\n 51\n 57\n 59\n 61\n 62\n 69\n 72\n 73\n 78\n 85",penwidth=3] ;
+35 -- 34 [label=" 59\n 85\n 57\n 37\n 31\n 73\n 62",penwidth=3] ;
+35 -- 36 [label=" 51\n 69",penwidth=3] ;
+37 -- 35 [label=" 79\n 70\n 32\n 14\n 71\n 65\n 95\n 4\n 6\n 15",penwidth=3] ;
+37 -- 41 [label=" 128\n 132\n 16\n 27\n 35\n 50\n 51\n 52\n 53\n 55\n 59\n 62\n 64\n 85\n 86\n 87\n 90",penwidth=3] ;
+39 -- 38 [label=" 85\n 128\n 64\n 51\n 16\n 62",penwidth=3] ;
+39 -- 40 [label=" 35\n 52\n 86\n 87",penwidth=3] ;
+41 -- 39 [label=" 85\n 62\n 64\n 35\n 16\n 52\n 51\n 86\n 128\n 87",penwidth=3] ;
+41 -- 42 [label=" 132\n 27\n 50\n 53\n 55\n 59\n 90",penwidth=3] ;
+43 -- 37 [label=" 14\n 79\n 35\n 4\n 86\n 50\n 71\n 90\n 52\n 85\n 15\n 16\n 6\n 132\n 51\n 53\n 128\n 70\n 95\n 64\n 27\n 65\n 55\n 32\n 62\n 87\n 59",penwidth=3] ;
+43 -- 44 [label=" 104\n 130\n 38\n 98",penwidth=3] ;
+45 -- 43 [label=" 32\n 38\n 95\n 86\n 65\n 64\n 35\n 132\n 71\n 90\n 70\n 4\n 130\n 52\n 104\n 50\n 14\n 15\n 55\n 51\n 87\n 128\n 85\n 6\n 98\n 79\n 16\n 62\n 53\n 27\n 59",penwidth=3] ;
+45 -- 46 [label=" 129\n 54\n 82\n 93\n 96",penwidth=3] ;
+{rank = same;}}

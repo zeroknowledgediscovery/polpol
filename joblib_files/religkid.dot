@@ -1,0 +1,32 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="catholic
+Prob: buddhism:0.0 catholic:0.8 hinduism:0.1 jewish:0.0 moslem/islam:0.0 native american:0.0 none:0.0 orthodox-christian:0.0 other:0.0 protestant:0.1
+Frac: 0.126", fillcolor="#f6eb5b"] ;
+1 [label="marelkid", fillcolor="#f08b78"] ;
+2 [label="protestant
+Prob: buddhism:0.0 catholic:0.1 hinduism:0.1 jewish:0.3 moslem/islam:0.0 native american:0.0 none:0.0 orthodox-christian:0.0 other:0.2 protestant:0.3
+Frac: 0.055", fillcolor="#c3ab95"] ;
+3 [label="marelkid", fillcolor="#f66684"] ;
+4 [label="protestant
+Prob: buddhism:0.0 catholic:0.0 hinduism:0.0 jewish:0.0 moslem/islam:0.0 native american:0.0 none:0.0 orthodox-christian:0.0 other:0.0 protestant:0.9
+Frac: 0.484", fillcolor="#fb5f82"] ;
+5 [label="RELIG16", fillcolor="#ef787e"] ;
+6 [label="hinduism
+Prob: buddhism:0.1 catholic:0.0 hinduism:0.8 jewish:0.0 moslem/islam:0.0 native american:0.0 none:0.0 orthodox-christian:0.0 other:0.0 protestant:0.1
+Frac: 0.091", fillcolor="#c7e05c"] ;
+7 [label="relig", fillcolor="#f3a570"] ;
+8 [label="catholic
+Prob: buddhism:0.0 catholic:0.9 hinduism:0.0 jewish:0.0 moslem/islam:0.0 native american:0.0 none:0.0 orthodox-christian:0.0 other:0.0 protestant:0.1
+Frac: 0.243", fillcolor="#fdf457"] ;
+1 -- 0 [label=" native american\n catholic\n other eastern",penwidth=3] ;
+1 -- 5 [label=" buddhism\n hinduism\n jewish\n moslem/islam\n none\n orthodox-christian\n other\n protestant",penwidth=3] ;
+3 -- 2 [label=" other\n hinduism\n jewish",penwidth=3] ;
+3 -- 4 [label=" buddhism\n moslem/islam\n none\n orthodox-christian\n protestant",penwidth=3] ;
+5 -- 3 [label=" christian\n buddhism\n moslem/islam\n protestant\n jewish\n catholic\n orthodox-christian",penwidth=3] ;
+5 -- 6 [label=" hinduism\n none\n other",penwidth=3] ;
+7 -- 1 [label=" protestant\n buddhism\n other\n jewish\n hinduism\n christian\n orthodox-christian\n none\n inter-nondenominational\n moslem/islam\n native american",penwidth=3] ;
+7 -- 8 [label=" catholic",penwidth=3] ;
+{rank = same;}}

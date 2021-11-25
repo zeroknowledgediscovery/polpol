@@ -1,0 +1,50 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="not at all interested
+Prob: moderately interested:0.5 not at all interested:0.5 very interested:0.1
+Frac: 0.11", fillcolor="#aad793"] ;
+1 [label="intecon", fillcolor="#d1b98a"] ;
+2 [label="moderately interested
+Prob: moderately interested:0.6 not at all interested:0.3 very interested:0.1
+Frac: 0.116", fillcolor="#c4cf81"] ;
+3 [label="intmed", fillcolor="#c7c38a"] ;
+4 [label="moderately interested
+Prob: moderately interested:0.5 not at all interested:0.2 very interested:0.3
+Frac: 0.067", fillcolor="#cbae9b"] ;
+5 [label="intspace", fillcolor="#dab288"] ;
+6 [label="moderately interested
+Prob: moderately interested:0.7 not at all interested:0.0 very interested:0.3
+Frac: 0.105", fillcolor="#e6a18c"] ;
+7 [label="life", fillcolor="#e5a886"] ;
+8 [label="moderately interested
+Prob: moderately interested:0.7 not at all interested:0.0 very interested:0.3
+Frac: 0.055", fillcolor="#eba683"] ;
+9 [label="degree", fillcolor="#e5ac83"] ;
+10 [label="moderately interested
+Prob: moderately interested:0.7 not at all interested:0.1 very interested:0.2
+Frac: 0.141", fillcolor="#e2af83"] ;
+11 [label="intsci", fillcolor="#cf9da7"] ;
+12 [label="very interested
+Prob: moderately interested:0.2 not at all interested:0.0 very interested:0.8
+Frac: 0.114", fillcolor="#cb71d7"] ;
+13 [label="SATJOB1", fillcolor="#cd75d2"] ;
+14 [label="very interested
+Prob: moderately interested:0.3 not at all interested:0.0 very interested:0.7
+Frac: 0.293", fillcolor="#cd76d0"] ;
+1 -- 0 [label=" not at all interested",penwidth=3] ;
+1 -- 5 [label=" moderately interested\n very interested",penwidth=3] ;
+3 -- 2 [label=" moderately interested\n not at all interested",penwidth=3] ;
+3 -- 4 [label=" very interested",penwidth=3] ;
+5 -- 3 [label=" not at all interested",penwidth=3] ;
+5 -- 7 [label=" moderately interested\n very interested",penwidth=3] ;
+7 -- 6 [label=" exciting",penwidth=3] ;
+7 -- 9 [label=" dull\n routine",penwidth=3] ;
+9 -- 8 [label=" bachelor\n graduate",penwidth=3] ;
+9 -- 10 [label=" high school\n junior college\n lt high school",penwidth=3] ;
+11 -- 1 [label=" moderately interested\n not at all interested",penwidth=3] ;
+11 -- 13 [label=" very interested",penwidth=3] ;
+13 -- 12 [label=" somewhat satisfied",penwidth=3] ;
+13 -- 14 [label=" not at all satisfied\n not too satisfied\n very satisfied",penwidth=3] ;
+{rank = same;}}

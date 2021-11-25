@@ -1,0 +1,8 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="american indian or alaska native
+Prob: american indian or alaska native:0.2 black or african american:0.1 filipino:0.1 hispanic:0.1 japanese:0.1 native hawaiian:0.1 some other race:0.2 white:0.2
+Frac: 1.0", fillcolor="#d39bb0"] ;
+{rank = same;}}

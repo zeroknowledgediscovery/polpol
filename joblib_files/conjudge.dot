@@ -1,0 +1,68 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="hardly any
+Prob: a great deal:0.1 hardly any:0.5 only some:0.4
+Frac: 0.062", fillcolor="#8bbacf"] ;
+1 [label="consci", fillcolor="#c391bf"] ;
+2 [label="only some
+Prob: a great deal:0.2 hardly any:0.3 only some:0.5
+Frac: 0.088", fillcolor="#af96ce"] ;
+3 [label="trcourts", fillcolor="#c78ebe"] ;
+4 [label="a great deal
+Prob: a great deal:0.8 hardly any:0.0 only some:0.2
+Frac: 0.05", fillcolor="#f3ac75"] ;
+5 [label="conlegis", fillcolor="#ca8dbd"] ;
+6 [label="a great deal
+Prob: a great deal:0.6 hardly any:0.0 only some:0.4
+Frac: 0.078", fillcolor="#e59b93"] ;
+7 [label="confed", fillcolor="#c78cc1"] ;
+8 [label="a great deal
+Prob: a great deal:0.5 hardly any:0.1 only some:0.4
+Frac: 0.073", fillcolor="#d897a5"] ;
+9 [label="conmedic", fillcolor="#cc8cbc"] ;
+10 [label="only some
+Prob: a great deal:0.2 hardly any:0.2 only some:0.6
+Frac: 0.057", fillcolor="#bb8ccd"] ;
+11 [label="breakdwn", fillcolor="#c586c9"] ;
+12 [label="only some
+Prob: a great deal:0.3 hardly any:0.1 only some:0.6
+Frac: 0.067", fillcolor="#cd81c5"] ;
+13 [label="trbigbus", fillcolor="#c492bd"] ;
+14 [label="only some
+Prob: a great deal:0.3 hardly any:0.2 only some:0.5
+Frac: 0.267", fillcolor="#bf97be"] ;
+15 [label="conarmy", fillcolor="#c48ac6"] ;
+16 [label="only some
+Prob: a great deal:0.3 hardly any:0.0 only some:0.6
+Frac: 0.097", fillcolor="#cf7ec7"] ;
+17 [label="trust", fillcolor="#c37ad6"] ;
+18 [label="only some
+Prob: a great deal:0.1 hardly any:0.1 only some:0.8
+Frac: 0.043", fillcolor="#c36ee3"] ;
+19 [label="natfare", fillcolor="#bb78e0"] ;
+20 [label="only some
+Prob: a great deal:0.1 hardly any:0.1 only some:0.7
+Frac: 0.118", fillcolor="#b97cdf"] ;
+1 -- 0 [label=" hardly any",penwidth=3] ;
+1 -- 3 [label=" a great deal\n only some",penwidth=3] ;
+3 -- 2 [label=" b",penwidth=3] ;
+3 -- 5 [label=" a\n c\n d\n e",penwidth=3] ;
+5 -- 4 [label=" a great deal",penwidth=3] ;
+5 -- 7 [label=" hardly any\n only some",penwidth=3] ;
+7 -- 6 [label=" a great deal",penwidth=3] ;
+7 -- 15 [label=" hardly any\n only some",penwidth=3] ;
+9 -- 8 [label=" a great deal",penwidth=3] ;
+9 -- 11 [label=" hardly any\n only some",penwidth=3] ;
+11 -- 10 [label=" not at all likely\n not very likely",penwidth=3] ;
+11 -- 12 [label=" somewhat likely\n very likely",penwidth=3] ;
+13 -- 9 [label=" c",penwidth=3] ;
+13 -- 14 [label=" a\n b\n d\n e",penwidth=3] ;
+15 -- 13 [label=" a great deal\n hardly any",penwidth=3] ;
+15 -- 17 [label=" only some",penwidth=3] ;
+17 -- 16 [label=" can trust",penwidth=3] ;
+17 -- 19 [label=" can't be too careful\n depends",penwidth=3] ;
+19 -- 18 [label=" about right",penwidth=3] ;
+19 -- 20 [label=" too little\n too much",penwidth=3] ;
+{rank = same;}}

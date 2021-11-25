@@ -1,0 +1,44 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="c
+Prob: a:0.0 b:0.0 c:1.0 e:0.0
+Frac: 0.029", fillcolor="#5be9f8"] ;
+1 [label="yearval", fillcolor="#f55efe"] ;
+2 [label="e
+Prob: a:0.0 b:0.0 c:0.0 e:1.0
+Frac: 0.034", fillcolor="#fc57ff"] ;
+3 [label="hlpdown", fillcolor="#f95afe"] ;
+4 [label="e
+Prob: a:0.0 b:0.0 c:0.0 e:1.0
+Frac: 0.041", fillcolor="#fc57ff"] ;
+5 [label="wealth", fillcolor="#fa58ff"] ;
+6 [label="e
+Prob: a:0.0 b:0.0 c:0.0 e:1.0
+Frac: 0.147", fillcolor="#fa58ff"] ;
+7 [label="parborn", fillcolor="#f959ff"] ;
+8 [label="e
+Prob: a:0.0 b:0.0 c:0.1 e:0.9
+Frac: 0.047", fillcolor="#f45eff"] ;
+9 [label="hlpdown", fillcolor="#f95afe"] ;
+10 [label="e
+Prob: a:0.0 b:0.0 c:0.0 e:1.0
+Frac: 0.097", fillcolor="#f85bfe"] ;
+11 [label="hispanic", fillcolor="#f95afe"] ;
+12 [label="e
+Prob: a:0.0 b:0.0 c:0.0 e:1.0
+Frac: 0.605", fillcolor="#f95afe"] ;
+1 -- 0 [label=" c",penwidth=3] ;
+1 -- 3 [label=" d\n e",penwidth=3] ;
+3 -- 2 [label=" no one\n someone i work with\n someone else\n more distant family member",penwidth=3] ;
+3 -- 9 [label=" close family member\n close friend\n neighbor",penwidth=3] ;
+5 -- 4 [label=" $150,000 to $250,000\n $75,000 to $100,000\n $20,000 to $40,000\n $250,000 to $500,000",penwidth=3] ;
+5 -- 6 [label=" $1 million to $2 million\n $100,000 to $150,000\n $2 million to $3 million\n $3 million to $4 million\n $40,000 to $75,000\n $5 million to $10 million\n $5,000 to $20,000\n $500,000 to $1 million\n above $10 million\n less than $5,000",penwidth=3] ;
+7 -- 5 [label=" both in u.s",penwidth=3] ;
+7 -- 8 [label=" father only\n mother only\n mother; fa. dk\n neither in u.s",penwidth=3] ;
+9 -- 7 [label=" close family member",penwidth=3] ;
+9 -- 11 [label=" close friend\n neighbor",penwidth=3] ;
+11 -- 10 [label=" salvadorian\n mexican, mexican american, chicano/a\n honduran\n south american\n spanish\n puerto rican\n costa rican\n columbian\n guatemalan",penwidth=3] ;
+11 -- 12 [label=" chilean\n cuban\n dominican\n equadorian\n hispanic\n not hispanic\n panamanian",penwidth=3] ;
+{rank = same;}}

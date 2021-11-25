@@ -1,0 +1,38 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="no
+Prob: no:0.6 yes:0.4
+Frac: 0.206", fillcolor="#b4d39f"] ;
+1 [label="RACECEN1", fillcolor="#89deca"] ;
+2 [label="yes
+Prob: no:0.3 yes:0.7
+Frac: 0.097", fillcolor="#81dfd2"] ;
+3 [label="dwellpre", fillcolor="#7ee0d5"] ;
+4 [label="no
+Prob: no:0.5 yes:0.5
+Frac: 0.07", fillcolor="#aed4a5"] ;
+5 [label="dwellpre", fillcolor="#7ee0d5"] ;
+6 [label="yes
+Prob: no:0.0 yes:1.0
+Frac: 0.242", fillcolor="#59e9fa"] ;
+7 [label="RELHHD2", fillcolor="#5de8f6"] ;
+8 [label="yes
+Prob: no:0.1 yes:0.9
+Frac: 0.097", fillcolor="#66e6ed"] ;
+9 [label="petfam", fillcolor="#78e2db"] ;
+10 [label="yes
+Prob: no:0.4 yes:0.6
+Frac: 0.288", fillcolor="#99dabb"] ;
+1 -- 0 [label=" japanese\n chinese\n filipino\n korean\n black or african american\n hispanic\n other pacific islander\n asian indian",penwidth=3] ;
+1 -- 3 [label=" american indian or alaska native\n other asian\n some other race\n vietnamese\n white",penwidth=3] ;
+3 -- 2 [label=" row house (3 or more units in an attached row)\n trailer\n apartment house (5 or more units, 4 stories or more)\n detached 3-4 family house",penwidth=3] ;
+3 -- 5 [label=" 2-family house, 2 units one above the other\n 2-family house, 2 units side-by-side\n apartment house (5 or more units, 3 stories or less)\n apartment in a partly commercial structure\n detached single family house\n other (specify on next page)",penwidth=3] ;
+5 -- 4 [label=" apartment house (5 or more units, 3 stories or less)",penwidth=3] ;
+5 -- 9 [label=" 2-family house, 2 units one above the other\n 2-family house, 2 units side-by-side\n apartment in a partly commercial structure\n detached single family house\n other (specify on next page)",penwidth=3] ;
+7 -- 6 [label=" spouse",penwidth=3] ;
+7 -- 8 [label=" brother,sister-full,half, or step sibling-\n child,natural or adopted,stepchild\n grandchild,great-granchild\n other non-relative-employee,boarder-\n other relative-great-aunt,grandniece,etc.-\n parent\n parent-in-law\n partner,fiance-e-,boyfriend,girlfriend,etc\n roommate,housemate",penwidth=3] ;
+9 -- 7 [label=" almost always",penwidth=3] ;
+9 -- 10 [label=" never\n often\n sometimes",penwidth=3] ;
+{rank = same;}}

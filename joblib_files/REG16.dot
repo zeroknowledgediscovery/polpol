@@ -1,0 +1,140 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="new england
+Prob: e. nor. central:0.1 e. sou. central:0.0 foreign:0.0 middle atlantic:0.1 mountain:0.2 new england:0.5 pacific:0.0 south atlantic:0.0 w. nor. central:0.0 w. sou. central:0.0
+Frac: 0.035", fillcolor="#74d8df"] ;
+1 [label="region", fillcolor="#bcafb9"] ;
+2 [label="w. nor. central
+Prob: e. nor. central:0.1 e. sou. central:0.2 foreign:0.1 middle atlantic:0.0 mountain:0.0 new england:0.0 pacific:0.0 south atlantic:0.1 w. nor. central:0.3 w. sou. central:0.2
+Frac: 0.058", fillcolor="#e796a1"] ;
+3 [label="region", fillcolor="#c4a2c0"] ;
+4 [label="south atlantic
+Prob: e. nor. central:0.1 e. sou. central:0.0 foreign:0.1 middle atlantic:0.1 mountain:0.0 new england:0.0 pacific:0.0 south atlantic:0.6 w. nor. central:0.0 w. sou. central:0.0
+Frac: 0.038", fillcolor="#d983d1"] ;
+5 [label="region", fillcolor="#a8beac"] ;
+6 [label="middle atlantic
+Prob: e. nor. central:0.0 e. sou. central:0.0 foreign:0.2 middle atlantic:0.7 mountain:0.0 new england:0.0 pacific:0.0 south atlantic:0.0 w. nor. central:0.0 w. sou. central:0.0
+Frac: 0.072", fillcolor="#75f089"] ;
+7 [label="sampcode", fillcolor="#bda4af"] ;
+8 [label="e. sou. central
+Prob: e. nor. central:0.3 e. sou. central:0.3 foreign:0.1 middle atlantic:0.1 mountain:0.0 new england:0.0 pacific:0.0 south atlantic:0.2 w. nor. central:0.0 w. sou. central:0.0
+Frac: 0.053", fillcolor="#e3cb80"] ;
+9 [label="sampcode", fillcolor="#c7a7a1"] ;
+10 [label="south atlantic
+Prob: e. nor. central:0.2 e. sou. central:0.0 foreign:0.1 middle atlantic:0.0 mountain:0.1 new england:0.0 pacific:0.2 south atlantic:0.3 w. nor. central:0.0 w. sou. central:0.1
+Frac: 0.049", fillcolor="#bf8ec3"] ;
+11 [label="sampcode", fillcolor="#ba96b1"] ;
+12 [label="pacific
+Prob: e. nor. central:0.0 e. sou. central:0.0 foreign:0.3 middle atlantic:0.0 mountain:0.0 new england:0.0 pacific:0.6 south atlantic:0.0 w. nor. central:0.0 w. sou. central:0.0
+Frac: 0.034", fillcolor="#858dbf"] ;
+13 [label="sampcode", fillcolor="#b69ca3"] ;
+14 [label="e. nor. central
+Prob: e. nor. central:0.7 e. sou. central:0.0 foreign:0.0 middle atlantic:0.0 mountain:0.0 new england:0.0 pacific:0.0 south atlantic:0.0 w. nor. central:0.2 w. sou. central:0.0
+Frac: 0.03", fillcolor="#edac84"] ;
+15 [label="sampcode", fillcolor="#c3a7a2"] ;
+16 [label="pacific
+Prob: e. nor. central:0.3 e. sou. central:0.0 foreign:0.1 middle atlantic:0.1 mountain:0.0 new england:0.0 pacific:0.3 south atlantic:0.1 w. nor. central:0.0 w. sou. central:0.0
+Frac: 0.028", fillcolor="#ada5a5"] ;
+17 [label="vstrat", fillcolor="#c799ad"] ;
+18 [label="e. nor. central
+Prob: e. nor. central:0.3 e. sou. central:0.0 foreign:0.1 middle atlantic:0.0 mountain:0.2 new england:0.0 pacific:0.0 south atlantic:0.0 w. nor. central:0.1 w. sou. central:0.2
+Frac: 0.043", fillcolor="#c4b59c"] ;
+19 [label="sampcode", fillcolor="#b999b5"] ;
+20 [label="pacific
+Prob: e. nor. central:0.0 e. sou. central:0.0 foreign:0.2 middle atlantic:0.0 mountain:0.0 new england:0.0 pacific:0.7 south atlantic:0.0 w. nor. central:0.0 w. sou. central:0.0
+Frac: 0.036", fillcolor="#7c7ed0"] ;
+21 [label="sampcode", fillcolor="#a49ab2"] ;
+22 [label="e. nor. central
+Prob: e. nor. central:0.4 e. sou. central:0.1 foreign:0.1 middle atlantic:0.2 mountain:0.0 new england:0.0 pacific:0.0 south atlantic:0.3 w. nor. central:0.0 w. sou. central:0.0
+Frac: 0.033", fillcolor="#d1b991"] ;
+23 [label="sampcode", fillcolor="#b48fbf"] ;
+24 [label="south atlantic
+Prob: e. nor. central:0.0 e. sou. central:0.0 foreign:0.2 middle atlantic:0.0 mountain:0.0 new england:0.0 pacific:0.2 south atlantic:0.6 w. nor. central:0.0 w. sou. central:0.0
+Frac: 0.042", fillcolor="#ce7cd4"] ;
+25 [label="sampcode", fillcolor="#c893b3"] ;
+26 [label="w. sou. central
+Prob: e. nor. central:0.0 e. sou. central:0.0 foreign:0.1 middle atlantic:0.1 mountain:0.0 new england:0.0 pacific:0.0 south atlantic:0.2 w. nor. central:0.0 w. sou. central:0.5
+Frac: 0.053", fillcolor="#de8694"] ;
+27 [label="vstrat", fillcolor="#d490ab"] ;
+28 [label="w. nor. central
+Prob: e. nor. central:0.1 e. sou. central:0.0 foreign:0.0 middle atlantic:0.0 mountain:0.1 new england:0.0 pacific:0.0 south atlantic:0.2 w. nor. central:0.2 w. sou. central:0.2
+Frac: 0.049", fillcolor="#d08ac6"] ;
+29 [label="vstrat", fillcolor="#d094b5"] ;
+30 [label="w. sou. central
+Prob: e. nor. central:0.0 e. sou. central:0.0 foreign:0.1 middle atlantic:0.1 mountain:0.1 new england:0.0 pacific:0.3 south atlantic:0.1 w. nor. central:0.1 w. sou. central:0.3
+Frac: 0.033", fillcolor="#af88b5"] ;
+31 [label="vstrat", fillcolor="#d09bab"] ;
+32 [label="south atlantic
+Prob: e. nor. central:0.2 e. sou. central:0.2 foreign:0.1 middle atlantic:0.0 mountain:0.0 new england:0.0 pacific:0.0 south atlantic:0.4 w. nor. central:0.0 w. sou. central:0.0
+Frac: 0.047", fillcolor="#e7a8a3"] ;
+33 [label="vstrat", fillcolor="#d290b1"] ;
+34 [label="south atlantic
+Prob: e. nor. central:0.0 e. sou. central:0.1 foreign:0.1 middle atlantic:0.1 mountain:0.0 new england:0.0 pacific:0.1 south atlantic:0.6 w. nor. central:0.0 w. sou. central:0.0
+Frac: 0.04", fillcolor="#d383d8"] ;
+35 [label="vstrat", fillcolor="#cc8fbe"] ;
+36 [label="e. sou. central
+Prob: e. nor. central:0.0 e. sou. central:0.3 foreign:0.0 middle atlantic:0.0 mountain:0.0 new england:0.0 pacific:0.3 south atlantic:0.1 w. nor. central:0.0 w. sou. central:0.2
+Frac: 0.039", fillcolor="#c49ca4"] ;
+37 [label="sampcode", fillcolor="#c29daf"] ;
+38 [label="pacific
+Prob: e. nor. central:0.0 e. sou. central:0.0 foreign:0.1 middle atlantic:0.1 mountain:0.2 new england:0.2 pacific:0.3 south atlantic:0.1 w. nor. central:0.0 w. sou. central:0.0
+Frac: 0.047", fillcolor="#74bada"] ;
+39 [label="vstrat", fillcolor="#a9aeb6"] ;
+40 [label="e. nor. central
+Prob: e. nor. central:0.3 e. sou. central:0.0 foreign:0.0 middle atlantic:0.1 mountain:0.1 new england:0.1 pacific:0.2 south atlantic:0.1 w. nor. central:0.1 w. sou. central:0.0
+Frac: 0.054", fillcolor="#aca6b9"] ;
+41 [label="vstrat", fillcolor="#c4a8a4"] ;
+42 [label="e. nor. central
+Prob: e. nor. central:0.6 e. sou. central:0.0 foreign:0.1 middle atlantic:0.0 mountain:0.0 new england:0.0 pacific:0.1 south atlantic:0.0 w. nor. central:0.2 w. sou. central:0.0
+Frac: 0.04", fillcolor="#e5ab88"] ;
+43 [label="vstrat", fillcolor="#b3a9b6"] ;
+44 [label="e. nor. central
+Prob: e. nor. central:0.3 e. sou. central:0.0 foreign:0.0 middle atlantic:0.1 mountain:0.1 new england:0.0 pacific:0.1 south atlantic:0.2 w. nor. central:0.2 w. sou. central:0.0
+Frac: 0.047", fillcolor="#cf9bb7"] ;
+1 -- 0 [label=" mountain\n new england",penwidth=3] ;
+1 -- 2 [label=" e. nor. central\n e. sou. central\n w. nor. central\n w. sou. central",penwidth=3] ;
+3 -- 1 [label=" new england\n w. nor. central\n mountain\n e. nor. central\n w. sou. central\n e. sou. central",penwidth=3] ;
+3 -- 4 [label=" south atlantic",penwidth=3] ;
+5 -- 3 [label=" mountain\n e. nor. central\n south atlantic\n new england\n w. nor. central\n w. sou. central\n e. sou. central",penwidth=3] ;
+5 -- 6 [label=" middle atlantic",penwidth=3] ;
+7 -- 5 [label=" 654\n 658\n 623\n 644\n 628\n 667\n 633\n 657\n 601\n 675\n 608\n 604\n 676",penwidth=3] ;
+7 -- 37 [label=" 602\n 603\n 605\n 606\n 607\n 609\n 610\n 611\n 612\n 613\n 614\n 615\n 616\n 617\n 618\n 619\n 620\n 621\n 622\n 624\n 625\n 626\n 627\n 629\n 630\n 631\n 632\n 634\n 635\n 636\n 637\n 638\n 639\n 640\n 641\n 642\n 643\n 645\n 646\n 647\n 648\n 649\n 650\n 651\n 652\n 653\n 655\n 656\n 659\n 660\n 661\n 662\n 663\n 664\n 665\n 666\n 668\n 669\n 670\n 671\n 672\n 673\n 674",penwidth=3] ;
+9 -- 8 [label=" 643\n 610\n 632\n 673\n 612",penwidth=3] ;
+9 -- 11 [label=" 602\n 606\n 609\n 614\n 622\n 630\n 668\n 671\n 672\n 674",penwidth=3] ;
+11 -- 10 [label=" 622\n 614\n 609\n 674\n 672",penwidth=3] ;
+11 -- 13 [label=" 602\n 606\n 630\n 668\n 671",penwidth=3] ;
+13 -- 12 [label=" 602\n 606",penwidth=3] ;
+13 -- 14 [label=" 630\n 668\n 671",penwidth=3] ;
+15 -- 9 [label=" 643\n 632\n 610\n 609\n 674\n 614\n 630\n 612\n 622\n 672\n 671\n 673\n 606\n 668\n 602",penwidth=3] ;
+15 -- 16 [label=" 624\n 649\n 660",penwidth=3] ;
+17 -- 15 [label=" 3362\n 3334\n 3310\n 3330\n 3365\n 3308\n 3354\n 3346\n 3338\n 3348\n 3329\n 3322\n 3356\n 3376\n 3377\n 3370\n 3374",penwidth=3] ;
+17 -- 25 [label=" 3309\n 3311\n 3312\n 3323\n 3324\n 3325\n 3328\n 3331\n 3332\n 3333\n 3335\n 3337\n 3342\n 3343\n 3344\n 3345\n 3349\n 3350\n 3355\n 3357\n 3358\n 3359\n 3360\n 3361\n 3363\n 3364\n 3366\n 3368\n 3371\n 3372\n 3373\n 3375",penwidth=3] ;
+19 -- 18 [label=" 656\n 631\n 618\n 614\n 612",penwidth=3] ;
+19 -- 23 [label=" 602\n 611\n 621\n 634\n 648\n 651\n 661",penwidth=3] ;
+21 -- 20 [label=" 602",penwidth=3] ;
+21 -- 22 [label=" 621\n 634\n 651",penwidth=3] ;
+23 -- 21 [label=" 651\n 602\n 634\n 621",penwidth=3] ;
+23 -- 24 [label=" 611\n 648\n 661",penwidth=3] ;
+25 -- 19 [label=" 611\n 602\n 621\n 614\n 612\n 634\n 648\n 618\n 661\n 631\n 656\n 651",penwidth=3] ;
+25 -- 33 [label=" 606\n 607\n 609\n 610\n 619\n 620\n 625\n 626\n 635\n 637\n 638\n 639\n 641\n 642\n 645\n 646\n 647\n 655\n 662\n 664\n 665\n 666\n 669",penwidth=3] ;
+27 -- 26 [label=" 3358\n 3328\n 3350\n 3373\n 3331",penwidth=3] ;
+27 -- 29 [label=" 3323\n 3324\n 3325\n 3343\n 3344\n 3349\n 3359\n 3364\n 3372\n 3375",penwidth=3] ;
+29 -- 28 [label=" 3344\n 3343\n 3325\n 3375\n 3372",penwidth=3] ;
+29 -- 31 [label=" 3323\n 3324\n 3349\n 3359\n 3364",penwidth=3] ;
+31 -- 30 [label=" 3323\n 3324",penwidth=3] ;
+31 -- 32 [label=" 3349\n 3359\n 3364",penwidth=3] ;
+33 -- 27 [label=" 3373\n 3375\n 3350\n 3328\n 3325\n 3372\n 3343\n 3358\n 3331\n 3344\n 3349\n 3359\n 3323\n 3364\n 3324",penwidth=3] ;
+33 -- 35 [label=" 3360\n 3361\n 3363\n 3368\n 3371",penwidth=3] ;
+35 -- 34 [label=" 3360\n 3361",penwidth=3] ;
+35 -- 36 [label=" 3363\n 3368\n 3371",penwidth=3] ;
+37 -- 17 [label=" 611\n 661\n 674\n 666\n 634\n 606\n 620\n 637\n 622\n 602\n 648\n 626\n 631\n 638\n 639\n 646\n 607\n 655\n 618\n 609\n 645\n 669\n 612\n 665\n 647\n 672\n 635\n 630\n 610\n 662\n 614\n 624\n 632\n 642\n 673\n 668\n 621\n 625\n 619\n 641\n 651\n 649\n 643\n 664\n 656\n 660\n 671",penwidth=3] ;
+37 -- 43 [label=" 603\n 605\n 613\n 615\n 616\n 617\n 627\n 629\n 636\n 640\n 650\n 652\n 653\n 659\n 663\n 670",penwidth=3] ;
+39 -- 38 [label=" 3341\n 3319\n 3340\n 3372\n 3320",penwidth=3] ;
+39 -- 41 [label=" 3313\n 3314\n 3315\n 3321\n 3336\n 3339\n 3351\n 3365\n 3370\n 3375",penwidth=3] ;
+41 -- 40 [label=" 3336\n 3321\n 3315\n 3375\n 3370",penwidth=3] ;
+41 -- 42 [label=" 3313\n 3314\n 3339\n 3351\n 3365",penwidth=3] ;
+43 -- 39 [label=" 3372\n 3375\n 3340\n 3319\n 3315\n 3370\n 3321\n 3341\n 3320\n 3336\n 3339\n 3351\n 3313\n 3365\n 3314",penwidth=3] ;
+43 -- 44 [label=" 3353\n 3358\n 3360\n 3366\n 3367",penwidth=3] ;
+{rank = same;}}

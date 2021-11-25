@@ -1,0 +1,62 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="strongly disagree
+Prob: agree:0.3 disagree:0.3 strongly agree:0.1 strongly disagree:0.3
+Frac: 0.065", fillcolor="#bbb8a1"] ;
+1 [label="premarsx", fillcolor="#aacb9e"] ;
+2 [label="agree
+Prob: agree:0.4 disagree:0.3 strongly agree:0.2 strongly disagree:0.1
+Frac: 0.193", fillcolor="#b6cd86"] ;
+3 [label="marhomo", fillcolor="#a4d39e"] ;
+4 [label="strongly agree
+Prob: agree:0.3 disagree:0.2 strongly agree:0.5 strongly disagree:0.1
+Frac: 0.195", fillcolor="#91d8b7"] ;
+5 [label="marhomo", fillcolor="#a9cd9e"] ;
+6 [label="strongly disagree
+Prob: agree:0.2 disagree:0.3 strongly agree:0.1 strongly disagree:0.4
+Frac: 0.126", fillcolor="#c1abaa"] ;
+7 [label="afterlif", fillcolor="#c2b1a2"] ;
+8 [label="agree
+Prob: agree:0.4 disagree:0.2 strongly agree:0.2 strongly disagree:0.2
+Frac: 0.047", fillcolor="#c2c18f"] ;
+9 [label="HOMOSEX1", fillcolor="#adc99e"] ;
+10 [label="agree
+Prob: agree:0.5 disagree:0.3 strongly agree:0.2 strongly disagree:0.0
+Frac: 0.063", fillcolor="#afdb75"] ;
+11 [label="respect", fillcolor="#abd58d"] ;
+12 [label="agree
+Prob: agree:0.4 disagree:0.2 strongly agree:0.3 strongly disagree:0.1
+Frac: 0.06", fillcolor="#aed291"] ;
+13 [label="natmass", fillcolor="#a8d19b"] ;
+14 [label="strongly agree
+Prob: agree:0.3 disagree:0.2 strongly agree:0.4 strongly disagree:0.1
+Frac: 0.052", fillcolor="#a1d0a5"] ;
+15 [label="abmoral", fillcolor="#a3d39b"] ;
+16 [label="strongly agree
+Prob: agree:0.3 disagree:0.2 strongly agree:0.4 strongly disagree:0.1
+Frac: 0.082", fillcolor="#94d8ac"] ;
+17 [label="ABSTATE2", fillcolor="#9dd2a8"] ;
+18 [label="strongly agree
+Prob: agree:0.3 disagree:0.2 strongly agree:0.3 strongly disagree:0.1
+Frac: 0.116", fillcolor="#a3cea5"] ;
+1 -- 0 [label=" almst always wrg",penwidth=3] ;
+1 -- 5 [label=" always wrong\n not wrong at all\n sometimes wrong",penwidth=3] ;
+3 -- 2 [label=" agree\n disagree\n neither agree nor disagree",penwidth=3] ;
+3 -- 4 [label=" strongly agree",penwidth=3] ;
+5 -- 3 [label=" agree\n disagree\n neither agree nor disagree\n strongly agree",penwidth=3] ;
+5 -- 9 [label=" strongly disagree",penwidth=3] ;
+7 -- 6 [label=" yes, definitely",penwidth=3] ;
+7 -- 8 [label=" no, definitely not\n no, probably not\n yes, probably",penwidth=3] ;
+9 -- 7 [label=" always wrong",penwidth=3] ;
+9 -- 15 [label=" almost always wrong\n not wrong at all\n wrong only sometimes",penwidth=3] ;
+11 -- 10 [label=" agree",penwidth=3] ;
+11 -- 13 [label=" disagree\n strongly agree\n strongly disagree",penwidth=3] ;
+13 -- 12 [label=" about right",penwidth=3] ;
+13 -- 14 [label=" too little\n too much",penwidth=3] ;
+15 -- 11 [label=" it depends",penwidth=3] ;
+15 -- 17 [label=" morally opposed\n not morally opposed",penwidth=3] ;
+17 -- 16 [label=" make it easier\n make it harder",penwidth=3] ;
+17 -- 18 [label=" stay the same as now",penwidth=3] ;
+{rank = same;}}

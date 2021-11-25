@@ -1,0 +1,26 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="e
+Prob: a:0.0 b:0.0 c:0.0 d:0.0 e:1.0
+Frac: 0.552", fillcolor="#ff55ff"] ;
+1 [label="marcohab", fillcolor="#eb64fd"] ;
+2 [label="d
+Prob: a:0.0 b:0.0 c:0.0 d:0.9 e:0.1
+Frac: 0.029", fillcolor="#695bff"] ;
+3 [label="codeg", fillcolor="#67d0f0"] ;
+4 [label="c
+Prob: a:0.0 b:0.1 c:0.8 d:0.0 e:0.0
+Frac: 0.093", fillcolor="#66f4ec"] ;
+5 [label="COSEI10EDUC", fillcolor="#d378fb"] ;
+6 [label="e
+Prob: a:0.0 b:0.0 c:0.0 d:0.0 e:1.0
+Frac: 0.327", fillcolor="#fb57ff"] ;
+1 -- 0 [label=" married",penwidth=3] ;
+1 -- 5 [label=" na\n not married, cohabitating partner\n not married, missing on cohabitating\n not married, no cohabitating partner",penwidth=3] ;
+3 -- 2 [label=" bachelor\n graduate",penwidth=3] ;
+3 -- 4 [label=" high school\n junior college\n lt high school",penwidth=3] ;
+5 -- 3 [label=" b\n c\n d",penwidth=3] ;
+5 -- 6 [label=" e",penwidth=3] ;
+{rank = same;}}

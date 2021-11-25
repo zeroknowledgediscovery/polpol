@@ -1,0 +1,44 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="strongly agree
+Prob: agree:0.2 disagree:0.0 strongly agree:0.7 strongly disagree:0.0
+Frac: 0.234", fillcolor="#7ce1d4"] ;
+1 [label="scientbe", fillcolor="#c7cf84"] ;
+2 [label="agree
+Prob: agree:0.9 disagree:0.1 strongly agree:0.1 strongly disagree:0.0
+Frac: 0.064", fillcolor="#e8c85f"] ;
+3 [label="hhrace", fillcolor="#e2c969"] ;
+4 [label="agree
+Prob: agree:0.9 disagree:0.1 strongly agree:0.1 strongly disagree:0.0
+Frac: 0.102", fillcolor="#e8c862"] ;
+5 [label="difrel", fillcolor="#e1c96b"] ;
+6 [label="agree
+Prob: agree:0.8 disagree:0.0 strongly agree:0.1 strongly disagree:0.0
+Frac: 0.104", fillcolor="#e3c86a"] ;
+7 [label="SATFAM7", fillcolor="#dec96e"] ;
+8 [label="agree
+Prob: agree:0.8 disagree:0.1 strongly agree:0.2 strongly disagree:0.0
+Frac: 0.132", fillcolor="#daca71"] ;
+9 [label="comfort", fillcolor="#deca6c"] ;
+10 [label="agree
+Prob: agree:0.8 disagree:0.1 strongly agree:0.1 strongly disagree:0.0
+Frac: 0.152", fillcolor="#dec96d"] ;
+11 [label="newsfrom", fillcolor="#dbcb6f"] ;
+12 [label="agree
+Prob: agree:0.8 disagree:0.1 strongly agree:0.2 strongly disagree:0.0
+Frac: 0.213", fillcolor="#d8cb70"] ;
+1 -- 0 [label=" strongly agree",penwidth=3] ;
+1 -- 9 [label=" agree\n disagree\n strongly disagree",penwidth=3] ;
+3 -- 2 [label=" black",penwidth=3] ;
+3 -- 5 [label=" amer indian\n asiatic, oriental\n other, mixed\n white",penwidth=3] ;
+5 -- 4 [label=" agree\n neither agree nor disagree",penwidth=3] ;
+5 -- 7 [label=" disagree\n strongly agree\n strongly disagree",penwidth=3] ;
+7 -- 6 [label=" neither satisfied nor dissatisfied\n very satisfied",penwidth=3] ;
+7 -- 8 [label=" completely dissatisfied\n completely satisfied\n fairly dissatisfied\n fairly satisfied\n very dissatisfied",penwidth=3] ;
+9 -- 3 [label=" agree",penwidth=3] ;
+9 -- 11 [label=" disagree\n neither agree nor disagree\n strongly agree\n strongly disagree",penwidth=3] ;
+11 -- 10 [label=" newspapers\n tv",penwidth=3] ;
+11 -- 12 [label=" books other printed material\n family\n friends colleagues\n government agencies\n radio\n the internet",penwidth=3] ;
+{rank = same;}}

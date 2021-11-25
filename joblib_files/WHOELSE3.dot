@@ -1,0 +1,68 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="yes
+Prob: no:0.1 yes:0.9
+Frac: 0.102", fillcolor="#63e7f0"] ;
+1 [label="WHOELSE2", fillcolor="#72e3e1"] ;
+2 [label="yes
+Prob: no:0.5 yes:0.5
+Frac: 0.029", fillcolor="#a8d6ab"] ;
+3 [label="WHOELSE1", fillcolor="#84dfcf"] ;
+4 [label="no
+Prob: no:0.5 yes:0.5
+Frac: 0.059", fillcolor="#acd5a7"] ;
+5 [label="WHOELSE5", fillcolor="#8fdcc4"] ;
+6 [label="no
+Prob: no:0.8 yes:0.2
+Frac: 0.03", fillcolor="#d9ca7a"] ;
+7 [label="mode", fillcolor="#9dd8b6"] ;
+8 [label="no
+Prob: no:0.9 yes:0.1
+Frac: 0.041", fillcolor="#e9c66a"] ;
+9 [label="marcohab", fillcolor="#b2d3a1"] ;
+10 [label="no
+Prob: no:0.6 yes:0.4
+Frac: 0.03", fillcolor="#b9d29a"] ;
+11 [label="SPSEI10INC", fillcolor="#d5cb7e"] ;
+12 [label="yes
+Prob: no:0.4 yes:0.6
+Frac: 0.03", fillcolor="#9ad9b9"] ;
+13 [label="SPSEI10EDUC", fillcolor="#dbc978"] ;
+14 [label="no
+Prob: no:0.9 yes:0.1
+Frac: 0.041", fillcolor="#f5c35e"] ;
+15 [label="random", fillcolor="#f0c463"] ;
+16 [label="no
+Prob: no:0.9 yes:0.1
+Frac: 0.028", fillcolor="#eec566"] ;
+17 [label="hhtype", fillcolor="#ecc567"] ;
+18 [label="no
+Prob: no:0.9 yes:0.1
+Frac: 0.028", fillcolor="#eac669"] ;
+19 [label="WHOELSE6", fillcolor="#dfc874"] ;
+20 [label="no
+Prob: no:1.0 yes:0.0
+Frac: 0.581", fillcolor="#ffc155"] ;
+1 -- 0 [label=" no",penwidth=3] ;
+1 -- 2 [label=" yes",penwidth=3] ;
+3 -- 1 [label=" no",penwidth=3] ;
+3 -- 4 [label=" yes",penwidth=3] ;
+5 -- 3 [label=" no",penwidth=3] ;
+5 -- 6 [label=" yes",penwidth=3] ;
+7 -- 5 [label=" in-person",penwidth=3] ;
+7 -- 8 [label=" over the phone",penwidth=3] ;
+9 -- 7 [label=" married",penwidth=3] ;
+9 -- 11 [label=" not married, cohabitating partner\n not married, missing on cohabitating\n not married, no cohabitating partner",penwidth=3] ;
+11 -- 10 [label=" c",penwidth=3] ;
+11 -- 13 [label=" b\n d\n e",penwidth=3] ;
+13 -- 12 [label=" b\n c",penwidth=3] ;
+13 -- 15 [label=" d\n e",penwidth=3] ;
+15 -- 14 [label=" b",penwidth=3] ;
+15 -- 17 [label=" c\n e",penwidth=3] ;
+17 -- 16 [label=" 3adlts,2mar,rel,0kids\n 2as,ntmar,ntrel,opsex,0ks\n 1adlt,0kids\n 4+adlts,2mar,1+kids\n 2as,ntmar,ntrel,opsex,1+ks\n 2adlts,dkmar,0kids\n 4+adlts,0mar,0kids",penwidth=3] ;
+17 -- 18 [label=" 1adlt,1+kids\n 2adlts,dkmar,1+kids\n 2adlts,ntmar,dkrel,1+kids\n 2adlts,ntmar,rel,0kids\n 2adlts,ntmar,rel,1+kids\n 2as,ntmar,ntrel,smsex,0ks\n 3adlts,0mar,ntrel,0kids\n 3adlts,0mar,ntrel,1+kids\n 3adlts,0mar,ntrel,rel,0kids\n 3adlts,0mar,ntrel,rel,1+kids\n 3adlts,0mar,rel,0kids\n 3adlts,2mar,sp,rel,0kids\n 3adlts,2mar,sp,rel,1+kids\n 4+adlts,0mar,1+kids\n 4+adlts,2mar,0kids",penwidth=3] ;
+19 -- 9 [label=" no",penwidth=3] ;
+19 -- 20 [label=" yes",penwidth=3] ;
+{rank = same;}}

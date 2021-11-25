@@ -1,0 +1,38 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="always wrong
+Prob: almst always wrg:0.0 always wrong:1.0 not wrong at all:0.0 sometimes wrong:0.0
+Frac: 0.183", fillcolor="#6bfd57"] ;
+1 [label="premarsx", fillcolor="#99d87c"] ;
+2 [label="always wrong
+Prob: almst always wrg:0.2 always wrong:0.5 not wrong at all:0.1 sometimes wrong:0.2
+Frac: 0.176", fillcolor="#a5d081"] ;
+3 [label="god", fillcolor="#a3d085"] ;
+4 [label="sometimes wrong
+Prob: almst always wrg:0.2 always wrong:0.3 not wrong at all:0.2 sometimes wrong:0.3
+Frac: 0.066", fillcolor="#aebbb1"] ;
+5 [label="churhpow", fillcolor="#b6b9a8"] ;
+6 [label="sometimes wrong
+Prob: almst always wrg:0.3 always wrong:0.3 not wrong at all:0.2 sometimes wrong:0.3
+Frac: 0.11", fillcolor="#bcb8a2"] ;
+7 [label="bible", fillcolor="#a3cf86"] ;
+8 [label="always wrong
+Prob: almst always wrg:0.3 always wrong:0.4 not wrong at all:0.2 sometimes wrong:0.2
+Frac: 0.044", fillcolor="#a2cf97"] ;
+9 [label="heaven", fillcolor="#9cd879"] ;
+10 [label="always wrong
+Prob: almst always wrg:0.2 always wrong:0.6 not wrong at all:0.1 sometimes wrong:0.1
+Frac: 0.422", fillcolor="#9bd976"] ;
+1 -- 0 [label=" always wrong",penwidth=3] ;
+1 -- 3 [label=" almst always wrg\n not wrong at all\n sometimes wrong",penwidth=3] ;
+3 -- 2 [label=" believe but doubts",penwidth=3] ;
+3 -- 7 [label=" believe sometimes\n dont believe\n know god exists\n no way to find out\n some higher power",penwidth=3] ;
+5 -- 4 [label=" far too much pwr\n right amount pwr",penwidth=3] ;
+5 -- 6 [label=" too little power\n too much power",penwidth=3] ;
+7 -- 5 [label=" book of fables",penwidth=3] ;
+7 -- 9 [label=" inspired word\n other\n word of god",penwidth=3] ;
+9 -- 8 [label=" no, definitely not\n no, probably not",penwidth=3] ;
+9 -- 10 [label=" yes, definitely\n yes, probably",penwidth=3] ;
+{rank = same;}}

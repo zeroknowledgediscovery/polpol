@@ -1,0 +1,44 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="very likely
+Prob: not at all likely:0.0 not very likely:0.0 somewhat likely:0.2 very likely:0.7
+Frac: 0.1", fillcolor="#d37dfa"] ;
+1 [label="seriousp", fillcolor="#9ec1c0"] ;
+2 [label="not at all likely
+Prob: not at all likely:0.3 not very likely:0.3 somewhat likely:0.2 very likely:0.2
+Frac: 0.094", fillcolor="#b1c799"] ;
+3 [label="dectreat", fillcolor="#98c9ba"] ;
+4 [label="somewhat likely
+Prob: not at all likely:0.0 not very likely:0.3 somewhat likely:0.6 very likely:0.1
+Frac: 0.097", fillcolor="#6fe2c6"] ;
+5 [label="physill", fillcolor="#7ed8c0"] ;
+6 [label="somewhat likely
+Prob: not at all likely:0.1 not very likely:0.3 somewhat likely:0.4 very likely:0.2
+Frac: 0.081", fillcolor="#8fcdba"] ;
+7 [label="mentlill", fillcolor="#83dcae"] ;
+8 [label="not very likely
+Prob: not at all likely:0.2 not very likely:0.4 somewhat likely:0.4 very likely:0.1
+Frac: 0.238", fillcolor="#87dfa1"] ;
+9 [label="breakdwn", fillcolor="#94d0af"] ;
+10 [label="very likely
+Prob: not at all likely:0.3 not very likely:0.2 somewhat likely:0.2 very likely:0.3
+Frac: 0.173", fillcolor="#bcb4b1"] ;
+11 [label="imprvown", fillcolor="#95c9be"] ;
+12 [label="somewhat likely
+Prob: not at all likely:0.0 not very likely:0.1 somewhat likely:0.5 very likely:0.4
+Frac: 0.218", fillcolor="#98b6e6"] ;
+1 -- 0 [label=" not very serious",penwidth=3] ;
+1 -- 3 [label=" not at all serious\n somewhat serious\n very serious",penwidth=3] ;
+3 -- 2 [label=" not able at all",penwidth=3] ;
+3 -- 11 [label=" not very able\n somewhat able\n very able",penwidth=3] ;
+5 -- 4 [label=" somewhat likely",penwidth=3] ;
+5 -- 6 [label=" not at all likely\n not very likely\n very likely",penwidth=3] ;
+7 -- 5 [label=" somewhat likely",penwidth=3] ;
+7 -- 8 [label=" not at all likely\n not very likely\n very likely",penwidth=3] ;
+9 -- 7 [label=" not very likely\n somewhat likely",penwidth=3] ;
+9 -- 10 [label=" not at all likely\n very likely",penwidth=3] ;
+11 -- 9 [label=" not likely at all\n somewhat unlikely",penwidth=3] ;
+11 -- 12 [label=" somewhat likely\n very likely",penwidth=3] ;
+{rank = same;}}

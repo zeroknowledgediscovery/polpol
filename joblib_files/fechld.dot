@@ -1,0 +1,62 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="agree
+Prob: agree:0.5 disagree:0.4 strongly agree:0.1 strongly disagree:0.0
+Frac: 0.087", fillcolor="#b4d871"] ;
+1 [label="conrinc", fillcolor="#aed96f"] ;
+2 [label="disagree
+Prob: agree:0.4 disagree:0.5 strongly agree:0.1 strongly disagree:0.1
+Frac: 0.096", fillcolor="#a9db6e"] ;
+3 [label="fefam", fillcolor="#aad975"] ;
+4 [label="disagree
+Prob: agree:0.2 disagree:0.4 strongly agree:0.2 strongly disagree:0.1
+Frac: 0.044", fillcolor="#9cd78c"] ;
+5 [label="fepresch", fillcolor="#b4d580"] ;
+6 [label="agree
+Prob: agree:0.5 disagree:0.2 strongly agree:0.3 strongly disagree:0.0
+Frac: 0.052", fillcolor="#a9da8c"] ;
+7 [label="ethnic", fillcolor="#b8d485"] ;
+8 [label="agree
+Prob: agree:0.6 disagree:0.2 strongly agree:0.2 strongly disagree:0.0
+Frac: 0.066", fillcolor="#c6d46f"] ;
+9 [label="ethnic", fillcolor="#bad384"] ;
+10 [label="agree
+Prob: agree:0.6 disagree:0.1 strongly agree:0.3 strongly disagree:0.0
+Frac: 0.18", fillcolor="#c0d183"] ;
+11 [label="ethnic", fillcolor="#b8d388"] ;
+12 [label="agree
+Prob: agree:0.4 disagree:0.3 strongly agree:0.3 strongly disagree:0.0
+Frac: 0.045", fillcolor="#a1de8b"] ;
+13 [label="ethnic", fillcolor="#b1d58b"] ;
+14 [label="agree
+Prob: agree:0.5 disagree:0.2 strongly agree:0.3 strongly disagree:0.0
+Frac: 0.18", fillcolor="#b5d28c"] ;
+15 [label="fepresch", fillcolor="#aad692"] ;
+16 [label="strongly agree
+Prob: agree:0.3 disagree:0.1 strongly agree:0.5 strongly disagree:0.1
+Frac: 0.091", fillcolor="#98d8ae"] ;
+17 [label="fefam", fillcolor="#8bd6c8"] ;
+18 [label="strongly agree
+Prob: agree:0.2 disagree:0.1 strongly agree:0.7 strongly disagree:0.1
+Frac: 0.16", fillcolor="#83d5d7"] ;
+1 -- 0 [label=" c",penwidth=3] ;
+1 -- 2 [label=" d\n e",penwidth=3] ;
+3 -- 1 [label=" agree\n disagree",penwidth=3] ;
+3 -- 4 [label=" strongly agree\n strongly disagree",penwidth=3] ;
+5 -- 3 [label=" agree",penwidth=3] ;
+5 -- 7 [label=" disagree",penwidth=3] ;
+7 -- 6 [label=" denmark\n non-span windies\n austria\n africa",penwidth=3] ;
+7 -- 9 [label=" american indian\n american only\n arabic\n belgium\n china\n czechoslovakia\n england & wales\n finland\n france\n french canada\n germany\n greece\n hungary\n india\n ireland\n italy\n lithuania\n mexico\n netherlands\n norway\n other\n other asian\n other canada\n other european\n other spanish\n philippines\n poland\n portugal\n puerto rico\n russia\n scotland\n spain\n sweden\n switzerland\n yugoslavia",penwidth=3] ;
+9 -- 8 [label=" ireland\n philippines\n american indian\n yugoslavia",penwidth=3] ;
+9 -- 11 [label=" american only\n arabic\n belgium\n china\n czechoslovakia\n england & wales\n finland\n france\n french canada\n germany\n greece\n hungary\n india\n italy\n lithuania\n mexico\n netherlands\n norway\n other\n other asian\n other canada\n other european\n other spanish\n poland\n portugal\n puerto rico\n russia\n scotland\n spain\n sweden\n switzerland",penwidth=3] ;
+11 -- 10 [label=" scotland\n finland\n england & wales\n switzerland\n hungary\n netherlands\n greece\n other european\n puerto rico\n germany\n american only\n russia\n czechoslovakia\n italy\n belgium",penwidth=3] ;
+11 -- 13 [label=" arabic\n china\n france\n french canada\n india\n lithuania\n mexico\n norway\n other\n other asian\n other canada\n other spanish\n poland\n portugal\n spain\n sweden",penwidth=3] ;
+13 -- 12 [label=" other\n mexico\n lithuania",penwidth=3] ;
+13 -- 14 [label=" arabic\n china\n france\n french canada\n india\n norway\n other asian\n other canada\n other spanish\n poland\n portugal\n spain\n sweden",penwidth=3] ;
+15 -- 5 [label=" agree\n disagree",penwidth=3] ;
+15 -- 17 [label=" strongly agree\n strongly disagree",penwidth=3] ;
+17 -- 16 [label=" agree\n disagree",penwidth=3] ;
+17 -- 18 [label=" strongly agree\n strongly disagree",penwidth=3] ;
+{rank = same;}}

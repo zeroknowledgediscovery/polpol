@@ -1,0 +1,50 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="very likely
+Prob: not at all likely:0.2 somewhat likely:0.3 very likely:0.5
+Frac: 0.061", fillcolor="#ab9bce"] ;
+1 [label="SATJOB1", fillcolor="#cabf8a"] ;
+2 [label="somewhat likely
+Prob: not at all likely:0.3 somewhat likely:0.4 very likely:0.2
+Frac: 0.061", fillcolor="#a6c2ac"] ;
+3 [label="satjob", fillcolor="#ccc285"] ;
+4 [label="not at all likely
+Prob: not at all likely:0.4 somewhat likely:0.4 very likely:0.2
+Frac: 0.056", fillcolor="#b1bfa3"] ;
+5 [label="race", fillcolor="#d4c37c"] ;
+6 [label="not at all likely
+Prob: not at all likely:0.8 somewhat likely:0.2 very likely:0.1
+Frac: 0.262", fillcolor="#dcc474"] ;
+7 [label="PRES16", fillcolor="#c7c389"] ;
+8 [label="not at all likely
+Prob: not at all likely:0.4 somewhat likely:0.4 very likely:0.2
+Frac: 0.202", fillcolor="#b3c39d"] ;
+9 [label="proudemp", fillcolor="#cfc283"] ;
+10 [label="not at all likely
+Prob: not at all likely:0.7 somewhat likely:0.2 very likely:0.1
+Frac: 0.112", fillcolor="#d7c478"] ;
+11 [label="trustman", fillcolor="#dabf7a"] ;
+12 [label="not at all likely
+Prob: not at all likely:0.8 somewhat likely:0.2 very likely:0.1
+Frac: 0.064", fillcolor="#dec174"] ;
+13 [label="manvsemp", fillcolor="#dcbd7a"] ;
+14 [label="not at all likely
+Prob: not at all likely:0.7 somewhat likely:0.2 very likely:0.1
+Frac: 0.183", fillcolor="#dbbc7d"] ;
+1 -- 0 [label=" not too satisfied",penwidth=3] ;
+1 -- 3 [label=" not at all satisfied\n somewhat satisfied\n very satisfied",penwidth=3] ;
+3 -- 2 [label=" a little dissat",penwidth=3] ;
+3 -- 9 [label=" mod. satisfied\n very dissatisfied\n very satisfied",penwidth=3] ;
+5 -- 4 [label=" black",penwidth=3] ;
+5 -- 6 [label=" other\n white",penwidth=3] ;
+7 -- 5 [label=" didn't vote for president\n don't know\n trump\n clinton\n no answer\n other candidate (specify)",penwidth=3] ;
+7 -- 8 [label=" iap",penwidth=3] ;
+9 -- 7 [label=" agree",penwidth=3] ;
+9 -- 11 [label=" disagree\n strongly agree\n strongly disagree",penwidth=3] ;
+11 -- 10 [label=" agree",penwidth=3] ;
+11 -- 13 [label=" disagree\n strongly agree\n strongly disagree",penwidth=3] ;
+13 -- 12 [label=" quite good",penwidth=3] ;
+13 -- 14 [label=" neither good nor bad\n quite bad\n very bad\n very good",penwidth=3] ;
+{rank = same;}}

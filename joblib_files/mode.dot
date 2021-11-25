@@ -1,0 +1,32 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="in-person
+Prob: in-person:1.0 na:0.0 over the phone:0.0
+Frac: 0.763", fillcolor="#fec055"] ;
+1 [label="ratetone", fillcolor="#f7b568"] ;
+2 [label="in-person
+Prob: in-person:0.9 na:0.0 over the phone:0.1
+Frac: 0.103", fillcolor="#f7b667"] ;
+3 [label="race", fillcolor="#df8fa5"] ;
+4 [label="over the phone
+Prob: in-person:0.1 na:0.0 over the phone:0.9
+Frac: 0.059", fillcolor="#c862e9"] ;
+5 [label="feelevel", fillcolor="#cf6ed6"] ;
+6 [label="over the phone
+Prob: in-person:0.5 na:0.0 over the phone:0.5
+Frac: 0.028", fillcolor="#de88ad"] ;
+7 [label="phone", fillcolor="#cd72d5"] ;
+8 [label="over the phone
+Prob: in-person:0.2 na:0.1 over the phone:0.7
+Frac: 0.048", fillcolor="#c77ad2"] ;
+1 -- 0 [label=" c",penwidth=3] ;
+1 -- 3 [label=" d\n e",penwidth=3] ;
+3 -- 2 [label=" black",penwidth=3] ;
+3 -- 7 [label=" other\n white",penwidth=3] ;
+5 -- 4 [label=" d",penwidth=3] ;
+5 -- 6 [label=" a\n b\n c\n e",penwidth=3] ;
+7 -- 5 [label=" cellphone",penwidth=3] ;
+7 -- 8 [label=" no phone\n phone elsewhere\n phone in home\n refused",penwidth=3] ;
+{rank = same;}}

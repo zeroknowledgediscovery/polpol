@@ -1,0 +1,62 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="strongly agree
+Prob: agree:0.2 disagree:0.0 strongly agree:0.8 strongly disagree:0.0
+Frac: 0.066", fillcolor="#7ce1d7"] ;
+1 [label="teamsafe", fillcolor="#7de0d5"] ;
+2 [label="strongly agree
+Prob: agree:0.2 disagree:0.0 strongly agree:0.7 strongly disagree:0.0
+Frac: 0.172", fillcolor="#7de0d5"] ;
+3 [label="scientbe", fillcolor="#c4d085"] ;
+4 [label="agree
+Prob: agree:0.8 disagree:0.1 strongly agree:0.1 strongly disagree:0.0
+Frac: 0.151", fillcolor="#e4c962"] ;
+5 [label="advfront", fillcolor="#dccc69"] ;
+6 [label="agree
+Prob: agree:0.7 disagree:0.1 strongly agree:0.2 strongly disagree:0.0
+Frac: 0.078", fillcolor="#cbd077"] ;
+7 [label="fefam", fillcolor="#dccb6c"] ;
+8 [label="agree
+Prob: agree:0.8 disagree:0.0 strongly agree:0.2 strongly disagree:0.0
+Frac: 0.116", fillcolor="#ddc971"] ;
+9 [label="SCINEWS3", fillcolor="#dbca6c"] ;
+10 [label="agree
+Prob: agree:0.8 disagree:0.1 strongly agree:0.1 strongly disagree:0.0
+Frac: 0.14", fillcolor="#e2c86a"] ;
+11 [label="ETH1", fillcolor="#e1c967"] ;
+12 [label="agree
+Prob: agree:0.8 disagree:0.1 strongly agree:0.1 strongly disagree:0.0
+Frac: 0.073", fillcolor="#d9cd65"] ;
+13 [label="socfrend", fillcolor="#decb63"] ;
+14 [label="agree
+Prob: agree:0.8 disagree:0.1 strongly agree:0.1 strongly disagree:0.0
+Frac: 0.058", fillcolor="#e5c761"] ;
+15 [label="socfrend", fillcolor="#e0ca65"] ;
+16 [label="agree
+Prob: agree:0.8 disagree:0.0 strongly agree:0.1 strongly disagree:0.0
+Frac: 0.064", fillcolor="#e4c868"] ;
+17 [label="scienthe", fillcolor="#daca6c"] ;
+18 [label="agree
+Prob: agree:0.5 disagree:0.2 strongly agree:0.2 strongly disagree:0.1
+Frac: 0.083", fillcolor="#bfcf81"] ;
+1 -- 0 [label=" disagree\n strongly agree",penwidth=3] ;
+1 -- 2 [label=" agree\n strongly disagree",penwidth=3] ;
+3 -- 1 [label=" strongly agree",penwidth=3] ;
+3 -- 9 [label=" agree\n disagree\n strongly disagree",penwidth=3] ;
+5 -- 4 [label=" agree",penwidth=3] ;
+5 -- 6 [label=" disagree\n strongly agree\n strongly disagree",penwidth=3] ;
+7 -- 5 [label=" agree\n disagree",penwidth=3] ;
+7 -- 8 [label=" strongly agree\n strongly disagree",penwidth=3] ;
+9 -- 7 [label=" other\n online magazines\n online newspapers\n government site\n search engine (google, bing)",penwidth=3] ;
+9 -- 17 [label=" don't know\n electronic books & reports\n news site\n no answer\n science site\n wikipedia",penwidth=3] ;
+11 -- 10 [label=" portugal\n greece\n switzerland\n england & wales\n india\n france\n germany\n poland\n philippines\n other spanish\n netherlands\n other european\n american only\n czechoslovakia\n hungary\n scotland\n puerto rico\n sweden\n rumania\n japan\n other",penwidth=3] ;
+11 -- 15 [label=" africa\n american indian\n arabic\n belgium\n denmark\n finland\n french canada\n ireland\n italy\n lithuania\n mexico\n non-span windies\n norway\n other asian\n other canada\n russia\n spain",penwidth=3] ;
+13 -- 12 [label=" once a month\n once a year",penwidth=3] ;
+13 -- 14 [label=" almost daily\n sev times a mnth\n sev times a week",penwidth=3] ;
+15 -- 13 [label=" once a year\n sev times a mnth\n once a month\n sev times a week\n almost daily",penwidth=3] ;
+15 -- 16 [label=" never\n sev times a year",penwidth=3] ;
+17 -- 11 [label=" agree",penwidth=3] ;
+17 -- 18 [label=" disagree\n strongly agree\n strongly disagree",penwidth=3] ;
+{rank = same;}}

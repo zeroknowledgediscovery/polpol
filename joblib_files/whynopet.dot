@@ -1,0 +1,8 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="too much time or work to care for pet
+Prob: allergies (own or another household member):0.1 away too much, travelling, working, or both:0.0 health risks:0.0 no interest:0.2 other:0.1 pet died:0.1 residential restrictions:0.1 too expensive:0.1 too much time or work to care for pet:0.4
+Frac: 1.0", fillcolor="#be97b3"] ;
+{rank = same;}}

@@ -1,0 +1,38 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="too little
+Prob: about right:0.1 too little:0.9 too much:0.0
+Frac: 0.089", fillcolor="#62f4bd"] ;
+1 [label="wealth", fillcolor="#66f6b8"] ;
+2 [label="too little
+Prob: about right:0.1 too little:0.9 too much:0.0
+Frac: 0.099", fillcolor="#69f7b3"] ;
+3 [label="wealth", fillcolor="#70eeb6"] ;
+4 [label="too little
+Prob: about right:0.1 too little:0.8 too much:0.1
+Frac: 0.385", fillcolor="#75eab5"] ;
+5 [label="natchld", fillcolor="#86e0ad"] ;
+6 [label="too little
+Prob: about right:0.2 too little:0.8 too much:0.0
+Frac: 0.115", fillcolor="#72f2b0"] ;
+7 [label="natracey", fillcolor="#a4cea2"] ;
+8 [label="too little
+Prob: about right:0.4 too little:0.4 too much:0.1
+Frac: 0.161", fillcolor="#a9cc9e"] ;
+9 [label="nateducy", fillcolor="#b6c19c"] ;
+10 [label="about right
+Prob: about right:0.5 too little:0.3 too much:0.2
+Frac: 0.152", fillcolor="#c3b69a"] ;
+1 -- 0 [label=" $2 million to $3 million\n $150,000 to $250,000\n $5,000 to $20,000\n $4 million to $5 million\n above $10 million",penwidth=3] ;
+1 -- 2 [label=" $20,000 to $40,000\n $40,000 to $75,000\n $5 million to $10 million\n less than $5,000",penwidth=3] ;
+3 -- 1 [label=" $5,000 to $20,000\n $2 million to $3 million\n $40,000 to $75,000\n $4 million to $5 million\n $150,000 to $250,000\n $20,000 to $40,000\n above $10 million\n $5 million to $10 million\n less than $5,000",penwidth=3] ;
+3 -- 4 [label=" $1 million to $2 million\n $100,000 to $150,000\n $250,000 to $500,000\n $3 million to $4 million\n $500,000 to $1 million\n $75,000 to $100,000",penwidth=3] ;
+5 -- 3 [label=" too little",penwidth=3] ;
+5 -- 7 [label=" about right\n too much",penwidth=3] ;
+7 -- 6 [label=" too little",penwidth=3] ;
+7 -- 9 [label=" about right\n too much",penwidth=3] ;
+9 -- 8 [label=" too little",penwidth=3] ;
+9 -- 10 [label=" about right\n too much",penwidth=3] ;
+{rank = same;}}

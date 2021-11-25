@@ -1,0 +1,50 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="american indian
+Prob: africa:0.0 american indian:0.3 american only:0.0 arabic:0.0 austria:0.0 belgium:0.0 china:0.0 czechoslovakia:0.0 denmark:0.0 england & wales:0.1 finland:0.0 france:0.0 french canada:0.1 germany:0.1 greece:0.0 hungary:0.0 india:0.0 ireland:0.2 italy:0.0 japan:0.0 lithuania:0.0 mexico:0.0 netherlands:0.0 non-span windies:0.0 norway:0.0 other:0.0 other asian:0.0 other canada:0.0 other european:0.0 other spanish:0.0 philippines:0.0 poland:0.0 portugal:0.0 puerto rico:0.0 rumania:0.0 russia:0.0 scotland:0.0 spain:0.0 sweden:0.0 switzerland:0.0 west indies:0.0 yugoslavia:0.0
+Frac: 0.07", fillcolor="#a8e48f"] ;
+1 [label="ethnic", fillcolor="#9bcaae"] ;
+2 [label="scotland
+Prob: africa:0.0 american indian:0.0 american only:0.0 arabic:0.0 austria:0.0 belgium:0.0 china:0.0 czechoslovakia:0.0 denmark:0.0 england & wales:0.1 finland:0.0 france:0.0 french canada:0.0 germany:0.1 greece:0.0 hungary:0.0 india:0.0 ireland:0.2 italy:0.0 japan:0.0 lithuania:0.0 mexico:0.0 netherlands:0.0 non-span windies:0.0 norway:0.0 other:0.0 other asian:0.0 other canada:0.1 other european:0.1 other spanish:0.0 philippines:0.0 poland:0.0 portugal:0.0 puerto rico:0.0 rumania:0.0 russia:0.0 scotland:0.3 spain:0.0 sweden:0.0 switzerland:0.0 west indies:0.0 yugoslavia:0.0
+Frac: 0.069", fillcolor="#aaa5c5"] ;
+3 [label="ethnic", fillcolor="#97c4b9"] ;
+4 [label="germany
+Prob: africa:0.1 american indian:0.0 american only:0.0 arabic:0.0 austria:0.0 belgium:0.0 china:0.0 czechoslovakia:0.0 denmark:0.0 england & wales:0.1 finland:0.0 france:0.1 french canada:0.0 germany:0.1 greece:0.0 hungary:0.0 india:0.0 ireland:0.1 italy:0.0 japan:0.0 lithuania:0.0 mexico:0.0 netherlands:0.0 non-span windies:0.0 norway:0.0 other:0.0 other asian:0.0 other canada:0.0 other european:0.0 other spanish:0.1 philippines:0.0 poland:0.1 portugal:0.0 puerto rico:0.0 rumania:0.0 russia:0.0 scotland:0.0 spain:0.0 sweden:0.0 switzerland:0.0 west indies:0.0 yugoslavia:0.0
+Frac: 0.08", fillcolor="#a5c2b2"] ;
+5 [label="ethnic", fillcolor="#95c8b9"] ;
+6 [label="ireland
+Prob: africa:0.0 american indian:0.0 american only:0.0 arabic:0.0 austria:0.0 belgium:0.0 china:0.0 czechoslovakia:0.0 denmark:0.0 england & wales:0.1 finland:0.0 france:0.1 french canada:0.0 germany:0.2 greece:0.0 hungary:0.0 india:0.0 ireland:0.2 italy:0.0 japan:0.0 lithuania:0.0 mexico:0.0 netherlands:0.0 non-span windies:0.0 norway:0.0 other:0.0 other asian:0.0 other canada:0.0 other european:0.0 other spanish:0.0 philippines:0.0 poland:0.1 portugal:0.0 puerto rico:0.0 rumania:0.0 russia:0.0 scotland:0.0 spain:0.0 sweden:0.0 switzerland:0.0 west indies:0.0 yugoslavia:0.0
+Frac: 0.126", fillcolor="#8accbe"] ;
+7 [label="ethnic", fillcolor="#92ccb6"] ;
+8 [label="italy
+Prob: africa:0.0 american indian:0.0 american only:0.0 arabic:0.0 austria:0.0 belgium:0.0 china:0.0 czechoslovakia:0.0 denmark:0.0 england & wales:0.1 finland:0.0 france:0.1 french canada:0.0 germany:0.2 greece:0.0 hungary:0.0 india:0.0 ireland:0.1 italy:0.2 japan:0.0 lithuania:0.0 mexico:0.0 netherlands:0.0 non-span windies:0.0 norway:0.0 other:0.0 other asian:0.0 other canada:0.0 other european:0.0 other spanish:0.0 philippines:0.0 poland:0.0 portugal:0.0 puerto rico:0.0 rumania:0.0 russia:0.0 scotland:0.1 spain:0.0 sweden:0.1 switzerland:0.0 west indies:0.0 yugoslavia:0.0
+Frac: 0.073", fillcolor="#8bd7ad"] ;
+9 [label="ethnic", fillcolor="#99c6b2"] ;
+10 [label="spain
+Prob: africa:0.0 american indian:0.0 american only:0.0 arabic:0.0 austria:0.0 belgium:0.0 china:0.0 czechoslovakia:0.0 denmark:0.1 england & wales:0.0 finland:0.0 france:0.2 french canada:0.0 germany:0.1 greece:0.0 hungary:0.0 india:0.0 ireland:0.0 italy:0.1 japan:0.0 lithuania:0.0 mexico:0.1 netherlands:0.0 non-span windies:0.0 norway:0.0 other:0.0 other asian:0.0 other canada:0.0 other european:0.0 other spanish:0.0 philippines:0.0 poland:0.0 portugal:0.0 puerto rico:0.0 rumania:0.0 russia:0.0 scotland:0.0 spain:0.2 sweden:0.0 switzerland:0.0 west indies:0.0 yugoslavia:0.0
+Frac: 0.1", fillcolor="#a0cc9c"] ;
+11 [label="ethnic", fillcolor="#9acdaa"] ;
+12 [label="england & wales
+Prob: africa:0.0 american indian:0.0 american only:0.0 arabic:0.0 austria:0.0 belgium:0.0 china:0.0 czechoslovakia:0.0 denmark:0.0 england & wales:0.3 finland:0.0 france:0.0 french canada:0.0 germany:0.2 greece:0.0 hungary:0.0 india:0.0 ireland:0.1 italy:0.0 japan:0.0 lithuania:0.0 mexico:0.0 netherlands:0.0 non-span windies:0.0 norway:0.0 other:0.0 other asian:0.0 other canada:0.0 other european:0.0 other spanish:0.0 philippines:0.0 poland:0.0 portugal:0.0 puerto rico:0.0 rumania:0.0 russia:0.0 scotland:0.1 spain:0.0 sweden:0.0 switzerland:0.0 west indies:0.0 yugoslavia:0.0
+Frac: 0.112", fillcolor="#96da98"] ;
+13 [label="ethnic", fillcolor="#96cfae"] ;
+14 [label="ireland
+Prob: africa:0.0 american indian:0.0 american only:0.0 arabic:0.0 austria:0.0 belgium:0.0 china:0.0 czechoslovakia:0.0 denmark:0.0 england & wales:0.1 finland:0.0 france:0.0 french canada:0.0 germany:0.2 greece:0.0 hungary:0.0 india:0.0 ireland:0.3 italy:0.0 japan:0.0 lithuania:0.0 mexico:0.0 netherlands:0.0 non-span windies:0.0 norway:0.0 other:0.0 other asian:0.0 other canada:0.0 other european:0.0 other spanish:0.0 philippines:0.0 poland:0.0 portugal:0.0 puerto rico:0.0 rumania:0.0 russia:0.0 scotland:0.1 spain:0.0 sweden:0.0 switzerland:0.0 west indies:0.0 yugoslavia:0.0
+Frac: 0.369", fillcolor="#90d4b4"] ;
+1 -- 0 [label=" french canada\n american indian\n belgium",penwidth=3] ;
+1 -- 9 [label=" africa\n american only\n arabic\n austria\n czechoslovakia\n denmark\n finland\n france\n germany\n hungary\n india\n italy\n japan\n lithuania\n mexico\n non-span windies\n norway\n other\n other canada\n other european\n other spanish\n philippines\n poland\n portugal\n puerto rico\n scotland\n spain\n sweden\n switzerland",penwidth=3] ;
+3 -- 2 [label=" other canada\n scotland\n portugal\n other european\n japan",penwidth=3] ;
+3 -- 7 [label=" africa\n arabic\n finland\n germany\n hungary\n india\n italy\n lithuania\n non-span windies\n norway\n other spanish\n philippines\n poland\n puerto rico\n sweden\n switzerland",penwidth=3] ;
+5 -- 4 [label=" india\n philippines\n other spanish\n norway\n arabic\n poland\n puerto rico\n africa\n hungary",penwidth=3] ;
+5 -- 6 [label=" germany\n lithuania\n non-span windies\n switzerland",penwidth=3] ;
+7 -- 5 [label=" puerto rico\n lithuania\n other spanish\n switzerland\n non-span windies\n arabic\n hungary\n africa\n germany\n india\n poland\n norway\n philippines",penwidth=3] ;
+7 -- 8 [label=" finland\n italy\n sweden",penwidth=3] ;
+9 -- 3 [label=" lithuania\n africa\n switzerland\n portugal\n other european\n other spanish\n norway\n puerto rico\n non-span windies\n philippines\n poland\n sweden\n other canada\n finland\n india\n japan\n scotland\n germany\n hungary\n italy\n arabic",penwidth=3] ;
+9 -- 10 [label=" american only\n austria\n czechoslovakia\n denmark\n france\n mexico\n other\n spain",penwidth=3] ;
+11 -- 1 [label=" portugal\n other canada\n poland\n american indian\n non-span windies\n italy\n africa\n american only\n finland\n puerto rico\n belgium\n lithuania\n india\n france\n spain\n austria\n other spanish\n other european\n switzerland\n philippines\n germany\n other\n arabic\n czechoslovakia\n norway\n french canada\n denmark\n japan\n scotland\n hungary\n sweden\n mexico",penwidth=3] ;
+11 -- 12 [label=" england & wales\n greece\n netherlands\n other asian\n russia\n yugoslavia",penwidth=3] ;
+13 -- 11 [label=" belgium\n india\n poland\n switzerland\n netherlands\n czechoslovakia\n japan\n american only\n lithuania\n england & wales\n philippines\n scotland\n arabic\n portugal\n other european\n french canada\n france\n russia\n puerto rico\n american indian\n sweden\n spain\n other canada\n mexico\n finland\n other asian\n other spanish\n austria\n greece\n italy\n denmark\n africa\n other\n norway\n germany\n yugoslavia\n non-span windies\n hungary",penwidth=3] ;
+13 -- 14 [label=" ireland\n west indies",penwidth=3] ;
+{rank = same;}}

@@ -1,0 +1,32 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="too much
+Prob: about right:0.3 too little:0.1 too much:0.6
+Frac: 0.237", fillcolor="#c784c9"] ;
+1 [label="bible", fillcolor="#bbb4a5"] ;
+2 [label="too little
+Prob: about right:0.2 too little:0.6 too much:0.1
+Frac: 0.166", fillcolor="#8bdcad"] ;
+3 [label="RACDIF3", fillcolor="#a8ce9d"] ;
+4 [label="too little
+Prob: about right:0.4 too little:0.5 too much:0.1
+Frac: 0.174", fillcolor="#a8d497"] ;
+5 [label="courts", fillcolor="#b8c695"] ;
+6 [label="about right
+Prob: about right:0.6 too little:0.2 too much:0.2
+Frac: 0.121", fillcolor="#d0b292"] ;
+7 [label="natcrimy", fillcolor="#b7c399"] ;
+8 [label="about right
+Prob: about right:0.6 too little:0.2 too much:0.2
+Frac: 0.302", fillcolor="#ceb393"] ;
+1 -- 0 [label=" book of fables",penwidth=3] ;
+1 -- 7 [label=" inspired word\n other\n word of god",penwidth=3] ;
+3 -- 2 [label=" no",penwidth=3] ;
+3 -- 5 [label=" yes",penwidth=3] ;
+5 -- 4 [label=" not harsh enough",penwidth=3] ;
+5 -- 6 [label=" about right\n too harsh",penwidth=3] ;
+7 -- 3 [label=" too little",penwidth=3] ;
+7 -- 8 [label=" about right\n too much",penwidth=3] ;
+{rank = same;}}

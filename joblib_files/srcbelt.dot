@@ -1,0 +1,164 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="smsa's 13-100
+Prob: 12 lrgst smsa's:0.0 other rural:0.0 other urban:0.2 smsa's 13-100:0.4 suburb, 12 lrgst:0.1 suburb, 13-100:0.3
+Frac: 0.028", fillcolor="#90b3ea"] ;
+1 [label="size", fillcolor="#9dbad7"] ;
+2 [label="other urban
+Prob: 12 lrgst smsa's:0.1 other rural:0.1 other urban:0.3 smsa's 13-100:0.2 suburb, 12 lrgst:0.0 suburb, 13-100:0.3
+Frac: 0.034", fillcolor="#a7bfc7"] ;
+3 [label="size", fillcolor="#99b6de"] ;
+4 [label="suburb, 13-100
+Prob: 12 lrgst smsa's:0.0 other rural:0.0 other urban:0.3 smsa's 13-100:0.2 suburb, 12 lrgst:0.2 suburb, 13-100:0.4
+Frac: 0.052", fillcolor="#a6a0e5"] ;
+5 [label="size", fillcolor="#96b3e3"] ;
+6 [label="other urban
+Prob: 12 lrgst smsa's:0.0 other rural:0.0 other urban:0.4 smsa's 13-100:0.3 suburb, 12 lrgst:0.0 suburb, 13-100:0.3
+Frac: 0.038", fillcolor="#80cde0"] ;
+7 [label="sampcode", fillcolor="#a3bcc8"] ;
+8 [label="suburb, 12 lrgst
+Prob: 12 lrgst smsa's:0.2 other rural:0.1 other urban:0.1 smsa's 13-100:0.2 suburb, 12 lrgst:0.2 suburb, 13-100:0.2
+Frac: 0.033", fillcolor="#b8a0d0"] ;
+9 [label="size", fillcolor="#b996d6"] ;
+10 [label="suburb, 13-100
+Prob: 12 lrgst smsa's:0.0 other rural:0.0 other urban:0.3 smsa's 13-100:0.0 suburb, 12 lrgst:0.3 suburb, 13-100:0.4
+Frac: 0.035", fillcolor="#ba8ddc"] ;
+11 [label="vstrat", fillcolor="#a8bbc2"] ;
+12 [label="other rural
+Prob: 12 lrgst smsa's:0.2 other rural:0.4 other urban:0.1 smsa's 13-100:0.2 suburb, 12 lrgst:0.0 suburb, 13-100:0.1
+Frac: 0.034", fillcolor="#c3dd91"] ;
+13 [label="sampcode", fillcolor="#a7d9a7"] ;
+14 [label="other urban
+Prob: 12 lrgst smsa's:0.1 other rural:0.1 other urban:0.5 smsa's 13-100:0.1 suburb, 12 lrgst:0.2 suburb, 13-100:0.0
+Frac: 0.034", fillcolor="#8ad4be"] ;
+15 [label="size", fillcolor="#a2c9ba"] ;
+16 [label="other urban
+Prob: 12 lrgst smsa's:0.0 other rural:0.2 other urban:0.5 smsa's 13-100:0.0 suburb, 12 lrgst:0.1 suburb, 13-100:0.2
+Frac: 0.03", fillcolor="#a2c3c0"] ;
+17 [label="size", fillcolor="#a8b7c0"] ;
+18 [label="other urban
+Prob: 12 lrgst smsa's:0.2 other rural:0.0 other urban:0.3 smsa's 13-100:0.1 suburb, 12 lrgst:0.3 suburb, 13-100:0.1
+Frac: 0.046", fillcolor="#acafc0"] ;
+19 [label="size", fillcolor="#9fc0c5"] ;
+20 [label="smsa's 13-100
+Prob: 12 lrgst smsa's:0.1 other rural:0.1 other urban:0.3 smsa's 13-100:0.4 suburb, 12 lrgst:0.0 suburb, 13-100:0.2
+Frac: 0.04", fillcolor="#8dd1cf"] ;
+21 [label="size", fillcolor="#a6bdc1"] ;
+22 [label="other urban
+Prob: 12 lrgst smsa's:0.0 other rural:0.1 other urban:0.5 smsa's 13-100:0.2 suburb, 12 lrgst:0.1 suburb, 13-100:0.2
+Frac: 0.029", fillcolor="#88cad4"] ;
+23 [label="sampcode", fillcolor="#abc4b5"] ;
+24 [label="12 lrgst smsa's
+Prob: 12 lrgst smsa's:0.5 other rural:0.1 other urban:0.1 smsa's 13-100:0.2 suburb, 12 lrgst:0.1 suburb, 13-100:0.1
+Frac: 0.032", fillcolor="#cbbf98"] ;
+25 [label="vstrat", fillcolor="#b5b9b5"] ;
+26 [label="suburb, 12 lrgst
+Prob: 12 lrgst smsa's:0.3 other rural:0.1 other urban:0.1 smsa's 13-100:0.1 suburb, 12 lrgst:0.3 suburb, 13-100:0.1
+Frac: 0.03", fillcolor="#c9a2b5"] ;
+27 [label="size", fillcolor="#a3c0c0"] ;
+28 [label="other urban
+Prob: 12 lrgst smsa's:0.1 other rural:0.2 other urban:0.3 smsa's 13-100:0.1 suburb, 12 lrgst:0.1 suburb, 13-100:0.3
+Frac: 0.031", fillcolor="#b6baba"] ;
+29 [label="vstrat", fillcolor="#c09bcb"] ;
+30 [label="suburb, 12 lrgst
+Prob: 12 lrgst smsa's:0.0 other rural:0.1 other urban:0.1 smsa's 13-100:0.0 suburb, 12 lrgst:0.5 suburb, 13-100:0.2
+Frac: 0.029", fillcolor="#ca7bdd"] ;
+31 [label="vstrat", fillcolor="#98c4c8"] ;
+32 [label="other urban
+Prob: 12 lrgst smsa's:0.0 other rural:0.1 other urban:0.8 smsa's 13-100:0.0 suburb, 12 lrgst:0.1 suburb, 13-100:0.0
+Frac: 0.038", fillcolor="#6af5b9"] ;
+33 [label="vstrat", fillcolor="#7de0c5"] ;
+34 [label="smsa's 13-100
+Prob: 12 lrgst smsa's:0.1 other rural:0.0 other urban:0.3 smsa's 13-100:0.4 suburb, 12 lrgst:0.1 suburb, 13-100:0.1
+Frac: 0.049", fillcolor="#8bd0ce"] ;
+35 [label="sampcode", fillcolor="#a9b7c7"] ;
+36 [label="other urban
+Prob: 12 lrgst smsa's:0.1 other rural:0.0 other urban:0.4 smsa's 13-100:0.0 suburb, 12 lrgst:0.3 suburb, 13-100:0.1
+Frac: 0.039", fillcolor="#9dadcd"] ;
+37 [label="vstrat", fillcolor="#a6acd5"] ;
+38 [label="smsa's 13-100
+Prob: 12 lrgst smsa's:0.1 other rural:0.1 other urban:0.0 smsa's 13-100:0.4 suburb, 12 lrgst:0.0 suburb, 13-100:0.4
+Frac: 0.029", fillcolor="#b2aadf"] ;
+39 [label="size", fillcolor="#a3a3e0"] ;
+40 [label="other urban
+Prob: 12 lrgst smsa's:0.0 other rural:0.0 other urban:0.3 smsa's 13-100:0.2 suburb, 12 lrgst:0.2 suburb, 13-100:0.2
+Frac: 0.056", fillcolor="#96ace6"] ;
+41 [label="size", fillcolor="#a19ce9"] ;
+42 [label="suburb, 12 lrgst
+Prob: 12 lrgst smsa's:0.0 other rural:0.0 other urban:0.2 smsa's 13-100:0.1 suburb, 12 lrgst:0.5 suburb, 13-100:0.3
+Frac: 0.032", fillcolor="#b57fee"] ;
+43 [label="vstrat", fillcolor="#b7acc5"] ;
+44 [label="suburb, 13-100
+Prob: 12 lrgst smsa's:0.1 other rural:0.2 other urban:0.1 smsa's 13-100:0.1 suburb, 12 lrgst:0.2 suburb, 13-100:0.3
+Frac: 0.045", fillcolor="#d0a3bb"] ;
+45 [label="sampcode", fillcolor="#d4a1b4"] ;
+46 [label="12 lrgst smsa's
+Prob: 12 lrgst smsa's:0.5 other rural:0.0 other urban:0.0 smsa's 13-100:0.1 suburb, 12 lrgst:0.2 suburb, 13-100:0.2
+Frac: 0.034", fillcolor="#da9eaa"] ;
+47 [label="vstrat", fillcolor="#d2b99f"] ;
+48 [label="other rural
+Prob: 12 lrgst smsa's:0.1 other rural:0.6 other urban:0.2 smsa's 13-100:0.0 suburb, 12 lrgst:0.0 suburb, 13-100:0.0
+Frac: 0.031", fillcolor="#cdf66c"] ;
+49 [label="xnorcsiz", fillcolor="#a6bbc5"] ;
+50 [label="other urban
+Prob: 12 lrgst smsa's:0.0 other rural:0.1 other urban:0.7 smsa's 13-100:0.0 suburb, 12 lrgst:0.0 suburb, 13-100:0.1
+Frac: 0.039", fillcolor="#80e6b9"] ;
+51 [label="size", fillcolor="#91e4ae"] ;
+52 [label="other urban
+Prob: 12 lrgst smsa's:0.0 other rural:0.3 other urban:0.5 smsa's 13-100:0.0 suburb, 12 lrgst:0.0 suburb, 13-100:0.2
+Frac: 0.052", fillcolor="#9de3a7"] ;
+1 -- 0 [label=" 1307\n 16\n 153\n 32\n 49\n 64\n 23\n 4",penwidth=3] ;
+1 -- 2 [label=" 2\n 285\n 3\n 336\n 44\n 805",penwidth=3] ;
+3 -- 1 [label=" 3\n 16\n 1307\n 336\n 44\n 2\n 805\n 23\n 153\n 4\n 49\n 32\n 285\n 64",penwidth=3] ;
+3 -- 5 [label=" 1\n 11\n 127\n 144\n 186\n 22\n 245\n 27\n 29\n 30\n 31\n 37\n 41\n 43\n 48\n 5\n 6\n 731\n 741\n 79\n 830\n 9\n 946",penwidth=3] ;
+5 -- 4 [label=" 22\n 144\n 37\n 5\n 830\n 9\n 29\n 127\n 43\n 186\n 48\n 731\n 6\n 41",penwidth=3] ;
+5 -- 6 [label=" 1\n 11\n 245\n 27\n 30\n 31\n 741\n 79\n 946",penwidth=3] ;
+7 -- 3 [label=" 623\n 636\n 615\n 621\n 631\n 616\n 648\n 647\n 624\n 671\n 633\n 606\n 627\n 654",penwidth=3] ;
+7 -- 21 [label=" 601\n 604\n 605\n 607\n 609\n 611\n 612\n 613\n 614\n 617\n 618\n 619\n 622\n 625\n 628\n 632\n 634\n 635\n 637\n 638\n 639\n 641\n 642\n 646\n 649\n 650\n 651\n 652\n 653\n 655\n 656\n 657\n 660\n 662\n 663\n 664\n 666\n 668\n 669\n 670\n 673\n 675\n 676",penwidth=3] ;
+9 -- 8 [label=" 62\n 31\n 297\n 121\n 39\n 8\n 16\n 105\n 70\n 49\n 621\n 57\n 466",penwidth=3] ;
+9 -- 10 [label=" 11\n 118\n 27\n 28\n 36\n 37\n 399\n 41\n 43\n 48\n 83\n 92\n 95",penwidth=3] ;
+11 -- 9 [label=" 3320\n 3307\n 3359\n 3349\n 3352\n 3333\n 3337\n 3316\n 3368\n 3332\n 3346\n 3324\n 3318\n 3336",penwidth=3] ;
+11 -- 15 [label=" 3302\n 3303\n 3305\n 3317\n 3319\n 3321\n 3325\n 3328\n 3329\n 3334\n 3338\n 3341\n 3342\n 3343\n 3358\n 3360\n 3361\n 3363\n 3365\n 3366\n 3367\n 3369\n 3370\n 3372\n 3373\n 3375\n 3377\n 3378",penwidth=3] ;
+13 -- 12 [label=" 657\n 673\n 676\n 617\n 649\n 614\n 675\n 618\n 635",penwidth=3] ;
+13 -- 14 [label=" 601\n 605\n 607\n 612\n 650\n 652\n 666\n 670",penwidth=3] ;
+15 -- 13 [label=" 2\n 111\n 261\n 5\n 28\n 49\n 16\n 618\n 15\n 439\n 84\n 325\n 1446\n 63",penwidth=3] ;
+15 -- 19 [label=" 0\n 100\n 11\n 12\n 154\n 17\n 2099\n 23\n 26\n 319\n 36\n 37\n 40\n 43\n 563\n 6\n 600\n 602\n 71\n 714\n 8\n 822\n 90\n 91\n 93",penwidth=3] ;
+17 -- 16 [label=" 6\n 26\n 91\n 563\n 37",penwidth=3] ;
+17 -- 18 [label=" 11\n 12\n 154\n 17\n 2099\n 43\n 600\n 602\n 8",penwidth=3] ;
+19 -- 17 [label=" 26\n 2099\n 37\n 17\n 563\n 12\n 43\n 8\n 600\n 91\n 11\n 6\n 154\n 602",penwidth=3] ;
+19 -- 20 [label=" 0\n 100\n 23\n 319\n 36\n 40\n 71\n 714\n 822\n 90\n 93",penwidth=3] ;
+21 -- 11 [label=" 2099\n 71\n 600\n 23\n 17\n 40\n 12\n 618\n 319\n 93\n 84\n 399\n 121\n 325\n 62\n 602\n 563\n 41\n 466\n 714\n 1446\n 92\n 91\n 439\n 154\n 48\n 5\n 261\n 36\n 111\n 15\n 118\n 28\n 83\n 8\n 27\n 37\n 822\n 43\n 90\n 26\n 297\n 2\n 95\n 39\n 49\n 0\n 100\n 6\n 70\n 63\n 621\n 57\n 105\n 31\n 16\n 11",penwidth=3] ;
+21 -- 27 [label=" 1\n 10\n 117\n 1198\n 125\n 134\n 14\n 166\n 179\n 19\n 198\n 20\n 209\n 21\n 24\n 25\n 260\n 3\n 30\n 32\n 4\n 46\n 495\n 56\n 601\n 609\n 65\n 67\n 7\n 741\n 787\n 8175\n 9\n 94",penwidth=3] ;
+23 -- 22 [label=" 668\n 650\n 642\n 611\n 638\n 628\n 637\n 618",penwidth=3] ;
+23 -- 24 [label=" 601\n 604\n 612\n 632",penwidth=3] ;
+25 -- 23 [label=" 3306\n 3304\n 3333\n 3356\n 3365\n 3374\n 3318\n 3303\n 3342\n 3305\n 3352\n 3361\n 3359\n 3335",penwidth=3] ;
+25 -- 26 [label=" 3301\n 3302\n 3307\n 3316\n 3324\n 3325\n 3363\n 3377",penwidth=3] ;
+27 -- 25 [label=" 601\n 14\n 25\n 24\n 179\n 134\n 260\n 4\n 20\n 21\n 56\n 787\n 1198\n 8175",penwidth=3] ;
+27 -- 31 [label=" 1\n 10\n 117\n 125\n 166\n 19\n 198\n 209\n 3\n 30\n 32\n 46\n 495\n 609\n 65\n 67\n 7\n 741\n 9\n 94",penwidth=3] ;
+29 -- 28 [label=" 3365\n 3361\n 3372\n 3317\n 3329\n 3356\n 3341",penwidth=3] ;
+29 -- 30 [label=" 3324\n 3325\n 3334\n 3338\n 3342\n 3343\n 3373",penwidth=3] ;
+31 -- 29 [label=" 3365\n 3325\n 3342\n 3341\n 3329\n 3324\n 3343\n 3356\n 3334\n 3338\n 3361\n 3372\n 3317\n 3373",penwidth=3] ;
+31 -- 33 [label=" 3301\n 3305\n 3307\n 3320\n 3328\n 3332\n 3333\n 3336\n 3346\n 3349\n 3352\n 3357\n 3358\n 3366\n 3367\n 3368\n 3370\n 3371\n 3375\n 3378",penwidth=3] ;
+33 -- 32 [label=" 3352\n 3320\n 3368\n 3346\n 3367\n 3375\n 3328\n 3333",penwidth=3] ;
+33 -- 34 [label=" 3301\n 3305\n 3307\n 3332\n 3336\n 3349\n 3357\n 3358\n 3366\n 3370\n 3371\n 3378",penwidth=3] ;
+35 -- 7 [label=" 648\n 612\n 616\n 625\n 651\n 636\n 638\n 649\n 607\n 675\n 609\n 637\n 618\n 611\n 617\n 642\n 641\n 647\n 662\n 673\n 670\n 633\n 663\n 668\n 676\n 660\n 628\n 635\n 664\n 601\n 621\n 604\n 646\n 657\n 653\n 652\n 669\n 605\n 619\n 650\n 622\n 632\n 623\n 627\n 615\n 613\n 639\n 654\n 655\n 606\n 666\n 634\n 624\n 614\n 656\n 671\n 631",penwidth=3] ;
+35 -- 43 [label=" 602\n 603\n 608\n 610\n 620\n 626\n 629\n 630\n 640\n 643\n 644\n 645\n 658\n 659\n 661\n 665\n 667\n 672\n 674",penwidth=3] ;
+37 -- 36 [label=" 3315\n 3311\n 3362\n 3371\n 3308\n 3312\n 3326",penwidth=3] ;
+37 -- 38 [label=" 3331\n 3354\n 3370\n 3373",penwidth=3] ;
+39 -- 37 [label=" 22\n 11\n 3\n 420\n 30\n 42\n 20\n 595\n 180\n 416\n 8\n 336\n 165\n 6",penwidth=3] ;
+39 -- 41 [label=" 1\n 10\n 109\n 124\n 193\n 206\n 23\n 26\n 29\n 304\n 34\n 39\n 40\n 41\n 46\n 5\n 54\n 546\n 61\n 67\n 69\n 74\n 84\n 86\n 88",penwidth=3] ;
+41 -- 40 [label=" 29\n 23\n 39\n 206\n 46\n 124\n 41\n 69\n 54\n 86\n 109\n 5\n 193\n 546",penwidth=3] ;
+41 -- 42 [label=" 1\n 10\n 26\n 304\n 34\n 40\n 61\n 67\n 74\n 84\n 88",penwidth=3] ;
+43 -- 39 [label=" 3369\n 3326\n 3315\n 3311\n 3331\n 3373\n 3312\n 3308\n 3371\n 3362\n 3370\n 3363\n 3354",penwidth=3] ;
+43 -- 47 [label=" 3309\n 3310\n 3313\n 3314\n 3327\n 3330\n 3344\n 3350\n 3353\n 3360\n 3374\n 3376\n 3377",penwidth=3] ;
+45 -- 44 [label=" 672\n 608\n 626\n 610\n 620",penwidth=3] ;
+45 -- 46 [label=" 602\n 603\n 629",penwidth=3] ;
+47 -- 45 [label=" 3353\n 3376\n 3350\n 3344\n 3330\n 3310\n 3309\n 3327\n 3314",penwidth=3] ;
+47 -- 48 [label=" 3313\n 3360\n 3374\n 3377",penwidth=3] ;
+49 -- 35 [label=" suburb, lrg city\n suburb, med city\n uninc,lrg city\n town gt 2500\n city,10-49999\n city gt 250000\n smaller areas\n open country\n city,50-250000",penwidth=3] ;
+49 -- 51 [label=" uninc,med city",penwidth=3] ;
+51 -- 50 [label=" 8\n 14\n 29\n 6\n 21\n 3",penwidth=3] ;
+51 -- 52 [label=" 10\n 12\n 17\n 18\n 2\n 23\n 25\n 28\n 32\n 4\n 5\n 7\n 9",penwidth=3] ;
+{rank = same;}}

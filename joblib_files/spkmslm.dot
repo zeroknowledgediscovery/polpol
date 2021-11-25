@@ -1,0 +1,38 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="yes, allowed
+Prob: not allowed:0.5 yes, allowed:0.5
+Frac: 0.195", fillcolor="#a4d7af"] ;
+1 [label="libmslm", fillcolor="#d5cb7e"] ;
+2 [label="not allowed
+Prob: not allowed:0.7 yes, allowed:0.3
+Frac: 0.136", fillcolor="#c7ce8c"] ;
+3 [label="spkmil", fillcolor="#d2cb81"] ;
+4 [label="not allowed
+Prob: not allowed:0.9 yes, allowed:0.1
+Frac: 0.045", fillcolor="#f5c35e"] ;
+5 [label="spkrac", fillcolor="#e9c66a"] ;
+6 [label="not allowed
+Prob: not allowed:1.0 yes, allowed:0.0
+Frac: 0.047", fillcolor="#fbc158"] ;
+7 [label="HIVTEST1", fillcolor="#f8c25b"] ;
+8 [label="not allowed
+Prob: not allowed:1.0 yes, allowed:0.0
+Frac: 0.234", fillcolor="#f8c25b"] ;
+9 [label="colmslm", fillcolor="#aed4a5"] ;
+10 [label="yes, allowed
+Prob: not allowed:0.1 yes, allowed:0.9
+Frac: 0.343", fillcolor="#65e7ee"] ;
+1 -- 0 [label=" not remove",penwidth=3] ;
+1 -- 5 [label=" remove",penwidth=3] ;
+3 -- 2 [label=" allowed",penwidth=3] ;
+3 -- 4 [label=" not allowed",penwidth=3] ;
+5 -- 3 [label=" allowed",penwidth=3] ;
+5 -- 7 [label=" not allowed",penwidth=3] ;
+7 -- 6 [label=" c",penwidth=3] ;
+7 -- 8 [label=" a\n b\n e",penwidth=3] ;
+9 -- 1 [label=" not allowed",penwidth=3] ;
+9 -- 10 [label=" yes, allowed",penwidth=3] ;
+{rank = same;}}

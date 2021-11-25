@@ -1,0 +1,8 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="child, not specified
+Prob: brother, sister (full, half, or step sibling:0.1 child, not specified:0.2 friend:0.2 grandchild, great-grandchild:0.1 parent:0.1 parent-in-law:0.1 roommate, housemate:0.1 sibling-in-law:0.1 uncle or aunt:0.1
+Frac: 1.0", fillcolor="#bcc39f"] ;
+{rank = same;}}

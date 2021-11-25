@@ -1,0 +1,74 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="once a year
+Prob: 2-3x a month:0.1 every week:0.2 lt once a year:0.0 more thn once wk:0.0 never:0.0 nrly every week:0.1 once a month:0.1 once a year:0.3 sevrl times a yr:0.2
+Frac: 0.031", fillcolor="#e087bb"] ;
+1 [label="neisafe", fillcolor="#ea80ba"] ;
+2 [label="once a year
+Prob: 2-3x a month:0.2 every week:0.1 lt once a year:0.0 more thn once wk:0.0 never:0.0 nrly every week:0.0 once a month:0.1 once a year:0.3 sevrl times a yr:0.2
+Frac: 0.058", fillcolor="#ef7db9"] ;
+3 [label="numcong", fillcolor="#92ccdb"] ;
+4 [label="never
+Prob: 2-3x a month:0.0 every week:0.0 lt once a year:0.1 more thn once wk:0.0 never:0.7 nrly every week:0.0 once a month:0.0 once a year:0.1 sevrl times a yr:0.0
+Frac: 0.068", fillcolor="#75e9df"] ;
+5 [label="fairearn", fillcolor="#7ae2e2"] ;
+6 [label="never
+Prob: 2-3x a month:0.0 every week:0.0 lt once a year:0.1 more thn once wk:0.0 never:0.7 nrly every week:0.0 once a month:0.0 once a year:0.1 sevrl times a yr:0.1
+Frac: 0.142", fillcolor="#7cdfe3"] ;
+7 [label="numwomen", fillcolor="#7ddfe3"] ;
+8 [label="never
+Prob: 2-3x a month:0.0 every week:0.0 lt once a year:0.1 more thn once wk:0.0 never:0.7 nrly every week:0.0 once a month:0.0 once a year:0.1 sevrl times a yr:0.1
+Frac: 0.153", fillcolor="#80dbe4"] ;
+9 [label="relactiv", fillcolor="#b0c4bb"] ;
+10 [label="sevrl times a yr
+Prob: 2-3x a month:0.2 every week:0.2 lt once a year:0.1 more thn once wk:0.0 never:0.1 nrly every week:0.0 once a month:0.1 once a year:0.1 sevrl times a yr:0.2
+Frac: 0.096", fillcolor="#d8a49f"] ;
+11 [label="reliten", fillcolor="#cfb69c"] ;
+12 [label="every week
+Prob: 2-3x a month:0.1 every week:0.4 lt once a year:0.0 more thn once wk:0.1 never:0.0 nrly every week:0.1 once a month:0.1 once a year:0.0 sevrl times a yr:0.1
+Frac: 0.093", fillcolor="#c8c399"] ;
+13 [label="income", fillcolor="#cac19a"] ;
+14 [label="every week
+Prob: 2-3x a month:0.2 every week:0.3 lt once a year:0.0 more thn once wk:0.1 never:0.1 nrly every week:0.1 once a month:0.1 once a year:0.1 sevrl times a yr:0.1
+Frac: 0.057", fillcolor="#ccbf9c"] ;
+15 [label="relpersn", fillcolor="#c9bca1"] ;
+16 [label="never
+Prob: 2-3x a month:0.0 every week:0.0 lt once a year:0.1 more thn once wk:0.0 never:0.4 nrly every week:0.0 once a month:0.1 once a year:0.2 sevrl times a yr:0.1
+Frac: 0.031", fillcolor="#a8b2d8"] ;
+17 [label="pray", fillcolor="#c4c2a6"] ;
+18 [label="sevrl times a yr
+Prob: 2-3x a month:0.1 every week:0.2 lt once a year:0.1 more thn once wk:0.1 never:0.1 nrly every week:0.1 once a month:0.1 once a year:0.2 sevrl times a yr:0.2
+Frac: 0.054", fillcolor="#d1a4ad"] ;
+19 [label="sprtprsn", fillcolor="#c7c3a0"] ;
+20 [label="once a year
+Prob: 2-3x a month:0.1 every week:0.1 lt once a year:0.1 more thn once wk:0.0 never:0.1 nrly every week:0.0 once a month:0.1 once a year:0.3 sevrl times a yr:0.2
+Frac: 0.028", fillcolor="#dc95b5"] ;
+21 [label="god", fillcolor="#c5cb9d"] ;
+22 [label="every week
+Prob: 2-3x a month:0.1 every week:0.4 lt once a year:0.0 more thn once wk:0.2 never:0.1 nrly every week:0.0 once a month:0.0 once a year:0.1 sevrl times a yr:0.1
+Frac: 0.189", fillcolor="#c1d399"] ;
+1 -- 0 [label=" somewhat safe",penwidth=3] ;
+1 -- 2 [label=" somewhat unsafe\n very safe\n very unsafe",penwidth=3] ;
+3 -- 1 [label=" c",penwidth=3] ;
+3 -- 7 [label=" d\n e",penwidth=3] ;
+5 -- 4 [label=" about as much as you deserve",penwidth=3] ;
+5 -- 6 [label=" much less than you deserve\n much more than you deserve\n somewhat less than you deserve\n somewhat more than you deserve",penwidth=3] ;
+7 -- 5 [label=" c",penwidth=3] ;
+7 -- 8 [label=" d\n e",penwidth=3] ;
+9 -- 3 [label=" never",penwidth=3] ;
+9 -- 15 [label=" 2-3 times a month\n about once a month\n about once or twice a year\n every week\n less than once a year\n nearly every week\n once a day\n several times a week\n several times a year",penwidth=3] ;
+11 -- 10 [label=" not very strong",penwidth=3] ;
+11 -- 13 [label=" no religion\n somewhat strong\n strong",penwidth=3] ;
+13 -- 12 [label=" $25000 or more",penwidth=3] ;
+13 -- 14 [label=" $10000 - 14999\n $15000 - 19999\n $20000 - 24999\n $4000 to 4999\n $5000 to 5999\n $7000 to 7999\n $8000 to 9999\n lt $1000",penwidth=3] ;
+15 -- 11 [label=" modrte religious",penwidth=3] ;
+15 -- 17 [label=" not religious\n slight religious\n very religious",penwidth=3] ;
+17 -- 16 [label=" never",penwidth=3] ;
+17 -- 19 [label=" lt once a week\n once a day\n once a week\n several times a day\n several times a week",penwidth=3] ;
+19 -- 18 [label=" modeate spirtual",penwidth=3] ;
+19 -- 21 [label=" not spiritual\n slight spiritual\n very spiritual",penwidth=3] ;
+21 -- 20 [label=" believe but doubts",penwidth=3] ;
+21 -- 22 [label=" believe sometimes\n dont believe\n know god exists\n no way to find out\n some higher power",penwidth=3] ;
+{rank = same;}}

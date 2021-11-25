@@ -1,0 +1,20 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="e
+Prob: a:0.0 b:0.1 c:0.1 d:0.0 e:0.7
+Frac: 0.029", fillcolor="#e380e4"] ;
+1 [label="cowrksta", fillcolor="#86c3f6"] ;
+2 [label="c
+Prob: a:0.0 b:0.0 c:0.8 d:0.1 e:0.0
+Frac: 0.066", fillcolor="#5ce1ff"] ;
+3 [label="COPRES105PLUS", fillcolor="#f161fd"] ;
+4 [label="e
+Prob: a:0.0 b:0.0 c:0.0 d:0.0 e:1.0
+Frac: 0.905", fillcolor="#fc57fe"] ;
+1 -- 0 [label=" keeping house\n retired\n temp not working\n school\n other\n working parttime\n unempl, laid off",penwidth=3] ;
+1 -- 2 [label=" working fulltime",penwidth=3] ;
+3 -- 1 [label=" c\n d",penwidth=3] ;
+3 -- 4 [label=" b\n e",penwidth=3] ;
+{rank = same;}}

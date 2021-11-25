@@ -1,0 +1,38 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="easier
+Prob: easier:0.6 more difficult:0.2 stay same:0.2
+Frac: 0.17", fillcolor="#d3b68b"] ;
+1 [label="ABSTATE2", fillcolor="#b5c09e"] ;
+2 [label="easier
+Prob: easier:0.5 more difficult:0.4 stay same:0.1
+Frac: 0.227", fillcolor="#afcd97"] ;
+3 [label="courts", fillcolor="#b5c698"] ;
+4 [label="easier
+Prob: easier:0.5 more difficult:0.3 stay same:0.2
+Frac: 0.136", fillcolor="#c0bb99"] ;
+5 [label="abmoral", fillcolor="#afc3a2"] ;
+6 [label="more difficult
+Prob: easier:0.2 more difficult:0.6 stay same:0.2
+Frac: 0.127", fillcolor="#86d4ba"] ;
+7 [label="premarsx", fillcolor="#aac0aa"] ;
+8 [label="more difficult
+Prob: easier:0.3 more difficult:0.5 stay same:0.2
+Frac: 0.045", fillcolor="#9ecca9"] ;
+9 [label="abmelegl", fillcolor="#b8b8a4"] ;
+10 [label="easier
+Prob: easier:0.4 more difficult:0.3 stay same:0.3
+Frac: 0.294", fillcolor="#bbb5a3"] ;
+1 -- 0 [label=" make it easier",penwidth=3] ;
+1 -- 5 [label=" make it harder\n stay the same as now",penwidth=3] ;
+3 -- 2 [label=" not harsh enough",penwidth=3] ;
+3 -- 4 [label=" about right\n too harsh",penwidth=3] ;
+5 -- 3 [label=" it depends",penwidth=3] ;
+5 -- 7 [label=" morally opposed\n not morally opposed",penwidth=3] ;
+7 -- 6 [label=" always wrong",penwidth=3] ;
+7 -- 9 [label=" almst always wrg\n not wrong at all\n sometimes wrong",penwidth=3] ;
+9 -- 8 [label=" it depends",penwidth=3] ;
+9 -- 10 [label=" should\n should not",penwidth=3] ;
+{rank = same;}}

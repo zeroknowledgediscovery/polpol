@@ -1,0 +1,38 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="voted
+Prob: did not vote:0.0 ineligible:0.0 voted:1.0
+Frac: 0.299", fillcolor="#c155ff"] ;
+1 [label="PRES16", fillcolor="#cc80c7"] ;
+2 [label="ineligible
+Prob: did not vote:0.1 ineligible:0.9 voted:0.0
+Frac: 0.035", fillcolor="#6af7b3"] ;
+3 [label="born", fillcolor="#99e695"] ;
+4 [label="did not vote
+Prob: did not vote:0.6 ineligible:0.4 voted:0.0
+Frac: 0.057", fillcolor="#b5db83"] ;
+5 [label="VOTE12", fillcolor="#e1cb67"] ;
+6 [label="did not vote
+Prob: did not vote:1.0 ineligible:0.0 voted:0.0
+Frac: 0.258", fillcolor="#fac257"] ;
+7 [label="PRES16", fillcolor="#d293af"] ;
+8 [label="voted
+Prob: did not vote:0.0 ineligible:0.0 voted:1.0
+Frac: 0.312", fillcolor="#c155ff"] ;
+9 [label="PRES16", fillcolor="#cc7eca"] ;
+10 [label="voted
+Prob: did not vote:0.0 ineligible:0.0 voted:1.0
+Frac: 0.039", fillcolor="#c155ff"] ;
+1 -- 0 [label=" clinton",penwidth=3] ;
+1 -- 7 [label=" didn't vote for president\n don't know\n iap\n no answer\n trump",penwidth=3] ;
+3 -- 2 [label=" no",penwidth=3] ;
+3 -- 4 [label=" yes",penwidth=3] ;
+5 -- 3 [label=" ineligible",penwidth=3] ;
+5 -- 6 [label=" did not vote\n voted",penwidth=3] ;
+7 -- 5 [label=" iap",penwidth=3] ;
+7 -- 8 [label=" didn't vote for president\n don't know\n no answer\n trump",penwidth=3] ;
+9 -- 1 [label=" clinton\n trump\n didn't vote for president\n no answer\n don't know\n iap",penwidth=3] ;
+9 -- 10 [label=" other candidate (specify)",penwidth=3] ;
+{rank = same;}}

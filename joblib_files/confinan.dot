@@ -1,0 +1,68 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="hardly any
+Prob: a great deal:0.0 hardly any:0.6 only some:0.4
+Frac: 0.136", fillcolor="#84bcd3"] ;
+1 [label="conbus", fillcolor="#b392ce"] ;
+2 [label="a great deal
+Prob: a great deal:0.6 hardly any:0.1 only some:0.3
+Frac: 0.045", fillcolor="#dda196"] ;
+3 [label="conlegis", fillcolor="#c58ac5"] ;
+4 [label="only some
+Prob: a great deal:0.2 hardly any:0.0 only some:0.8
+Frac: 0.049", fillcolor="#c66be2"] ;
+5 [label="CONF2F", fillcolor="#bb84d5"] ;
+6 [label="only some
+Prob: a great deal:0.2 hardly any:0.2 only some:0.7
+Frac: 0.088", fillcolor="#ba84d5"] ;
+7 [label="goodlife", fillcolor="#b88bd1"] ;
+8 [label="only some
+Prob: a great deal:0.2 hardly any:0.2 only some:0.6
+Frac: 0.095", fillcolor="#b591ce"] ;
+9 [label="trbigbus", fillcolor="#c388c9"] ;
+10 [label="only some
+Prob: a great deal:0.5 hardly any:0.0 only some:0.5
+Frac: 0.06", fillcolor="#da8baf"] ;
+11 [label="lifenow", fillcolor="#d891ab"] ;
+12 [label="a great deal
+Prob: a great deal:0.5 hardly any:0.1 only some:0.4
+Frac: 0.064", fillcolor="#d696a8"] ;
+13 [label="conmedic", fillcolor="#c98bbf"] ;
+14 [label="only some
+Prob: a great deal:0.2 hardly any:0.2 only some:0.6
+Frac: 0.158", fillcolor="#be86cf"] ;
+15 [label="conarmy", fillcolor="#ba8bce"] ;
+16 [label="only some
+Prob: a great deal:0.1 hardly any:0.3 only some:0.7
+Frac: 0.108", fillcolor="#a78ae3"] ;
+17 [label="cntctkid", fillcolor="#a78ede"] ;
+18 [label="hardly any
+Prob: a great deal:0.1 hardly any:0.5 only some:0.4
+Frac: 0.043", fillcolor="#93b5cc"] ;
+19 [label="bible", fillcolor="#a891db"] ;
+20 [label="only some
+Prob: a great deal:0.1 hardly any:0.2 only some:0.7
+Frac: 0.154", fillcolor="#ae87df"] ;
+1 -- 0 [label=" hardly any",penwidth=3] ;
+1 -- 15 [label=" a great deal\n only some",penwidth=3] ;
+3 -- 2 [label=" a great deal",penwidth=3] ;
+3 -- 9 [label=" hardly any\n only some",penwidth=3] ;
+5 -- 4 [label=" about half of them",penwidth=3] ;
+5 -- 7 [label=" all or almost all of them\n most of them\n none or almost none of them\n some of them",penwidth=3] ;
+7 -- 6 [label=" agree",penwidth=3] ;
+7 -- 8 [label=" disagree\n neither\n strongly agree\n strongly disagree",penwidth=3] ;
+9 -- 5 [label=" c",penwidth=3] ;
+9 -- 13 [label=" a\n b\n d\n e",penwidth=3] ;
+11 -- 10 [label=" c",penwidth=3] ;
+11 -- 12 [label=" a\n b\n d\n e",penwidth=3] ;
+13 -- 11 [label=" a great deal",penwidth=3] ;
+13 -- 14 [label=" hardly any\n only some",penwidth=3] ;
+15 -- 3 [label=" a great deal",penwidth=3] ;
+15 -- 17 [label=" hardly any\n only some",penwidth=3] ;
+17 -- 16 [label=" less often\n i do not have any adult children",penwidth=3] ;
+17 -- 19 [label="  two to three times a month\n daily\n never\n once a month\n once a week\n several times a week\n several times a year\n the adult child i have contact with most frequently lives with me",penwidth=3] ;
+19 -- 18 [label=" book of fables",penwidth=3] ;
+19 -- 20 [label=" inspired word\n other\n word of god",penwidth=3] ;
+{rank = same;}}

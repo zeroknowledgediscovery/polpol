@@ -1,0 +1,62 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="no
+Prob: no:0.9 yes:0.1
+Frac: 0.045", fillcolor="#eac669"] ;
+1 [label="haveinfo", fillcolor="#f7c25c"] ;
+2 [label="no
+Prob: no:1.0 yes:0.0
+Frac: 0.297", fillcolor="#f7c25c"] ;
+3 [label="DENOM16", fillcolor="#f8c25b"] ;
+4 [label="no
+Prob: no:0.9 yes:0.1
+Frac: 0.098", fillcolor="#eac669"] ;
+5 [label="condemnd", fillcolor="#f8c25b"] ;
+6 [label="no
+Prob: no:1.0 yes:0.0
+Frac: 0.139", fillcolor="#f9c25a"] ;
+7 [label="chldidel", fillcolor="#f9c25a"] ;
+8 [label="no
+Prob: no:1.0 yes:0.0
+Frac: 0.106", fillcolor="#f9c25a"] ;
+9 [label="PAISCO08", fillcolor="#fbc158"] ;
+10 [label="no
+Prob: no:1.0 yes:0.0
+Frac: 0.071", fillcolor="#ffc155"] ;
+11 [label="makefrnd", fillcolor="#fdc156"] ;
+12 [label="no
+Prob: no:1.0 yes:0.0
+Frac: 0.068", fillcolor="#fcc157"] ;
+13 [label="intage", fillcolor="#fdc156"] ;
+14 [label="no
+Prob: no:1.0 yes:0.0
+Frac: 0.045", fillcolor="#fbc158"] ;
+15 [label="intage", fillcolor="#fdc156"] ;
+16 [label="no
+Prob: no:1.0 yes:0.0
+Frac: 0.069", fillcolor="#ffc155"] ;
+17 [label="wkracism", fillcolor="#f4c35f"] ;
+18 [label="no
+Prob: no:0.6 yes:0.4
+Frac: 0.061", fillcolor="#bad199"] ;
+1 -- 0 [label=" not at all true\n not too true",penwidth=3] ;
+1 -- 3 [label=" somewhat true\n very true",penwidth=3] ;
+3 -- 2 [label=" am baptist asso\n no denomination\n presbyterian c in us\n am lutheran\n lutheran-dk which\n united pres ch in us\n afr meth episcopal\n other lutheran\n am bapt ch in usa\n other baptists\n wi evan luth synod\n methodist-dk which\n presbyterian-dk wh\n southern baptist\n evangelical luth\n other",penwidth=3] ;
+3 -- 5 [label=" baptist-dk which\n episcopal\n lutheran-mo synod\n nat bapt conv of am\n other methodist\n other presbyterian\n presbyterian, merged\n united methodist",penwidth=3] ;
+5 -- 4 [label=" not too true",penwidth=3] ;
+5 -- 9 [label=" not at all true\n somewhat true\n very true",penwidth=3] ;
+7 -- 6 [label=" c",penwidth=3] ;
+7 -- 8 [label=" b\n d\n e",penwidth=3] ;
+9 -- 7 [label=" information and communications technology service managers\n agricultural and forestry production managers\n printers\n chemical engineers\n odd job persons\n steam engine and boiler operators\n physicists and astronomers\n domestic cleaners and helpers\n securities and finance dealers and brokers\n kitchen helpers\n garbage and recycling collectors\n applications programmers\n biologists, botanists, zoologists and related professionals\n health associate professionals not elsewhere classified\n bartenders\n electrical line installers and repairers\n chemical processing plant controllers\n supply, distribution and related managers\n mail carriers and sorting clerks\n photographers\n cleaners and helpers in offices, hotels and other establishments\n teaching professionals not elsewhere classified\n statistical, finance and insurance clerks\n accountants\n manufacturing supervisors\n assemblers not elsewhere classified\n sheet-metal workers\n cooks\n product graders and testers (excluding foods and beverages)\n information and communications technology installers and servicers\n university and higher education teachers\n secondary education teachers\n systems analysts\n prison guards\n business services and administration managers not elsewhere classified\n floor layers and tile setters\n electrical engineers\n mechanical machinery assemblers\n building and related electricians\n shop supervisors\n environmental and occupational health inspectors and associates\n film, stage and related directors and producers\n interior designers and decorators\n food and beverage tasters and graders\n building architects\n finance managers\n building construction labourers\n sewing, embroidery and related workers\n agricultural and industrial machinery mechanics and repairers\n construction supervisors\n journalists\n education managers\n government licensing officials\n buyers\n forestry labourers\n manufacturing labourers not elsewhere classified\n pharmacists\n civil engineers\n police officers\n metal processing plant operators\n motor vehicle mechanics and repairers\n upholsterers and related workers\n financial analysts\n police inspectors and detectives\n fire-fighters\n office supervisors\n meter readers and vending-machine collectors\n field crop and vegetable growers\n commercial sales representatives\n electrical mechanics and fitters\n shop sales assistants\n social work and counselling professionals\n visual artists\n mining engineers, metallurgists and related professionals\n air conditioning and refrigeration mechanics\n specialist medical practitioners\n bakers, pastry-cooks and confectionery makers\n insurance representatives\n restaurant managers\n commissioned armed forces officers\n food and related products machine operators\n painters and related workers\n research and development managers\n car, taxi and van drivers\n pulp and papermaking plant operators\n gardeners, horticultural and nursery growers\n lifting truck operators\n religious professionals\n mechanical engineering technicians\n toolmakers and related workers\n civil engineering labourers\n manufacturing managers\n health care assistants",penwidth=3] ;
+9 -- 11 [label=" aircraft engine mechanics and repairers\n aircraft pilots and related associate professionals\n armed forces occupations, other ranks\n cabinet-makers and related workers\n carpenters and joiners\n concrete placers, concrete finishers and related workers\n construction managers\n crop farm labourers\n database designers and administrators\n dentists\n earthmoving and related plant operators\n electrical and electronic equipment assemblers\n electronics engineers\n engineering professionals not elsewhere classified\n environmental engineers\n filing and copying clerks\n garden and horticultural labourers\n general office clerks\n heavy truck and lorry drivers\n hotel managers\n incinerator and water treatment plant operators\n industrial and production engineers\n insulation workers\n laundry machine operators\n management and organization analysts\n managing directors and chief executives\n mechanical engineers\n messengers, package deliverers and luggage porters\n metal moulders and coremakers\n metal polishers, wheel grinders and tool sharpeners\n metal working machine tool setters and operators\n miners and quarriers\n packing, bottling and labelling machine operators\n personal services workers not elsewhere classified\n personnel and careers professionals\n pet groomers and animal care workers\n petroleum and natural gas refining plant operators\n plumbers and pipe fitters\n primary school teachers\n real estate agents and property managers\n rubber products machine operators\n sales and marketing managers\n sales workers\n sales workers not elsewhere classified\n ships' deck officers and pilots\n sociologists, anthropologists and related professionals\n stock clerks\n structural-metal preparers and erectors\n teaching professionals\n travel consultants and clerks\n undertakers and embalmers\n vehicle cleaners\n veterinarians\n welders and flamecutters\n wood processing plant operators",penwidth=3] ;
+11 -- 10 [label=" agree",penwidth=3] ;
+11 -- 13 [label=" disagree\n neither agree nor disagree\n strongly agree\n strongly disagree",penwidth=3] ;
+13 -- 12 [label=" 63\n 42\n 81\n 28\n 27\n 31\n 47\n 55\n 71\n 43\n 56\n 38\n 61\n 74\n 37\n 72",penwidth=3] ;
+13 -- 15 [label=" 24\n 33\n 35\n 39\n 40\n 45\n 48\n 49\n 51\n 52\n 53\n 54\n 57\n 58\n 59\n 60\n 62\n 64\n 66\n 67\n 68\n 69\n 75\n 78",penwidth=3] ;
+15 -- 14 [label=" 35\n 57\n 78\n 54\n 33\n 68\n 67\n 45\n 48\n 52",penwidth=3] ;
+15 -- 16 [label=" 24\n 39\n 40\n 49\n 51\n 53\n 58\n 59\n 60\n 62\n 64\n 66\n 69\n 75",penwidth=3] ;
+17 -- 1 [label=" no",penwidth=3] ;
+17 -- 18 [label=" yes",penwidth=3] ;
+{rank = same;}}

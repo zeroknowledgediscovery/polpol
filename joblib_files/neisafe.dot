@@ -1,0 +1,128 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="very safe
+Prob: somewhat safe:0.3 somewhat unsafe:0.2 very safe:0.5 very unsafe:0.0
+Frac: 0.033", fillcolor="#90e1a7"] ;
+1 [label="nihilism", fillcolor="#8edfb2"] ;
+2 [label="somewhat safe
+Prob: somewhat safe:0.5 somewhat unsafe:0.2 very safe:0.3 very unsafe:0.0
+Frac: 0.035", fillcolor="#abd695"] ;
+3 [label="size", fillcolor="#8edeb6"] ;
+4 [label="very safe
+Prob: somewhat safe:0.1 somewhat unsafe:0.2 very safe:0.7 very unsafe:0.0
+Frac: 0.034", fillcolor="#6fe9c9"] ;
+5 [label="size", fillcolor="#80e2c5"] ;
+6 [label="very safe
+Prob: somewhat safe:0.3 somewhat unsafe:0.0 very safe:0.6 very unsafe:0.0
+Frac: 0.042", fillcolor="#8eddc1"] ;
+7 [label="size", fillcolor="#94dcb3"] ;
+8 [label="very safe
+Prob: somewhat safe:0.4 somewhat unsafe:0.0 very safe:0.6 very unsafe:0.0
+Frac: 0.033", fillcolor="#96d9bb"] ;
+9 [label="vstrat", fillcolor="#9ed7b4"] ;
+10 [label="very safe
+Prob: somewhat safe:0.5 somewhat unsafe:0.0 very safe:0.5 very unsafe:0.0
+Frac: 0.051", fillcolor="#a4d6af"] ;
+11 [label="size", fillcolor="#90ddb9"] ;
+12 [label="very safe
+Prob: somewhat safe:0.3 somewhat unsafe:0.1 very safe:0.6 very unsafe:0.0
+Frac: 0.069", fillcolor="#90ddbb"] ;
+13 [label="size", fillcolor="#8dddbf"] ;
+14 [label="very safe
+Prob: somewhat safe:0.2 somewhat unsafe:0.0 very safe:0.8 very unsafe:0.0
+Frac: 0.089", fillcolor="#73e3de"] ;
+15 [label="dwellpre", fillcolor="#82dfce"] ;
+16 [label="somewhat safe
+Prob: somewhat safe:0.5 somewhat unsafe:0.1 very safe:0.4 very unsafe:0.0
+Frac: 0.033", fillcolor="#abd4a1"] ;
+17 [label="size", fillcolor="#8cddc0"] ;
+18 [label="somewhat safe
+Prob: somewhat safe:0.5 somewhat unsafe:0.0 very safe:0.4 very unsafe:0.0
+Frac: 0.038", fillcolor="#aed5a1"] ;
+19 [label="vstrat", fillcolor="#9bdbab"] ;
+20 [label="very safe
+Prob: somewhat safe:0.3 somewhat unsafe:0.1 very safe:0.6 very unsafe:0.0
+Frac: 0.039", fillcolor="#88e1b6"] ;
+21 [label="size", fillcolor="#90ddb9"] ;
+22 [label="very safe
+Prob: somewhat safe:0.4 somewhat unsafe:0.0 very safe:0.6 very unsafe:0.0
+Frac: 0.029", fillcolor="#9ed8b5"] ;
+23 [label="xnorcsiz", fillcolor="#7de0d6"] ;
+24 [label="very safe
+Prob: somewhat safe:0.1 somewhat unsafe:0.0 very safe:0.9 very unsafe:0.0
+Frac: 0.032", fillcolor="#60e8f3"] ;
+25 [label="intage", fillcolor="#80e0d3"] ;
+26 [label="very safe
+Prob: somewhat safe:0.3 somewhat unsafe:0.0 very safe:0.7 very unsafe:0.0
+Frac: 0.031", fillcolor="#85dfce"] ;
+27 [label="incuspop", fillcolor="#80e1cc"] ;
+28 [label="very safe
+Prob: somewhat safe:0.2 somewhat unsafe:0.1 very safe:0.6 very unsafe:0.0
+Frac: 0.075", fillcolor="#7fe3c3"] ;
+29 [label="wwwmin", fillcolor="#89dfc0"] ;
+30 [label="very safe
+Prob: somewhat safe:0.3 somewhat unsafe:0.1 very safe:0.6 very unsafe:0.0
+Frac: 0.084", fillcolor="#8edebc"] ;
+31 [label="dwellpre", fillcolor="#96dcae"] ;
+32 [label="somewhat safe
+Prob: somewhat safe:0.5 somewhat unsafe:0.2 very safe:0.3 very unsafe:0.0
+Frac: 0.029", fillcolor="#aed886"] ;
+33 [label="size", fillcolor="#8fddb8"] ;
+34 [label="somewhat safe
+Prob: somewhat safe:0.5 somewhat unsafe:0.1 very safe:0.4 very unsafe:0.0
+Frac: 0.077", fillcolor="#a9d89a"] ;
+35 [label="vstrat", fillcolor="#96dcb2"] ;
+36 [label="very safe
+Prob: somewhat safe:0.2 somewhat unsafe:0.0 very safe:0.8 very unsafe:0.0
+Frac: 0.054", fillcolor="#7ae2d4"] ;
+37 [label="size", fillcolor="#86e0c5"] ;
+38 [label="very safe
+Prob: somewhat safe:0.4 somewhat unsafe:0.1 very safe:0.5 very unsafe:0.0
+Frac: 0.041", fillcolor="#95ddb2"] ;
+39 [label="size", fillcolor="#97dbaf"] ;
+40 [label="very safe
+Prob: somewhat safe:0.4 somewhat unsafe:0.1 very safe:0.4 very unsafe:0.0
+Frac: 0.053", fillcolor="#9dd8a7"] ;
+1 -- 0 [label=" disagree",penwidth=3] ;
+1 -- 3 [label=" agree\n neither agree nor disagree\n strongly agree\n strongly disagree",penwidth=3] ;
+3 -- 2 [label=" 180\n 23\n 186\n 92\n 595\n 787\n 439\n 105",penwidth=3] ;
+3 -- 5 [label=" 111\n 1198\n 136\n 14\n 193\n 198\n 217\n 245\n 260\n 41\n 546\n 56\n 60\n 618\n 63\n 64\n 70\n 9\n 91",penwidth=3] ;
+5 -- 4 [label=" 198\n 546\n 217\n 9\n 1198\n 618\n 63\n 245\n 70",penwidth=3] ;
+5 -- 6 [label=" 111\n 136\n 14\n 193\n 260\n 41\n 56\n 60\n 64\n 91",penwidth=3] ;
+7 -- 1 [label=" 198\n 105\n 618\n 595\n 193\n 439\n 260\n 9\n 91\n 14\n 70\n 546\n 217\n 60\n 63\n 787\n 186\n 41\n 64\n 56\n 1198\n 111\n 245\n 136\n 180\n 92\n 420\n 23",penwidth=3] ;
+7 -- 9 [label=" 118\n 19\n 24\n 30\n 39\n 49\n 563\n 602\n 621\n 65\n 67\n 69",penwidth=3] ;
+9 -- 8 [label=" 3346\n 3317\n 3333\n 3337\n 3312\n 3327\n 3308\n 3314\n 3351\n 3324\n 3352\n 3301",penwidth=3] ;
+9 -- 10 [label=" 3307\n 3311\n 3315\n 3316\n 3323\n 3328\n 3331\n 3342\n 3343\n 3350\n 3357\n 3361\n 3365\n 3366",penwidth=3] ;
+11 -- 7 [label=" 24\n 30\n 49\n 118\n 69\n 217\n 63\n 198\n 67\n 180\n 245\n 60\n 193\n 41\n 23\n 39\n 1198\n 186\n 64\n 595\n 439\n 563\n 92\n 602\n 787\n 105\n 260\n 136\n 420\n 14\n 65\n 70\n 618\n 19\n 111\n 56\n 91\n 621\n 9\n 546",penwidth=3] ;
+11 -- 13 [label=" 10\n 109\n 144\n 166\n 2\n 206\n 21\n 22\n 26\n 261\n 27\n 28\n 31\n 325\n 3793\n 4\n 40\n 416\n 46\n 5\n 609\n 71\n 731\n 75\n 8\n 822\n 90\n 95",penwidth=3] ;
+13 -- 12 [label=" 206\n 28\n 21\n 95\n 31\n 46\n 8\n 416",penwidth=3] ;
+13 -- 17 [label=" 10\n 109\n 144\n 166\n 2\n 22\n 26\n 261\n 27\n 325\n 3793\n 4\n 40\n 5\n 609\n 71\n 731\n 75\n 822\n 90",penwidth=3] ;
+15 -- 14 [label=" row house (3 or more units in an attached row)\n detached single family house\n apartment in a partly commercial structure",penwidth=3] ;
+15 -- 16 [label=" 2-family house, 2 units one above the other\n 2-family house, 2 units side-by-side\n apartment house (5 or more units, 3 stories or less)\n detached 3-4 family house\n other (specify on next page)\n trailer",penwidth=3] ;
+17 -- 15 [label=" 261\n 22\n 609\n 26\n 40\n 4\n 2\n 5",penwidth=3] ;
+17 -- 19 [label=" 10\n 109\n 144\n 166\n 27\n 325\n 3793\n 71\n 731\n 75\n 822\n 90",penwidth=3] ;
+19 -- 18 [label=" 3331\n 3344\n 3332\n 3349\n 3310\n 3355\n 3361\n 3334\n 3362",penwidth=3] ;
+19 -- 20 [label=" 3309\n 3316\n 3317\n 3326\n 3340\n 3341\n 3347\n 3348\n 3356\n 3365\n 3368",penwidth=3] ;
+21 -- 11 [label=" 787\n 46\n 75\n 92\n 90\n 21\n 65\n 9\n 260\n 118\n 39\n 23\n 109\n 63\n 27\n 56\n 245\n 64\n 144\n 14\n 49\n 70\n 67\n 1198\n 206\n 19\n 136\n 91\n 69\n 111\n 180\n 166\n 325\n 4\n 31\n 40\n 595\n 602\n 563\n 105\n 193\n 30\n 71\n 822\n 95\n 621\n 8\n 41\n 439\n 731\n 546\n 186\n 198\n 420\n 24\n 618\n 609\n 261\n 416\n 10\n 26\n 217\n 2\n 5\n 60\n 3793\n 28\n 22",penwidth=3] ;
+21 -- 33 [label=" 0\n 1\n 100\n 11\n 117\n 12\n 121\n 124\n 125\n 127\n 13\n 1307\n 1327\n 134\n 137\n 1446\n 15\n 1526\n 153\n 154\n 16\n 165\n 17\n 179\n 18\n 20\n 209\n 2099\n 223\n 25\n 2696\n 285\n 29\n 297\n 3\n 304\n 319\n 32\n 33\n 336\n 34\n 36\n 37\n 399\n 42\n 43\n 44\n 462\n 466\n 48\n 495\n 54\n 57\n 584\n 6\n 600\n 601\n 61\n 62\n 7\n 714\n 74\n 741\n 79\n 805\n 8175\n 83\n 830\n 84\n 86\n 88\n 93\n 94\n 946",penwidth=3] ;
+23 -- 22 [label=" town gt 2500\n city,10-49999\n open country\n uninc,med city\n city gt 250000\n suburb, lrg city",penwidth=3] ;
+23 -- 24 [label=" city,50-250000\n smaller areas\n suburb, med city\n uninc,lrg city",penwidth=3] ;
+25 -- 23 [label=" 55\n 62\n 29\n 37\n 51\n 69\n 54\n 74\n 61\n 60\n 40\n 68\n 43\n 53\n 33\n 44\n 52\n 67\n 27\n 56\n 85\n 38\n 66\n 71\n 26\n 72",penwidth=3] ;
+25 -- 26 [label=" 28\n 39\n 48\n 49\n 57\n 59\n 63\n 64\n 65\n 75\n 77\n 78",penwidth=3] ;
+27 -- 25 [label=" average",penwidth=3] ;
+27 -- 28 [label=" higher than average\n lower than average",penwidth=3] ;
+29 -- 27 [label=" c",penwidth=3] ;
+29 -- 31 [label=" d\n e",penwidth=3] ;
+31 -- 30 [label=" row house (3 or more units in an attached row)\n detached single family house\n apartment house (5 or more units, 4 stories or more)",penwidth=3] ;
+31 -- 32 [label=" 2-family house, 2 units one above the other\n 2-family house, 2 units side-by-side\n apartment house (5 or more units, 3 stories or less)\n detached 3-4 family house\n other (specify on next page)\n trailer",penwidth=3] ;
+33 -- 29 [label=" 153\n 462\n 137\n 94\n 117\n 297\n 48\n 399\n 16\n 13\n 165\n 83\n 33\n 134\n 304\n 74\n 29\n 43\n 34\n 584\n 6\n 17\n 741\n 121\n 18\n 223\n 32\n 12\n 1307\n 54\n 7\n 495\n 336\n 37\n 44\n 2696\n 714\n 1\n 946\n 124",penwidth=3] ;
+33 -- 39 [label=" 0\n 100\n 11\n 125\n 127\n 1327\n 1446\n 15\n 1526\n 154\n 179\n 20\n 209\n 2099\n 25\n 285\n 3\n 319\n 36\n 42\n 466\n 57\n 600\n 601\n 61\n 62\n 79\n 805\n 8175\n 830\n 84\n 86\n 88\n 93",penwidth=3] ;
+35 -- 34 [label=" 3336\n 3305\n 3347\n 3328\n 3341\n 3351\n 3307\n 3335\n 3363\n 3371\n 3359\n 3339\n 3373\n 3360\n 3325\n 3343\n 3366",penwidth=3] ;
+35 -- 37 [label=" 3303\n 3304\n 3306\n 3308\n 3314\n 3323\n 3327\n 3329\n 3346\n 3348\n 3356\n 3361\n 3362\n 3364\n 3367\n 3368\n 3376\n 3377",penwidth=3] ;
+37 -- 36 [label=" 25\n 1526\n 3\n 8175",penwidth=3] ;
+37 -- 38 [label=" 11\n 127\n 2099\n 57\n 601\n 79",penwidth=3] ;
+39 -- 35 [label=" 11\n 179\n 25\n 601\n 209\n 600\n 79\n 127\n 830\n 57\n 2099\n 36\n 3\n 1526\n 285\n 86\n 8175",penwidth=3] ;
+39 -- 40 [label=" 0\n 100\n 125\n 1327\n 1446\n 15\n 154\n 20\n 319\n 42\n 466\n 61\n 62\n 805\n 84\n 88\n 93",penwidth=3] ;
+{rank = same;}}

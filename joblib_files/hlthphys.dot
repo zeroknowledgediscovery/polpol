@@ -1,0 +1,80 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="fair
+Prob: excellent:0.0 fair:0.7 good:0.2 poor:0.0 very good:0.0
+Frac: 0.028", fillcolor="#a1f384"] ;
+1 [label="coop", fillcolor="#a8f078"] ;
+2 [label="fair
+Prob: excellent:0.0 fair:0.8 good:0.1 poor:0.1 very good:0.0
+Frac: 0.138", fillcolor="#aaef76"] ;
+3 [label="healthissp", fillcolor="#b4bcc3"] ;
+4 [label="good
+Prob: excellent:0.0 fair:0.0 good:0.9 poor:0.0 very good:0.1
+Frac: 0.179", fillcolor="#6aeef6"] ;
+5 [label="HEALTH1", fillcolor="#b7b2d2"] ;
+6 [label="excellent
+Prob: excellent:0.6 fair:0.0 good:0.0 poor:0.0 very good:0.4
+Frac: 0.03", fillcolor="#f8989e"] ;
+7 [label="SEVERE1", fillcolor="#f8a983"] ;
+8 [label="excellent
+Prob: excellent:0.8 fair:0.0 good:0.0 poor:0.0 very good:0.2
+Frac: 0.13", fillcolor="#f8ad7d"] ;
+9 [label="health", fillcolor="#cca1c9"] ;
+10 [label="poor
+Prob: excellent:0.0 fair:0.2 good:0.2 poor:0.5 very good:0.0
+Frac: 0.032", fillcolor="#799bd4"] ;
+11 [label="quallife", fillcolor="#be9fdf"] ;
+12 [label="good
+Prob: excellent:0.0 fair:0.1 good:0.6 poor:0.0 very good:0.4
+Frac: 0.058", fillcolor="#99c1f3"] ;
+13 [label="rhlthend", fillcolor="#9bbfe7"] ;
+14 [label="good
+Prob: excellent:0.0 fair:0.1 good:0.5 poor:0.0 very good:0.4
+Frac: 0.056", fillcolor="#a5bbe3"] ;
+15 [label="ratepain", fillcolor="#9cbddf"] ;
+16 [label="good
+Prob: excellent:0.1 fair:0.1 good:0.4 poor:0.2 very good:0.2
+Frac: 0.037", fillcolor="#8fc0da"] ;
+17 [label="hlthmntl", fillcolor="#c39fe0"] ;
+18 [label="very good
+Prob: excellent:0.4 fair:0.0 good:0.1 poor:0.0 very good:0.5
+Frac: 0.028", fillcolor="#ea92be"] ;
+19 [label="satlife", fillcolor="#e189db"] ;
+20 [label="very good
+Prob: excellent:0.2 fair:0.0 good:0.2 poor:0.0 very good:0.6
+Frac: 0.21", fillcolor="#df88de"] ;
+21 [label="physacts", fillcolor="#d690dd"] ;
+22 [label="very good
+Prob: excellent:0.0 fair:0.1 good:0.4 poor:0.1 very good:0.4
+Frac: 0.045", fillcolor="#aea9e9"] ;
+23 [label="marcohab", fillcolor="#b3a7e3"] ;
+24 [label="very good
+Prob: excellent:0.1 fair:0.2 good:0.3 poor:0.1 very good:0.5
+Frac: 0.029", fillcolor="#bba4da"] ;
+1 -- 0 [label=" cooperative",penwidth=3] ;
+1 -- 2 [label=" friendly,interested\n hostile\n restless,impatient",penwidth=3] ;
+3 -- 1 [label=" fair",penwidth=3] ;
+3 -- 5 [label=" excellent\n good\n poor\n very good",penwidth=3] ;
+5 -- 4 [label=" good",penwidth=3] ;
+5 -- 9 [label=" excellent\n fair\n poor\n very good",penwidth=3] ;
+7 -- 6 [label=" b\n c",penwidth=3] ;
+7 -- 8 [label=" a\n d\n e",penwidth=3] ;
+9 -- 7 [label=" excellent",penwidth=3] ;
+9 -- 11 [label=" fair\n good\n poor",penwidth=3] ;
+11 -- 10 [label=" fair\n poor",penwidth=3] ;
+11 -- 17 [label=" excellent\n good\n very good",penwidth=3] ;
+13 -- 12 [label=" good",penwidth=3] ;
+13 -- 15 [label=" excellent\n fair\n poor",penwidth=3] ;
+15 -- 14 [label=" c",penwidth=3] ;
+15 -- 16 [label=" b\n d\n e",penwidth=3] ;
+17 -- 13 [label=" fair\n good\n poor",penwidth=3] ;
+17 -- 21 [label=" excellent\n very good",penwidth=3] ;
+19 -- 18 [label=" completely satisfied",penwidth=3] ;
+19 -- 20 [label=" mostly satisfied\n neither satisfied nor dissatisfied\n somewhat dissatisfied\n somewhat satisfied",penwidth=3] ;
+21 -- 19 [label=" completely",penwidth=3] ;
+21 -- 23 [label=" a little\n moderately\n mostly\n not at all",penwidth=3] ;
+23 -- 22 [label=" married",penwidth=3] ;
+23 -- 24 [label=" not married, cohabitating partner\n not married, missing on cohabitating\n not married, no cohabitating partner",penwidth=3] ;
+{rank = same;}}

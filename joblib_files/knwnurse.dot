@@ -1,0 +1,20 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="no one
+Prob: close friend:0.1 family or relative:0.2 no one:0.6 someone else i know:0.1
+Frac: 0.093", fillcolor="#75e3c3"] ;
+1 [label="knwmchnc", fillcolor="#85dcab"] ;
+2 [label="family or relative
+Prob: close friend:0.2 family or relative:0.4 no one:0.2 someone else i know:0.1
+Frac: 0.108", fillcolor="#93d796"] ;
+3 [label="knwtcher", fillcolor="#a4d387"] ;
+4 [label="family or relative
+Prob: close friend:0.3 family or relative:0.4 no one:0.1 someone else i know:0.1
+Frac: 0.799", fillcolor="#acd17e"] ;
+1 -- 0 [label=" no one",penwidth=3] ;
+1 -- 2 [label=" close friend\n family or relative\n someone else i know",penwidth=3] ;
+3 -- 1 [label=" no one",penwidth=3] ;
+3 -- 4 [label=" close friend\n family or relative\n someone else i know",penwidth=3] ;
+{rank = same;}}

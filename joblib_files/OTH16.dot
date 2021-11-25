@@ -1,0 +1,8 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="pentecostal
+Prob: 7th day adventist:0.1 apostolic church:0.0 armenian apostolic church:0.0 assembly of god:0.0 brethren church, brethren:0.0 christian & missionary alliance:0.0 christian reform:0.0 christian scientist:0.0 christian; central christian:0.1 church of christ:0.1 church of god in christ:0.0 churches of god(except with christ and holiness):0.0 congregationalist, 1st congreg:0.0 covenant:0.0 disciples of christ:0.0 dutch reform:0.0 ethiopian evangelical church:0.0 evangelical reformed:0.0 evangelical, evangelist:0.0 free methodist:0.0 free will baptist:0.0 holiness; church of holiness:0.0 jehovah's witnesses:0.1 mennonite:0.0 mormon:0.1 nazarene:0.0 pentecostal:0.2 pentecostal holiness, holiness pentecostal:0.0 quaker:0.0 reformed:0.0 sanctified, sanctification:0.0 the church of god of prophecy:0.0 unitarian, universalist:0.0 united church of canada:0.0 united church of christ:0.0 wesleyan:0.0 word of jesus:0.0
+Frac: 1.0", fillcolor="#ab9dc4"] ;
+{rank = same;}}

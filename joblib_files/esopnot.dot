@@ -1,0 +1,38 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="i would definitely take the job with the esop (employee stock ownership plan) or cash profit sharing
+Prob: i would be neutral:0.2 i would definitely take the job with the esop (employee stock ownership plan) or cash profit sharing:0.4 i would definitely take the job without the esop (employee stock ownership plan) or cash profit sharing:0.0 i would probably take the job with the esop (employee stock ownership plan) or cash profit sharing:0.3 i would probably take the job without the esop (employee stock ownership plan) or cash profit sharing:0.0
+Frac: 0.057", fillcolor="#aab892"] ;
+1 [label="hlphome", fillcolor="#a5b495"] ;
+2 [label="i would definitely take the job with the esop (employee stock ownership plan) or cash profit sharing
+Prob: i would be neutral:0.2 i would definitely take the job with the esop (employee stock ownership plan) or cash profit sharing:0.4 i would definitely take the job without the esop (employee stock ownership plan) or cash profit sharing:0.0 i would probably take the job with the esop (employee stock ownership plan) or cash profit sharing:0.4 i would probably take the job without the esop (employee stock ownership plan) or cash profit sharing:0.0
+Frac: 0.076", fillcolor="#a2b197"] ;
+3 [label="fampress", fillcolor="#acb890"] ;
+4 [label="i would definitely take the job with the esop (employee stock ownership plan) or cash profit sharing
+Prob: i would be neutral:0.2 i would definitely take the job with the esop (employee stock ownership plan) or cash profit sharing:0.4 i would definitely take the job without the esop (employee stock ownership plan) or cash profit sharing:0.0 i would probably take the job with the esop (employee stock ownership plan) or cash profit sharing:0.3 i would probably take the job without the esop (employee stock ownership plan) or cash profit sharing:0.0
+Frac: 0.217", fillcolor="#b0bb8d"] ;
+5 [label="form", fillcolor="#aab49c"] ;
+6 [label="i would definitely take the job with the esop (employee stock ownership plan) or cash profit sharing
+Prob: i would be neutral:0.2 i would definitely take the job with the esop (employee stock ownership plan) or cash profit sharing:0.3 i would definitely take the job without the esop (employee stock ownership plan) or cash profit sharing:0.1 i would probably take the job with the esop (employee stock ownership plan) or cash profit sharing:0.3 i would probably take the job without the esop (employee stock ownership plan) or cash profit sharing:0.1
+Frac: 0.256", fillcolor="#a2b8a4"] ;
+7 [label="buyesop", fillcolor="#aab2a2"] ;
+8 [label="i would be neutral
+Prob: i would be neutral:0.5 i would definitely take the job with the esop (employee stock ownership plan) or cash profit sharing:0.2 i would definitely take the job without the esop (employee stock ownership plan) or cash profit sharing:0.1 i would probably take the job with the esop (employee stock ownership plan) or cash profit sharing:0.2 i would probably take the job without the esop (employee stock ownership plan) or cash profit sharing:0.0
+Frac: 0.133", fillcolor="#c0bf8f"] ;
+9 [label="RACDIF3", fillcolor="#aeaea1"] ;
+10 [label="i would probably take the job with the esop (employee stock ownership plan) or cash profit sharing
+Prob: i would be neutral:0.3 i would definitely take the job with the esop (employee stock ownership plan) or cash profit sharing:0.2 i would definitely take the job without the esop (employee stock ownership plan) or cash profit sharing:0.1 i would probably take the job with the esop (employee stock ownership plan) or cash profit sharing:0.4 i would probably take the job without the esop (employee stock ownership plan) or cash profit sharing:0.0
+Frac: 0.262", fillcolor="#a5a5aa"] ;
+1 -- 0 [label=" neighbor\n someone else\n more distant family member\n no one\n someone i work with\n close friend",penwidth=3] ;
+1 -- 2 [label=" close family member",penwidth=3] ;
+3 -- 1 [label=" no, never",penwidth=3] ;
+3 -- 4 [label=" yes, but rarely\n yes, often\n yes, sometimes\n yes, very often",penwidth=3] ;
+5 -- 3 [label=" alternate <y>",penwidth=3] ;
+5 -- 7 [label=" standard <x>",penwidth=3] ;
+7 -- 6 [label=" i would be more likely to buy from an employee-owned company",penwidth=3] ;
+7 -- 9 [label=" i would be less likely to buy from an employee-owned company\n i would be neither more nor less likely to buy from an employee-owned company",penwidth=3] ;
+9 -- 8 [label=" no",penwidth=3] ;
+9 -- 10 [label=" yes",penwidth=3] ;
+{rank = same;}}

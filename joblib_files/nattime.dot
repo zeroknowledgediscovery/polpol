@@ -1,0 +1,26 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="strongly agree
+Prob: somewhat agree:0.3 somewhat disagree:0.1 strongly agree:0.5 strongly disagree:0.1
+Frac: 0.569", fillcolor="#92d5bc"] ;
+1 [label="natsat", fillcolor="#9fd3a6"] ;
+2 [label="somewhat agree
+Prob: somewhat agree:0.5 somewhat disagree:0.2 strongly agree:0.2 strongly disagree:0.1
+Frac: 0.203", fillcolor="#b7ce88"] ;
+3 [label="nattimeok", fillcolor="#afcf88"] ;
+4 [label="somewhat disagree
+Prob: somewhat agree:0.3 somewhat disagree:0.4 strongly agree:0.2 strongly disagree:0.1
+Frac: 0.154", fillcolor="#a3d783"] ;
+5 [label="physacts", fillcolor="#a8d088"] ;
+6 [label="somewhat disagree
+Prob: somewhat agree:0.3 somewhat disagree:0.4 strongly agree:0.1 strongly disagree:0.3
+Frac: 0.074", fillcolor="#b4c092"] ;
+1 -- 0 [label=" strongly agree",penwidth=3] ;
+1 -- 3 [label=" somewhat agree\n somewhat disagree\n strongly disagree",penwidth=3] ;
+3 -- 2 [label=" somewhat agree\n strongly agree",penwidth=3] ;
+3 -- 5 [label=" somewhat disagree\n strongly disagree",penwidth=3] ;
+5 -- 4 [label=" completely",penwidth=3] ;
+5 -- 6 [label=" a little\n moderately\n mostly",penwidth=3] ;
+{rank = same;}}

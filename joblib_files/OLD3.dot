@@ -1,0 +1,80 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="e
+Prob: b:0.0 c:0.1 d:0.0 e:0.8
+Frac: 0.032", fillcolor="#e66fea"] ;
+1 [label="hhtype", fillcolor="#bdaaab"] ;
+2 [label="c
+Prob: b:0.2 c:0.6 d:0.1 e:0.1
+Frac: 0.032", fillcolor="#94e56c"] ;
+3 [label="hhtype", fillcolor="#d28aca"] ;
+4 [label="c
+Prob: b:0.0 c:0.9 d:0.0 e:0.1
+Frac: 0.041", fillcolor="#7de96b"] ;
+5 [label="hompop", fillcolor="#d388cc"] ;
+6 [label="e
+Prob: b:0.0 c:0.0 d:0.0 e:1.0
+Frac: 0.061", fillcolor="#ff55ff"] ;
+7 [label="hhtype", fillcolor="#ed68ee"] ;
+8 [label="c
+Prob: b:0.0 c:0.7 d:0.1 e:0.2
+Frac: 0.033", fillcolor="#7ee186"] ;
+9 [label="hhtype", fillcolor="#eb6aec"] ;
+10 [label="e
+Prob: b:0.0 c:0.0 d:0.0 e:1.0
+Frac: 0.2", fillcolor="#ff55ff"] ;
+11 [label="hhtype", fillcolor="#f65ef6"] ;
+12 [label="e
+Prob: b:0.0 c:0.1 d:0.0 e:0.9
+Frac: 0.205", fillcolor="#ed68ef"] ;
+13 [label="respnum", fillcolor="#f163f2"] ;
+14 [label="e
+Prob: b:0.0 c:0.0 d:0.0 e:1.0
+Frac: 0.124", fillcolor="#fe55fe"] ;
+15 [label="hhtype", fillcolor="#e76fe6"] ;
+16 [label="c
+Prob: b:0.0 c:0.7 d:0.1 e:0.1
+Frac: 0.028", fillcolor="#7fe37d"] ;
+17 [label="hhtype", fillcolor="#d784d0"] ;
+18 [label="e
+Prob: b:0.0 c:0.2 d:0.0 e:0.8
+Frac: 0.039", fillcolor="#dd79e1"] ;
+19 [label="famgen", fillcolor="#9dce82"] ;
+20 [label="c
+Prob: b:0.1 c:0.9 d:0.0 e:0.1
+Frac: 0.117", fillcolor="#7cf061"] ;
+21 [label="OLD1", fillcolor="#83ed62"] ;
+22 [label="c
+Prob: b:0.3 c:0.6 d:0.0 e:0.1
+Frac: 0.028", fillcolor="#9fdd69"] ;
+23 [label="OLD2", fillcolor="#91de70"] ;
+24 [label="c
+Prob: b:0.2 c:0.5 d:0.0 e:0.3
+Frac: 0.062", fillcolor="#b4bb8f"] ;
+1 -- 0 [label=" 2adlts,ntmar,rel,0kids\n 3adlts,0mar,rel,1+kids",penwidth=3] ;
+1 -- 2 [label=" 2as,ntmar,ntrel,opsex,1+ks\n 3adlts,1mar,ntrel,0kids\n 3adlts,3mar,sp,rel,0kids\n 4+adlts,2mar,1+kids",penwidth=3] ;
+3 -- 1 [label=" 3adlts,0mar,rel,1+kids\n 2adlts,ntmar,rel,0kids\n 2as,ntmar,ntrel,opsex,1+ks\n 3adlts,3mar,sp,rel,0kids\n 3adlts,1mar,ntrel,0kids\n 4+adlts,2mar,1+kids",penwidth=3] ;
+3 -- 5 [label=" 1adlt,0kids\n 1adlt,1+kids\n 2adlts,dkmar,0kids\n 2adlts,dkmar,1+kids\n 2adlts,mar,0kids\n 2adlts,mar,1+kids\n 2adlts,ntmar,dkrel,0kids\n 2adlts,ntmar,dkrel,1+kids\n 2adlts,ntmar,rel,1+kids\n 2as,ntmar,ntrel,opsex,0ks\n 2as,ntmar,ntrel,smsex,0ks\n 2as,ntmar,ntrel,smsex,1+ks\n 3adlts,0mar,ntrel,0kids\n 3adlts,0mar,ntrel,1+kids\n 3adlts,0mar,ntrel,rel,0kids\n 3adlts,0mar,ntrel,rel,1+kids\n 3adlts,0mar,rel,0kids\n 3adlts,0mar,sp,rel,0kids\n 3adlts,1mar,rel,ntrel,0kids\n 3adlts,1mar,rel,rel,0kids\n 3adlts,2mar,ntrel,rel,0kids\n 3adlts,2mar,rel,0kids\n 3adlts,2mar,rel,1+kids\n 3adlts,2mar,sp,rel,0kids\n 3adlts,2mar,sp,rel,1+kids\n 3adlts,3mar,sp,rel,1+kids\n 4+adlts,0mar,0kids\n 4+adlts,0mar,1+kids\n 4+adlts,1mar,0kids\n 4+adlts,2mar,0kids\n 4+adlts,3mar,0kids\n 4+adlts,4+mar,0kids\n 4+adlts,4+mar,1+kids",penwidth=3] ;
+5 -- 4 [label=" 5",penwidth=3] ;
+5 -- 17 [label=" 1\n 10\n 11\n 2\n 3\n 4\n 6\n 7\n 8",penwidth=3] ;
+7 -- 6 [label=" 2as,ntmar,ntrel,opsex,0ks",penwidth=3] ;
+7 -- 9 [label=" 1adlt,0kids\n 2adlts,mar,0kids\n 2adlts,ntmar,dkrel,0kids\n 2as,ntmar,ntrel,smsex,1+ks\n 3adlts,0mar,ntrel,0kids\n 3adlts,0mar,ntrel,1+kids\n 3adlts,0mar,ntrel,rel,1+kids\n 3adlts,1mar,rel,ntrel,0kids\n 3adlts,2mar,ntrel,rel,0kids\n 3adlts,2mar,rel,1+kids\n 3adlts,2mar,sp,rel,0kids\n 3adlts,3mar,sp,rel,1+kids\n 4+adlts,0mar,1+kids\n 4+adlts,2mar,0kids\n 4+adlts,3mar,0kids\n 4+adlts,4+mar,0kids",penwidth=3] ;
+9 -- 8 [label=" 4+adlts,3mar,0kids\n 3adlts,0mar,ntrel,1+kids\n 2adlts,ntmar,dkrel,0kids\n 4+adlts,4+mar,0kids\n 4+adlts,2mar,0kids\n 3adlts,2mar,rel,1+kids\n 4+adlts,0mar,1+kids\n 3adlts,0mar,ntrel,0kids\n 3adlts,2mar,ntrel,rel,0kids",penwidth=3] ;
+9 -- 13 [label=" 1adlt,0kids\n 2adlts,mar,0kids\n 2as,ntmar,ntrel,smsex,1+ks\n 3adlts,0mar,ntrel,rel,1+kids\n 3adlts,1mar,rel,ntrel,0kids\n 3adlts,2mar,sp,rel,0kids\n 3adlts,3mar,sp,rel,1+kids",penwidth=3] ;
+11 -- 10 [label=" 1adlt,0kids",penwidth=3] ;
+11 -- 12 [label=" 2adlts,mar,0kids\n 2as,ntmar,ntrel,smsex,1+ks\n 3adlts,0mar,ntrel,rel,1+kids\n 3adlts,2mar,sp,rel,0kids\n 3adlts,3mar,sp,rel,1+kids",penwidth=3] ;
+13 -- 11 [label=" 1st person",penwidth=3] ;
+13 -- 15 [label=" 2nd person\n 3rd person\n 4th person",penwidth=3] ;
+15 -- 14 [label=" 2adlts,mar,0kids",penwidth=3] ;
+15 -- 16 [label=" 1adlt,0kids\n 2as,ntmar,ntrel,smsex,1+ks\n 3adlts,0mar,ntrel,rel,1+kids\n 3adlts,1mar,rel,ntrel,0kids\n 3adlts,2mar,sp,rel,0kids\n 3adlts,3mar,sp,rel,1+kids",penwidth=3] ;
+17 -- 7 [label=" 3adlts,1mar,rel,ntrel,0kids\n 3adlts,0mar,ntrel,rel,1+kids\n 4+adlts,2mar,0kids\n 3adlts,3mar,sp,rel,1+kids\n 3adlts,2mar,ntrel,rel,0kids\n 4+adlts,4+mar,0kids\n 2as,ntmar,ntrel,smsex,1+ks\n 3adlts,0mar,ntrel,1+kids\n 3adlts,2mar,sp,rel,0kids\n 4+adlts,3mar,0kids\n 2adlts,mar,0kids\n 2as,ntmar,ntrel,opsex,0ks\n 3adlts,0mar,ntrel,0kids\n 4+adlts,0mar,1+kids\n 1adlt,0kids\n 3adlts,2mar,rel,1+kids\n 2adlts,ntmar,dkrel,0kids",penwidth=3] ;
+17 -- 19 [label=" 1adlt,1+kids\n 2adlts,dkmar,0kids\n 2adlts,dkmar,1+kids\n 2adlts,mar,1+kids\n 2adlts,ntmar,rel,1+kids\n 2as,ntmar,ntrel,smsex,0ks\n 3adlts,0mar,ntrel,rel,0kids\n 3adlts,0mar,rel,0kids\n 3adlts,0mar,sp,rel,0kids\n 3adlts,1mar,rel,rel,0kids\n 3adlts,2mar,rel,0kids\n 3adlts,2mar,sp,rel,1+kids\n 4+adlts,0mar,0kids\n 4+adlts,1mar,0kids\n 4+adlts,4+mar,1+kids",penwidth=3] ;
+19 -- 18 [label=" 1 gen",penwidth=3] ;
+19 -- 23 [label=" 2 gens, children\n 2 gens, grandchldrn\n 2 gens, parents\n 3 gens, chld, par\n 3 gens, grandchldrn",penwidth=3] ;
+21 -- 20 [label=" c",penwidth=3] ;
+21 -- 22 [label=" b\n d\n e",penwidth=3] ;
+23 -- 21 [label=" c\n d",penwidth=3] ;
+23 -- 24 [label=" a\n b\n e",penwidth=3] ;
+{rank = same;}}

@@ -1,0 +1,26 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="other family
+Prob: acquaintance:0.0 child:0.1 coworker:0.1 friend:0.1 friend of a relative:0.0 grandchild:0.0 grandparent:0.0 member of religious community:0.0 neighbor:0.0 other:0.0 other family:0.2 parent:0.2 relative of a friend:0.0 sibling:0.2 spouse/partner (current/ex):0.0 student/classmate:0.0
+Frac: 0.21", fillcolor="#cc99bf"] ;
+1 [label="MHP1R1", fillcolor="#c29bc7"] ;
+2 [label="sibling
+Prob: acquaintance:0.0 child:0.0 coworker:0.0 friend:0.2 friend of a relative:0.0 grandchild:0.0 grandparent:0.1 member of religious community:0.0 neighbor:0.0 other:0.0 other family:0.2 parent:0.1 relative of a friend:0.0 sibling:0.2 spouse/partner (current/ex):0.0 student/classmate:0.0
+Frac: 0.21", fillcolor="#b89ccf"] ;
+3 [label="MHP1R1", fillcolor="#bf98c4"] ;
+4 [label="other family
+Prob: acquaintance:0.0 child:0.1 coworker:0.0 friend:0.2 friend of a relative:0.0 grandchild:0.0 grandparent:0.0 member of religious community:0.0 neighbor:0.0 other:0.0 other family:0.3 parent:0.1 relative of a friend:0.0 sibling:0.2 spouse/partner (current/ex):0.0 student/classmate:0.0
+Frac: 0.29", fillcolor="#bc95be"] ;
+5 [label="MHP1R1", fillcolor="#c3a9b0"] ;
+6 [label="friend
+Prob: acquaintance:0.0 child:0.0 coworker:0.0 friend:0.7 friend of a relative:0.0 grandchild:0.0 grandparent:0.0 member of religious community:0.0 neighbor:0.0 other:0.0 other family:0.1 parent:0.0 relative of a friend:0.0 sibling:0.1 spouse/partner (current/ex):0.1 student/classmate:0.0
+Frac: 0.29", fillcolor="#cdd280"] ;
+1 -- 0 [label=" acquaintance\n sibling\n spouse/partner (current/ex)",penwidth=3] ;
+1 -- 2 [label=" grandparent\n member of religious community\n neighbor\n other\n parent",penwidth=3] ;
+3 -- 1 [label=" acquaintance\n other\n sibling\n parent\n spouse/partner (current/ex)\n grandparent\n neighbor\n member of religious community",penwidth=3] ;
+3 -- 4 [label=" child\n coworker\n other family\n relative of a friend\n student/classmate",penwidth=3] ;
+5 -- 3 [label=" relative of a friend\n other family\n other\n coworker\n acquaintance\n child\n neighbor\n member of religious community\n spouse/partner (current/ex)\n parent\n sibling\n grandparent\n student/classmate",penwidth=3] ;
+5 -- 6 [label=" friend",penwidth=3] ;
+{rank = same;}}

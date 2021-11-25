@@ -1,0 +1,44 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="strongly favor
+Prob: favor:0.1 neither favor nor oppose:0.0 oppose:0.0 strongly favor:0.9 strongly oppose:0.0
+Frac: 0.239", fillcolor="#6965ec"] ;
+1 [label="marblk", fillcolor="#a8ca8a"] ;
+2 [label="favor
+Prob: favor:0.7 neither favor nor oppose:0.2 oppose:0.0 strongly favor:0.1 strongly oppose:0.0
+Frac: 0.05", fillcolor="#e2c666"] ;
+3 [label="marwht", fillcolor="#f2c45c"] ;
+4 [label="favor
+Prob: favor:1.0 neither favor nor oppose:0.0 oppose:0.0 strongly favor:0.0 strongly oppose:0.0
+Frac: 0.085", fillcolor="#fbc256"] ;
+5 [label="marhisp", fillcolor="#bce96c"] ;
+6 [label="neither favor nor oppose
+Prob: favor:0.0 neither favor nor oppose:0.9 oppose:0.0 strongly favor:0.0 strongly oppose:0.0
+Frac: 0.449", fillcolor="#b5fc5c"] ;
+7 [label="marwht", fillcolor="#b0f16f"] ;
+8 [label="neither favor nor oppose
+Prob: favor:0.1 neither favor nor oppose:0.5 oppose:0.2 strongly favor:0.1 strongly oppose:0.0
+Frac: 0.054", fillcolor="#9fdb97"] ;
+9 [label="polviews", fillcolor="#a6d89a"] ;
+10 [label="neither favor nor oppose
+Prob: favor:0.1 neither favor nor oppose:0.5 oppose:0.2 strongly favor:0.1 strongly oppose:0.2
+Frac: 0.056", fillcolor="#add69d"] ;
+11 [label="polviews", fillcolor="#a4d7a1"] ;
+12 [label="neither favor nor oppose
+Prob: favor:0.1 neither favor nor oppose:0.4 oppose:0.3 strongly favor:0.1 strongly oppose:0.1
+Frac: 0.068", fillcolor="#a0d6ac"] ;
+1 -- 0 [label=" strongly favor",penwidth=3] ;
+1 -- 5 [label=" favor\n neither favor nor oppose\n oppose\n strongly oppose",penwidth=3] ;
+3 -- 2 [label=" neither favor nor oppose\n oppose\n strongly favor",penwidth=3] ;
+3 -- 4 [label=" favor\n strongly oppose",penwidth=3] ;
+5 -- 3 [label=" favor",penwidth=3] ;
+5 -- 7 [label=" neither favor nor oppose\n oppose\n strongly favor\n strongly oppose",penwidth=3] ;
+7 -- 6 [label=" neither favor nor oppose",penwidth=3] ;
+7 -- 11 [label=" favor\n oppose\n strongly favor\n strongly oppose",penwidth=3] ;
+9 -- 8 [label=" moderate",penwidth=3] ;
+9 -- 10 [label=" extremely liberal\n extrmly conservative\n liberal\n slghtly conservative",penwidth=3] ;
+11 -- 9 [label=" extrmly conservative\n slghtly conservative\n extremely liberal\n moderate\n liberal",penwidth=3] ;
+11 -- 12 [label=" conservative\n slightly liberal",penwidth=3] ;
+{rank = same;}}

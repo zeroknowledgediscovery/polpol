@@ -1,0 +1,14 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="biological child
+Prob: adopted child:0.1 biological child:0.5 child of non-relative:0.0 child, not specified:0.1 grandchild, great-grandchild:0.3 niece or nephew:0.0 other non-relative (employee, boarder):0.0 parent:0.0 parent-in-law:0.0 roommate, housemate:0.0 son-in-law, daughter-in-law:0.0 stepchild:0.1
+Frac: 0.435", fillcolor="#bbea82"] ;
+1 [label="RELHH5", fillcolor="#93f16d"] ;
+2 [label="child, not specified
+Prob: adopted child:0.0 biological child:0.0 child of non-relative:0.0 child, not specified:0.9 grandchild, great-grandchild:0.0 niece or nephew:0.0 other non-relative (employee, boarder):0.0 parent:0.0 parent-in-law:0.0 roommate, housemate:0.0 son-in-law, daughter-in-law:0.0 stepchild:0.0
+Frac: 0.565", fillcolor="#74f75e"] ;
+1 -- 0 [label=" parent\n stepchild\n grandchild, great grandchild\n partner,girl(boy)friend\n niece or nephew\n biological child\n adopted child\n parent-in-law",penwidth=3] ;
+1 -- 2 [label=" child of non-relative\n child, unsp\n roommate, housemate\n son (daughter)-in-law",penwidth=3] ;
+{rank = same;}}

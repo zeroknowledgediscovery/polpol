@@ -1,0 +1,92 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="every week
+Prob: 2-3 times a month:0.1 about once a month:0.1 about once or twice a year:0.1 every week:0.3 less than once a year:0.0 nearly every week:0.0 never:0.1 once a day:0.0 several times a week:0.0 several times a year:0.2
+Frac: 0.111", fillcolor="#b2c58a"] ;
+1 [label="SPPRES10", fillcolor="#acc48c"] ;
+2 [label="every week
+Prob: 2-3 times a month:0.2 about once a month:0.1 about once or twice a year:0.0 every week:0.3 less than once a year:0.0 nearly every week:0.1 never:0.1 once a day:0.0 several times a week:0.0 several times a year:0.1
+Frac: 0.029", fillcolor="#a7c292"] ;
+3 [label="rplace", fillcolor="#a9c28e"] ;
+4 [label="every week
+Prob: 2-3 times a month:0.2 about once a month:0.1 about once or twice a year:0.1 every week:0.3 less than once a year:0.0 nearly every week:0.0 never:0.1 once a day:0.0 several times a week:0.0 several times a year:0.2
+Frac: 0.029", fillcolor="#b7be80"] ;
+5 [label="satjob", fillcolor="#a9c38d"] ;
+6 [label="every week
+Prob: 2-3 times a month:0.1 about once a month:0.1 about once or twice a year:0.1 every week:0.3 less than once a year:0.0 nearly every week:0.0 never:0.1 once a day:0.0 several times a week:0.0 several times a year:0.1
+Frac: 0.098", fillcolor="#a5c491"] ;
+7 [label="attend", fillcolor="#9faca6"] ;
+8 [label="never
+Prob: 2-3 times a month:0.2 about once a month:0.2 about once or twice a year:0.2 every week:0.0 less than once a year:0.0 nearly every week:0.0 never:0.2 once a day:0.0 several times a week:0.0 several times a year:0.2
+Frac: 0.077", fillcolor="#c3ab91"] ;
+9 [label="attend", fillcolor="#979db7"] ;
+10 [label="never
+Prob: 2-3 times a month:0.0 about once a month:0.0 about once or twice a year:0.2 every week:0.0 less than once a year:0.2 nearly every week:0.0 never:0.6 once a day:0.0 several times a week:0.0 several times a year:0.0
+Frac: 0.028", fillcolor="#708edb"] ;
+11 [label="OLD2", fillcolor="#738dd8"] ;
+12 [label="never
+Prob: 2-3 times a month:0.0 about once a month:0.0 about once or twice a year:0.2 every week:0.0 less than once a year:0.1 nearly every week:0.0 never:0.6 once a day:0.0 several times a week:0.0 several times a year:0.0
+Frac: 0.032", fillcolor="#758dd6"] ;
+13 [label="partvol", fillcolor="#8d99bf"] ;
+14 [label="never
+Prob: 2-3 times a month:0.0 about once a month:0.1 about once or twice a year:0.3 every week:0.0 less than once a year:0.1 nearly every week:0.0 never:0.3 once a day:0.0 several times a week:0.0 several times a year:0.1
+Frac: 0.048", fillcolor="#9ab1a8"] ;
+15 [label="hlpadvce", fillcolor="#939cb9"] ;
+16 [label="never
+Prob: 2-3 times a month:0.0 about once a month:0.1 about once or twice a year:0.2 every week:0.0 less than once a year:0.1 nearly every week:0.0 never:0.4 once a day:0.0 several times a week:0.0 several times a year:0.2
+Frac: 0.201", fillcolor="#9198bd"] ;
+17 [label="size", fillcolor="#8d9abf"] ;
+18 [label="never
+Prob: 2-3 times a month:0.0 about once a month:0.1 about once or twice a year:0.2 every week:0.0 less than once a year:0.1 nearly every week:0.0 never:0.4 once a day:0.0 several times a week:0.0 several times a year:0.1
+Frac: 0.044", fillcolor="#949ebc"] ;
+19 [label="attend", fillcolor="#8e99bc"] ;
+20 [label="never
+Prob: 2-3 times a month:0.0 about once a month:0.0 about once or twice a year:0.1 every week:0.0 less than once a year:0.0 nearly every week:0.0 never:0.8 once a day:0.0 several times a week:0.0 several times a year:0.0
+Frac: 0.03", fillcolor="#6873e5"] ;
+21 [label="denom", fillcolor="#656ded"] ;
+22 [label="never
+Prob: 2-3 times a month:0.0 about once a month:0.0 about once or twice a year:0.1 every week:0.0 less than once a year:0.0 nearly every week:0.0 never:0.8 once a day:0.0 several times a week:0.0 several times a year:0.0
+Frac: 0.037", fillcolor="#6c72e3"] ;
+23 [label="INTRACE1", fillcolor="#646cee"] ;
+24 [label="never
+Prob: 2-3 times a month:0.0 about once a month:0.0 about once or twice a year:0.1 every week:0.0 less than once a year:0.1 nearly every week:0.0 never:0.8 once a day:0.0 several times a week:0.0 several times a year:0.0
+Frac: 0.057", fillcolor="#6070f3"] ;
+25 [label="helpoth", fillcolor="#636bf0"] ;
+26 [label="never
+Prob: 2-3 times a month:0.0 about once a month:0.0 about once or twice a year:0.1 every week:0.0 less than once a year:0.0 nearly every week:0.0 never:0.9 once a day:0.0 several times a week:0.0 several times a year:0.0
+Frac: 0.046", fillcolor="#6767eb"] ;
+27 [label="hlpequip", fillcolor="#6469ef"] ;
+28 [label="never
+Prob: 2-3 times a month:0.0 about once a month:0.0 about once or twice a year:0.0 every week:0.0 less than once a year:0.1 nearly every week:0.0 never:0.9 once a day:0.0 several times a week:0.0 several times a year:0.0
+Frac: 0.132", fillcolor="#636af1"] ;
+1 -- 0 [label=" c",penwidth=3] ;
+1 -- 3 [label=" a\n b\n d\n e",penwidth=3] ;
+3 -- 2 [label=" son or daughter-in-law\n grand or great-grandchild\n spouse",penwidth=3] ;
+3 -- 5 [label=" child\n head of household\n non-relative\n other relative",penwidth=3] ;
+5 -- 4 [label=" a little dissat\n mod. satisfied",penwidth=3] ;
+5 -- 6 [label=" very dissatisfied\n very satisfied",penwidth=3] ;
+7 -- 1 [label=" nrly every week\n more thn once wk\n every week",penwidth=3] ;
+7 -- 9 [label=" 2-3x a month\n lt once a year\n once a month\n once a year\n sevrl times a yr",penwidth=3] ;
+9 -- 8 [label=" 2-3x a month",penwidth=3] ;
+9 -- 17 [label=" lt once a year\n once a month\n once a year\n sevrl times a yr",penwidth=3] ;
+11 -- 10 [label=" c",penwidth=3] ;
+11 -- 12 [label=" a\n b\n d\n e",penwidth=3] ;
+13 -- 11 [label=" never",penwidth=3] ;
+13 -- 15 [label=" once a week or more\n once in the past year\n one to three times a month\n several times a year",penwidth=3] ;
+15 -- 14 [label=" someone else\n close friend\n someone i work with",penwidth=3] ;
+15 -- 16 [label=" close family member\n more distant family member\n neighbor\n no one",penwidth=3] ;
+17 -- 13 [label=" 95\n 714\n 22\n 40\n 117\n 1327\n 217\n 285\n 26\n 30\n 21\n 3793\n 11\n 48\n 39\n 57\n 44\n 34\n 563\n 9\n 154\n 49\n 5\n 8\n 245\n 127\n 31\n 325\n 71\n 18\n 20\n 137\n 88\n 609\n 165\n 584\n 209\n 416\n 1526\n 3\n 41\n 13\n 84\n 42\n 90\n 124\n 16\n 23\n 206\n 64\n 62\n 24\n 1198\n 546\n 787\n 32\n 19\n 37\n 46\n 8175\n 741\n 109\n 602\n 10\n 2099\n 15\n 304\n 56\n 125\n 4\n 111\n 0\n 134\n 86\n 43\n 946\n 75\n 29\n 601\n 105\n 118\n 14\n 600\n 28\n 65\n 1\n 261\n 621\n 193\n 25\n 83\n 260\n 136\n 2\n 153\n 100\n 6\n 61\n 830\n 70\n 74\n 822\n 17\n 12\n 618\n 1307",penwidth=3] ;
+17 -- 18 [label=" 144\n 166\n 179\n 180\n 186\n 2696\n 27\n 297\n 336\n 439\n 495\n 54\n 595\n 60\n 63\n 67\n 7\n 731\n 79\n 805\n 91\n 92\n 93",penwidth=3] ;
+19 -- 7 [label=" more thn once wk\n once a year\n sevrl times a yr\n once a month\n nrly every week\n every week\n lt once a year\n 2-3x a month",penwidth=3] ;
+19 -- 21 [label=" never",penwidth=3] ;
+21 -- 20 [label=" wi evan luth synod\n other methodist\n united methodist\n methodist-dk which\n am lutheran\n nat bapt conv of am\n am baptist asso\n baptist-dk which\n presbyterian-dk wh\n other baptists",penwidth=3] ;
+21 -- 23 [label=" afr meth episcopal\n am bapt ch in usa\n episcopal\n lutheran-dk which\n no denomination\n other\n southern baptist",penwidth=3] ;
+23 -- 22 [label=" some other race\n filipino\n black or african\n other asian",penwidth=3] ;
+23 -- 25 [label=" asian indian\n chinese\n white",penwidth=3] ;
+25 -- 24 [label=" 2nd important",penwidth=3] ;
+25 -- 27 [label=" 3rd important\n 4th important\n least important\n most important",penwidth=3] ;
+27 -- 26 [label=" somewhat true",penwidth=3] ;
+27 -- 28 [label=" not at all true\n not too true\n very true",penwidth=3] ;
+{rank = same;}}

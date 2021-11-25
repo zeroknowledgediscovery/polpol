@@ -1,0 +1,44 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="b
+Prob: b:0.6 c:0.3 d:0.1 e:0.0
+Frac: 0.101", fillcolor="#cad164"] ;
+1 [label="helppoor", fillcolor="#86ec78"] ;
+2 [label="c
+Prob: b:0.2 c:0.8 d:0.0 e:0.0
+Frac: 0.028", fillcolor="#8df055"] ;
+3 [label="newfrds", fillcolor="#89f157"] ;
+4 [label="c
+Prob: b:0.2 c:0.8 d:0.0 e:0.0
+Frac: 0.046", fillcolor="#86f259"] ;
+5 [label="goveqinc", fillcolor="#79f17c"] ;
+6 [label="c
+Prob: b:0.1 c:0.7 d:0.2 e:0.0
+Frac: 0.034", fillcolor="#76f379"] ;
+7 [label="MAJOR1", fillcolor="#77f181"] ;
+8 [label="c
+Prob: b:0.1 c:0.6 d:0.3 e:0.0
+Frac: 0.368", fillcolor="#75f184"] ;
+9 [label="parborn", fillcolor="#77f182"] ;
+10 [label="c
+Prob: b:0.2 c:0.6 d:0.2 e:0.0
+Frac: 0.061", fillcolor="#81ef77"] ;
+11 [label="helpblk", fillcolor="#afb9a5"] ;
+12 [label="e
+Prob: b:0.0 c:0.0 d:0.0 e:0.9
+Frac: 0.363", fillcolor="#f65ff4"] ;
+1 -- 0 [label=" b",penwidth=3] ;
+1 -- 5 [label=" c\n d\n e",penwidth=3] ;
+3 -- 2 [label=" never\n rarely",penwidth=3] ;
+3 -- 4 [label=" often\n sometimes\n very often",penwidth=3] ;
+5 -- 3 [label=" agree",penwidth=3] ;
+5 -- 7 [label=" disagree\n neither\n strongly agree\n strongly disagree",penwidth=3] ;
+7 -- 6 [label=" foreign language\n english\n social sciences\n geology\n comm. disorders\n psychology\n education",penwidth=3] ;
+7 -- 9 [label=" accounting/bookkeeping\n administrative science/public administration\n agriculture/horticulture\n architecture\n art\n aviation/aeronatics\n biology\n business administration\n chemistry\n communications/speech\n computer science\n counseling\n criminology/criminal justice\n dentistry\n economics\n educational administration\n electronics\n engineering\n environmental science/ecology\n fashion\n finance\n fine arts\n food science/nutrition/culinary arts\n general sciences\n general studies\n geography\n health\n history\n industrial relations\n information technology\n journalism\n law\n law enforcement\n liberal arts\n marketing\n mechanics/machine trade\n medicine\n nursing\n other\n other vocational\n pharmacy\n physical education\n physics\n political science/international relations\n public relations\n social work\n sociology\n statistics/biostatistics\n theology\n veterinary medicine\n visual arts/graphic design/design and drafting",penwidth=3] ;
+9 -- 8 [label=" not mother;fa.dk\n father only\n both in u.s\n dk for both\n mother only",penwidth=3] ;
+9 -- 10 [label=" mother; fa. dk\n neither in u.s",penwidth=3] ;
+11 -- 1 [label=" b\n c\n d",penwidth=3] ;
+11 -- 12 [label=" e",penwidth=3] ;
+{rank = same;}}

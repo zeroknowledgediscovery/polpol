@@ -1,0 +1,20 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="continue working
+Prob: continue working:0.5 stop working:0.5
+Frac: 0.187", fillcolor="#afd4a4"] ;
+1 [label="satjob", fillcolor="#c3cf90"] ;
+2 [label="continue working
+Prob: continue working:0.7 stop working:0.3
+Frac: 0.277", fillcolor="#d1cc82"] ;
+3 [label="hvylift", fillcolor="#cfcc84"] ;
+4 [label="continue working
+Prob: continue working:0.8 stop working:0.2
+Frac: 0.536", fillcolor="#d9ca7a"] ;
+1 -- 0 [label=" mod. satisfied",penwidth=3] ;
+1 -- 2 [label=" a little dissat\n very dissatisfied\n very satisfied",penwidth=3] ;
+3 -- 1 [label=" no",penwidth=3] ;
+3 -- 4 [label=" yes",penwidth=3] ;
+{rank = same;}}

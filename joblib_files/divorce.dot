@@ -1,0 +1,50 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="no
+Prob: no:1.0 yes:0.0
+Frac: 0.087", fillcolor="#f7c25c"] ;
+1 [label="age", fillcolor="#d5cb7e"] ;
+2 [label="no
+Prob: no:0.7 yes:0.3
+Frac: 0.133", fillcolor="#cbcd88"] ;
+3 [label="cntctkid", fillcolor="#d1cc82"] ;
+4 [label="no
+Prob: no:0.7 yes:0.3
+Frac: 0.11", fillcolor="#cace89"] ;
+5 [label="cntctkid", fillcolor="#d2cb81"] ;
+6 [label="no
+Prob: no:0.8 yes:0.2
+Frac: 0.056", fillcolor="#dfc874"] ;
+7 [label="RELSP4", fillcolor="#d4cb7f"] ;
+8 [label="no
+Prob: no:0.9 yes:0.1
+Frac: 0.161", fillcolor="#e7c66c"] ;
+9 [label="knowschd", fillcolor="#d3cb80"] ;
+10 [label="no
+Prob: no:0.7 yes:0.3
+Frac: 0.158", fillcolor="#c6cf8e"] ;
+11 [label="wrksched", fillcolor="#cccd87"] ;
+12 [label="no
+Prob: no:0.9 yes:0.1
+Frac: 0.093", fillcolor="#e7c66c"] ;
+13 [label="libmslm", fillcolor="#cfcc84"] ;
+14 [label="no
+Prob: no:0.7 yes:0.3
+Frac: 0.203", fillcolor="#c4cf8f"] ;
+1 -- 0 [label=" b",penwidth=3] ;
+1 -- 3 [label=" c\n d\n e",penwidth=3] ;
+3 -- 2 [label=" never\n once a month\n  two to three times a month\n the adult child i have contact with most frequently lives with me\n several times a week\n several times a year",penwidth=3] ;
+3 -- 5 [label=" daily\n i do not have any adult children\n less often\n once a week",penwidth=3] ;
+5 -- 4 [label=" daily",penwidth=3] ;
+5 -- 7 [label=" i do not have any adult children\n less often\n once a week",penwidth=3] ;
+7 -- 6 [label=" adopted child\n stepchild\n parent\n grandchild, great-grandchild\n son-in-law, daughter-in-law\n biological child",penwidth=3] ;
+7 -- 9 [label=" child of non-relative\n child, not specified\n grandparent, great-grandparent\n niece or nephew\n sibling-in-law",penwidth=3] ;
+9 -- 8 [label=" 4 weeks or more",penwidth=3] ;
+9 -- 11 [label=" between 1 and 2 weeks\n between 3 and 4 weeks\n one week or less",penwidth=3] ;
+11 -- 10 [label=" day shift",penwidth=3] ;
+11 -- 13 [label=" afternoon shift\n irregular shift/on-call\n night shift\n rotating shifts\n split shift",penwidth=3] ;
+13 -- 12 [label=" not remove",penwidth=3] ;
+13 -- 14 [label=" remove",penwidth=3] ;
+{rank = same;}}

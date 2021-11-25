@@ -1,0 +1,32 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="c
+Prob: c:1.0 e:0.0
+Frac: 0.651", fillcolor="#fdc156"] ;
+1 [label="intlblks", fillcolor="#c2cf91"] ;
+2 [label="e
+Prob: c:0.0 e:1.0
+Frac: 0.07", fillcolor="#55ebff"] ;
+3 [label="hhtype", fillcolor="#55eafe"] ;
+4 [label="e
+Prob: c:0.0 e:1.0
+Frac: 0.081", fillcolor="#56eafd"] ;
+5 [label="hhtype", fillcolor="#55eafe"] ;
+6 [label="e
+Prob: c:0.0 e:1.0
+Frac: 0.126", fillcolor="#55ebff"] ;
+7 [label="hhtype", fillcolor="#55eafe"] ;
+8 [label="e
+Prob: c:0.0 e:1.0
+Frac: 0.072", fillcolor="#55ebff"] ;
+1 -- 0 [label=" c",penwidth=3] ;
+1 -- 7 [label=" e",penwidth=3] ;
+3 -- 2 [label=" 3adlts,2mar,rel,1+kids\n 2as,ntmar,ntrel,opsex,1+ks\n 3adlts,0mar,rel,0kids\n 4+adlts,0mar,0kids\n 2adlts,dkmar,0kids\n 2as,ntmar,ntrel,smsex,0ks\n 4+adlts,4+mar,1+kids\n 3adlts,3mar,sp,rel,0kids\n 2as,ntmar,ntrel,opsex,0ks\n 2as,ntmar,ntrel,smsex,1+ks\n 3adlts,2mar,rel,0kids\n 2adlts,ntmar,rel,1+kids\n 3adlts,0mar,ntrel,0kids\n 1adlt,1+kids",penwidth=3] ;
+3 -- 5 [label=" 1adlt,0kids\n 2adlts,dkmar,1+kids\n 2adlts,mar,0kids\n 2adlts,ntmar,dkrel,0kids\n 2adlts,ntmar,rel,0kids\n 3adlts,0mar,ntrel,1+kids\n 3adlts,0mar,ntrel,rel,1+kids\n 3adlts,0mar,rel,1+kids\n 3adlts,1mar,rel,rel,0kids\n 3adlts,2mar,ntrel,rel,0kids\n 4+adlts,2mar,0kids\n 4+adlts,2mar,1+kids",penwidth=3] ;
+5 -- 4 [label=" 4+adlts,2mar,0kids\n 1adlt,0kids\n 2adlts,ntmar,dkrel,0kids\n 3adlts,1mar,rel,rel,0kids\n 2adlts,dkmar,1+kids\n 3adlts,0mar,ntrel,1+kids\n 3adlts,0mar,ntrel,rel,1+kids\n 4+adlts,2mar,1+kids\n 3adlts,0mar,rel,1+kids",penwidth=3] ;
+5 -- 6 [label=" 2adlts,mar,0kids\n 2adlts,ntmar,rel,0kids\n 3adlts,2mar,ntrel,rel,0kids",penwidth=3] ;
+7 -- 3 [label=" 3adlts,1mar,rel,rel,0kids\n 4+adlts,2mar,1+kids\n 1adlt,1+kids\n 2adlts,dkmar,1+kids\n 2adlts,dkmar,0kids\n 4+adlts,0mar,0kids\n 3adlts,0mar,ntrel,rel,1+kids\n 3adlts,2mar,rel,1+kids\n 2as,ntmar,ntrel,opsex,1+ks\n 2adlts,ntmar,rel,1+kids\n 2as,ntmar,ntrel,smsex,1+ks\n 2as,ntmar,ntrel,smsex,0ks\n 3adlts,0mar,ntrel,0kids\n 3adlts,0mar,ntrel,1+kids\n 2as,ntmar,ntrel,opsex,0ks\n 2adlts,ntmar,dkrel,0kids\n 3adlts,3mar,sp,rel,0kids\n 3adlts,2mar,ntrel,rel,0kids\n 4+adlts,2mar,0kids\n 3adlts,0mar,rel,1+kids\n 3adlts,2mar,rel,0kids\n 2adlts,mar,0kids\n 3adlts,0mar,rel,0kids\n 2adlts,ntmar,rel,0kids\n 1adlt,0kids\n 4+adlts,4+mar,1+kids",penwidth=3] ;
+7 -- 8 [label=" 2adlts,mar,1+kids\n 3adlts,0mar,ntrel,rel,0kids\n 3adlts,2mar,sp,rel,0kids\n 3adlts,2mar,sp,rel,1+kids\n 4+adlts,1mar,0kids\n 4+adlts,4+mar,0kids",penwidth=3] ;
+{rank = same;}}

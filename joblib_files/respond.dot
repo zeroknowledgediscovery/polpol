@@ -1,0 +1,146 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="high
+Prob: high:0.7 low:0.3
+Frac: 0.056", fillcolor="#c4cf8f"] ;
+1 [label="vstrat", fillcolor="#cfcc84"] ;
+2 [label="high
+Prob: high:0.9 low:0.1
+Frac: 0.031", fillcolor="#e9c66a"] ;
+3 [label="srcbelt", fillcolor="#daca79"] ;
+4 [label="high
+Prob: high:0.7 low:0.3
+Frac: 0.029", fillcolor="#cacd89"] ;
+5 [label="size", fillcolor="#cbcd88"] ;
+6 [label="high
+Prob: high:0.7 low:0.3
+Frac: 0.033", fillcolor="#cdcd86"] ;
+7 [label="size", fillcolor="#c2cf91"] ;
+8 [label="high
+Prob: high:0.6 low:0.4
+Frac: 0.033", fillcolor="#b8d29b"] ;
+9 [label="vstrat", fillcolor="#c9ce8a"] ;
+10 [label="high
+Prob: high:0.7 low:0.3
+Frac: 0.049", fillcolor="#c3cf90"] ;
+11 [label="sampcode", fillcolor="#c9ce8a"] ;
+12 [label="high
+Prob: high:0.8 low:0.2
+Frac: 0.036", fillcolor="#d4cb7f"] ;
+13 [label="sampcode", fillcolor="#d0cc83"] ;
+14 [label="high
+Prob: high:0.7 low:0.3
+Frac: 0.035", fillcolor="#c5cf8e"] ;
+15 [label="sampcode", fillcolor="#cecd85"] ;
+16 [label="high
+Prob: high:0.8 low:0.2
+Frac: 0.036", fillcolor="#d7ca7c"] ;
+17 [label="sampcode", fillcolor="#cacd89"] ;
+18 [label="high
+Prob: high:0.6 low:0.4
+Frac: 0.05", fillcolor="#bdd196"] ;
+19 [label="size", fillcolor="#d2cc81"] ;
+20 [label="high
+Prob: high:0.5 low:0.5
+Frac: 0.041", fillcolor="#acd5a7"] ;
+21 [label="region", fillcolor="#d4cb7f"] ;
+22 [label="high
+Prob: high:0.7 low:0.3
+Frac: 0.038", fillcolor="#cecc85"] ;
+23 [label="dwellpre", fillcolor="#ddc976"] ;
+24 [label="high
+Prob: high:0.8 low:0.2
+Frac: 0.061", fillcolor="#e1c872"] ;
+25 [label="size", fillcolor="#e1c872"] ;
+26 [label="high
+Prob: high:0.9 low:0.1
+Frac: 0.034", fillcolor="#e8c66b"] ;
+27 [label="size", fillcolor="#e1c872"] ;
+28 [label="high
+Prob: high:0.8 low:0.2
+Frac: 0.047", fillcolor="#dcc977"] ;
+29 [label="vstrat", fillcolor="#d8ca7b"] ;
+30 [label="high
+Prob: high:0.9 low:0.1
+Frac: 0.029", fillcolor="#ebc568"] ;
+31 [label="size", fillcolor="#e0c873"] ;
+32 [label="high
+Prob: high:0.8 low:0.2
+Frac: 0.045", fillcolor="#d8ca7b"] ;
+33 [label="size", fillcolor="#dec975"] ;
+34 [label="high
+Prob: high:0.8 low:0.2
+Frac: 0.034", fillcolor="#daca79"] ;
+35 [label="vstrat", fillcolor="#daca79"] ;
+36 [label="high
+Prob: high:0.8 low:0.2
+Frac: 0.049", fillcolor="#d7ca7c"] ;
+37 [label="vstrat", fillcolor="#d5cb7e"] ;
+38 [label="high
+Prob: high:0.7 low:0.3
+Frac: 0.041", fillcolor="#d2cb81"] ;
+39 [label="vstrat", fillcolor="#dac979"] ;
+40 [label="high
+Prob: high:0.8 low:0.2
+Frac: 0.031", fillcolor="#ddc977"] ;
+41 [label="vstrat", fillcolor="#dcc977"] ;
+42 [label="high
+Prob: high:0.9 low:0.1
+Frac: 0.029", fillcolor="#e7c66c"] ;
+43 [label="sampcode", fillcolor="#d4cb7f"] ;
+44 [label="high
+Prob: high:0.8 low:0.2
+Frac: 0.08", fillcolor="#e0c873"] ;
+45 [label="sampcode", fillcolor="#e2c771"] ;
+46 [label="high
+Prob: high:0.9 low:0.1
+Frac: 0.053", fillcolor="#e5c76e"] ;
+1 -- 0 [label=" 3348\n 3327\n 3335\n 3303\n 3369\n 3375\n 3324\n 3371\n 3311\n 3310\n 3328\n 3301\n 3312\n 3325\n 3339",penwidth=3] ;
+1 -- 3 [label=" 3307\n 3309\n 3320\n 3323\n 3326\n 3329\n 3361\n 3362\n 3364\n 3365\n 3372\n 3374",penwidth=3] ;
+3 -- 2 [label=" other urban",penwidth=3] ;
+3 -- 4 [label=" 12 lrgst smsa's\n other rural\n smsa's 13-100\n suburb, 12 lrgst\n suburb, 13-100",penwidth=3] ;
+5 -- 1 [label=" 67\n 7\n 0\n 180\n 64\n 11\n 39\n 56\n 125\n 304\n 946\n 546\n 2099\n 23\n 61\n 741\n 731\n 86\n 28\n 25\n 137\n 105\n 49\n 91\n 563",penwidth=3] ;
+5 -- 7 [label=" 134\n 136\n 21\n 24\n 245\n 260\n 3\n 31\n 325\n 57\n 69\n 8175\n 95",penwidth=3] ;
+7 -- 6 [label=" 57\n 24\n 3\n 260\n 136\n 134",penwidth=3] ;
+7 -- 8 [label=" 21\n 245\n 31\n 325\n 69\n 8175\n 95",penwidth=3] ;
+9 -- 5 [label=" 3365\n 3335\n 3374\n 3345\n 3369\n 3307\n 3309\n 3301\n 3303\n 3326\n 3305\n 3325\n 3341\n 3329\n 3324\n 3328\n 3361\n 3312\n 3364\n 3339\n 3310\n 3372\n 3348\n 3304\n 3362\n 3306\n 3311\n 3327\n 3375\n 3323\n 3320\n 3371",penwidth=3] ;
+9 -- 10 [label=" 3302\n 3308\n 3319\n 3334\n 3366\n 3368",penwidth=3] ;
+11 -- 9 [label=" 607\n 617\n 621\n 661\n 608\n 601\n 667\n 602\n 669\n 609\n 658\n 663\n 656\n 605\n 606\n 612\n 670\n 624\n 615\n 652\n 655\n 648\n 644\n 649\n 641\n 650",penwidth=3] ;
+11 -- 17 [label=" 603\n 604\n 613\n 614\n 618\n 619\n 620\n 629\n 630\n 631\n 633\n 635\n 637\n 638\n 639\n 643\n 645\n 647\n 651\n 657\n 659\n 665\n 666\n 671\n 675",penwidth=3] ;
+13 -- 12 [label=" 618\n 671\n 651\n 603\n 620\n 645",penwidth=3] ;
+13 -- 15 [label=" 614\n 630\n 631\n 633\n 635\n 637\n 638\n 647\n 657\n 659\n 665\n 666",penwidth=3] ;
+15 -- 14 [label=" 659\n 633\n 638\n 637\n 630\n 614",penwidth=3] ;
+15 -- 16 [label=" 631\n 635\n 647\n 657\n 665\n 666",penwidth=3] ;
+17 -- 13 [label=" 620\n 635\n 618\n 657\n 631\n 647\n 638\n 630\n 651\n 645\n 671\n 666\n 659\n 633\n 637\n 603\n 665\n 614",penwidth=3] ;
+17 -- 18 [label=" 604\n 613\n 619\n 629\n 639\n 643\n 675",penwidth=3] ;
+19 -- 11 [label=" 27\n 946\n 0\n 46\n 28\n 261\n 56\n 23\n 546\n 64\n 136\n 2099\n 25\n 118\n 37\n 325\n 198\n 36\n 63\n 245\n 125\n 111\n 621\n 34\n 741\n 206\n 84\n 31\n 8175\n 137\n 105\n 11\n 60\n 67\n 563\n 2696\n 24\n 21\n 134\n 260\n 1446\n 180\n 714\n 731\n 91\n 90\n 7\n 69\n 71\n 584\n 54\n 3\n 217\n 61\n 39\n 100\n 49\n 595\n 95\n 57\n 18\n 86\n 416\n 121\n 304",penwidth=3] ;
+19 -- 29 [label=" 1\n 10\n 117\n 1198\n 12\n 124\n 13\n 1327\n 14\n 15\n 1526\n 153\n 16\n 165\n 17\n 179\n 186\n 19\n 193\n 2\n 20\n 22\n 223\n 26\n 285\n 29\n 30\n 319\n 32\n 336\n 3793\n 4\n 40\n 41\n 42\n 43\n 439\n 44\n 462\n 48\n 495\n 5\n 6\n 600\n 601\n 602\n 609\n 618\n 70\n 74\n 75\n 8\n 805\n 822\n 830\n 88\n 9\n 93\n 94",penwidth=3] ;
+21 -- 20 [label=" mountain\n w. nor. central\n middle atlantic",penwidth=3] ;
+21 -- 23 [label=" e. nor. central\n e. sou. central\n new england\n pacific\n south atlantic\n w. sou. central",penwidth=3] ;
+23 -- 22 [label=" apartment house (5 or more units, 4 stories or more)\n row house (3 or more units in an attached row)\n apartment house (5 or more units, 3 stories or less)",penwidth=3] ;
+23 -- 25 [label=" 2-family house, 2 units one above the other\n 2-family house, 2 units side-by-side\n detached 3-4 family house\n detached single family house\n other (specify on next page)\n trailer",penwidth=3] ;
+25 -- 24 [label=" 179\n 165\n 495\n 153\n 9\n 14\n 336\n 3793\n 822\n 74\n 16\n 2\n 48\n 17\n 830",penwidth=3] ;
+25 -- 27 [label=" 1\n 10\n 12\n 124\n 193\n 20\n 22\n 29\n 30\n 32\n 4\n 41\n 42\n 43\n 5\n 6\n 601\n 8",penwidth=3] ;
+27 -- 26 [label=" 12\n 8\n 42\n 1\n 124\n 4",penwidth=3] ;
+27 -- 28 [label=" 10\n 193\n 20\n 22\n 29\n 30\n 32\n 41\n 43\n 5\n 6\n 601",penwidth=3] ;
+29 -- 21 [label=" 3301\n 3351\n 3374\n 3311\n 3359\n 3322\n 3373\n 3362\n 3357\n 3312\n 3363\n 3356\n 3368\n 3370\n 3369\n 3334\n 3378\n 3361\n 3318\n 3310\n 3302\n 3376\n 3353\n 3341",penwidth=3] ;
+29 -- 41 [label=" 3303\n 3305\n 3308\n 3309\n 3314\n 3315\n 3316\n 3317\n 3319\n 3320\n 3321\n 3324\n 3325\n 3326\n 3327\n 3329\n 3336\n 3338\n 3339\n 3342\n 3343\n 3344\n 3345\n 3350\n 3354\n 3355\n 3358\n 3360\n 3364\n 3365\n 3366\n 3371\n 3372\n 3375\n 3377",penwidth=3] ;
+31 -- 30 [label=" 12\n 9\n 6\n 1\n 16\n 43",penwidth=3] ;
+31 -- 32 [label=" 1198\n 19\n 2\n 285\n 29\n 30\n 319\n 5\n 609\n 618\n 70\n 8",penwidth=3] ;
+33 -- 31 [label=" 16\n 29\n 12\n 609\n 2\n 5\n 319\n 19\n 6\n 43\n 9\n 8\n 618\n 285\n 30\n 1\n 70\n 1198",penwidth=3] ;
+33 -- 34 [label=" 10\n 117\n 14\n 17\n 4\n 41\n 94",penwidth=3] ;
+35 -- 33 [label=" 3343\n 3329\n 3339\n 3305\n 3360\n 3377\n 3324\n 3371\n 3316\n 3315\n 3336\n 3303\n 3319\n 3326\n 3342",penwidth=3] ;
+35 -- 37 [label=" 3309\n 3314\n 3320\n 3321\n 3327\n 3338\n 3345\n 3354\n 3355\n 3358\n 3364\n 3366\n 3375",penwidth=3] ;
+37 -- 36 [label=" 3358\n 3321\n 3345\n 3338\n 3314\n 3309",penwidth=3] ;
+37 -- 38 [label=" 3320\n 3327\n 3354\n 3355\n 3364\n 3366\n 3375",penwidth=3] ;
+39 -- 35 [label=" 3338\n 3314\n 3320\n 3358\n 3355\n 3377\n 3366\n 3345\n 3326\n 3321\n 3316\n 3343\n 3339\n 3364\n 3342\n 3315\n 3354\n 3360\n 3336\n 3329\n 3305\n 3371\n 3324\n 3327\n 3303\n 3319\n 3309\n 3375",penwidth=3] ;
+39 -- 40 [label=" 3308\n 3344\n 3350\n 3365",penwidth=3] ;
+41 -- 39 [label=" 3316\n 3303\n 3338\n 3329\n 3314\n 3342\n 3365\n 3354\n 3360\n 3345\n 3364\n 3324\n 3319\n 3336\n 3308\n 3358\n 3343\n 3320\n 3375\n 3350\n 3309\n 3355\n 3315\n 3371\n 3339\n 3377\n 3327\n 3326\n 3366\n 3305\n 3344\n 3321",penwidth=3] ;
+41 -- 42 [label=" 3317\n 3325\n 3372",penwidth=3] ;
+43 -- 19 [label=" 640\n 621\n 601\n 642\n 607\n 652\n 629\n 631\n 626\n 617\n 624\n 672\n 612\n 657\n 618\n 656\n 676\n 648\n 655\n 663\n 675\n 604\n 658\n 606\n 660\n 619\n 643\n 615\n 614\n 651\n 650\n 637\n 665\n 668\n 649\n 644\n 639\n 636\n 632\n 620\n 635\n 673\n 664\n 608\n 634\n 638\n 609\n 630\n 633\n 602\n 641\n 605\n 613\n 671\n 666\n 603\n 647\n 669\n 627\n 670\n 646\n 659\n 645\n 661\n 667",penwidth=3] ;
+43 -- 45 [label=" 610\n 611\n 616\n 622\n 623\n 625\n 628\n 653\n 654\n 662\n 674",penwidth=3] ;
+45 -- 44 [label=" 662\n 622\n 628\n 674\n 611\n 610",penwidth=3] ;
+45 -- 46 [label=" 616\n 623\n 625\n 653\n 654",penwidth=3] ;
+{rank = same;}}

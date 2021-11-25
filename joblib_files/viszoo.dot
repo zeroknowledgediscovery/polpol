@@ -1,0 +1,80 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="e
+Prob: c:0.0 d:0.0 e:1.0
+Frac: 0.163", fillcolor="#c155ff"] ;
+1 [label="trcourts", fillcolor="#df90a4"] ;
+2 [label="c
+Prob: c:1.0 d:0.0 e:0.0
+Frac: 0.063", fillcolor="#fdc155"] ;
+3 [label="size", fillcolor="#fcc157"] ;
+4 [label="c
+Prob: c:1.0 d:0.0 e:0.0
+Frac: 0.034", fillcolor="#f9c358"] ;
+5 [label="size", fillcolor="#fbc157"] ;
+6 [label="c
+Prob: c:1.0 d:0.0 e:0.0
+Frac: 0.063", fillcolor="#fcc057"] ;
+7 [label="intage", fillcolor="#f8c15b"] ;
+8 [label="c
+Prob: c:1.0 d:0.0 e:0.0
+Frac: 0.055", fillcolor="#fcbf59"] ;
+9 [label="newsfrom", fillcolor="#f6c15d"] ;
+10 [label="c
+Prob: c:0.9 d:0.1 e:0.0
+Frac: 0.047", fillcolor="#f1c260"] ;
+11 [label="relgeneq", fillcolor="#f2c25f"] ;
+12 [label="c
+Prob: c:0.9 d:0.1 e:0.0
+Frac: 0.031", fillcolor="#f4c25d"] ;
+13 [label="intage", fillcolor="#f6c15c"] ;
+14 [label="c
+Prob: c:1.0 d:0.0 e:0.0
+Frac: 0.055", fillcolor="#f9c258"] ;
+15 [label="PRES16", fillcolor="#f8c359"] ;
+16 [label="c
+Prob: c:0.9 d:0.1 e:0.0
+Frac: 0.031", fillcolor="#f5c45a"] ;
+17 [label="ethnic", fillcolor="#f7c15c"] ;
+18 [label="c
+Prob: c:0.9 d:0.0 e:0.0
+Frac: 0.128", fillcolor="#f6c05e"] ;
+19 [label="intage", fillcolor="#f7c15c"] ;
+20 [label="c
+Prob: c:0.9 d:0.0 e:0.0
+Frac: 0.041", fillcolor="#f6c05d"] ;
+21 [label="visnhist", fillcolor="#e59c93"] ;
+22 [label="e
+Prob: c:0.0 d:0.0 e:1.0
+Frac: 0.084", fillcolor="#c157fc"] ;
+23 [label="hhtype", fillcolor="#c155fd"] ;
+24 [label="e
+Prob: c:0.0 d:0.0 e:1.0
+Frac: 0.203", fillcolor="#c155fe"] ;
+1 -- 0 [label=" a\n b\n d",penwidth=3] ;
+1 -- 21 [label=" c\n e",penwidth=3] ;
+3 -- 2 [label=" 95\n 32\n 325\n 19\n 67\n 1\n 26\n 74\n 64\n 285\n 1526\n 180\n 584\n 787\n 336\n 3\n 49\n 17\n 86\n 8\n 34\n 118\n 7\n 56",penwidth=3] ;
+3 -- 5 [label=" 100\n 109\n 11\n 111\n 117\n 12\n 1307\n 134\n 136\n 14\n 144\n 16\n 193\n 2\n 206\n 209\n 2099\n 21\n 217\n 22\n 223\n 23\n 25\n 261\n 2696\n 27\n 28\n 29\n 304\n 319\n 36\n 3793\n 39\n 4\n 40\n 43\n 495\n 5\n 546\n 6\n 600\n 63\n 69\n 714\n 731\n 8175\n 822\n 84\n 88\n 9\n 91\n 93\n 946",penwidth=3] ;
+5 -- 4 [label=" 16\n 319\n 495\n 4\n 6\n 39\n 206\n 2099\n 9\n 63\n 91\n 14\n 714\n 3793",penwidth=3] ;
+5 -- 6 [label=" 100\n 109\n 11\n 111\n 117\n 12\n 1307\n 134\n 136\n 144\n 193\n 2\n 209\n 21\n 217\n 22\n 223\n 23\n 25\n 261\n 2696\n 27\n 28\n 29\n 304\n 36\n 40\n 43\n 5\n 546\n 600\n 69\n 731\n 8175\n 822\n 84\n 88\n 93\n 946",penwidth=3] ;
+7 -- 3 [label=" 51\n 64\n 69\n 59\n 72\n 62\n 67\n 61\n 45\n 37\n 39\n 58\n 27\n 40",penwidth=3] ;
+7 -- 13 [label=" 20\n 26\n 28\n 29\n 31\n 33\n 35\n 36\n 38\n 42\n 43\n 44\n 46\n 47\n 48\n 49\n 50\n 52\n 53\n 54\n 55\n 56\n 57\n 60\n 63\n 65\n 66\n 68\n 71\n 73\n 74\n 75\n 77\n 78\n 81\n 85",penwidth=3] ;
+9 -- 8 [label=" government agencies\n friends colleagues\n tv\n radio",penwidth=3] ;
+9 -- 11 [label=" books other printed material\n family\n magazines\n newspapers\n the internet",penwidth=3] ;
+11 -- 10 [label=" treats men better than women",penwidth=3] ;
+11 -- 12 [label=" i don't belong to or follow any religion\n treats men and women equally\n treats women better than men",penwidth=3] ;
+13 -- 9 [label=" 46\n 71\n 57\n 55\n 26\n 28\n 53\n 20\n 42\n 65\n 52\n 81\n 36\n 74",penwidth=3] ;
+13 -- 19 [label=" 29\n 31\n 33\n 35\n 38\n 43\n 44\n 47\n 48\n 49\n 50\n 54\n 56\n 60\n 63\n 66\n 68\n 73\n 75\n 77\n 78\n 85",penwidth=3] ;
+15 -- 14 [label=" clinton\n didn't vote for president\n trump\n don't know",penwidth=3] ;
+15 -- 16 [label=" iap\n no answer\n other candidate (specify)",penwidth=3] ;
+17 -- 15 [label=" french canada\n philippines\n non-span windies\n poland\n american indian\n american only\n italy\n africa\n england & wales\n russia\n ireland\n sweden\n czechoslovakia\n puerto rico",penwidth=3] ;
+17 -- 18 [label=" arabic\n austria\n belgium\n china\n denmark\n finland\n france\n germany\n greece\n hungary\n india\n lithuania\n mexico\n netherlands\n norway\n other\n other asian\n other canada\n other european\n other spanish\n portugal\n scotland\n spain\n switzerland",penwidth=3] ;
+19 -- 17 [label=" 60\n 31\n 56\n 78\n 49\n 66\n 63\n 35\n 47\n 54\n 68\n 38\n 75\n 29",penwidth=3] ;
+19 -- 20 [label=" 33\n 43\n 44\n 48\n 50\n 73\n 77\n 85",penwidth=3] ;
+21 -- 7 [label=" c\n d",penwidth=3] ;
+21 -- 23 [label=" e",penwidth=3] ;
+23 -- 22 [label=" 1adlt,1+kids\n 3adlts,0mar,ntrel,1+kids\n 4+adlts,0mar,0kids\n 2as,ntmar,ntrel,opsex,1+ks\n 1adlt,0kids\n 3adlts,2mar,sp,rel,0kids\n 4+adlts,2mar,0kids\n 3adlts,0mar,ntrel,0kids\n 2adlts,dkmar,1+kids\n 3adlts,0mar,rel,0kids\n 2adlts,ntmar,rel,1+kids\n 3adlts,2mar,rel,1+kids\n 2as,ntmar,ntrel,smsex,1+ks\n 4+adlts,4+mar,0kids",penwidth=3] ;
+23 -- 24 [label=" 2adlts,dkmar,0kids\n 2adlts,mar,0kids\n 2adlts,mar,1+kids\n 2adlts,ntmar,rel,0kids\n 2as,ntmar,ntrel,opsex,0ks\n 2as,ntmar,ntrel,smsex,0ks\n 3adlts,0mar,ntrel,rel,0kids\n 3adlts,0mar,rel,1+kids\n 3adlts,2mar,sp,rel,1+kids\n 4+adlts,1mar,0kids\n 4+adlts,2mar,1+kids\n 4+adlts,4+mar,1+kids",penwidth=3] ;
+{rank = same;}}

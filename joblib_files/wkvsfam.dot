@@ -1,0 +1,62 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="never
+Prob: never:0.8 often:0.1 rarely:0.1 sometimes:0.0
+Frac: 0.056", fillcolor="#e4c56a"] ;
+1 [label="stress", fillcolor="#d0bd93"] ;
+2 [label="never
+Prob: never:0.7 often:0.0 rarely:0.2 sometimes:0.1
+Frac: 0.112", fillcolor="#d5c189"] ;
+3 [label="famwkoff", fillcolor="#cabb9d"] ;
+4 [label="never
+Prob: never:0.4 often:0.1 rarely:0.3 sometimes:0.3
+Frac: 0.062", fillcolor="#c7afb5"] ;
+5 [label="respect", fillcolor="#c0b5b2"] ;
+6 [label="never
+Prob: never:0.3 often:0.2 rarely:0.3 sometimes:0.2
+Frac: 0.046", fillcolor="#b5bdaf"] ;
+7 [label="famvswk", fillcolor="#afb6c5"] ;
+8 [label="sometimes
+Prob: never:0.0 often:0.2 rarely:0.3 sometimes:0.5
+Frac: 0.211", fillcolor="#b2a4d7"] ;
+9 [label="overwork", fillcolor="#a3b3d8"] ;
+10 [label="sometimes
+Prob: never:0.0 often:0.3 rarely:0.2 sometimes:0.4
+Frac: 0.11", fillcolor="#a7b3be"] ;
+11 [label="toofewwk", fillcolor="#9db9d8"] ;
+12 [label="rarely
+Prob: never:0.0 often:0.1 rarely:0.5 sometimes:0.4
+Frac: 0.058", fillcolor="#a1acec"] ;
+13 [label="condemnd", fillcolor="#9abbdf"] ;
+14 [label="rarely
+Prob: never:0.1 often:0.1 rarely:0.5 sometimes:0.3
+Frac: 0.134", fillcolor="#99badf"] ;
+15 [label="wrktime", fillcolor="#99bddd"] ;
+16 [label="rarely
+Prob: never:0.1 often:0.1 rarely:0.5 sometimes:0.3
+Frac: 0.137", fillcolor="#97bee0"] ;
+17 [label="HRS1", fillcolor="#99bfdb"] ;
+18 [label="rarely
+Prob: never:0.2 often:0.1 rarely:0.5 sometimes:0.2
+Frac: 0.073", fillcolor="#9cc1d0"] ;
+1 -- 0 [label=" never",penwidth=3] ;
+1 -- 3 [label=" always\n hardly ever\n often\n sometimes",penwidth=3] ;
+3 -- 2 [label=" not at all hard",penwidth=3] ;
+3 -- 5 [label=" not too hard\n somewhat hard\n very hard",penwidth=3] ;
+5 -- 4 [label=" agree",penwidth=3] ;
+5 -- 6 [label=" disagree\n strongly agree\n strongly disagree",penwidth=3] ;
+7 -- 1 [label=" never",penwidth=3] ;
+7 -- 9 [label=" often\n rarely\n sometimes",penwidth=3] ;
+9 -- 8 [label=" agree",penwidth=3] ;
+9 -- 11 [label=" disagree\n strongly agree\n strongly disagree",penwidth=3] ;
+11 -- 10 [label=" often",penwidth=3] ;
+11 -- 13 [label=" never\n rarely\n sometimes",penwidth=3] ;
+13 -- 12 [label=" not too true",penwidth=3] ;
+13 -- 15 [label=" not at all true\n somewhat true\n very true",penwidth=3] ;
+15 -- 14 [label=" somewhat true",penwidth=3] ;
+15 -- 17 [label=" not at all true\n not too true\n very true",penwidth=3] ;
+17 -- 16 [label=" c",penwidth=3] ;
+17 -- 18 [label=" a\n b\n d\n e",penwidth=3] ;
+{rank = same;}}

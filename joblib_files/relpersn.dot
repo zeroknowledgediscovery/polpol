@@ -1,0 +1,104 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="not religious
+Prob: modrte religious:0.1 not religious:0.6 slight religious:0.3 very religious:0.0
+Frac: 0.04", fillcolor="#79ef83"] ;
+1 [label="hhtype", fillcolor="#75f281"] ;
+2 [label="not religious
+Prob: modrte religious:0.1 not religious:0.7 slight religious:0.3 very religious:0.0
+Frac: 0.042", fillcolor="#70f480"] ;
+3 [label="feelrel", fillcolor="#74f27b"] ;
+4 [label="not religious
+Prob: modrte religious:0.0 not religious:0.9 slight religious:0.1 very religious:0.0
+Frac: 0.049", fillcolor="#68fd62"] ;
+5 [label="hhtype", fillcolor="#6bfa64"] ;
+6 [label="not religious
+Prob: modrte religious:0.0 not religious:0.9 slight religious:0.1 very religious:0.0
+Frac: 0.033", fillcolor="#70f666"] ;
+7 [label="bible", fillcolor="#74f177"] ;
+8 [label="not religious
+Prob: modrte religious:0.1 not religious:0.5 slight religious:0.3 very religious:0.1
+Frac: 0.058", fillcolor="#80e593"] ;
+9 [label="reliten", fillcolor="#b5c699"] ;
+10 [label="slight religious
+Prob: modrte religious:0.4 not religious:0.1 slight religious:0.5 very religious:0.0
+Frac: 0.032", fillcolor="#9ad9ad"] ;
+11 [label="pray", fillcolor="#dac183"] ;
+12 [label="modrte religious
+Prob: modrte religious:0.7 not religious:0.0 slight religious:0.2 very religious:0.1
+Frac: 0.029", fillcolor="#e1bb86"] ;
+13 [label="popular", fillcolor="#e2be7e"] ;
+14 [label="modrte religious
+Prob: modrte religious:0.8 not religious:0.0 slight religious:0.1 very religious:0.1
+Frac: 0.031", fillcolor="#e8c074"] ;
+15 [label="lifenow", fillcolor="#e7c175"] ;
+16 [label="modrte religious
+Prob: modrte religious:0.8 not religious:0.0 slight religious:0.1 very religious:0.1
+Frac: 0.029", fillcolor="#e5c175"] ;
+17 [label="SPIND10", fillcolor="#e2bf7d"] ;
+18 [label="modrte religious
+Prob: modrte religious:0.7 not religious:0.0 slight religious:0.2 very religious:0.1
+Frac: 0.171", fillcolor="#e0be80"] ;
+19 [label="sprtprsn", fillcolor="#c7baa2"] ;
+20 [label="slight religious
+Prob: modrte religious:0.1 not religious:0.2 slight religious:0.6 very religious:0.0
+Frac: 0.053", fillcolor="#70e7c6"] ;
+21 [label="pray", fillcolor="#bcb6b5"] ;
+22 [label="very religious
+Prob: modrte religious:0.2 not religious:0.0 slight religious:0.1 very religious:0.7
+Frac: 0.041", fillcolor="#ef77d9"] ;
+23 [label="attend", fillcolor="#c5b0b3"] ;
+24 [label="slight religious
+Prob: modrte religious:0.4 not religious:0.1 slight religious:0.4 very religious:0.0
+Frac: 0.065", fillcolor="#a4d5a7"] ;
+25 [label="god", fillcolor="#c1b6af"] ;
+26 [label="modrte religious
+Prob: modrte religious:0.4 not religious:0.2 slight religious:0.3 very religious:0.1
+Frac: 0.144", fillcolor="#aacea1"] ;
+27 [label="savesoul", fillcolor="#c6b0b0"] ;
+28 [label="modrte religious
+Prob: modrte religious:0.4 not religious:0.1 slight religious:0.3 very religious:0.3
+Frac: 0.049", fillcolor="#c5b4af"] ;
+29 [label="relactiv", fillcolor="#dd98bc"] ;
+30 [label="very religious
+Prob: modrte religious:0.2 not religious:0.0 slight religious:0.0 very religious:0.8
+Frac: 0.034", fillcolor="#f76fdd"] ;
+31 [label="spfund", fillcolor="#e58ec1"] ;
+32 [label="very religious
+Prob: modrte religious:0.3 not religious:0.1 slight religious:0.1 very religious:0.5
+Frac: 0.1", fillcolor="#df98b7"] ;
+1 -- 0 [label=" 2as,ntmar,ntrel,opsex,1+ks\n 4+adlts,4+mar,0kids\n 2adlts,ntmar,dkrel,1+kids\n 3adlts,2mar,ntrel,rel,0kids\n 3adlts,0mar,rel,1+kids\n 3adlts,2mar,rel,1+kids\n 2adlts,ntmar,rel,1+kids\n 2adlts,mar,0kids\n 2adlts,dkmar,1+kids\n 4+adlts,0mar,0kids\n 4+adlts,1mar,0kids\n 4+adlts,0mar,1+kids\n 2as,ntmar,ntrel,smsex,1+ks\n 3adlts,0mar,ntrel,rel,0kids\n 2as,ntmar,ntrel,opsex,0ks\n 3adlts,2mar,sp,rel,0kids",penwidth=3] ;
+1 -- 2 [label=" 1adlt,0kids\n 1adlt,1+kids\n 2adlts,dkmar,0kids\n 2adlts,mar,1+kids\n 2adlts,ntmar,rel,0kids\n 2as,ntmar,ntrel,smsex,0ks\n 3adlts,0mar,ntrel,rel,1+kids\n 3adlts,0mar,rel,0kids\n 3adlts,2mar,sp,rel,1+kids\n 4+adlts,2mar,0kids\n 4+adlts,2mar,1+kids",penwidth=3] ;
+3 -- 1 [label=" not rel or non\n somewhat non-rel\n somwhat relgious\n very non-rel",penwidth=3] ;
+3 -- 7 [label=" extreme non-rel\n extreme relgious\n very religious",penwidth=3] ;
+5 -- 4 [label=" 4+adlts,1mar,0kids\n 2as,ntmar,ntrel,opsex,0ks\n 4+adlts,0mar,0kids\n 2adlts,mar,1+kids\n 3adlts,2mar,sp,rel,0kids\n 2adlts,mar,0kids\n 2adlts,dkmar,1+kids",penwidth=3] ;
+5 -- 6 [label=" 1adlt,0kids\n 1adlt,1+kids\n 2adlts,dkmar,0kids\n 2adlts,ntmar,rel,0kids\n 2as,ntmar,ntrel,opsex,1+ks\n 2as,ntmar,ntrel,smsex,0ks\n 3adlts,0mar,ntrel,0kids\n 3adlts,0mar,ntrel,rel,0kids\n 3adlts,0mar,ntrel,rel,1+kids\n 3adlts,1mar,rel,ntrel,0kids\n 4+adlts,2mar,0kids\n 4+adlts,4+mar,1+kids",penwidth=3] ;
+7 -- 5 [label=" book of fables",penwidth=3] ;
+7 -- 8 [label=" inspired word\n other\n word of god",penwidth=3] ;
+9 -- 3 [label=" no religion",penwidth=3] ;
+9 -- 19 [label=" not very strong\n somewhat strong\n strong",penwidth=3] ;
+11 -- 10 [label=" lt once a week\n never",penwidth=3] ;
+11 -- 13 [label=" once a day\n once a week\n several times a day\n several times a week",penwidth=3] ;
+13 -- 12 [label=" 4th important",penwidth=3] ;
+13 -- 17 [label=" 2nd important\n 3rd important\n least important\n most important",penwidth=3] ;
+15 -- 14 [label=" c",penwidth=3] ;
+15 -- 16 [label=" a\n b\n d\n e",penwidth=3] ;
+17 -- 15 [label=" not specified wholesale trade\n services to buildings and dwellings\n u.s. navy\n civic, social, advocacy organizations, and grantmaking and giving services\n fiber, yarn, and thread mills\n colleges and universities, including junior colleges\n other health care services\n aluminum production and processing\n truck transportation\n management, scientific, and technical consulting services\n banking and related activities\n auto parts, accessories, and tire stores\n animal slaughtering and processing\n retail florists\n leather tanning and finishing and other allied products manufacturing\n support activities for mining\n logging\n travel arrangements and reservation services\n petroleum and petroleum products, merchant wholesalers\n waste management and remediation services\n electric power generation, transmission, and distribution\n beverage manufacturing\n architectural, engineering, and related services\n gasoline stations\n natural gas distribution\n administration of economic programs and space research\n household appliance stores\n other personal services\n u.s. armed forces/n.s.\n insurance carriers and related activities\n legal services\n industrial and miscellaneous chemicals\n advertising and related services\n groceries and related products, merchant wholesalers\n pottery, ceramics, and plumbing fixture manufacturing\n business, technical, and trade schools and training\n dairy product manufacturing\n private households\n administration of human resource programs\n cutlery and hand tool manufacturing\n apparel, fabrics, and notions, merchant wholesalers\n animal production\n postal service\n department stores and discount stores\n sugar and confectionery products\n car washes\n  restaurants and other food services\n specialty food stores\n non-depository credit and related activities\n electrical and electronic goods, merchant wholesalers\n sporting goods, camera, and hobby and toy stores\n computer systems design and related services\n clothing stores\n farm supplies, merchant wholesalers\n personal and household goods repair and maintenance\n paint, coating, and adhesive manufacturing\n pharmaceutical and medicine manufacturing\n other amusement, gambling, and recreation industries",penwidth=3] ;
+17 -- 18 [label=" accounting, tax preparation, bookkeeping, and payroll services\n air transportation\n automotive repair and maintenance\n beauty salons\n building material and supplies dealers\n child day care services\n construction\n crop production\n drycleaning and laundry services\n elementary and secondary schools\n employment services\n fuel dealers\n grocery stores\n hospitals\n independent artists, performing arts, spectator sports, and related industries\n individual and family services\n internet publishing and broadcasting and web search portals\n investigation and security services\n justice, public order, and safety activities\n landscaping services\n libraries and archives\n metal forgings and stampings\n miscellaneous durable goods, merchant wholesalers\n motor vehicles and motor vehicle equipment manufacturing\n national security and international affairs\n newspaper publishers\n not specified retail trade\n nursing care facilities\n offices of chiropractors\n offices of dentists\n offices of physicians\n other direct selling establishments\n outpatient care centers\n pharmacies and drug stores\n plastics product manufacturing\n radio, tv, and computer stores\n rail transportation\n real estate\n securities, commodities, funds, trusts, and other financial investments\n services incidental to transportation\n structural metals, and boiler, tank, and shipping container manufacturing\n traveler accommodation\n warehousing and storage\n water transportation",penwidth=3] ;
+19 -- 11 [label=" modeate spirtual",penwidth=3] ;
+19 -- 21 [label=" not spiritual\n slight spiritual\n very spiritual",penwidth=3] ;
+21 -- 20 [label=" lt once a week",penwidth=3] ;
+21 -- 23 [label=" never\n once a day\n once a week\n several times a day\n several times a week",penwidth=3] ;
+23 -- 22 [label=" more thn once wk",penwidth=3] ;
+23 -- 25 [label=" 2-3x a month\n every week\n lt once a year\n never\n nrly every week\n once a month\n once a year\n sevrl times a yr",penwidth=3] ;
+25 -- 24 [label=" believe but doubts",penwidth=3] ;
+25 -- 27 [label=" believe sometimes\n dont believe\n know god exists\n no way to find out\n some higher power",penwidth=3] ;
+27 -- 26 [label=" no",penwidth=3] ;
+27 -- 29 [label=" yes",penwidth=3] ;
+29 -- 28 [label=" never",penwidth=3] ;
+29 -- 31 [label=" 2-3 times a month\n about once a month\n about once or twice a year\n every week\n less than once a year\n nearly every week\n once a day\n several times a week\n several times a year",penwidth=3] ;
+31 -- 30 [label=" fundamentalist",penwidth=3] ;
+31 -- 32 [label=" liberal\n moderate",penwidth=3] ;
+{rank = same;}}

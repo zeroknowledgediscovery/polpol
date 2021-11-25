@@ -1,0 +1,50 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="moderate
+Prob: fundamentalist:0.0 liberal:0.0 moderate:1.0
+Frac: 0.337", fillcolor="#c155ff"] ;
+1 [label="RELIG16", fillcolor="#b99cbe"] ;
+2 [label="moderate
+Prob: fundamentalist:0.1 liberal:0.0 moderate:0.9
+Frac: 0.083", fillcolor="#c964e7"] ;
+3 [label="DENOM16", fillcolor="#d9ab90"] ;
+4 [label="fundamentalist
+Prob: fundamentalist:0.6 liberal:0.2 moderate:0.2
+Frac: 0.127", fillcolor="#d3bb85"] ;
+5 [label="DENOM16", fillcolor="#dcbb7d"] ;
+6 [label="moderate
+Prob: fundamentalist:0.3 liberal:0.3 moderate:0.4
+Frac: 0.052", fillcolor="#b2a5bd"] ;
+7 [label="DENOM16", fillcolor="#e1bb78"] ;
+8 [label="fundamentalist
+Prob: fundamentalist:0.9 liberal:0.0 moderate:0.0
+Frac: 0.092", fillcolor="#f7be5e"] ;
+9 [label="DENOM16", fillcolor="#edc166"] ;
+10 [label="fundamentalist
+Prob: fundamentalist:0.8 liberal:0.1 moderate:0.1
+Frac: 0.101", fillcolor="#e4c36d"] ;
+11 [label="DENOM16", fillcolor="#b5c19e"] ;
+12 [label="fundamentalist
+Prob: fundamentalist:0.6 liberal:0.1 moderate:0.3
+Frac: 0.029", fillcolor="#daa496"] ;
+13 [label="DENOM16", fillcolor="#68f0bb"] ;
+14 [label="liberal
+Prob: fundamentalist:0.0 liberal:1.0 moderate:0.0
+Frac: 0.179", fillcolor="#56fdc1"] ;
+1 -- 0 [label=" catholic",penwidth=3] ;
+1 -- 11 [label=" christian\n jewish\n none\n orthodox-christian\n protestant",penwidth=3] ;
+3 -- 2 [label=" no denomination\n other presbyterian\n lutheran-mo synod",penwidth=3] ;
+3 -- 5 [label=" afr meth episcopal\n am bapt ch in usa\n am baptist asso\n baptist-dk which\n episcopal\n evangelical luth\n lutheran-dk which\n methodist-dk which\n nat bapt conv usa\n other\n other lutheran\n other methodist\n presbyterian-dk wh\n southern baptist\n united pres ch in us\n wi evan luth synod",penwidth=3] ;
+5 -- 4 [label=" episcopal\n am bapt ch in usa\n other",penwidth=3] ;
+5 -- 7 [label=" afr meth episcopal\n am baptist asso\n baptist-dk which\n evangelical luth\n lutheran-dk which\n methodist-dk which\n nat bapt conv usa\n other lutheran\n other methodist\n presbyterian-dk wh\n southern baptist\n united pres ch in us\n wi evan luth synod",penwidth=3] ;
+7 -- 6 [label=" lutheran-dk which\n am baptist asso\n presbyterian-dk wh",penwidth=3] ;
+7 -- 9 [label=" afr meth episcopal\n baptist-dk which\n evangelical luth\n methodist-dk which\n nat bapt conv usa\n other lutheran\n other methodist\n southern baptist\n united pres ch in us\n wi evan luth synod",penwidth=3] ;
+9 -- 8 [label=" evangelical luth\n baptist-dk which\n united pres ch in us",penwidth=3] ;
+9 -- 10 [label=" afr meth episcopal\n methodist-dk which\n nat bapt conv usa\n other lutheran\n other methodist\n southern baptist\n wi evan luth synod",penwidth=3] ;
+11 -- 3 [label=" other lutheran\n united pres ch in us\n am baptist asso\n southern baptist\n other\n other presbyterian\n nat bapt conv usa\n methodist-dk which\n evangelical luth\n lutheran-dk which\n episcopal\n am bapt ch in usa\n baptist-dk which\n afr meth episcopal\n no denomination\n other methodist\n wi evan luth synod\n lutheran-mo synod\n presbyterian-dk wh",penwidth=3] ;
+11 -- 13 [label=" afr meth ep zion\n am lutheran\n luth ch in america\n nat bapt conv of am\n other baptists\n presbyterian c in us\n presbyterian, merged\n united methodist",penwidth=3] ;
+13 -- 12 [label=" presbyterian, merged\n other baptists\n nat bapt conv of am\n am lutheran\n presbyterian c in us",penwidth=3] ;
+13 -- 14 [label=" afr meth ep zion\n luth ch in america\n united methodist",penwidth=3] ;
+{rank = same;}}

@@ -1,0 +1,50 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="d
+Prob: a:0.0 b:0.0 c:0.4 d:0.5 e:0.1
+Frac: 0.17", fillcolor="#6c98fd"] ;
+1 [label="wordj", fillcolor="#69d7ec"] ;
+2 [label="c
+Prob: a:0.0 b:0.0 c:0.7 d:0.3 e:0.0
+Frac: 0.105", fillcolor="#57cafe"] ;
+3 [label="wordh", fillcolor="#5aeef6"] ;
+4 [label="c
+Prob: a:0.0 b:0.0 c:0.8 d:0.2 e:0.0
+Frac: 0.029", fillcolor="#55e4ff"] ;
+5 [label="wordc", fillcolor="#57fbfb"] ;
+6 [label="c
+Prob: a:0.0 b:0.0 c:1.0 d:0.0 e:0.0
+Frac: 0.202", fillcolor="#57fffb"] ;
+7 [label="worde", fillcolor="#5bfcf3"] ;
+8 [label="c
+Prob: a:0.0 b:0.3 c:0.7 d:0.0 e:0.0
+Frac: 0.058", fillcolor="#6effd2"] ;
+9 [label="wordb", fillcolor="#67eee6"] ;
+10 [label="c
+Prob: a:0.0 b:0.4 c:0.6 d:0.0 e:0.0
+Frac: 0.048", fillcolor="#82fcb5"] ;
+11 [label="worda", fillcolor="#a3e99f"] ;
+12 [label="a
+Prob: a:0.4 b:0.4 c:0.2 d:0.0 e:0.1
+Frac: 0.04", fillcolor="#cbd284"] ;
+13 [label="workblks", fillcolor="#9bacf2"] ;
+14 [label="e
+Prob: a:0.0 b:0.0 c:0.0 d:0.0 e:1.0
+Frac: 0.349", fillcolor="#f85bfd"] ;
+1 -- 0 [label=" correct",penwidth=3] ;
+1 -- 9 [label=" incorrect",penwidth=3] ;
+3 -- 2 [label=" correct",penwidth=3] ;
+3 -- 7 [label=" incorrect",penwidth=3] ;
+5 -- 4 [label=" correct",penwidth=3] ;
+5 -- 6 [label=" incorrect",penwidth=3] ;
+7 -- 5 [label=" correct",penwidth=3] ;
+7 -- 8 [label=" incorrect",penwidth=3] ;
+9 -- 3 [label=" correct",penwidth=3] ;
+9 -- 11 [label=" incorrect",penwidth=3] ;
+11 -- 10 [label=" correct",penwidth=3] ;
+11 -- 12 [label=" incorrect",penwidth=3] ;
+13 -- 1 [label=" c",penwidth=3] ;
+13 -- 14 [label=" e",penwidth=3] ;
+{rank = same;}}

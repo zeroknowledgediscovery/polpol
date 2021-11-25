@@ -1,0 +1,56 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="correct
+Prob: correct:0.8 incorrect:0.2
+Frac: 0.084", fillcolor="#d7ca7c"] ;
+1 [label="wordsum", fillcolor="#f6c35d"] ;
+2 [label="correct
+Prob: correct:1.0 incorrect:0.0
+Frac: 0.05", fillcolor="#fcc157"] ;
+3 [label="extrayr", fillcolor="#fcc157"] ;
+4 [label="correct
+Prob: correct:1.0 incorrect:0.0
+Frac: 0.051", fillcolor="#ffc155"] ;
+5 [label="MAIND10", fillcolor="#fec155"] ;
+6 [label="correct
+Prob: correct:1.0 incorrect:0.0
+Frac: 0.043", fillcolor="#ffc155"] ;
+7 [label="comfort", fillcolor="#fdc156"] ;
+8 [label="correct
+Prob: correct:1.0 incorrect:0.0
+Frac: 0.062", fillcolor="#fcc157"] ;
+9 [label="MAIND10", fillcolor="#fcc157"] ;
+10 [label="correct
+Prob: correct:1.0 incorrect:0.0
+Frac: 0.049", fillcolor="#f9c25a"] ;
+11 [label="yearsusa", fillcolor="#fcc157"] ;
+12 [label="correct
+Prob: correct:1.0 incorrect:0.0
+Frac: 0.058", fillcolor="#fac25a"] ;
+13 [label="parborn", fillcolor="#fcc157"] ;
+14 [label="correct
+Prob: correct:1.0 incorrect:0.0
+Frac: 0.52", fillcolor="#fdc156"] ;
+15 [label="wordb", fillcolor="#f9c25a"] ;
+16 [label="correct
+Prob: correct:0.8 incorrect:0.2
+Frac: 0.081", fillcolor="#d5cb7e"] ;
+1 -- 0 [label=" b",penwidth=3] ;
+1 -- 15 [label=" a\n c\n d\n e",penwidth=3] ;
+3 -- 2 [label=" c",penwidth=3] ;
+3 -- 9 [label=" a\n b\n e",penwidth=3] ;
+5 -- 4 [label=" carpet and rug mills\n paper and paper products, merchant wholesalers\n museums, art galleries, historical sites, and similar institutions\n crop production\n ship and boat building\n nursing care facilities\n clothing stores\n knitting fabric mills, and apparel knitting mills\n computer systems design and related services\n animal food, grain, and oilseed milling\n sewing, needlework, and piece goods stores\n specialty food stores\n furniture and related product manufacturing\n animal production\n retail bakeries\n offices of other health practitioners\n child day care services",penwidth=3] ;
+5 -- 7 [label=" administration of environmental quality and housing programs\n commercial and service industry machinery manufacturing\n elementary and secondary schools\n farm product raw materials, merchant wholesalers\n furniture and home furnishings stores\n hardware stores\n hardware, plumbing and heating equipment, and supplies, merchant wholesalers\n health and personal care, except drug, stores\n jewelry, luggage, and leather goods stores\n landscaping services\n motion pictures and video industries\n navigational, measuring, electromedical, and control instruments manufacturing\n not specified retail trade\n religious organizations\n savings institutions, including credit unions\n tire manufacturing\n u.s. army",penwidth=3] ;
+7 -- 6 [label=" agree\n neither agree nor disagree",penwidth=3] ;
+7 -- 8 [label=" disagree\n strongly agree",penwidth=3] ;
+9 -- 5 [label=" clothing stores\n animal production\n elementary and secondary schools\n farm product raw materials, merchant wholesalers\n computer systems design and related services\n religious organizations\n carpet and rug mills\n child day care services\n u.s. army\n motion pictures and video industries\n museums, art galleries, historical sites, and similar institutions\n administration of environmental quality and housing programs\n hardware, plumbing and heating equipment, and supplies, merchant wholesalers\n ship and boat building\n navigational, measuring, electromedical, and control instruments manufacturing\n paper and paper products, merchant wholesalers\n landscaping services\n offices of other health practitioners\n animal food, grain, and oilseed milling\n specialty food stores\n commercial and service industry machinery manufacturing\n nursing care facilities\n furniture and home furnishings stores\n savings institutions, including credit unions\n knitting fabric mills, and apparel knitting mills\n sewing, needlework, and piece goods stores\n hardware stores\n crop production\n tire manufacturing\n furniture and related product manufacturing\n health and personal care, except drug, stores\n jewelry, luggage, and leather goods stores\n not specified retail trade\n retail bakeries",penwidth=3] ;
+9 -- 11 [label="  restaurants and other food services\n accounting, tax preparation, bookkeeping, and payroll services\n administration of economic programs and space research\n administration of human resource programs\n advertising and related services\n air transportation\n aircraft and parts manufacturing\n animal slaughtering and processing\n apparel accessories and other apparel manufacturing\n architectural, engineering, and related services\n auto parts, accessories, and tire stores\n automobile dealers\n bakeries, except retail\n banking and related activities\n beauty salons\n beverage manufacturing\n book stores and news dealers\n bowling centers\n building material and supplies dealers\n bus service and urban transit\n civic, social, advocacy organizations, and grantmaking and giving services\n colleges and universities, including junior colleges\n communications, and audio and video equipment manufacturing\n community food and housing, and emergency services\n computer and peripheral equipment manufacturing\n construction\n cut and sew apparel manufacturing\n dairy product manufacturing\n department stores and discount stores\n drinking places, alcoholic beverages\n drycleaning and laundry services\n electric power generation, transmission, and distribution\n electrical lighting and electrical equipment manufacturing, and other electrical component manufacturing, n.e.c.\n electronic component and product manufacturing, n.e.c.\n executive offices and legislative bodies\n fabric mills, except knitting mills\n footwear manufacturing\n fruit and vegetable preserving and specialty food manufacturing\n funeral homes, and cemeteries and crematories\n gasoline stations\n glass and glass product manufacturing\n groceries and related products, merchant wholesalers\n grocery stores\n home health care services\n hospitals\n household appliance manufacturing\n independent artists, performing arts, spectator sports, and related industries\n individual and family services\n industrial and miscellaneous chemicals\n insurance carriers and related activities\n justice, public order, and safety activities\n lawn and garden equipment and supplies stores\n legal services\n libraries and archives\n machinery manufacturing, n.e.c.\n management of companies and enterprises\n medical equipment and supplies manufacturing\n metals and minerals, except petroleum, merchant wholesalers\n metalworking machinery manufacturing\n miscellaneous general merchandise stores\n miscellaneous manufacturing, n.e.c.\n miscellaneous nondurable goods, merchant wholesalers\n miscellaneous retail stores\n motor vehicles and motor vehicle equipment manufacturing\n nail salons and other personal care services\n national security and international affairs\n natural gas distribution\n newspaper publishers\n non-depository credit and related activities\n not specified food industries\n office supplies and stationery stores\n offices of dentists\n offices of optometrists\n offices of physicians\n other administrative and other support services\n other amusement, gambling, and recreation industries\n other direct selling establishments\n other health care services\n other motor vehicle dealers\n other personal services\n other schools and instruction, and educational support services\n other telecommunications services\n outpatient care centers\n periodical, book, and directory publishers\n personal and household goods repair and maintenance\n pharmaceutical and medicine manufacturing\n pharmacies and drug stores\n plastics product manufacturing\n postal service\n pottery, ceramics, and plumbing fixture manufacturing\n printing and related support activities\n private households\n public finance activities\n pulp, paper, and paperboard mills\n radio and television broadcasting and cable subscription programming\n radio, tv, and computer stores\n rail transportation\n real estate\n residential care facilities, without nursing\n retail florists\n seafood and other miscellaneous foods, n.e.c.\n securities, commodities, funds, trusts, and other financial investments\n services incidental to transportation\n services to buildings and dwellings\n shoe stores\n soap, cleaning compound, and cosmetics manufacturing\n specialized design services\n sporting and athletic goods, and doll, toy and game manufacturing\n sporting goods, camera, and hobby and toy stores\n structural clay product manufacturing\n sugar and confectionery products\n support activities for mining\n textile product mills, except carpet and rug\n travel arrangements and reservation services\n traveler accommodation\n truck transportation\n u.s. navy\n warehousing and storage\n waste management and remediation services\n wired telecommunications carriers",penwidth=3] ;
+11 -- 10 [label=" c\n d",penwidth=3] ;
+11 -- 13 [label=" b\n e",penwidth=3] ;
+13 -- 12 [label=" neither in u.s\n mother only\n not mother;fa.dk",penwidth=3] ;
+13 -- 14 [label=" both in u.s\n dk for both\n father only\n mother; fa. dk",penwidth=3] ;
+15 -- 3 [label=" correct",penwidth=3] ;
+15 -- 16 [label=" incorrect",penwidth=3] ;
+{rank = same;}}

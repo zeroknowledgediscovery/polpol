@@ -1,0 +1,38 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="divorced
+Prob: divorced:0.6 married:0.0 never married:0.3 separated:0.1 widowed:0.0
+Frac: 0.056", fillcolor="#bfcd97"] ;
+1 [label="marital", fillcolor="#83e0d2"] ;
+2 [label="never married
+Prob: divorced:0.0 married:0.0 never married:0.9 separated:0.1 widowed:0.0
+Frac: 0.049", fillcolor="#5eeff5"] ;
+3 [label="difrel", fillcolor="#67ebee"] ;
+4 [label="never married
+Prob: divorced:0.1 married:0.0 never married:0.8 separated:0.1 widowed:0.0
+Frac: 0.075", fillcolor="#6debe6"] ;
+5 [label="RELATE2", fillcolor="#6be9ec"] ;
+6 [label="never married
+Prob: divorced:0.0 married:0.0 never married:0.8 separated:0.1 widowed:0.1
+Frac: 0.036", fillcolor="#68e5f8"] ;
+7 [label="marital", fillcolor="#72e5e3"] ;
+8 [label="married
+Prob: divorced:0.1 married:0.3 never married:0.3 separated:0.1 widowed:0.1
+Frac: 0.042", fillcolor="#9ccfb5"] ;
+9 [label="RELHHD2", fillcolor="#a9f677"] ;
+10 [label="married
+Prob: divorced:0.0 married:1.0 never married:0.0 separated:0.0 widowed:0.0
+Frac: 0.742", fillcolor="#b6fe57"] ;
+1 -- 0 [label=" divorced",penwidth=3] ;
+1 -- 7 [label=" married\n never married\n separated\n widowed",penwidth=3] ;
+3 -- 2 [label=" disagree",penwidth=3] ;
+3 -- 5 [label=" agree\n neither agree nor disagree\n strongly agree\n strongly disagree",penwidth=3] ;
+5 -- 4 [label=" non-relative",penwidth=3] ;
+5 -- 6 [label=" child\n other relative\n parent or parent-in-law",penwidth=3] ;
+7 -- 3 [label=" never married",penwidth=3] ;
+7 -- 8 [label=" married\n separated\n widowed",penwidth=3] ;
+9 -- 1 [label=" roommate,housemate\n son-in-law,daughter-in-law\n other non-relative-employee,boarder-\n friend\n partner,fiance-e-,boyfriend,girlfriend,etc\n parent\n parent-in-law\n brother,sister-full,half, or step sibling-\n child,natural or adopted,stepchild",penwidth=3] ;
+9 -- 10 [label=" cousin\n grandchild,great-granchild\n niece or nephew\n other relative-great-aunt,grandniece,etc.-\n sibling-in-law\n spouse",penwidth=3] ;
+{rank = same;}}

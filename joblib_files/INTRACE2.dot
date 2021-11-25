@@ -1,0 +1,14 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="white
+Prob: american indian:0.0 asian indian:0.0 black or african:0.1 chinese:0.0 some other race:0.2 white:0.6
+Frac: 0.531", fillcolor="#d972e3"] ;
+1 [label="intage", fillcolor="#e76ae2"] ;
+2 [label="white
+Prob: american indian:0.1 asian indian:0.0 black or african:0.0 chinese:0.0 some other race:0.1 white:0.8
+Frac: 0.469", fillcolor="#f661e1"] ;
+1 -- 0 [label=" 47\n 26\n 81\n 53\n 38\n 67\n 20\n 52\n 42\n 63\n 44",penwidth=3] ;
+1 -- 2 [label=" 43\n 49\n 60\n 61\n 65\n 66\n 69\n 72",penwidth=3] ;
+{rank = same;}}

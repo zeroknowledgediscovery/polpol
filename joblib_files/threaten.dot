@@ -1,0 +1,62 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="never
+Prob: a few times a month:0.0 a few times a year:0.2 almost every day:0.0 at least once a week:0.0 less than once a year:0.3 never:0.5
+Frac: 0.045", fillcolor="#e178d5"] ;
+1 [label="nihilism", fillcolor="#e074d9"] ;
+2 [label="never
+Prob: a few times a month:0.0 a few times a year:0.1 almost every day:0.0 at least once a week:0.0 less than once a year:0.4 never:0.4
+Frac: 0.08", fillcolor="#df72da"] ;
+3 [label="comfort", fillcolor="#e078d6"] ;
+4 [label="never
+Prob: a few times a month:0.1 a few times a year:0.2 almost every day:0.0 at least once a week:0.1 less than once a year:0.3 never:0.3
+Frac: 0.11", fillcolor="#d88dc8"] ;
+5 [label="poorserv", fillcolor="#e079d5"] ;
+6 [label="never
+Prob: a few times a month:0.0 a few times a year:0.1 almost every day:0.0 at least once a week:0.0 less than once a year:0.3 never:0.5
+Frac: 0.272", fillcolor="#e471db"] ;
+7 [label="notsmart", fillcolor="#e275d8"] ;
+8 [label="never
+Prob: a few times a month:0.0 a few times a year:0.1 almost every day:0.0 at least once a week:0.0 less than once a year:0.2 never:0.7
+Frac: 0.097", fillcolor="#ec69e0"] ;
+9 [label="poorserv", fillcolor="#e572da"] ;
+10 [label="never
+Prob: a few times a month:0.0 a few times a year:0.0 almost every day:0.0 at least once a week:0.0 less than once a year:0.1 never:0.8
+Frac: 0.044", fillcolor="#f662e1"] ;
+11 [label="SATFAM7", fillcolor="#f065e2"] ;
+12 [label="never
+Prob: a few times a month:0.0 a few times a year:0.1 almost every day:0.0 at least once a week:0.0 less than once a year:0.1 never:0.8
+Frac: 0.047", fillcolor="#f65ee5"] ;
+13 [label="SPPRES10", fillcolor="#ee65e2"] ;
+14 [label="never
+Prob: a few times a month:0.0 a few times a year:0.1 almost every day:0.0 at least once a week:0.0 less than once a year:0.2 never:0.7
+Frac: 0.084", fillcolor="#ea6ae0"] ;
+15 [label="disrspct", fillcolor="#ea6cdd"] ;
+16 [label="never
+Prob: a few times a month:0.0 a few times a year:0.0 almost every day:0.0 at least once a week:0.0 less than once a year:0.1 never:0.9
+Frac: 0.077", fillcolor="#f959e7"] ;
+17 [label="vstrat", fillcolor="#fa59e7"] ;
+18 [label="never
+Prob: a few times a month:0.0 a few times a year:0.0 almost every day:0.0 at least once a week:0.0 less than once a year:0.1 never:0.9
+Frac: 0.144", fillcolor="#fb5ae7"] ;
+1 -- 0 [label=" disagree",penwidth=3] ;
+1 -- 2 [label=" agree\n neither agree nor disagree\n strongly agree\n strongly disagree",penwidth=3] ;
+3 -- 1 [label=" agree",penwidth=3] ;
+3 -- 5 [label=" disagree\n neither agree nor disagree\n strongly agree\n strongly disagree",penwidth=3] ;
+5 -- 4 [label=" a few times a month\n almost every day\n at least once a week",penwidth=3] ;
+5 -- 6 [label=" a few times a year\n less than once a year",penwidth=3] ;
+7 -- 3 [label=" a few times a month\n a few times a year\n almost every day\n at least once a week\n less than once a year",penwidth=3] ;
+7 -- 8 [label=" never",penwidth=3] ;
+9 -- 7 [label=" a few times a month\n a few times a year\n almost every day\n at least once a week\n less than once a year",penwidth=3] ;
+9 -- 11 [label=" never",penwidth=3] ;
+11 -- 10 [label=" fairly dissatisfied\n very dissatisfied\n fairly satisfied\n neither satisfied nor dissatisfied\n completely satisfied",penwidth=3] ;
+11 -- 13 [label=" completely dissatisfied\n very satisfied",penwidth=3] ;
+13 -- 12 [label=" c",penwidth=3] ;
+13 -- 14 [label=" a\n b\n d\n e",penwidth=3] ;
+15 -- 9 [label=" a few times a month\n a few times a year\n almost every day\n at least once a week\n less than once a year",penwidth=3] ;
+15 -- 17 [label=" never",penwidth=3] ;
+17 -- 16 [label=" 3337\n 3355\n 3376\n 3326\n 3311\n 3341\n 3312\n 3357\n 3339\n 3325\n 3353\n 3366\n 3346\n 3315\n 3322\n 3348\n 3309\n 3361\n 3327\n 3331\n 3302\n 3304\n 3332\n 3349\n 3378\n 3363\n 3371\n 3321\n 3323",penwidth=3] ;
+17 -- 18 [label=" 3301\n 3305\n 3306\n 3307\n 3308\n 3310\n 3316\n 3317\n 3318\n 3319\n 3320\n 3324\n 3328\n 3329\n 3333\n 3334\n 3336\n 3338\n 3342\n 3343\n 3344\n 3345\n 3347\n 3350\n 3351\n 3352\n 3354\n 3359\n 3360\n 3362\n 3364\n 3365\n 3367\n 3368\n 3369\n 3370\n 3372\n 3373\n 3374\n 3375\n 3377",penwidth=3] ;
+{rank = same;}}

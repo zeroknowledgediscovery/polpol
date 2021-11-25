@@ -1,0 +1,56 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="clean
+Prob: clean:0.4 dirty:0.0 interviewer never saw the interior of the respondent's hu:0.2 not very clean:0.0 so-so:0.2 very clean:0.2
+Frac: 0.076", fillcolor="#cf9faf"] ;
+1 [label="MAISCO08", fillcolor="#cfa8a7"] ;
+2 [label="clean
+Prob: clean:0.4 dirty:0.0 interviewer never saw the interior of the respondent's hu:0.2 not very clean:0.1 so-so:0.2 very clean:0.2
+Frac: 0.063", fillcolor="#cca6ac"] ;
+3 [label="comfort", fillcolor="#cfaba5"] ;
+4 [label="clean
+Prob: clean:0.4 dirty:0.0 interviewer never saw the interior of the respondent's hu:0.2 not very clean:0.1 so-so:0.1 very clean:0.2
+Frac: 0.149", fillcolor="#d0aca2"] ;
+5 [label="incuspop", fillcolor="#cca9aa"] ;
+6 [label="clean
+Prob: clean:0.4 dirty:0.0 interviewer never saw the interior of the respondent's hu:0.2 not very clean:0.1 so-so:0.2 very clean:0.2
+Frac: 0.22", fillcolor="#c7aaad"] ;
+7 [label="rgroomed", fillcolor="#cfa2b1"] ;
+8 [label="very clean
+Prob: clean:0.3 dirty:0.0 interviewer never saw the interior of the respondent's hu:0.2 not very clean:0.1 so-so:0.1 very clean:0.4
+Frac: 0.039", fillcolor="#d39fb4"] ;
+9 [label="nihilism", fillcolor="#d598bb"] ;
+10 [label="very clean
+Prob: clean:0.2 dirty:0.0 interviewer never saw the interior of the respondent's hu:0.2 not very clean:0.0 so-so:0.1 very clean:0.5
+Frac: 0.14", fillcolor="#d696bc"] ;
+11 [label="rlooks", fillcolor="#d39bb9"] ;
+12 [label="very clean
+Prob: clean:0.3 dirty:0.0 interviewer never saw the interior of the respondent's hu:0.2 not very clean:0.0 so-so:0.0 very clean:0.5
+Frac: 0.052", fillcolor="#db96b7"] ;
+13 [label="HEALTH1", fillcolor="#d29db8"] ;
+14 [label="very clean
+Prob: clean:0.2 dirty:0.0 interviewer never saw the interior of the respondent's hu:0.2 not very clean:0.0 so-so:0.1 very clean:0.5
+Frac: 0.062", fillcolor="#d595bf"] ;
+15 [label="rhlthend", fillcolor="#d09fb8"] ;
+16 [label="very clean
+Prob: clean:0.3 dirty:0.1 interviewer never saw the interior of the respondent's hu:0.2 not very clean:0.0 so-so:0.1 very clean:0.4
+Frac: 0.198", fillcolor="#cfa2b5"] ;
+1 -- 0 [label=" sales workers not elsewhere classified\n building construction labourers\n mail carriers and sorting clerks\n social work and counselling professionals\n interior designers and decorators\n information and communications technology user support technicians\n clearing and forwarding agents\n packing, bottling and labelling machine operators\n health services managers\n bartenders\n education managers\n shoemakers and related workers\n medical and pharmaceutical technicians\n primary school teachers\n librarians and related information professionals\n manufacturing labourers not elsewhere classified\n bank tellers and related clerks\n cashiers and ticket clerks\n cooks\n teachers' aides\n cleaners and helpers in offices, hotels and other establishments\n supply, distribution and related managers\n welders and flamecutters\n shop supervisors\n police inspectors and detectives\n receptionists (general)\n dieticians and nutritionists\n special needs teachers\n laundry machine operators\n weaving and knitting machine operators\n sales workers\n finance managers\n nursing associate professionals\n nursing professionals\n life science technicians (excluding medical)",penwidth=3] ;
+1 -- 3 [label=" accountants\n accounting and bookkeeping clerks\n administrative and executive secretaries\n archivists and curators\n armed forces occupations, other ranks\n assemblers not elsewhere classified\n bakers, pastry-cooks and confectionery makers\n bus and tram drivers\n business services agents not elsewhere classified\n business services and administration managers not elsewhere classified\n butchers, fishmongers and related food preparers\n buyers\n cartographers and surveyors\n child care workers\n clerical support workers not elsewhere classified\n commercial sales representatives\n contact centre information clerks\n credit and loans officers\n crop farm labourers\n data entry clerks\n dental assistants and therapists\n dentists\n domestic cleaners and helpers\n early childhood educators\n electrical and electronic equipment assemblers\n food and beverage tasters and graders\n food and related products machine operators\n food service counter attendants\n general office clerks\n government licensing officials\n hairdressers\n hand launderers and pressers\n hand packers\n health care assistants\n home-based personal care workers\n hotel receptionists\n information and communications technology operations technicians\n insurance representatives\n kitchen helpers\n lawyers\n library clerks\n manufacturing supervisors\n medical imaging and therapeutic equipment technicians\n medical records and health information technicians\n office supervisors\n payroll clerks\n personal care workers in health services not elsewhere classified\n pet groomers and animal care workers\n photographic products machine operators\n product graders and testers (excluding foods and beverages)\n protective services workers not elsewhere classified\n real estate agents and property managers\n sales and marketing managers\n secondary education teachers\n service station attendants\n sewing machine operators\n sewing, embroidery and related workers\n shop sales assistants\n social work associate professionals\n software developers\n specialist medical practitioners\n statistical, finance and insurance clerks\n stock clerks\n survey and market research interviewers\n teaching professionals not elsewhere classified\n telephone switchboard operators\n textile, fur and leather products machine operators not elsewhere classified\n travel consultants and clerks\n university and higher education teachers\n visual artists\n waiters",penwidth=3] ;
+3 -- 2 [label=" agree",penwidth=3] ;
+3 -- 4 [label=" disagree\n neither agree nor disagree\n strongly agree\n strongly disagree",penwidth=3] ;
+5 -- 1 [label=" average",penwidth=3] ;
+5 -- 6 [label=" higher than average\n lower than average",penwidth=3] ;
+7 -- 5 [label=" about average",penwidth=3] ;
+7 -- 11 [label=" poorly groomed\n very poorly groomed\n very well groomed\n well groomed",penwidth=3] ;
+9 -- 8 [label=" disagree\n neither agree nor disagree",penwidth=3] ;
+9 -- 10 [label=" agree\n strongly agree\n strongly disagree",penwidth=3] ;
+11 -- 9 [label=" about average",penwidth=3] ;
+11 -- 13 [label=" attractive\n unattractive\n very attractive\n very unattractive",penwidth=3] ;
+13 -- 12 [label=" excellent",penwidth=3] ;
+13 -- 15 [label=" fair\n good\n poor\n very good",penwidth=3] ;
+15 -- 14 [label=" excellent",penwidth=3] ;
+15 -- 16 [label=" fair\n good\n poor",penwidth=3] ;
+{rank = same;}}

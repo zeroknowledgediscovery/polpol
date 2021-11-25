@@ -1,0 +1,68 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="english
+Prob: english:1.0 spanish:0.0
+Frac: 0.034", fillcolor="#ffc155"] ;
+1 [label="intage", fillcolor="#fcc157"] ;
+2 [label="english
+Prob: english:1.0 spanish:0.0
+Frac: 0.057", fillcolor="#fbc158"] ;
+3 [label="intid", fillcolor="#f8c25b"] ;
+4 [label="english
+Prob: english:0.9 spanish:0.1
+Frac: 0.24", fillcolor="#edc566"] ;
+5 [label="intid", fillcolor="#f7c25c"] ;
+6 [label="english
+Prob: english:0.8 spanish:0.2
+Frac: 0.074", fillcolor="#e5c76e"] ;
+7 [label="hispanic", fillcolor="#fbc158"] ;
+8 [label="english
+Prob: english:1.0 spanish:0.0
+Frac: 0.044", fillcolor="#ffc155"] ;
+9 [label="lngthinv", fillcolor="#fec155"] ;
+10 [label="english
+Prob: english:1.0 spanish:0.0
+Frac: 0.138", fillcolor="#fec155"] ;
+11 [label="lngthinv", fillcolor="#fec155"] ;
+12 [label="english
+Prob: english:1.0 spanish:0.0
+Frac: 0.165", fillcolor="#ffc155"] ;
+13 [label="lngthinv", fillcolor="#fec155"] ;
+14 [label="english
+Prob: english:1.0 spanish:0.0
+Frac: 0.03", fillcolor="#ffc155"] ;
+15 [label="height", fillcolor="#fec155"] ;
+16 [label="english
+Prob: english:1.0 spanish:0.0
+Frac: 0.093", fillcolor="#fdc156"] ;
+17 [label="height", fillcolor="#fec155"] ;
+18 [label="english
+Prob: english:1.0 spanish:0.0
+Frac: 0.06", fillcolor="#ffc155"] ;
+19 [label="OLD2", fillcolor="#fec155"] ;
+20 [label="english
+Prob: english:1.0 spanish:0.0
+Frac: 0.064", fillcolor="#fdc156"] ;
+1 -- 0 [label=" 63\n 78\n 47\n 35\n 66",penwidth=3] ;
+1 -- 2 [label=" 28\n 39\n 45\n 53\n 55\n 58\n 59",penwidth=3] ;
+3 -- 1 [label=" 37\n 83\n 75\n 46\n 21\n 107\n 19\n 104\n 56\n 88\n 95\n 62",penwidth=3] ;
+3 -- 5 [label=" 1\n 10\n 100\n 101\n 102\n 103\n 105\n 106\n 108\n 109\n 11\n 110\n 111\n 112\n 113\n 114\n 115\n 117\n 118\n 119\n 12\n 120\n 121\n 122\n 123\n 124\n 125\n 126\n 127\n 128\n 129\n 13\n 130\n 131\n 132\n 133\n 135\n 136\n 137\n 138\n 139\n 14\n 15\n 16\n 17\n 18\n 2\n 20\n 22\n 23\n 24\n 25\n 26\n 27\n 28\n 29\n 3\n 30\n 32\n 33\n 34\n 35\n 36\n 38\n 39\n 4\n 40\n 41\n 42\n 43\n 44\n 47\n 48\n 49\n 5\n 50\n 51\n 52\n 53\n 54\n 55\n 57\n 58\n 59\n 6\n 60\n 61\n 63\n 64\n 65\n 66\n 67\n 68\n 69\n 7\n 70\n 71\n 72\n 73\n 74\n 76\n 77\n 78\n 79\n 8\n 80\n 81\n 82\n 84\n 85\n 86\n 87\n 89\n 9\n 90\n 91\n 92\n 93\n 94\n 96\n 97\n 98\n 99",penwidth=3] ;
+5 -- 4 [label=" 139\n 109\n 98\n 82\n 64\n 33\n 73\n 72\n 123\n 81\n 93\n 57\n 69\n 131\n 30\n 34\n 43\n 24\n 11\n 32\n 68\n 101\n 40\n 85\n 22\n 108\n 119\n 87\n 44\n 25\n 52\n 97\n 23\n 66\n 38\n 58\n 10",penwidth=3] ;
+5 -- 7 [label=" 1\n 100\n 102\n 103\n 105\n 106\n 110\n 111\n 112\n 113\n 114\n 115\n 117\n 118\n 12\n 120\n 121\n 122\n 124\n 125\n 126\n 127\n 128\n 129\n 13\n 130\n 132\n 133\n 135\n 136\n 137\n 138\n 14\n 15\n 16\n 17\n 18\n 2\n 20\n 26\n 27\n 28\n 29\n 3\n 35\n 36\n 39\n 4\n 41\n 42\n 47\n 48\n 49\n 5\n 50\n 51\n 53\n 54\n 55\n 59\n 6\n 60\n 61\n 63\n 65\n 67\n 7\n 70\n 71\n 74\n 76\n 77\n 78\n 79\n 8\n 80\n 84\n 86\n 89\n 9\n 90\n 91\n 92\n 94\n 96\n 99",penwidth=3] ;
+7 -- 6 [label=" mexican, mexican american, chicano/a\n cuban\n chilean\n panamanian\n honduran\n dominican\n spanish\n south american\n guatemalan",penwidth=3] ;
+7 -- 9 [label=" columbian\n hispanic\n not hispanic\n puerto rican\n salvadorian",penwidth=3] ;
+9 -- 8 [label=" 84\n 72\n 75\n 171\n 79\n 109\n 95\n 106\n 83\n 177\n 126\n 69",penwidth=3] ;
+9 -- 11 [label=" 100\n 101\n 102\n 103\n 104\n 105\n 107\n 108\n 110\n 111\n 112\n 113\n 114\n 115\n 116\n 117\n 118\n 119\n 120\n 121\n 122\n 123\n 124\n 125\n 127\n 128\n 129\n 130\n 131\n 132\n 133\n 134\n 135\n 136\n 137\n 138\n 139\n 140\n 141\n 142\n 143\n 144\n 145\n 146\n 147\n 148\n 149\n 150\n 151\n 152\n 153\n 154\n 155\n 156\n 157\n 158\n 159\n 160\n 161\n 162\n 163\n 164\n 165\n 166\n 167\n 168\n 169\n 170\n 172\n 174\n 175\n 176\n 178\n 179\n 180\n 181\n 182\n 183\n 184\n 185\n 186\n 187\n 190\n 191\n 192\n 193\n 195\n 197\n 198\n 199\n 200\n 30\n 34\n 38\n 39\n 41\n 43\n 45\n 49\n 56\n 64\n 67\n 68\n 70\n 71\n 73\n 74\n 76\n 78\n 80\n 81\n 82\n 85\n 86\n 87\n 88\n 89\n 90\n 91\n 92\n 93\n 94\n 96\n 97\n 98\n 99",penwidth=3] ;
+11 -- 10 [label=" 111\n 49\n 67\n 70\n 152\n 165\n 68\n 166\n 80\n 136\n 94\n 127\n 175\n 184\n 85\n 192\n 93\n 163\n 97\n 179\n 38\n 112\n 90\n 161\n 103\n 174\n 87\n 154\n 110\n 121\n 157\n 143\n 153\n 41\n 71\n 98\n 186",penwidth=3] ;
+11 -- 13 [label=" 100\n 101\n 102\n 104\n 105\n 107\n 108\n 113\n 114\n 115\n 116\n 117\n 118\n 119\n 120\n 122\n 123\n 124\n 125\n 128\n 129\n 130\n 131\n 132\n 133\n 134\n 135\n 137\n 138\n 139\n 140\n 141\n 142\n 144\n 145\n 146\n 147\n 148\n 149\n 150\n 151\n 155\n 156\n 158\n 159\n 160\n 162\n 164\n 167\n 168\n 169\n 170\n 172\n 176\n 178\n 180\n 181\n 182\n 183\n 185\n 187\n 190\n 191\n 193\n 195\n 197\n 198\n 199\n 200\n 30\n 34\n 39\n 43\n 45\n 56\n 64\n 73\n 74\n 76\n 78\n 81\n 82\n 86\n 88\n 89\n 91\n 92\n 96\n 99",penwidth=3] ;
+13 -- 12 [label=" 92\n 82\n 134\n 39\n 147\n 168\n 129\n 144\n 114\n 101\n 156\n 128\n 160\n 78\n 86\n 56\n 140\n 198\n 191\n 89\n 151\n 149\n 169\n 167\n 43\n 74\n 104\n 185\n 30\n 113\n 108\n 146\n 34\n 137\n 115\n 102\n 124",penwidth=3] ;
+13 -- 15 [label=" 100\n 105\n 107\n 116\n 117\n 118\n 119\n 120\n 122\n 123\n 125\n 130\n 131\n 132\n 133\n 135\n 138\n 139\n 141\n 142\n 145\n 148\n 150\n 155\n 158\n 159\n 162\n 164\n 170\n 172\n 176\n 178\n 180\n 181\n 182\n 183\n 187\n 190\n 193\n 195\n 197\n 199\n 200\n 45\n 64\n 73\n 76\n 81\n 88\n 91\n 96\n 99",penwidth=3] ;
+15 -- 14 [label=" b",penwidth=3] ;
+15 -- 17 [label=" a\n c\n d\n e",penwidth=3] ;
+17 -- 16 [label=" c",penwidth=3] ;
+17 -- 19 [label=" a\n d\n e",penwidth=3] ;
+19 -- 18 [label=" c",penwidth=3] ;
+19 -- 20 [label=" a\n b\n d\n e",penwidth=3] ;
+{rank = same;}}

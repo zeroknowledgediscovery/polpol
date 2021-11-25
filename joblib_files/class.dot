@@ -1,0 +1,110 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="middle class
+Prob: lower class:0.0 middle class:0.8 upper class:0.1 working class:0.2
+Frac: 0.06", fillcolor="#80e27d"] ;
+1 [label="intid", fillcolor="#81e17f"] ;
+2 [label="middle class
+Prob: lower class:0.0 middle class:0.8 upper class:0.0 working class:0.2
+Frac: 0.069", fillcolor="#84e077"] ;
+3 [label="incuspop", fillcolor="#7ce57b"] ;
+4 [label="middle class
+Prob: lower class:0.0 middle class:0.8 upper class:0.2 working class:0.1
+Frac: 0.061", fillcolor="#74ec7f"] ;
+5 [label="ratetone", fillcolor="#81e080"] ;
+6 [label="middle class
+Prob: lower class:0.0 middle class:0.6 upper class:0.1 working class:0.3
+Frac: 0.032", fillcolor="#95cb94"] ;
+7 [label="finrela", fillcolor="#b4b0a5"] ;
+8 [label="working class
+Prob: lower class:0.1 middle class:0.4 upper class:0.0 working class:0.5
+Frac: 0.035", fillcolor="#c2a0b2"] ;
+9 [label="wealth", fillcolor="#b8a9a9"] ;
+10 [label="middle class
+Prob: lower class:0.0 middle class:0.5 upper class:0.0 working class:0.4
+Frac: 0.036", fillcolor="#adb3a2"] ;
+11 [label="region", fillcolor="#b3aea4"] ;
+12 [label="working class
+Prob: lower class:0.0 middle class:0.5 upper class:0.0 working class:0.5
+Frac: 0.04", fillcolor="#b8a9a7"] ;
+13 [label="INCOME16", fillcolor="#aab6a8"] ;
+14 [label="middle class
+Prob: lower class:0.1 middle class:0.4 upper class:0.3 working class:0.2
+Frac: 0.052", fillcolor="#8ed1a6"] ;
+15 [label="INCOME16", fillcolor="#b4aeab"] ;
+16 [label="working class
+Prob: lower class:0.1 middle class:0.5 upper class:0.0 working class:0.5
+Frac: 0.051", fillcolor="#baa9a9"] ;
+17 [label="RELHH2", fillcolor="#c49fb2"] ;
+18 [label="working class
+Prob: lower class:0.1 middle class:0.3 upper class:0.0 working class:0.6
+Frac: 0.045", fillcolor="#d194bc"] ;
+19 [label="INCOME16", fillcolor="#b7aaad"] ;
+20 [label="working class
+Prob: lower class:0.0 middle class:0.4 upper class:0.0 working class:0.5
+Frac: 0.089", fillcolor="#bfa0b2"] ;
+21 [label="INCOME16", fillcolor="#c3a2b0"] ;
+22 [label="working class
+Prob: lower class:0.0 middle class:0.3 upper class:0.0 working class:0.6
+Frac: 0.05", fillcolor="#d08fc1"] ;
+23 [label="goodlife", fillcolor="#d78ac4"] ;
+24 [label="working class
+Prob: lower class:0.1 middle class:0.3 upper class:0.0 working class:0.7
+Frac: 0.046", fillcolor="#d887c8"] ;
+25 [label="SATFAM7", fillcolor="#da88c5"] ;
+26 [label="working class
+Prob: lower class:0.1 middle class:0.2 upper class:0.0 working class:0.7
+Frac: 0.082", fillcolor="#dc89c3"] ;
+27 [label="wealth", fillcolor="#cc9bb2"] ;
+28 [label="working class
+Prob: lower class:0.1 middle class:0.3 upper class:0.0 working class:0.5
+Frac: 0.072", fillcolor="#ca9eaf"] ;
+29 [label="intage", fillcolor="#c89eaf"] ;
+30 [label="working class
+Prob: lower class:0.1 middle class:0.4 upper class:0.0 working class:0.5
+Frac: 0.052", fillcolor="#c49faf"] ;
+31 [label="satfin", fillcolor="#c5a6a5"] ;
+32 [label="middle class
+Prob: lower class:0.2 middle class:0.4 upper class:0.0 working class:0.3
+Frac: 0.029", fillcolor="#c2b493"] ;
+33 [label="newsfrom", fillcolor="#c2ae9c"] ;
+34 [label="working class
+Prob: lower class:0.2 middle class:0.4 upper class:0.0 working class:0.4
+Frac: 0.099", fillcolor="#c2ac9f"] ;
+1 -- 0 [label=" 125\n 46\n 119\n 30\n 97\n 47\n 20\n 109\n 60\n 70\n 38\n 92\n 132\n 93\n 63\n 5\n 77\n 133\n 9\n 110\n 29\n 58\n 64\n 53\n 50\n 28\n 56",penwidth=3] ;
+1 -- 5 [label=" 1\n 10\n 100\n 102\n 103\n 104\n 105\n 106\n 107\n 108\n 11\n 111\n 114\n 118\n 12\n 120\n 121\n 122\n 123\n 124\n 126\n 128\n 129\n 13\n 130\n 131\n 135\n 136\n 138\n 139\n 14\n 15\n 16\n 17\n 18\n 19\n 21\n 22\n 24\n 27\n 32\n 34\n 35\n 39\n 4\n 40\n 42\n 43\n 44\n 49\n 54\n 55\n 57\n 59\n 6\n 61\n 65\n 66\n 69\n 7\n 71\n 72\n 73\n 74\n 76\n 80\n 82\n 83\n 84\n 85\n 87\n 88\n 89\n 90\n 91\n 94\n 96\n 98",penwidth=3] ;
+3 -- 2 [label=" average",penwidth=3] ;
+3 -- 4 [label=" higher than average\n lower than average",penwidth=3] ;
+5 -- 3 [label=" c",penwidth=3] ;
+5 -- 6 [label=" d\n e",penwidth=3] ;
+7 -- 1 [label=" above average",penwidth=3] ;
+7 -- 21 [label=" average\n below average\n far above average\n far below average",penwidth=3] ;
+9 -- 8 [label=" $100,000 to $150,000\n $4 million to $5 million\n less than $5,000\n $5,000 to $20,000\n $250,000 to $500,000",penwidth=3] ;
+9 -- 11 [label=" $1 million to $2 million\n $150,000 to $250,000\n $20,000 to $40,000\n $3 million to $4 million\n $40,000 to $75,000\n $500,000 to $1 million\n $75,000 to $100,000",penwidth=3] ;
+11 -- 10 [label=" e. nor. central\n new england\n middle atlantic\n w. sou. central\n mountain",penwidth=3] ;
+11 -- 12 [label=" e. sou. central\n pacific\n south atlantic\n w. nor. central",penwidth=3] ;
+13 -- 9 [label=" $110000 to $129999\n $75000 to $89999\n $6 000 to 6 999\n $4 000 to 4 999\n $15000 to 17499",penwidth=3] ;
+13 -- 14 [label=" $170000 or over\n $17500 to 19999",penwidth=3] ;
+15 -- 13 [label=" $4 000 to 4 999\n $17500 to 19999\n $15000 to 17499\n $110000 to $129999\n $6 000 to 6 999\n $75000 to $89999\n $170000 or over",penwidth=3] ;
+15 -- 17 [label=" $130000 to $149999\n $3 000 to 3 999\n $40000 to 49999\n under $1 000",penwidth=3] ;
+17 -- 16 [label=" spouse\n brother, sister",penwidth=3] ;
+17 -- 18 [label=" biological child\n child, unsp\n friend\n niece or nephew\n parent\n parent-in-law\n partner,girl(boy)friend",penwidth=3] ;
+19 -- 15 [label=" under $1 000\n $17500 to 19999\n $15000 to 17499\n $110000 to $129999\n $40000 to 49999\n $6 000 to 6 999\n $170000 or over\n $3 000 to 3 999\n $4 000 to 4 999\n $75000 to $89999\n $130000 to $149999",penwidth=3] ;
+19 -- 20 [label=" $30000 to 34999\n $90000 to $109999",penwidth=3] ;
+21 -- 19 [label=" $6 000 to 6 999\n $75000 to $89999\n $3 000 to 3 999\n $110000 to $129999\n $130000 to $149999\n $4 000 to 4 999\n $90000 to $109999\n under $1 000\n $40000 to 49999\n $17500 to 19999\n $15000 to 17499\n $30000 to 34999\n $170000 or over",penwidth=3] ;
+21 -- 27 [label=" $1 000 to 2 999\n $10000 to 12499\n $12500 to 14999\n $150000 to $169999\n $20000 to 22499\n $22500 to 24999\n $25000 to 29999\n $35000 to 39999\n $5 000 to 5 999\n $50000 to 59999\n $60000 to 74999\n $7 000 to 7 999\n $8 000 to 9 999",penwidth=3] ;
+23 -- 22 [label=" agree",penwidth=3] ;
+23 -- 25 [label=" disagree\n neither\n strongly agree\n strongly disagree",penwidth=3] ;
+25 -- 24 [label=" completely satisfied\n fairly satisfied",penwidth=3] ;
+25 -- 26 [label=" completely dissatisfied\n fairly dissatisfied\n neither satisfied nor dissatisfied\n very satisfied",penwidth=3] ;
+27 -- 23 [label=" less than $5,000\n $250,000 to $500,000\n $150,000 to $250,000\n $1 million to $2 million\n $5,000 to $20,000\n $500,000 to $1 million\n $20,000 to $40,000\n $4 million to $5 million\n $5 million to $10 million\n $75,000 to $100,000\n $100,000 to $150,000",penwidth=3] ;
+27 -- 31 [label=" $40,000 to $75,000\n above $10 million",penwidth=3] ;
+29 -- 28 [label=" 75\n 65\n 51\n 40\n 56\n 29\n 50\n 44\n 35\n 48\n 43\n 45\n 64\n 53\n 37\n 59\n 72\n 57\n 42\n 26\n 52\n 66\n 39\n 36\n 61\n 69\n 38",penwidth=3] ;
+29 -- 30 [label=" 27\n 33\n 47\n 49\n 54\n 55\n 60\n 63\n 67\n 68\n 74\n 78\n 81",penwidth=3] ;
+31 -- 29 [label=" more or less",penwidth=3] ;
+31 -- 33 [label=" not at all sat\n satisfied",penwidth=3] ;
+33 -- 32 [label=" family\n the internet",penwidth=3] ;
+33 -- 34 [label=" friends colleagues\n newspapers\n radio\n tv",penwidth=3] ;
+{rank = same;}}

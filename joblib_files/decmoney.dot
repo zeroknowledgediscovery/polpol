@@ -1,0 +1,38 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="not able at all
+Prob: not able at all:0.5 not very able:0.3 somewhat able:0.1 very able:0.0
+Frac: 0.097", fillcolor="#b5da6e"] ;
+1 [label="dectreat", fillcolor="#8ae97a"] ;
+2 [label="not very able
+Prob: not able at all:0.1 not very able:0.6 somewhat able:0.2 very able:0.0
+Frac: 0.273", fillcolor="#7bee7e"] ;
+3 [label="dectreat", fillcolor="#82dfa7"] ;
+4 [label="somewhat able
+Prob: not able at all:0.0 not very able:0.2 somewhat able:0.6 very able:0.2
+Frac: 0.161", fillcolor="#78d7d2"] ;
+5 [label="hurtoth", fillcolor="#7ad6d2"] ;
+6 [label="somewhat able
+Prob: not able at all:0.1 not very able:0.2 somewhat able:0.6 very able:0.1
+Frac: 0.227", fillcolor="#7cd6d2"] ;
+7 [label="dectreat", fillcolor="#96c8b9"] ;
+8 [label="very able
+Prob: not able at all:0.0 not very able:0.0 somewhat able:0.2 very able:0.7
+Frac: 0.123", fillcolor="#d67cf5"] ;
+9 [label="PRESTG10", fillcolor="#d67ff0"] ;
+10 [label="very able
+Prob: not able at all:0.1 not very able:0.1 somewhat able:0.2 very able:0.7
+Frac: 0.119", fillcolor="#d781ea"] ;
+1 -- 0 [label=" not able at all",penwidth=3] ;
+1 -- 2 [label=" not very able",penwidth=3] ;
+3 -- 1 [label=" not able at all\n not very able",penwidth=3] ;
+3 -- 5 [label=" somewhat able",penwidth=3] ;
+5 -- 4 [label=" not very likely",penwidth=3] ;
+5 -- 6 [label=" not likely at all\n somewhat likely\n very likely",penwidth=3] ;
+7 -- 3 [label=" not able at all\n not very able\n somewhat able",penwidth=3] ;
+7 -- 9 [label=" very able",penwidth=3] ;
+9 -- 8 [label=" c",penwidth=3] ;
+9 -- 10 [label=" a\n b\n d\n e",penwidth=3] ;
+{rank = same;}}

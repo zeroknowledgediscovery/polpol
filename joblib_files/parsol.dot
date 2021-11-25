@@ -1,0 +1,68 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="much better
+Prob: about the same:0.2 much better:0.5 much worse:0.0 somewhat better:0.2 somewhat worse:0.1
+Frac: 0.14", fillcolor="#aec08b"] ;
+1 [label="kidssol", fillcolor="#b0a4a2"] ;
+2 [label="somewhat better
+Prob: about the same:0.3 much better:0.3 much worse:0.0 somewhat better:0.3 somewhat worse:0.1
+Frac: 0.044", fillcolor="#b6a69b"] ;
+3 [label="wordsum", fillcolor="#b1a0a2"] ;
+4 [label="somewhat better
+Prob: about the same:0.3 much better:0.2 much worse:0.0 somewhat better:0.4 somewhat worse:0.1
+Frac: 0.059", fillcolor="#ad9ca8"] ;
+5 [label="spwrksta", fillcolor="#b197ad"] ;
+6 [label="somewhat better
+Prob: about the same:0.3 much better:0.2 much worse:0.0 somewhat better:0.4 somewhat worse:0.2
+Frac: 0.197", fillcolor="#b192b3"] ;
+7 [label="satfin", fillcolor="#b0ac9f"] ;
+8 [label="somewhat better
+Prob: about the same:0.2 much better:0.2 much worse:0.1 somewhat better:0.3 somewhat worse:0.2
+Frac: 0.06", fillcolor="#aba3b6"] ;
+9 [label="endsmeet", fillcolor="#b1b39c"] ;
+10 [label="much better
+Prob: about the same:0.3 much better:0.4 much worse:0.0 somewhat better:0.3 somewhat worse:0.0
+Frac: 0.135", fillcolor="#b2be87"] ;
+11 [label="quallife", fillcolor="#b1b599"] ;
+12 [label="much better
+Prob: about the same:0.1 much better:0.6 much worse:0.0 somewhat better:0.2 somewhat worse:0.1
+Frac: 0.048", fillcolor="#b7c882"] ;
+13 [label="incgap", fillcolor="#b3b498"] ;
+14 [label="much better
+Prob: about the same:0.2 much better:0.4 much worse:0.0 somewhat better:0.3 somewhat worse:0.1
+Frac: 0.121", fillcolor="#b1aca1"] ;
+15 [label="class", fillcolor="#b1b2a0"] ;
+16 [label="much better
+Prob: about the same:0.2 much better:0.3 much worse:0.1 somewhat better:0.3 somewhat worse:0.2
+Frac: 0.085", fillcolor="#b2a8a7"] ;
+17 [label="finrela", fillcolor="#afb0a7"] ;
+18 [label="much better
+Prob: about the same:0.3 much better:0.3 much worse:0.1 somewhat better:0.3 somewhat worse:0.0
+Frac: 0.068", fillcolor="#acbd95"] ;
+19 [label="savesoul", fillcolor="#adb6a7"] ;
+20 [label="somewhat worse
+Prob: about the same:0.2 much better:0.2 much worse:0.2 somewhat better:0.2 somewhat worse:0.3
+Frac: 0.044", fillcolor="#afabc3"] ;
+1 -- 0 [label=" much better",penwidth=3] ;
+1 -- 5 [label=" about the same\n much worse\n no children -volunteered-\n somewhat better\n somewhat worse",penwidth=3] ;
+3 -- 2 [label=" c\n d",penwidth=3] ;
+3 -- 4 [label=" a\n b\n e",penwidth=3] ;
+5 -- 3 [label=" other\n unempl, laid off\n temp not working\n working fulltime",penwidth=3] ;
+5 -- 6 [label=" keeping house\n retired\n school\n working parttime",penwidth=3] ;
+7 -- 1 [label=" more or less",penwidth=3] ;
+7 -- 9 [label=" not at all sat\n satisfied",penwidth=3] ;
+9 -- 8 [label=" fairly difficult",penwidth=3] ;
+9 -- 11 [label=" fairly easy\n neither easy nor difficult\n very difficult\n very easy",penwidth=3] ;
+11 -- 10 [label=" excellent",penwidth=3] ;
+11 -- 15 [label=" fair\n good\n poor\n very good",penwidth=3] ;
+13 -- 12 [label=" agree\n neither",penwidth=3] ;
+13 -- 14 [label=" disagree\n strongly agree\n strongly disagree",penwidth=3] ;
+15 -- 13 [label=" middle class",penwidth=3] ;
+15 -- 17 [label=" lower class\n upper class\n working class",penwidth=3] ;
+17 -- 16 [label=" average",penwidth=3] ;
+17 -- 19 [label=" above average\n below average\n far above average\n far below average",penwidth=3] ;
+19 -- 18 [label=" no",penwidth=3] ;
+19 -- 20 [label=" yes",penwidth=3] ;
+{rank = same;}}

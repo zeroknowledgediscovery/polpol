@@ -1,0 +1,92 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="not hispanic
+Prob: central american:0.0 chilean:0.0 columbian:0.0 costa rican:0.0 cuban:0.0 dominican:0.0 equadorian:0.0 guatemalan:0.0 hispanic:0.0 honduran:0.0 mexican, mexican american, chicano/a:0.0 nicaraguan:0.0 not hispanic:1.0 panamanian:0.0 puerto rican:0.0 salvadorian:0.0 south american:0.0 spanish:0.0
+Frac: 0.04", fillcolor="#c157fc"] ;
+1 [label="vstrat", fillcolor="#c056fe"] ;
+2 [label="not hispanic
+Prob: central american:0.0 chilean:0.0 columbian:0.0 costa rican:0.0 cuban:0.0 dominican:0.0 equadorian:0.0 guatemalan:0.0 hispanic:0.0 honduran:0.0 mexican, mexican american, chicano/a:0.0 nicaraguan:0.0 not hispanic:1.0 panamanian:0.0 puerto rican:0.0 salvadorian:0.0 south american:0.0 spanish:0.0
+Frac: 0.058", fillcolor="#be56ff"] ;
+3 [label="ethnic", fillcolor="#9d6bfe"] ;
+4 [label="not hispanic
+Prob: central american:0.0 chilean:0.0 columbian:0.0 costa rican:0.0 cuban:0.0 dominican:0.0 equadorian:0.0 guatemalan:0.0 hispanic:0.0 honduran:0.0 mexican, mexican american, chicano/a:0.1 nicaraguan:0.0 not hispanic:0.9 panamanian:0.0 puerto rican:0.0 salvadorian:0.0 south american:0.0 spanish:0.0
+Frac: 0.03", fillcolor="#b95cfb"] ;
+5 [label="ethnic", fillcolor="#847afe"] ;
+6 [label="mexican, mexican american, chicano/a
+Prob: central american:0.0 chilean:0.0 columbian:0.0 costa rican:0.0 cuban:0.0 dominican:0.0 equadorian:0.0 guatemalan:0.0 hispanic:0.0 honduran:0.0 mexican, mexican american, chicano/a:1.0 nicaraguan:0.0 not hispanic:0.0 panamanian:0.0 puerto rican:0.0 salvadorian:0.0 south american:0.0 spanish:0.0
+Frac: 0.078", fillcolor="#5994fe"] ;
+7 [label="ETH1", fillcolor="#7582fe"] ;
+8 [label="not hispanic
+Prob: central american:0.0 chilean:0.0 columbian:0.0 costa rican:0.0 cuban:0.0 dominican:0.0 equadorian:0.0 guatemalan:0.0 hispanic:0.0 honduran:0.0 mexican, mexican american, chicano/a:0.0 nicaraguan:0.0 not hispanic:1.0 panamanian:0.0 puerto rican:0.0 salvadorian:0.0 south american:0.0 spanish:0.0
+Frac: 0.03", fillcolor="#c155ff"] ;
+9 [label="ETH1", fillcolor="#b560fb"] ;
+10 [label="not hispanic
+Prob: central american:0.0 chilean:0.0 columbian:0.0 costa rican:0.0 cuban:0.0 dominican:0.0 equadorian:0.0 guatemalan:0.0 hispanic:0.0 honduran:0.0 mexican, mexican american, chicano/a:0.1 nicaraguan:0.0 not hispanic:0.9 panamanian:0.0 puerto rican:0.0 salvadorian:0.0 south american:0.0 spanish:0.0
+Frac: 0.03", fillcolor="#b45cff"] ;
+11 [label="ethnic", fillcolor="#bd5cfa"] ;
+12 [label="not hispanic
+Prob: central american:0.0 chilean:0.0 columbian:0.0 costa rican:0.0 cuban:0.0 dominican:0.0 equadorian:0.0 guatemalan:0.0 hispanic:0.0 honduran:0.0 mexican, mexican american, chicano/a:0.1 nicaraguan:0.0 not hispanic:0.8 panamanian:0.0 puerto rican:0.0 salvadorian:0.0 south american:0.0 spanish:0.0
+Frac: 0.061", fillcolor="#b367ef"] ;
+13 [label="ethnic", fillcolor="#bd5cfa"] ;
+14 [label="not hispanic
+Prob: central american:0.0 chilean:0.0 columbian:0.0 costa rican:0.0 cuban:0.0 dominican:0.0 equadorian:0.0 guatemalan:0.0 hispanic:0.0 honduran:0.0 mexican, mexican american, chicano/a:0.0 nicaraguan:0.0 not hispanic:1.0 panamanian:0.0 puerto rican:0.0 salvadorian:0.0 south american:0.0 spanish:0.0
+Frac: 0.144", fillcolor="#c155fe"] ;
+15 [label="respnum", fillcolor="#c155fe"] ;
+16 [label="not hispanic
+Prob: central american:0.0 chilean:0.0 columbian:0.0 costa rican:0.0 cuban:0.0 dominican:0.0 equadorian:0.0 guatemalan:0.0 hispanic:0.0 honduran:0.0 mexican, mexican american, chicano/a:0.0 nicaraguan:0.0 not hispanic:1.0 panamanian:0.0 puerto rican:0.0 salvadorian:0.0 south american:0.0 spanish:0.0
+Frac: 0.081", fillcolor="#c055ff"] ;
+17 [label="ethnic", fillcolor="#be5bfb"] ;
+18 [label="not hispanic
+Prob: central american:0.0 chilean:0.0 columbian:0.0 costa rican:0.0 cuban:0.0 dominican:0.0 equadorian:0.0 guatemalan:0.0 hispanic:0.0 honduran:0.0 mexican, mexican american, chicano/a:0.0 nicaraguan:0.0 not hispanic:1.0 panamanian:0.0 puerto rican:0.0 salvadorian:0.0 south american:0.0 spanish:0.0
+Frac: 0.039", fillcolor="#bd56ff"] ;
+19 [label="ethnic", fillcolor="#b771f0"] ;
+20 [label="not hispanic
+Prob: central american:0.0 chilean:0.0 columbian:0.0 costa rican:0.0 cuban:0.1 dominican:0.0 equadorian:0.0 guatemalan:0.1 hispanic:0.0 honduran:0.0 mexican, mexican american, chicano/a:0.1 nicaraguan:0.0 not hispanic:0.6 panamanian:0.0 puerto rican:0.1 salvadorian:0.0 south american:0.0 spanish:0.0
+Frac: 0.051", fillcolor="#b17dec"] ;
+21 [label="vissci", fillcolor="#b47cea"] ;
+22 [label="not hispanic
+Prob: central american:0.0 chilean:0.0 columbian:0.0 costa rican:0.0 cuban:0.0 dominican:0.0 equadorian:0.0 guatemalan:0.0 hispanic:0.0 honduran:0.0 mexican, mexican american, chicano/a:0.0 nicaraguan:0.0 not hispanic:0.6 panamanian:0.0 puerto rican:0.1 salvadorian:0.0 south american:0.0 spanish:0.0
+Frac: 0.039", fillcolor="#b97be8"] ;
+23 [label="ethnic", fillcolor="#bc5ff9"] ;
+24 [label="not hispanic
+Prob: central american:0.0 chilean:0.0 columbian:0.0 costa rican:0.0 cuban:0.0 dominican:0.0 equadorian:0.0 guatemalan:0.0 hispanic:0.0 honduran:0.0 mexican, mexican american, chicano/a:0.0 nicaraguan:0.0 not hispanic:0.9 panamanian:0.0 puerto rican:0.0 salvadorian:0.0 south american:0.0 spanish:0.0
+Frac: 0.07", fillcolor="#bb59fd"] ;
+25 [label="hompop", fillcolor="#be57fd"] ;
+26 [label="not hispanic
+Prob: central american:0.0 chilean:0.0 columbian:0.0 costa rican:0.0 cuban:0.0 dominican:0.0 equadorian:0.0 guatemalan:0.0 hispanic:0.0 honduran:0.0 mexican, mexican american, chicano/a:0.0 nicaraguan:0.0 not hispanic:1.0 panamanian:0.0 puerto rican:0.0 salvadorian:0.0 south american:0.0 spanish:0.0
+Frac: 0.133", fillcolor="#bf56fc"] ;
+27 [label="hompop", fillcolor="#bf57fd"] ;
+28 [label="not hispanic
+Prob: central american:0.0 chilean:0.0 columbian:0.0 costa rican:0.0 cuban:0.0 dominican:0.0 equadorian:0.0 guatemalan:0.0 hispanic:0.0 honduran:0.0 mexican, mexican american, chicano/a:0.0 nicaraguan:0.0 not hispanic:1.0 panamanian:0.0 puerto rican:0.0 salvadorian:0.0 south american:0.0 spanish:0.0
+Frac: 0.113", fillcolor="#c057fd"] ;
+1 -- 0 [label=" 3310\n 3359\n 3362\n 3341\n 3348\n 3332\n 3360\n 3311\n 3319\n 3345\n 3351\n 3377\n 3306\n 3361\n 3344\n 3356\n 3304\n 3317\n 3367\n 3368\n 3365\n 3350\n 3339\n 3312\n 3320\n 3315",penwidth=3] ;
+1 -- 2 [label=" 3303\n 3305\n 3307\n 3308\n 3313\n 3314\n 3316\n 3318\n 3321\n 3322\n 3323\n 3324\n 3325\n 3327\n 3328\n 3330\n 3331\n 3333\n 3336\n 3337\n 3338\n 3342\n 3343\n 3347\n 3352\n 3354\n 3355\n 3357\n 3358\n 3363\n 3364\n 3366\n 3369\n 3370\n 3371\n 3372\n 3373\n 3374\n 3375\n 3376\n 3378",penwidth=3] ;
+3 -- 1 [label=" england & wales\n ireland\n sweden\n non-span windies\n poland\n france\n norway\n austria\n germany",penwidth=3] ;
+3 -- 5 [label=" american indian\n american only\n arabic\n czechoslovakia\n denmark\n finland\n french canada\n italy\n mexico\n other canada\n other european\n other spanish\n puerto rico\n scotland\n spain",penwidth=3] ;
+5 -- 4 [label=" italy\n spain\n american only\n puerto rico\n other canada\n other european\n finland\n scotland\n arabic\n american indian",penwidth=3] ;
+5 -- 7 [label=" czechoslovakia\n denmark\n french canada\n mexico\n other spanish",penwidth=3] ;
+7 -- 6 [label=" mexico",penwidth=3] ;
+7 -- 8 [label=" austria\n czechoslovakia\n england & wales\n norway\n scotland",penwidth=3] ;
+9 -- 3 [label=" arabic\n austria\n norway\n west indies\n scotland\n england & wales\n czechoslovakia\n mexico\n non-span windies",penwidth=3] ;
+9 -- 11 [label=" africa\n american indian\n american only\n belgium\n china\n denmark\n finland\n france\n french canada\n germany\n greece\n hungary\n india\n ireland\n italy\n japan\n lithuania\n netherlands\n other\n other asian\n other canada\n other european\n other spanish\n philippines\n poland\n portugal\n puerto rico\n rumania\n russia\n spain\n sweden\n switzerland\n yugoslavia",penwidth=3] ;
+11 -- 10 [label=" arabic\n austria\n norway\n west indies\n scotland\n england & wales\n czechoslovakia\n mexico\n non-span windies",penwidth=3] ;
+11 -- 13 [label=" africa\n american indian\n american only\n belgium\n china\n denmark\n finland\n france\n french canada\n germany\n greece\n hungary\n india\n ireland\n italy\n japan\n lithuania\n netherlands\n other\n other asian\n other canada\n other european\n other spanish\n philippines\n poland\n portugal\n puerto rico\n rumania\n russia\n spain\n sweden\n switzerland\n yugoslavia",penwidth=3] ;
+13 -- 12 [label=" switzerland\n belgium\n philippines\n greece\n other european\n japan\n poland\n yugoslavia\n spain",penwidth=3] ;
+13 -- 17 [label=" africa\n american indian\n american only\n china\n denmark\n finland\n france\n french canada\n germany\n hungary\n india\n ireland\n italy\n lithuania\n netherlands\n other\n other asian\n other canada\n other spanish\n portugal\n puerto rico\n rumania\n russia\n sweden",penwidth=3] ;
+15 -- 14 [label=" 1st person",penwidth=3] ;
+15 -- 16 [label=" 2nd person\n 3rd person\n 4th person\n 5th person",penwidth=3] ;
+17 -- 15 [label=" france\n ireland\n sweden\n netherlands\n portugal\n germany\n other\n china\n india",penwidth=3] ;
+17 -- 23 [label=" africa\n american indian\n american only\n denmark\n finland\n french canada\n hungary\n italy\n lithuania\n other asian\n other canada\n other spanish\n puerto rico\n rumania\n russia",penwidth=3] ;
+19 -- 18 [label=" italy",penwidth=3] ;
+19 -- 21 [label=" american indian\n denmark\n finland\n lithuania\n other spanish\n puerto rico\n rumania\n russia",penwidth=3] ;
+21 -- 20 [label=" c",penwidth=3] ;
+21 -- 22 [label=" d\n e",penwidth=3] ;
+23 -- 19 [label=" rumania\n russia\n italy\n lithuania\n other spanish\n finland\n puerto rico\n denmark\n american indian",penwidth=3] ;
+23 -- 27 [label=" africa\n american only\n french canada\n hungary\n other asian\n other canada",penwidth=3] ;
+25 -- 24 [label=" 11\n 8\n 3\n 7\n 5\n 6",penwidth=3] ;
+25 -- 26 [label=" 10\n 2",penwidth=3] ;
+27 -- 25 [label=" 8\n 11\n 2\n 7\n 5\n 3\n 6\n 10",penwidth=3] ;
+27 -- 28 [label=" 1\n 4",penwidth=3] ;
+{rank = same;}}

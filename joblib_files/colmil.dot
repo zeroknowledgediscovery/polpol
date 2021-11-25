@@ -1,0 +1,50 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="allowed
+Prob: allowed:0.9 not allowed:0.1
+Frac: 0.112", fillcolor="#e8c66b"] ;
+1 [label="colrac", fillcolor="#d6cb7d"] ;
+2 [label="allowed
+Prob: allowed:0.7 not allowed:0.3
+Frac: 0.14", fillcolor="#c7ce8c"] ;
+3 [label="colmslm", fillcolor="#eac669"] ;
+4 [label="allowed
+Prob: allowed:1.0 not allowed:0.0
+Frac: 0.059", fillcolor="#fac25a"] ;
+5 [label="SEVERE1", fillcolor="#fbc158"] ;
+6 [label="allowed
+Prob: allowed:1.0 not allowed:0.0
+Frac: 0.24", fillcolor="#fbc158"] ;
+7 [label="colath", fillcolor="#d8ca7b"] ;
+8 [label="not allowed
+Prob: allowed:0.3 not allowed:0.7
+Frac: 0.084", fillcolor="#84dfcf"] ;
+9 [label="colcom", fillcolor="#9dd8b6"] ;
+10 [label="allowed
+Prob: allowed:0.6 not allowed:0.4
+Frac: 0.081", fillcolor="#b8d29b"] ;
+11 [label="spkmil", fillcolor="#bad199"] ;
+12 [label="not allowed
+Prob: allowed:0.3 not allowed:0.7
+Frac: 0.104", fillcolor="#8addc9"] ;
+13 [label="libmil", fillcolor="#6de4e6"] ;
+14 [label="not allowed
+Prob: allowed:0.0 not allowed:1.0
+Frac: 0.179", fillcolor="#5de8f6"] ;
+1 -- 0 [label=" allowed",penwidth=3] ;
+1 -- 2 [label=" not allowed",penwidth=3] ;
+3 -- 1 [label=" not allowed",penwidth=3] ;
+3 -- 5 [label=" yes, allowed",penwidth=3] ;
+5 -- 4 [label=" c",penwidth=3] ;
+5 -- 6 [label=" a\n b\n d\n e",penwidth=3] ;
+7 -- 3 [label=" allowed",penwidth=3] ;
+7 -- 9 [label=" not allowed",penwidth=3] ;
+9 -- 8 [label=" fired",penwidth=3] ;
+9 -- 10 [label=" not fired",penwidth=3] ;
+11 -- 7 [label=" allowed",penwidth=3] ;
+11 -- 13 [label=" not allowed",penwidth=3] ;
+13 -- 12 [label=" not remove",penwidth=3] ;
+13 -- 14 [label=" remove",penwidth=3] ;
+{rank = same;}}

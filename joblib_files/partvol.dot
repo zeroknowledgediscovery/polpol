@@ -1,0 +1,62 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="never
+Prob: never:0.8 once a week or more:0.0 once in the past year:0.1 one to three times a month:0.0 several times a year:0.1
+Frac: 0.14", fillcolor="#eac073"] ;
+1 [label="PRESTG10", fillcolor="#e4c277"] ;
+2 [label="never
+Prob: never:0.8 once a week or more:0.0 once in the past year:0.2 one to three times a month:0.0 several times a year:0.0
+Frac: 0.087", fillcolor="#dac67e"] ;
+3 [label="relactiv", fillcolor="#deb989"] ;
+4 [label="never
+Prob: never:0.5 once a week or more:0.0 once in the past year:0.2 one to three times a month:0.1 several times a year:0.2
+Frac: 0.145", fillcolor="#d5aba4"] ;
+5 [label="partlsc", fillcolor="#c7acb2"] ;
+6 [label="never
+Prob: never:0.4 once a week or more:0.0 once in the past year:0.2 one to three times a month:0.1 several times a year:0.3
+Frac: 0.145", fillcolor="#c8adb9"] ;
+7 [label="attend", fillcolor="#baa4ca"] ;
+8 [label="several times a year
+Prob: never:0.1 once a week or more:0.1 once in the past year:0.2 one to three times a month:0.2 several times a year:0.3
+Frac: 0.069", fillcolor="#b19ad0"] ;
+9 [label="fatigue", fillcolor="#ab97d9"] ;
+10 [label="several times a year
+Prob: never:0.1 once a week or more:0.1 once in the past year:0.2 one to three times a month:0.3 several times a year:0.3
+Frac: 0.067", fillcolor="#a494e2"] ;
+11 [label="knwlawyr", fillcolor="#b5a1cf"] ;
+12 [label="once in the past year
+Prob: never:0.3 once a week or more:0.1 once in the past year:0.3 one to three times a month:0.1 several times a year:0.3
+Frac: 0.064", fillcolor="#baafc6"] ;
+13 [label="RELATE2", fillcolor="#b9a5cb"] ;
+14 [label="several times a year
+Prob: never:0.2 once a week or more:0.0 once in the past year:0.3 one to three times a month:0.1 several times a year:0.4
+Frac: 0.088", fillcolor="#afa2df"] ;
+15 [label="relpersn", fillcolor="#b0a4d5"] ;
+16 [label="several times a year
+Prob: never:0.2 once a week or more:0.1 once in the past year:0.2 one to three times a month:0.2 several times a year:0.3
+Frac: 0.086", fillcolor="#b0a6ca"] ;
+17 [label="ISCO88", fillcolor="#b9a2cc"] ;
+18 [label="never
+Prob: never:0.3 once a week or more:0.0 once in the past year:0.2 one to three times a month:0.1 several times a year:0.3
+Frac: 0.107", fillcolor="#c99fbf"] ;
+1 -- 0 [label=" c",penwidth=3] ;
+1 -- 2 [label=" a\n b\n d\n e",penwidth=3] ;
+3 -- 1 [label=" never",penwidth=3] ;
+3 -- 4 [label=" 2-3 times a month\n about once a month\n about once or twice a year\n every week\n less than once a year\n once a day\n several times a week\n several times a year",penwidth=3] ;
+5 -- 3 [label=" never",penwidth=3] ;
+5 -- 7 [label=" once a week or more\n once in the past year\n one to three times a month\n several times a year",penwidth=3] ;
+7 -- 6 [label=" never",penwidth=3] ;
+7 -- 11 [label=" 2-3x a month\n every week\n lt once a year\n more thn once wk\n nrly every week\n once a month\n once a year\n sevrl times a yr",penwidth=3] ;
+9 -- 8 [label=" moderate\n none",penwidth=3] ;
+9 -- 10 [label=" mild\n severe",penwidth=3] ;
+11 -- 9 [label=" close friend",penwidth=3] ;
+11 -- 13 [label=" family or relative\n no one\n someone else i know",penwidth=3] ;
+13 -- 12 [label=" child\n non-relative\n other relative",penwidth=3] ;
+13 -- 17 [label=" parent or parent-in-law\n spouse",penwidth=3] ;
+15 -- 14 [label=" modrte religious",penwidth=3] ;
+15 -- 16 [label=" not religious\n slight religious\n very religious",penwidth=3] ;
+17 -- 15 [label=" c",penwidth=3] ;
+17 -- 18 [label=" b\n d\n e",penwidth=3] ;
+{rank = same;}}

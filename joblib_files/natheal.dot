@@ -1,0 +1,74 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="too little
+Prob: about right:0.1 too little:0.9 too much:0.0
+Frac: 0.162", fillcolor="#65f8b7"] ;
+1 [label="natcrime", fillcolor="#67f4b8"] ;
+2 [label="too little
+Prob: about right:0.1 too little:0.8 too much:0.1
+Frac: 0.062", fillcolor="#6eeabb"] ;
+3 [label="lngthinv", fillcolor="#64f6b9"] ;
+4 [label="too little
+Prob: about right:0.1 too little:0.9 too much:0.0
+Frac: 0.044", fillcolor="#69f7b4"] ;
+5 [label="lngthinv", fillcolor="#61f9b9"] ;
+6 [label="too little
+Prob: about right:0.1 too little:0.9 too much:0.0
+Frac: 0.044", fillcolor="#67f5b7"] ;
+7 [label="lngthinv", fillcolor="#5efabb"] ;
+8 [label="too little
+Prob: about right:0.0 too little:1.0 too much:0.0
+Frac: 0.088", fillcolor="#5afdbd"] ;
+9 [label="natsoc", fillcolor="#6ff1b3"] ;
+10 [label="too little
+Prob: about right:0.1 too little:0.8 too much:0.0
+Frac: 0.05", fillcolor="#6ef3b3"] ;
+11 [label="nextgen", fillcolor="#75eeb1"] ;
+12 [label="too little
+Prob: about right:0.2 too little:0.8 too much:0.0
+Frac: 0.094", fillcolor="#79ebaf"] ;
+13 [label="natrace", fillcolor="#80e8ab"] ;
+14 [label="too little
+Prob: about right:0.3 too little:0.7 too much:0.1
+Frac: 0.126", fillcolor="#8ce2a5"] ;
+15 [label="natenvir", fillcolor="#80e8ab"] ;
+16 [label="too little
+Prob: about right:0.3 too little:0.7 too much:0.0
+Frac: 0.136", fillcolor="#8ce6a1"] ;
+17 [label="natcity", fillcolor="#a2d69b"] ;
+18 [label="about right
+Prob: about right:0.6 too little:0.3 too much:0.1
+Frac: 0.076", fillcolor="#c5ce81"] ;
+19 [label="natarms", fillcolor="#b2cb97"] ;
+20 [label="too little
+Prob: about right:0.4 too little:0.5 too much:0.1
+Frac: 0.065", fillcolor="#a2d1a0"] ;
+21 [label="PASEI10", fillcolor="#a5c9a6"] ;
+22 [label="too little
+Prob: about right:0.3 too little:0.4 too much:0.2
+Frac: 0.052", fillcolor="#a8bfac"] ;
+1 -- 0 [label=" too little",penwidth=3] ;
+1 -- 2 [label=" about right\n too much",penwidth=3] ;
+3 -- 1 [label=" 162\n 141\n 64\n 142\n 185\n 79\n 163\n 138\n 147\n 86\n 75\n 116\n 111\n 105\n 123\n 113\n 69\n 109\n 80\n 124\n 171\n 82\n 74\n 134\n 126\n 200\n 115\n 154\n 150\n 114\n 149\n 48\n 184\n 125\n 101\n 81\n 87\n 88\n 148\n 73\n 135\n 68\n 164\n 132\n 49\n 30\n 181\n 91\n 102\n 110\n 95\n 133\n 191\n 173\n 158\n 139\n 170\n 129\n 119\n 89\n 140\n 121\n 128\n 78\n 51\n 98\n 146\n 39\n 187\n 156\n 92\n 46\n 192\n 72",penwidth=3] ;
+3 -- 5 [label=" 100\n 103\n 104\n 106\n 107\n 108\n 112\n 117\n 118\n 120\n 122\n 127\n 130\n 131\n 136\n 137\n 143\n 144\n 145\n 151\n 152\n 153\n 157\n 161\n 168\n 169\n 174\n 175\n 176\n 183\n 195\n 34\n 38\n 43\n 58\n 65\n 76\n 83\n 84\n 85\n 90\n 93\n 94\n 96\n 97\n 99",penwidth=3] ;
+5 -- 4 [label=" 168\n 157\n 85\n 43\n 122\n 93\n 99\n 131\n 195\n 120\n 97\n 130\n 106",penwidth=3] ;
+5 -- 7 [label=" 100\n 103\n 104\n 107\n 108\n 112\n 117\n 118\n 127\n 136\n 137\n 143\n 144\n 145\n 151\n 152\n 153\n 161\n 169\n 174\n 175\n 176\n 183\n 34\n 38\n 58\n 65\n 76\n 83\n 84\n 90\n 94\n 96",penwidth=3] ;
+7 -- 6 [label=" 104\n 103\n 137\n 143\n 58\n 94\n 83\n 153\n 76\n 96",penwidth=3] ;
+7 -- 8 [label=" 100\n 107\n 108\n 112\n 117\n 118\n 127\n 136\n 144\n 145\n 151\n 152\n 161\n 169\n 174\n 175\n 176\n 183\n 34\n 38\n 65\n 84\n 90",penwidth=3] ;
+9 -- 3 [label=" too little",penwidth=3] ;
+9 -- 13 [label=" about right\n too much",penwidth=3] ;
+11 -- 10 [label=" agree",penwidth=3] ;
+11 -- 12 [label=" disagree\n strongly agree\n strongly disagree",penwidth=3] ;
+13 -- 11 [label=" too little",penwidth=3] ;
+13 -- 14 [label=" about right\n too much",penwidth=3] ;
+15 -- 9 [label=" too little",penwidth=3] ;
+15 -- 17 [label=" about right\n too much",penwidth=3] ;
+17 -- 16 [label=" too little",penwidth=3] ;
+17 -- 19 [label=" about right\n too much",penwidth=3] ;
+19 -- 18 [label=" about right",penwidth=3] ;
+19 -- 21 [label=" too little\n too much",penwidth=3] ;
+21 -- 20 [label=" c",penwidth=3] ;
+21 -- 22 [label=" b\n d\n e",penwidth=3] ;
+{rank = same;}}

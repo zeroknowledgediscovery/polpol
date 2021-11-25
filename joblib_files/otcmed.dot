@@ -1,0 +1,32 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="no
+Prob: no:0.9 yes:0.1
+Frac: 0.472", fillcolor="#f1c462"] ;
+1 [label="sphealer", fillcolor="#e4c76f"] ;
+2 [label="no
+Prob: no:0.8 yes:0.2
+Frac: 0.114", fillcolor="#e1c872"] ;
+3 [label="vigwork", fillcolor="#d8ca7b"] ;
+4 [label="no
+Prob: no:0.7 yes:0.3
+Frac: 0.103", fillcolor="#cccd87"] ;
+5 [label="seriousp", fillcolor="#d6cb7d"] ;
+6 [label="no
+Prob: no:0.9 yes:0.1
+Frac: 0.071", fillcolor="#ecc567"] ;
+7 [label="vigversn", fillcolor="#d9ca7a"] ;
+8 [label="no
+Prob: no:0.7 yes:0.3
+Frac: 0.239", fillcolor="#d3cb80"] ;
+1 -- 0 [label=" no",penwidth=3] ;
+1 -- 3 [label=" yes",penwidth=3] ;
+3 -- 2 [label=" definitely unwilling",penwidth=3] ;
+3 -- 5 [label=" definitely willing\n probably unwilling\n probably willing",penwidth=3] ;
+5 -- 4 [label=" somewhat serious",penwidth=3] ;
+5 -- 7 [label=" not at all serious\n not very serious\n very serious",penwidth=3] ;
+7 -- 6 [label=" b",penwidth=3] ;
+7 -- 8 [label=" c\n d",penwidth=3] ;
+{rank = same;}}

@@ -1,0 +1,8 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="child, not specified
+Prob: child, not specified:0.4 grandchild, great-grandchild:0.4 stepchild:0.2
+Frac: 1.0", fillcolor="#aec4a2"] ;
+{rank = same;}}

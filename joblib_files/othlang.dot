@@ -1,0 +1,50 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="no
+Prob: no:0.9 yes:0.1
+Frac: 0.202", fillcolor="#ecc567"] ;
+1 [label="RELIG16", fillcolor="#eac669"] ;
+2 [label="no
+Prob: no:0.9 yes:0.1
+Frac: 0.148", fillcolor="#e6c76d"] ;
+3 [label="numlangs", fillcolor="#c9ce8a"] ;
+4 [label="yes
+Prob: no:0.1 yes:0.9
+Frac: 0.03", fillcolor="#6be5e8"] ;
+5 [label="trcourts", fillcolor="#d2cb81"] ;
+6 [label="no
+Prob: no:0.8 yes:0.2
+Frac: 0.429", fillcolor="#d9ca7a"] ;
+7 [label="parborn", fillcolor="#b8d29b"] ;
+8 [label="yes
+Prob: no:0.0 yes:1.0
+Frac: 0.053", fillcolor="#58eafb"] ;
+9 [label="numpets", fillcolor="#79e2da"] ;
+10 [label="yes
+Prob: no:0.2 yes:0.8
+Frac: 0.042", fillcolor="#70e4e3"] ;
+11 [label="ethnic", fillcolor="#82dfd1"] ;
+12 [label="yes
+Prob: no:0.4 yes:0.6
+Frac: 0.035", fillcolor="#98dabb"] ;
+13 [label="ETH1", fillcolor="#86decd"] ;
+14 [label="yes
+Prob: no:0.3 yes:0.7
+Frac: 0.061", fillcolor="#8addc9"] ;
+1 -- 0 [label=" moslem/islam\n hinduism\n buddhism\n orthodox-christian\n protestant",penwidth=3] ;
+1 -- 2 [label=" catholic\n christian\n jewish\n none\n other",penwidth=3] ;
+3 -- 1 [label=" one language",penwidth=3] ;
+3 -- 7 [label=" four or more languages\n three languages\n two languages",penwidth=3] ;
+5 -- 4 [label=" a\n c",penwidth=3] ;
+5 -- 6 [label=" b\n d\n e",penwidth=3] ;
+7 -- 5 [label=" both in u.s",penwidth=3] ;
+7 -- 9 [label=" father only\n mother only\n mother; fa. dk\n neither in u.s\n not mother;fa.dk",penwidth=3] ;
+9 -- 8 [label=" c",penwidth=3] ;
+9 -- 13 [label=" e",penwidth=3] ;
+11 -- 10 [label=" greece\n non-span windies\n mexico",penwidth=3] ;
+11 -- 12 [label=" africa\n american indian\n arabic\n england & wales\n france\n french canada\n germany\n hungary\n india\n italy\n norway\n other canada\n philippines\n scotland",penwidth=3] ;
+13 -- 11 [label=" hungary\n india\n czechoslovakia\n germany\n arabic\n scotland\n american indian\n other canada\n mexico\n africa\n philippines\n italy\n french canada\n norway\n greece\n france",penwidth=3] ;
+13 -- 14 [label=" american only\n china\n england & wales\n finland\n ireland\n netherlands\n non-span windies\n other\n other asian\n other spanish\n poland\n puerto rico\n russia\n spain\n sweden\n switzerland\n yugoslavia",penwidth=3] ;
+{rank = same;}}

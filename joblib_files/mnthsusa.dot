@@ -1,0 +1,20 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="e
+Prob: b:0.0 c:0.0 e:1.0
+Frac: 0.141", fillcolor="#c155fe"] ;
+1 [label="hispanic", fillcolor="#c055fe"] ;
+2 [label="e
+Prob: b:0.0 c:0.0 e:1.0
+Frac: 0.044", fillcolor="#bf57fe"] ;
+3 [label="INTRACE1", fillcolor="#c055fe"] ;
+4 [label="e
+Prob: b:0.0 c:0.0 e:1.0
+Frac: 0.814", fillcolor="#c055fe"] ;
+1 -- 0 [label=" dominican\n nicaraguan\n not hispanic",penwidth=3] ;
+1 -- 2 [label=" central american\n columbian\n costa rican\n cuban\n equadorian\n guatemalan\n honduran\n mexican, mexican american, chicano/a\n panamanian\n puerto rican\n salvadorian\n spanish",penwidth=3] ;
+3 -- 1 [label=" asian indian\n some other race\n filipino\n other asian\n black or african",penwidth=3] ;
+3 -- 4 [label=" american indian\n chinese\n other pacific islander\n white",penwidth=3] ;
+{rank = same;}}

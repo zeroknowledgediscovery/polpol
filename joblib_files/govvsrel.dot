@@ -1,0 +1,20 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="agree
+Prob: agree:0.6 disagree:0.1 neither agree nor disagree:0.1 strongly agree:0.1 strongly disagree:0.0
+Frac: 0.281", fillcolor="#cdc481"] ;
+1 [label="clergvte", fillcolor="#bcb593"] ;
+2 [label="agree
+Prob: agree:0.5 disagree:0.1 neither agree nor disagree:0.1 strongly agree:0.3 strongly disagree:0.0
+Frac: 0.564", fillcolor="#b4ae9c"] ;
+3 [label="relgenbar", fillcolor="#b4af9c"] ;
+4 [label="strongly agree
+Prob: agree:0.2 disagree:0.1 neither agree nor disagree:0.1 strongly agree:0.5 strongly disagree:0.1
+Frac: 0.155", fillcolor="#8a8ed0"] ;
+1 -- 0 [label=" agree",penwidth=3] ;
+1 -- 2 [label=" disagree\n neither agree nor disagree\n strongly agree\n strongly disagree",penwidth=3] ;
+3 -- 1 [label=" agree\n disagree\n neither agree nor disagree",penwidth=3] ;
+3 -- 4 [label=" strongly agree\n strongly disagree",penwidth=3] ;
+{rank = same;}}

@@ -1,0 +1,68 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="ind,near rep
+Prob: ind,near dem:0.1 ind,near rep:0.2 independent:0.2 not str democrat:0.1 not str republican:0.2 other party:0.0 strong democrat:0.0 strong republican:0.2
+Frac: 0.08", fillcolor="#abcfa1"] ;
+1 [label="polviews", fillcolor="#bbb2af"] ;
+2 [label="strong republican
+Prob: ind,near dem:0.0 ind,near rep:0.1 independent:0.0 not str democrat:0.0 not str republican:0.3 other party:0.1 strong democrat:0.0 strong republican:0.4
+Frac: 0.029", fillcolor="#ba9bc5"] ;
+3 [label="INCOME16", fillcolor="#c19abd"] ;
+4 [label="strong republican
+Prob: ind,near dem:0.0 ind,near rep:0.1 independent:0.0 not str democrat:0.0 not str republican:0.3 other party:0.0 strong democrat:0.0 strong republican:0.5
+Frac: 0.044", fillcolor="#c69eb5"] ;
+5 [label="helppoor", fillcolor="#c49aba"] ;
+6 [label="strong republican
+Prob: ind,near dem:0.0 ind,near rep:0.1 independent:0.0 not str democrat:0.0 not str republican:0.3 other party:0.0 strong democrat:0.0 strong republican:0.5
+Frac: 0.043", fillcolor="#c196c0"] ;
+7 [label="polviews", fillcolor="#c1a7b4"] ;
+8 [label="strong republican
+Prob: ind,near dem:0.0 ind,near rep:0.2 independent:0.1 not str democrat:0.0 not str republican:0.2 other party:0.0 strong democrat:0.0 strong republican:0.3
+Frac: 0.091", fillcolor="#c1b6a9"] ;
+9 [label="PRES16", fillcolor="#b2c1ab"] ;
+10 [label="strong democrat
+Prob: ind,near dem:0.2 ind,near rep:0.0 independent:0.1 not str democrat:0.3 not str republican:0.0 other party:0.0 strong democrat:0.4 strong republican:0.0
+Frac: 0.298", fillcolor="#beadca"] ;
+11 [label="PRES16", fillcolor="#afc7a9"] ;
+12 [label="independent
+Prob: ind,near dem:0.2 ind,near rep:0.1 independent:0.3 not str democrat:0.2 not str republican:0.0 other party:0.0 strong democrat:0.2 strong republican:0.0
+Frac: 0.053", fillcolor="#adce9d"] ;
+13 [label="race", fillcolor="#a4d992"] ;
+14 [label="independent
+Prob: ind,near dem:0.2 ind,near rep:0.1 independent:0.3 not str democrat:0.2 not str republican:0.1 other party:0.0 strong democrat:0.1 strong republican:0.0
+Frac: 0.056", fillcolor="#a9d494"] ;
+15 [label="PRES12", fillcolor="#a2da90"] ;
+16 [label="independent
+Prob: ind,near dem:0.1 ind,near rep:0.2 independent:0.4 not str democrat:0.1 not str republican:0.1 other party:0.0 strong democrat:0.0 strong republican:0.1
+Frac: 0.174", fillcolor="#9dde8c"] ;
+17 [label="incuspop", fillcolor="#a1dc8f"] ;
+18 [label="ind,near rep
+Prob: ind,near dem:0.1 ind,near rep:0.3 independent:0.2 not str democrat:0.1 not str republican:0.2 other party:0.0 strong democrat:0.1 strong republican:0.1
+Frac: 0.049", fillcolor="#b2dc97"] ;
+19 [label="MASEI10INC", fillcolor="#a6d894"] ;
+20 [label="independent
+Prob: ind,near dem:0.2 ind,near rep:0.1 independent:0.3 not str democrat:0.1 not str republican:0.1 other party:0.1 strong democrat:0.0 strong republican:0.1
+Frac: 0.084", fillcolor="#9fd692"] ;
+1 -- 0 [label=" slightly liberal\n moderate",penwidth=3] ;
+1 -- 7 [label=" conservative\n extremely liberal\n extrmly conservative\n liberal\n slghtly conservative",penwidth=3] ;
+3 -- 2 [label=" $150000 to $169999\n $25000 to 29999\n $50000 to 59999\n $22500 to 24999\n $30000 to 34999\n $1 000 to 2 999\n $20000 to 22499\n $35000 to 39999\n $8 000 to 9 999\n $3 000 to 3 999",penwidth=3] ;
+3 -- 5 [label=" $10000 to 12499\n $110000 to $129999\n $12500 to 14999\n $130000 to $149999\n $15000 to 17499\n $170000 or over\n $17500 to 19999\n $40000 to 49999\n $6 000 to 6 999\n $60000 to 74999\n $75000 to $89999\n $90000 to $109999",penwidth=3] ;
+5 -- 4 [label=" c",penwidth=3] ;
+5 -- 6 [label=" b\n d\n e",penwidth=3] ;
+7 -- 3 [label=" conservative",penwidth=3] ;
+7 -- 8 [label=" extremely liberal\n extrmly conservative\n liberal\n slghtly conservative",penwidth=3] ;
+9 -- 1 [label=" trump\n no answer",penwidth=3] ;
+9 -- 11 [label=" clinton\n didn't vote for president\n don't know\n iap\n other candidate (specify)",penwidth=3] ;
+11 -- 10 [label=" clinton",penwidth=3] ;
+11 -- 13 [label=" didn't vote for president\n don't know\n iap\n other candidate (specify)",penwidth=3] ;
+13 -- 12 [label=" black",penwidth=3] ;
+13 -- 15 [label=" other\n white",penwidth=3] ;
+15 -- 14 [label=" obama",penwidth=3] ;
+15 -- 17 [label=" didn't vote for president\n other candidate (specify)\n romney",penwidth=3] ;
+17 -- 16 [label=" average",penwidth=3] ;
+17 -- 19 [label=" higher than average\n lower than average",penwidth=3] ;
+19 -- 18 [label=" c",penwidth=3] ;
+19 -- 20 [label=" b\n d\n e",penwidth=3] ;
+{rank = same;}}

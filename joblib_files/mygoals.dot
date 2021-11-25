@@ -1,0 +1,20 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="mostly true
+Prob: completely true:0.4 completely untrue:0.0 mostly true:0.5 mostly untrue:0.0 neither true nor untrue:0.0 somewhat true:0.1 somewhat untrue:0.0
+Frac: 0.174", fillcolor="#aacf7e"] ;
+1 [label="satlife", fillcolor="#abb0aa"] ;
+2 [label="somewhat true
+Prob: completely true:0.1 completely untrue:0.0 mostly true:0.3 mostly untrue:0.0 neither true nor untrue:0.1 somewhat true:0.4 somewhat untrue:0.1
+Frac: 0.33", fillcolor="#aba0c1"] ;
+3 [label="satlife", fillcolor="#a5b2ab"] ;
+4 [label="mostly true
+Prob: completely true:0.1 completely untrue:0.0 mostly true:0.5 mostly untrue:0.0 neither true nor untrue:0.1 somewhat true:0.3 somewhat untrue:0.0
+Frac: 0.496", fillcolor="#9eb5ac"] ;
+1 -- 0 [label=" completely satisfied",penwidth=3] ;
+1 -- 2 [label=" completely dissatisfied\n mostly dissatisfied\n somewhat satisfied",penwidth=3] ;
+3 -- 1 [label=" mostly dissatisfied\n somewhat satisfied\n completely dissatisfied\n completely satisfied",penwidth=3] ;
+3 -- 4 [label=" mostly satisfied\n neither satisfied nor dissatisfied\n somewhat dissatisfied",penwidth=3] ;
+{rank = same;}}

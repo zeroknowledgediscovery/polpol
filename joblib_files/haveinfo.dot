@@ -1,0 +1,62 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="somewhat true
+Prob: not at all true:0.0 not too true:0.3 somewhat true:0.5 very true:0.2
+Frac: 0.092", fillcolor="#7ed2ca"] ;
+1 [label="hlpequip", fillcolor="#93b8ee"] ;
+2 [label="somewhat true
+Prob: not at all true:0.0 not too true:0.1 somewhat true:0.6 very true:0.3
+Frac: 0.092", fillcolor="#8fb9f4"] ;
+3 [label="relpast", fillcolor="#8dbcf4"] ;
+4 [label="somewhat true
+Prob: not at all true:0.0 not too true:0.0 somewhat true:0.7 very true:0.3
+Frac: 0.111", fillcolor="#84c3f6"] ;
+5 [label="myskills", fillcolor="#8fb9f6"] ;
+6 [label="somewhat true
+Prob: not at all true:0.0 not too true:0.0 somewhat true:0.5 very true:0.5
+Frac: 0.054", fillcolor="#a6a6f6"] ;
+7 [label="safehlth", fillcolor="#8dbdf5"] ;
+8 [label="somewhat true
+Prob: not at all true:0.1 not too true:0.0 somewhat true:0.7 very true:0.2
+Frac: 0.083", fillcolor="#89c5f1"] ;
+9 [label="condemnd", fillcolor="#97b3f6"] ;
+10 [label="very true
+Prob: not at all true:0.0 not too true:0.0 somewhat true:0.4 very true:0.6
+Frac: 0.081", fillcolor="#c18aff"] ;
+11 [label="hlpequip", fillcolor="#ba94f5"] ;
+12 [label="very true
+Prob: not at all true:0.0 not too true:0.0 somewhat true:0.2 very true:0.8
+Frac: 0.052", fillcolor="#d579ff"] ;
+13 [label="PRESTG10", fillcolor="#d778fd"] ;
+14 [label="very true
+Prob: not at all true:0.0 not too true:0.0 somewhat true:0.2 very true:0.8
+Frac: 0.049", fillcolor="#d976fb"] ;
+15 [label="ETH2", fillcolor="#e36efd"] ;
+16 [label="very true
+Prob: not at all true:0.0 not too true:0.0 somewhat true:0.1 very true:0.9
+Frac: 0.11", fillcolor="#e66bfc"] ;
+17 [label="sexnow", fillcolor="#e66bfd"] ;
+18 [label="very true
+Prob: not at all true:0.0 not too true:0.0 somewhat true:0.1 very true:0.9
+Frac: 0.278", fillcolor="#e66bfd"] ;
+1 -- 0 [label=" not too true",penwidth=3] ;
+1 -- 9 [label=" not at all true\n somewhat true",penwidth=3] ;
+3 -- 2 [label=" disagree",penwidth=3] ;
+3 -- 7 [label=" agree\n neither agree nor disagree\n strongly agree\n strongly disagree",penwidth=3] ;
+5 -- 4 [label=" agree",penwidth=3] ;
+5 -- 6 [label=" disagree\n strongly agree\n strongly disagree",penwidth=3] ;
+7 -- 5 [label=" agree",penwidth=3] ;
+7 -- 8 [label=" disagree\n strongly agree\n strongly disagree",penwidth=3] ;
+9 -- 3 [label=" not at all true\n not too true\n somewhat true",penwidth=3] ;
+9 -- 10 [label=" very true",penwidth=3] ;
+11 -- 1 [label=" not at all true\n not too true\n somewhat true",penwidth=3] ;
+11 -- 15 [label=" very true",penwidth=3] ;
+13 -- 12 [label=" c",penwidth=3] ;
+13 -- 14 [label=" a\n b\n d\n e",penwidth=3] ;
+15 -- 13 [label=" belgium\n germany\n american indian\n american only\n hungary\n non-span windies\n france\n czechoslovakia\n other european\n puerto rico\n rumania\n italy\n india\n philippines\n scotland\n other spanish\n sweden\n switzerland\n netherlands\n mexico\n austria\n denmark\n other canada\n other\n portugal\n norway",penwidth=3] ;
+15 -- 17 [label=" africa\n england & wales\n finland\n french canada\n ireland\n japan\n lithuania\n poland\n russia\n spain\n west indies",penwidth=3] ;
+17 -- 16 [label=" man",penwidth=3] ;
+17 -- 18 [label=" transgender\n women",penwidth=3] ;
+{rank = same;}}

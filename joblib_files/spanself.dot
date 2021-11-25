@@ -1,0 +1,8 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="not have been able to do the interview
+Prob: have been able to do the interview easily in english:0.1 have been able to do the interview with difficulty:0.3 not have been able to do the interview:0.6
+Frac: 1.0", fillcolor="#a38fe2"] ;
+{rank = same;}}

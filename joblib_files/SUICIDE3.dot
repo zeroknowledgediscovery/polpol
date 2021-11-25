@@ -1,0 +1,56 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="no
+Prob: no:1.0 yes:0.0
+Frac: 0.237", fillcolor="#fdc156"] ;
+1 [label="newsfrom", fillcolor="#fdc156"] ;
+2 [label="no
+Prob: no:1.0 yes:0.0
+Frac: 0.048", fillcolor="#ffc155"] ;
+3 [label="newsfrom", fillcolor="#fdc156"] ;
+4 [label="no
+Prob: no:1.0 yes:0.0
+Frac: 0.043", fillcolor="#ffc155"] ;
+5 [label="INCOME16", fillcolor="#fbc158"] ;
+6 [label="no
+Prob: no:1.0 yes:0.0
+Frac: 0.043", fillcolor="#f8c25b"] ;
+7 [label="INCOME16", fillcolor="#fdc156"] ;
+8 [label="no
+Prob: no:1.0 yes:0.0
+Frac: 0.16", fillcolor="#fec155"] ;
+9 [label="INCOME16", fillcolor="#fdc156"] ;
+10 [label="no
+Prob: no:1.0 yes:0.0
+Frac: 0.166", fillcolor="#ffc155"] ;
+11 [label="dwelling", fillcolor="#fec155"] ;
+12 [label="no
+Prob: no:1.0 yes:0.0
+Frac: 0.048", fillcolor="#fcc157"] ;
+13 [label="SUICIDE4", fillcolor="#fbc158"] ;
+14 [label="no
+Prob: no:0.9 yes:0.1
+Frac: 0.108", fillcolor="#ecc567"] ;
+15 [label="SUICIDE2", fillcolor="#e8c66b"] ;
+16 [label="yes
+Prob: no:0.2 yes:0.8
+Frac: 0.146", fillcolor="#78e2db"] ;
+1 -- 0 [label=" family\n books other printed material\n tv\n magazines",penwidth=3] ;
+1 -- 2 [label=" friends colleagues\n government agencies\n radio",penwidth=3] ;
+3 -- 1 [label=" government agencies\n family\n tv\n radio\n friends colleagues\n books other printed material\n magazines",penwidth=3] ;
+3 -- 9 [label=" newspapers\n other\n the internet",penwidth=3] ;
+5 -- 4 [label=" $50000 to 59999",penwidth=3] ;
+5 -- 6 [label=" $1 000 to 2 999\n $10000 to 12499\n $40000 to 49999\n $5 000 to 5 999\n $7 000 to 7 999\n under $1 000",penwidth=3] ;
+7 -- 5 [label=" $5 000 to 5 999\n $1 000 to 2 999\n $50000 to 59999\n $10000 to 12499\n $7 000 to 7 999\n under $1 000\n $40000 to 49999",penwidth=3] ;
+7 -- 8 [label=" $130000 to $149999\n $15000 to 17499\n $150000 to $169999\n $170000 or over\n $17500 to 19999\n $20000 to 22499\n $35000 to 39999\n $75000 to $89999",penwidth=3] ;
+9 -- 7 [label=" $5 000 to 5 999\n $1 000 to 2 999\n $10000 to 12499\n $150000 to $169999\n $15000 to 17499\n $35000 to 39999\n $40000 to 49999\n $130000 to $149999\n $170000 or over\n $75000 to $89999\n under $1 000\n $50000 to 59999\n $17500 to 19999\n $20000 to 22499\n $7 000 to 7 999",penwidth=3] ;
+9 -- 11 [label=" $110000 to $129999\n $12500 to 14999\n $22500 to 24999\n $25000 to 29999\n $3 000 to 3 999\n $30000 to 34999\n $4 000 to 4 999\n $6 000 to 6 999\n $60000 to 74999\n $8 000 to 9 999\n $90000 to $109999",penwidth=3] ;
+11 -- 10 [label=" apartment-4 stories\n detached 1-fam house\n trailer\n apartment-commercial",penwidth=3] ;
+11 -- 12 [label=" 2 units side by side\n 3-4 fam house\n apartment house\n row house",penwidth=3] ;
+13 -- 3 [label=" no",penwidth=3] ;
+13 -- 14 [label=" yes",penwidth=3] ;
+15 -- 13 [label=" no",penwidth=3] ;
+15 -- 16 [label=" yes",penwidth=3] ;
+{rank = same;}}

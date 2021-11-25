@@ -1,0 +1,32 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="strongly agree
+Prob: agree:0.2 disagree:0.1 neither agree nor disagree:0.1 strongly agree:0.6 strongly disagree:0.0
+Frac: 0.147", fillcolor="#8688d1"] ;
+1 [label="helpfrds", fillcolor="#a2adb0"] ;
+2 [label="agree
+Prob: agree:0.4 disagree:0.1 neither agree nor disagree:0.2 strongly agree:0.3 strongly disagree:0.0
+Frac: 0.425", fillcolor="#a8b6a8"] ;
+3 [label="partners", fillcolor="#a9b2a8"] ;
+4 [label="agree
+Prob: agree:0.4 disagree:0.1 neither agree nor disagree:0.1 strongly agree:0.3 strongly disagree:0.0
+Frac: 0.117", fillcolor="#aca5aa"] ;
+5 [label="RELHHD2", fillcolor="#a7b4ab"] ;
+6 [label="agree
+Prob: agree:0.4 disagree:0.0 neither agree nor disagree:0.3 strongly agree:0.2 strongly disagree:0.0
+Frac: 0.082", fillcolor="#aab6ad"] ;
+7 [label="prvdold", fillcolor="#a4b7af"] ;
+8 [label="agree
+Prob: agree:0.4 disagree:0.0 neither agree nor disagree:0.3 strongly agree:0.3 strongly disagree:0.0
+Frac: 0.229", fillcolor="#a2b7b0"] ;
+1 -- 0 [label=" strongly agree",penwidth=3] ;
+1 -- 5 [label=" agree\n disagree\n neither agree nor disagree\n strongly disagree",penwidth=3] ;
+3 -- 2 [label=" 1 partner",penwidth=3] ;
+3 -- 4 [label=" 2 partners\n 3 partners\n 4 partners\n 5-10 partners\n no partners",penwidth=3] ;
+5 -- 3 [label=" parent-in-law\n grandchild,great-granchild\n sibling-in-law\n niece or nephew\n spouse",penwidth=3] ;
+5 -- 7 [label=" brother,sister-full,half, or step sibling-\n child,natural or adopted,stepchild\n cousin\n other non-relative-employee,boarder-\n parent\n partner,fiance-e-,boyfriend,girlfriend,etc\n roommate,housemate",penwidth=3] ;
+7 -- 6 [label=" family, relatives or friends",penwidth=3] ;
+7 -- 8 [label=" government\n non-profit organizations/charities/cooperatives\n private companies/for-profit organizations\n religious organizations",penwidth=3] ;
+{rank = same;}}

@@ -1,0 +1,86 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="cohab couple, no children
+Prob: cohab couple w children:0.1 cohab couple, no children:0.5 married couple w children:0.0 married couple, no children:0.0 non-family w children:0.0 non-family, no children:0.0 other fam., no children:0.0 other family w children:0.0 single adult:0.0 single parent:0.3 unsure w children:0.0 unsure, no children:0.0
+Frac: 0.038", fillcolor="#f9bb8e"] ;
+1 [label="hhtype", fillcolor="#c685d3"] ;
+2 [label="single adult
+Prob: cohab couple w children:0.0 cohab couple, no children:0.0 married couple w children:0.0 married couple, no children:0.0 non-family w children:0.0 non-family, no children:0.0 other fam., no children:0.1 other family w children:0.0 single adult:0.7 single parent:0.0 unsure w children:0.0 unsure, no children:0.0
+Frac: 0.091", fillcolor="#b16ef1"] ;
+3 [label="marital", fillcolor="#a7cc8d"] ;
+4 [label="cohab couple w children
+Prob: cohab couple w children:0.5 cohab couple, no children:0.0 married couple w children:0.0 married couple, no children:0.0 non-family w children:0.0 non-family, no children:0.3 other fam., no children:0.1 other family w children:0.0 single adult:0.0 single parent:0.0 unsure w children:0.0 unsure, no children:0.0
+Frac: 0.038", fillcolor="#a8dda5"] ;
+5 [label="hhtype", fillcolor="#c9e182"] ;
+6 [label="cohab couple, no children
+Prob: cohab couple w children:0.0 cohab couple, no children:0.7 married couple w children:0.0 married couple, no children:0.1 non-family w children:0.0 non-family, no children:0.1 other fam., no children:0.0 other family w children:0.1 single adult:0.0 single parent:0.0 unsure w children:0.0 unsure, no children:0.1
+Frac: 0.063", fillcolor="#dde46c"] ;
+7 [label="RELATE2", fillcolor="#a2d682"] ;
+8 [label="single parent
+Prob: cohab couple w children:0.0 cohab couple, no children:0.0 married couple w children:0.3 married couple, no children:0.0 non-family w children:0.0 non-family, no children:0.0 other fam., no children:0.0 other family w children:0.1 single adult:0.0 single parent:0.5 unsure w children:0.1 unsure, no children:0.1
+Frac: 0.03", fillcolor="#e68dbc"] ;
+9 [label="hhtype", fillcolor="#dec48a"] ;
+10 [label="married couple w children
+Prob: cohab couple w children:0.0 cohab couple, no children:0.0 married couple w children:0.8 married couple, no children:0.2 non-family w children:0.0 non-family, no children:0.0 other fam., no children:0.0 other family w children:0.0 single adult:0.0 single parent:0.0 unsure w children:0.0 unsure, no children:0.0
+Frac: 0.028", fillcolor="#d6ff55"] ;
+11 [label="hhtype", fillcolor="#9bd185"] ;
+12 [label="married couple w children
+Prob: cohab couple w children:0.0 cohab couple, no children:0.0 married couple w children:1.0 married couple, no children:0.0 non-family w children:0.0 non-family, no children:0.0 other fam., no children:0.0 other family w children:0.0 single adult:0.0 single parent:0.0 unsure w children:0.0 unsure, no children:0.0
+Frac: 0.061", fillcolor="#ebff55"] ;
+13 [label="hhtype", fillcolor="#ccef61"] ;
+14 [label="married couple, no children
+Prob: cohab couple w children:0.0 cohab couple, no children:0.0 married couple w children:0.1 married couple, no children:0.6 non-family w children:0.0 non-family, no children:0.0 other fam., no children:0.0 other family w children:0.1 single adult:0.0 single parent:0.0 unsure w children:0.1 unsure, no children:0.1
+Frac: 0.031", fillcolor="#8fd07a"] ;
+15 [label="hompop", fillcolor="#95d284"] ;
+16 [label="single adult
+Prob: cohab couple w children:0.0 cohab couple, no children:0.0 married couple w children:0.0 married couple, no children:0.0 non-family w children:0.0 non-family, no children:0.0 other fam., no children:0.0 other family w children:0.0 single adult:1.0 single parent:0.0 unsure w children:0.0 unsure, no children:0.0
+Frac: 0.135", fillcolor="#c155ff"] ;
+17 [label="hompop", fillcolor="#8bcd8b"] ;
+18 [label="married couple, no children
+Prob: cohab couple w children:0.0 cohab couple, no children:0.0 married couple w children:0.0 married couple, no children:1.0 non-family w children:0.0 non-family, no children:0.0 other fam., no children:0.0 other family w children:0.0 single adult:0.0 single parent:0.0 unsure w children:0.0 unsure, no children:0.0
+Frac: 0.3", fillcolor="#6aff55"] ;
+19 [label="hhtype", fillcolor="#6bf961"] ;
+20 [label="other fam., no children
+Prob: cohab couple w children:0.0 cohab couple, no children:0.0 married couple w children:0.0 married couple, no children:0.0 non-family w children:0.0 non-family, no children:0.0 other fam., no children:0.7 other family w children:0.1 single adult:0.0 single parent:0.0 unsure w children:0.0 unsure, no children:0.2
+Frac: 0.031", fillcolor="#7dc0de"] ;
+21 [label="hhtype", fillcolor="#77f960"] ;
+22 [label="married couple w children
+Prob: cohab couple w children:0.0 cohab couple, no children:0.0 married couple w children:0.9 married couple, no children:0.1 non-family w children:0.0 non-family, no children:0.0 other fam., no children:0.0 other family w children:0.0 single adult:0.0 single parent:0.0 unsure w children:0.0 unsure, no children:0.0
+Frac: 0.036", fillcolor="#e2ff55"] ;
+23 [label="hompop", fillcolor="#9dd582"] ;
+24 [label="married couple w children
+Prob: cohab couple w children:0.0 cohab couple, no children:0.0 married couple w children:1.0 married couple, no children:0.0 non-family w children:0.0 non-family, no children:0.0 other fam., no children:0.0 other family w children:0.0 single adult:0.0 single parent:0.0 unsure w children:0.0 unsure, no children:0.0
+Frac: 0.049", fillcolor="#e9fe56"] ;
+25 [label="hhtype", fillcolor="#a5ea73"] ;
+26 [label="married couple, no children
+Prob: cohab couple w children:0.0 cohab couple, no children:0.0 married couple w children:0.0 married couple, no children:0.7 non-family w children:0.0 non-family, no children:0.0 other fam., no children:0.1 other family w children:0.1 single adult:0.0 single parent:0.1 unsure w children:0.0 unsure, no children:0.0
+Frac: 0.068", fillcolor="#74dc88"] ;
+1 -- 0 [label=" 3adlts,0mar,ntrel,1+kids\n 3adlts,0mar,sp,rel,0kids\n 3adlts,1mar,rel,rel,0kids\n 2as,ntmar,ntrel,opsex,1+ks\n 4+adlts,0mar,1+kids\n 4+adlts,0mar,0kids\n 3adlts,0mar,ntrel,rel,1+kids\n 1adlt,1+kids\n 3adlts,2mar,sp,rel,1+kids\n 2as,ntmar,ntrel,opsex,0ks",penwidth=3] ;
+1 -- 2 [label=" 1adlt,0kids\n 2adlts,dkmar,0kids\n 2adlts,dkmar,1+kids\n 2adlts,ntmar,rel,0kids\n 2adlts,ntmar,rel,1+kids\n 2as,ntmar,ntrel,smsex,0ks\n 2as,ntmar,ntrel,smsex,1+ks\n 3adlts,0mar,ntrel,rel,0kids\n 3adlts,0mar,rel,0kids\n 3adlts,0mar,rel,1+kids\n 3adlts,2mar,sp,rel,0kids\n 4+adlts,2mar,0kids",penwidth=3] ;
+3 -- 1 [label=" divorced",penwidth=3] ;
+3 -- 7 [label=" married\n never married\n separated\n widowed",penwidth=3] ;
+5 -- 4 [label=" 3adlts,2mar,ntrel,rel,0kids\n 3adlts,1mar,ntrel,0kids\n 4+adlts,2mar,0kids\n 3adlts,0mar,ntrel,1+kids\n 2as,ntmar,ntrel,smsex,0ks\n 2as,ntmar,ntrel,opsex,1+ks\n 3adlts,0mar,ntrel,rel,0kids\n 3adlts,2mar,rel,0kids\n 1adlt,1+kids",penwidth=3] ;
+5 -- 6 [label=" 2adlts,mar,0kids\n 2adlts,mar,1+kids\n 2as,ntmar,ntrel,opsex,0ks\n 2as,ntmar,ntrel,smsex,1+ks\n 3adlts,0mar,ntrel,0kids\n 3adlts,0mar,ntrel,rel,1+kids\n 4+adlts,0mar,0kids\n 4+adlts,0mar,1+kids\n 4+adlts,1mar,0kids",penwidth=3] ;
+7 -- 5 [label=" son or daughter-in-law\n non-relative",penwidth=3] ;
+7 -- 23 [label=" child\n grand or great-grandchild\n other relative\n parent or parent-in-law\n spouse",penwidth=3] ;
+9 -- 8 [label=" 4+adlts,2mar,1+kids\n 2adlts,ntmar,dkrel,1+kids\n 3adlts,0mar,rel,1+kids\n 4+adlts,1mar,0kids\n 1adlt,1+kids\n 4+adlts,3mar,0kids\n 2adlts,ntmar,dkrel,0kids\n 4+adlts,0mar,1+kids",penwidth=3] ;
+9 -- 10 [label=" 3adlts,2mar,sp,rel,1+kids\n 4+adlts,4+mar,0kids",penwidth=3] ;
+11 -- 9 [label=" 3adlts,0mar,rel,1+kids\n 4+adlts,0mar,1+kids\n 4+adlts,1mar,0kids\n 2adlts,ntmar,dkrel,1+kids\n 4+adlts,4+mar,0kids\n 4+adlts,3mar,0kids\n 3adlts,2mar,sp,rel,1+kids\n 1adlt,1+kids\n 4+adlts,2mar,1+kids\n 2adlts,ntmar,dkrel,0kids",penwidth=3] ;
+11 -- 15 [label=" 1adlt,0kids\n 2adlts,dkmar,0kids\n 2adlts,dkmar,1+kids\n 2adlts,mar,0kids\n 2adlts,mar,1+kids\n 2adlts,ntmar,rel,0kids\n 2adlts,ntmar,rel,1+kids\n 3adlts,2mar,rel,1+kids\n 3adlts,3mar,sp,rel,1+kids\n 4+adlts,0mar,0kids\n 4+adlts,2mar,0kids\n 4+adlts,4+mar,1+kids",penwidth=3] ;
+13 -- 12 [label=" 2adlts,mar,1+kids",penwidth=3] ;
+13 -- 14 [label=" 2adlts,dkmar,1+kids\n 2adlts,ntmar,rel,1+kids\n 3adlts,2mar,rel,1+kids\n 3adlts,3mar,sp,rel,1+kids\n 4+adlts,0mar,0kids\n 4+adlts,2mar,0kids\n 4+adlts,4+mar,1+kids",penwidth=3] ;
+15 -- 13 [label=" 7\n 4",penwidth=3] ;
+15 -- 17 [label=" 1\n 2\n 5\n 6\n 8",penwidth=3] ;
+17 -- 16 [label=" 1",penwidth=3] ;
+17 -- 21 [label=" 2\n 5\n 6\n 8",penwidth=3] ;
+19 -- 18 [label=" 2adlts,mar,0kids",penwidth=3] ;
+19 -- 20 [label=" 2adlts,dkmar,0kids\n 2adlts,dkmar,1+kids\n 2adlts,ntmar,rel,0kids\n 2adlts,ntmar,rel,1+kids",penwidth=3] ;
+21 -- 19 [label=" 2adlts,ntmar,rel,1+kids\n 2adlts,ntmar,rel,0kids\n 2adlts,dkmar,1+kids\n 2adlts,mar,0kids\n 2adlts,dkmar,0kids",penwidth=3] ;
+21 -- 22 [label=" 2adlts,mar,1+kids\n 3adlts,2mar,rel,1+kids\n 3adlts,3mar,sp,rel,1+kids\n 4+adlts,2mar,0kids\n 4+adlts,4+mar,1+kids",penwidth=3] ;
+23 -- 11 [label=" 4\n 9\n 10\n 11\n 1\n 5\n 8\n 2\n 6\n 7",penwidth=3] ;
+23 -- 25 [label=" 3",penwidth=3] ;
+25 -- 24 [label=" 2adlts,mar,1+kids\n 3adlts,1mar,rel,ntrel,0kids",penwidth=3] ;
+25 -- 26 [label=" 1adlt,1+kids\n 2adlts,dkmar,1+kids\n 2adlts,ntmar,rel,1+kids\n 3adlts,0mar,rel,0kids\n 3adlts,2mar,rel,0kids\n 3adlts,2mar,sp,rel,0kids\n 3adlts,3mar,sp,rel,0kids",penwidth=3] ;
+{rank = same;}}

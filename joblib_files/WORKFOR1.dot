@@ -1,0 +1,26 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="government or government agency
+Prob: for-profit company:0.1 government or government agency:0.9 non-profit or not-for-profit organization:0.1
+Frac: 0.184", fillcolor="#66efbf"] ;
+1 [label="wrkgovt", fillcolor="#d9bc7e"] ;
+2 [label="for-profit company
+Prob: for-profit company:0.9 government or government agency:0.0 non-profit or not-for-profit organization:0.1
+Frac: 0.095", fillcolor="#f4b26d"] ;
+3 [label="scifrom", fillcolor="#f4b070"] ;
+4 [label="for-profit company
+Prob: for-profit company:0.8 government or government agency:0.0 non-profit or not-for-profit organization:0.2
+Frac: 0.597", fillcolor="#f4b070"] ;
+5 [label="INTRACE1", fillcolor="#f3b070"] ;
+6 [label="for-profit company
+Prob: for-profit company:0.8 government or government agency:0.0 non-profit or not-for-profit organization:0.2
+Frac: 0.124", fillcolor="#f1b271"] ;
+1 -- 0 [label=" government",penwidth=3] ;
+1 -- 5 [label=" private",penwidth=3] ;
+3 -- 2 [label=" friends colleagues\n family\n tv\n books other printed material\n radio",penwidth=3] ;
+3 -- 4 [label=" government agencies\n magazines\n newspapers\n other\n the internet",penwidth=3] ;
+5 -- 3 [label=" american indian\n chinese\n white\n asian indian\n some other race",penwidth=3] ;
+5 -- 6 [label=" black or african\n filipino\n other pacific islander",penwidth=3] ;
+{rank = same;}}

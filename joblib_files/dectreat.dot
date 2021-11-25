@@ -1,0 +1,50 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="not able at all
+Prob: not able at all:0.5 not very able:0.3 somewhat able:0.2 very able:0.1
+Frac: 0.11", fillcolor="#b8cf7f"] ;
+1 [label="decmoney", fillcolor="#89e587"] ;
+2 [label="not very able
+Prob: not able at all:0.2 not very able:0.6 somewhat able:0.2 very able:0.0
+Frac: 0.082", fillcolor="#7cf07d"] ;
+3 [label="satlife", fillcolor="#7bec8c"] ;
+4 [label="not very able
+Prob: not able at all:0.1 not very able:0.5 somewhat able:0.4 very able:0.0
+Frac: 0.094", fillcolor="#7be899"] ;
+5 [label="PRESTG10", fillcolor="#78ed8a"] ;
+6 [label="not very able
+Prob: not able at all:0.1 not very able:0.6 somewhat able:0.3 very able:0.0
+Frac: 0.124", fillcolor="#74ee87"] ;
+7 [label="decmoney", fillcolor="#80dfad"] ;
+8 [label="somewhat able
+Prob: not able at all:0.0 not very able:0.2 somewhat able:0.7 very able:0.1
+Frac: 0.346", fillcolor="#76d8db"] ;
+9 [label="decmoney", fillcolor="#93c8bf"] ;
+10 [label="very able
+Prob: not able at all:0.0 not very able:0.1 somewhat able:0.3 very able:0.7
+Frac: 0.076", fillcolor="#c58af3"] ;
+11 [label="workhard", fillcolor="#ce82f6"] ;
+12 [label="very able
+Prob: not able at all:0.0 not very able:0.1 somewhat able:0.3 very able:0.7
+Frac: 0.065", fillcolor="#c689f4"] ;
+13 [label="INCOME16", fillcolor="#d17ef8"] ;
+14 [label="very able
+Prob: not able at all:0.0 not very able:0.0 somewhat able:0.2 very able:0.8
+Frac: 0.104", fillcolor="#d978fa"] ;
+1 -- 0 [label=" not able at all",penwidth=3] ;
+1 -- 5 [label=" not very able",penwidth=3] ;
+3 -- 2 [label=" mostly satisfied",penwidth=3] ;
+3 -- 4 [label=" completely dissatisfied\n completely satisfied\n neither satisfied nor dissatisfied\n somewhat dissatisfied\n somewhat satisfied",penwidth=3] ;
+5 -- 3 [label=" c",penwidth=3] ;
+5 -- 6 [label=" a\n b\n d\n e",penwidth=3] ;
+7 -- 1 [label=" not able at all\n not very able",penwidth=3] ;
+7 -- 8 [label=" somewhat able",penwidth=3] ;
+9 -- 7 [label=" not able at all\n not very able\n somewhat able",penwidth=3] ;
+9 -- 11 [label=" very able",penwidth=3] ;
+11 -- 10 [label=" 2nd important",penwidth=3] ;
+11 -- 13 [label=" 3rd important\n 4th important\n least important\n most important",penwidth=3] ;
+13 -- 12 [label=" $60000 to 74999\n $12500 to 14999\n under $1 000\n $30000 to 34999\n $110000 to $129999\n $40000 to 49999\n $6 000 to 6 999\n $8 000 to 9 999\n $3 000 to 3 999",penwidth=3] ;
+13 -- 14 [label=" $1 000 to 2 999\n $10000 to 12499\n $130000 to $149999\n $15000 to 17499\n $150000 to $169999\n $170000 or over\n $17500 to 19999\n $20000 to 22499\n $22500 to 24999\n $25000 to 29999\n $35000 to 39999\n $4 000 to 4 999\n $5 000 to 5 999\n $50000 to 59999\n $75000 to $89999\n $90000 to $109999",penwidth=3] ;
+{rank = same;}}

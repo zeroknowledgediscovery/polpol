@@ -1,0 +1,38 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="no one
+Prob: close friend:0.0 family or relative:0.0 no one:0.8 someone else i know:0.1
+Frac: 0.106", fillcolor="#70d8f0"] ;
+1 [label="smallgap", fillcolor="#6ddcec"] ;
+2 [label="no one
+Prob: close friend:0.1 family or relative:0.1 no one:0.8 someone else i know:0.1
+Frac: 0.307", fillcolor="#6ddeeb"] ;
+3 [label="knwlawyr", fillcolor="#89cfd3"] ;
+4 [label="no one
+Prob: close friend:0.1 family or relative:0.2 no one:0.5 someone else i know:0.2
+Frac: 0.087", fillcolor="#8bd0c3"] ;
+5 [label="natrace", fillcolor="#96c7c9"] ;
+6 [label="no one
+Prob: close friend:0.2 family or relative:0.1 no one:0.5 someone else i know:0.2
+Frac: 0.249", fillcolor="#9bc3cb"] ;
+7 [label="incuspop", fillcolor="#9cc7c1"] ;
+8 [label="no one
+Prob: close friend:0.3 family or relative:0.2 no one:0.3 someone else i know:0.2
+Frac: 0.123", fillcolor="#adc1aa"] ;
+9 [label="class", fillcolor="#a3c6b6"] ;
+10 [label="no one
+Prob: close friend:0.2 family or relative:0.1 no one:0.5 someone else i know:0.2
+Frac: 0.129", fillcolor="#99cbc1"] ;
+1 -- 0 [label=" agree",penwidth=3] ;
+1 -- 2 [label=" disagree\n neither agree nor disagree\n strongly agree\n strongly disagree",penwidth=3] ;
+3 -- 1 [label=" no one",penwidth=3] ;
+3 -- 7 [label=" close friend\n family or relative\n someone else i know",penwidth=3] ;
+5 -- 4 [label=" too little",penwidth=3] ;
+5 -- 6 [label=" about right\n too much",penwidth=3] ;
+7 -- 5 [label=" average",penwidth=3] ;
+7 -- 9 [label=" higher than average\n lower than average",penwidth=3] ;
+9 -- 8 [label=" middle class",penwidth=3] ;
+9 -- 10 [label=" lower class\n upper class\n working class",penwidth=3] ;
+{rank = same;}}

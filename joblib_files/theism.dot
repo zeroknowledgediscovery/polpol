@@ -1,0 +1,68 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="strongly disagree
+Prob: agree:0.1 disagree:0.2 neither agree nor disagree:0.1 strongly agree:0.1 strongly disagree:0.6
+Frac: 0.088", fillcolor="#d989d5"] ;
+1 [label="heaven", fillcolor="#9a99c4"] ;
+2 [label="agree
+Prob: agree:0.6 disagree:0.0 neither agree nor disagree:0.2 strongly agree:0.2 strongly disagree:0.0
+Frac: 0.058", fillcolor="#bdbc94"] ;
+3 [label="pray", fillcolor="#a8bca9"] ;
+4 [label="strongly agree
+Prob: agree:0.4 disagree:0.0 neither agree nor disagree:0.1 strongly agree:0.5 strongly disagree:0.0
+Frac: 0.054", fillcolor="#9a98ba"] ;
+5 [label="afterlif", fillcolor="#9ebcb3"] ;
+6 [label="neither agree nor disagree
+Prob: agree:0.4 disagree:0.1 neither agree nor disagree:0.4 strongly agree:0.1 strongly disagree:0.0
+Frac: 0.067", fillcolor="#a1d9ad"] ;
+7 [label="god", fillcolor="#949bc3"] ;
+8 [label="strongly agree
+Prob: agree:0.1 disagree:0.0 neither agree nor disagree:0.0 strongly agree:0.9 strongly disagree:0.0
+Frac: 0.202", fillcolor="#6d64e9"] ;
+9 [label="godmeans", fillcolor="#8f93c9"] ;
+10 [label="neither agree nor disagree
+Prob: agree:0.2 disagree:0.2 neither agree nor disagree:0.3 strongly agree:0.1 strongly disagree:0.1
+Frac: 0.069", fillcolor="#a2cdb0"] ;
+11 [label="hell", fillcolor="#9c9eba"] ;
+12 [label="strongly agree
+Prob: agree:0.3 disagree:0.0 neither agree nor disagree:0.1 strongly agree:0.5 strongly disagree:0.0
+Frac: 0.169", fillcolor="#968cbe"] ;
+13 [label="prayfreq", fillcolor="#9592c1"] ;
+14 [label="strongly agree
+Prob: agree:0.3 disagree:0.0 neither agree nor disagree:0.3 strongly agree:0.4 strongly disagree:0.1
+Frac: 0.056", fillcolor="#93a5c9"] ;
+15 [label="relig", fillcolor="#9a94bc"] ;
+16 [label="agree
+Prob: agree:0.4 disagree:0.0 neither agree nor disagree:0.1 strongly agree:0.4 strongly disagree:0.0
+Frac: 0.092", fillcolor="#a698b0"] ;
+17 [label="feelrel", fillcolor="#9ba4bd"] ;
+18 [label="neither agree nor disagree
+Prob: agree:0.1 disagree:0.2 neither agree nor disagree:0.4 strongly agree:0.1 strongly disagree:0.2
+Frac: 0.067", fillcolor="#9ac1cf"] ;
+19 [label="relsprt", fillcolor="#9bb5c4"] ;
+20 [label="strongly agree
+Prob: agree:0.1 disagree:0.3 neither agree nor disagree:0.2 strongly agree:0.3 strongly disagree:0.1
+Frac: 0.077", fillcolor="#9cabbb"] ;
+1 -- 0 [label=" no, definitely not",penwidth=3] ;
+1 -- 7 [label=" no, probably not\n yes, definitely\n yes, probably",penwidth=3] ;
+3 -- 2 [label=" once a day",penwidth=3] ;
+3 -- 5 [label=" lt once a week\n never\n once a week\n several times a day\n several times a week",penwidth=3] ;
+5 -- 4 [label=" yes, definitely",penwidth=3] ;
+5 -- 6 [label=" no, definitely not\n no, probably not\n yes, probably",penwidth=3] ;
+7 -- 3 [label=" believe but doubts",penwidth=3] ;
+7 -- 9 [label=" believe sometimes\n dont believe\n know god exists\n no way to find out\n some higher power",penwidth=3] ;
+9 -- 8 [label=" strongly agree",penwidth=3] ;
+9 -- 17 [label=" agree\n disagree\n neither agree nor disagree\n strongly disagree",penwidth=3] ;
+11 -- 10 [label=" no, definitely not\n no, probably not",penwidth=3] ;
+11 -- 15 [label=" yes, definitely\n yes, probably",penwidth=3] ;
+13 -- 12 [label=" several times a week",penwidth=3] ;
+13 -- 14 [label=" 2-3 times a month\n about once a month\n about once or twice a year\n every week\n less than once a year\n nearly every week\n never\n several times a year",penwidth=3] ;
+15 -- 13 [label=" jewish\n other\n none\n buddhism\n christian\n protestant\n inter-nondenominational\n moslem/islam",penwidth=3] ;
+15 -- 16 [label=" catholic",penwidth=3] ;
+17 -- 11 [label=" somwhat relgious\n very religious\n not rel or non",penwidth=3] ;
+17 -- 19 [label=" extreme non-rel\n extreme relgious\n somewhat non-rel\n very non-rel",penwidth=3] ;
+19 -- 18 [label=" i dont follow a religion, but consider myself to be a spiritual person interested in the sacred and",penwidth=3] ;
+19 -- 20 [label=" i dont follow a religion and dont consider myself to be a spiritual person interested in the sacred\n i follow a religion and consider myself to be a spiritual person interested in the sacred and the sup\n i follow a religion, but dont consider myself to be a spiritual person interested in the sacred and",penwidth=3] ;
+{rank = same;}}

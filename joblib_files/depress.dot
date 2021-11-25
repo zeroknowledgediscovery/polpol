@@ -1,0 +1,56 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="no
+Prob: no:1.0 yes:0.0
+Frac: 0.174", fillcolor="#ffc155"] ;
+1 [label="unhappy", fillcolor="#f7c25c"] ;
+2 [label="no
+Prob: no:0.9 yes:0.1
+Frac: 0.074", fillcolor="#f2c461"] ;
+3 [label="ethnic", fillcolor="#f1c462"] ;
+4 [label="no
+Prob: no:0.9 yes:0.1
+Frac: 0.052", fillcolor="#f6c35d"] ;
+5 [label="satlife", fillcolor="#f0c463"] ;
+6 [label="no
+Prob: no:0.9 yes:0.1
+Frac: 0.068", fillcolor="#ecc567"] ;
+7 [label="diagnosd", fillcolor="#dfc874"] ;
+8 [label="yes
+Prob: no:0.1 yes:0.9
+Frac: 0.046", fillcolor="#65e6ee"] ;
+9 [label="SEETALK1", fillcolor="#d1cc82"] ;
+10 [label="no
+Prob: no:1.0 yes:0.0
+Frac: 0.067", fillcolor="#fcc157"] ;
+11 [label="rplace", fillcolor="#f5c35e"] ;
+12 [label="no
+Prob: no:0.9 yes:0.1
+Frac: 0.049", fillcolor="#ecc567"] ;
+13 [label="hlthmntl", fillcolor="#daca79"] ;
+14 [label="no
+Prob: no:0.8 yes:0.2
+Frac: 0.373", fillcolor="#e0c873"] ;
+15 [label="mntlhlth", fillcolor="#d3cb80"] ;
+16 [label="yes
+Prob: no:0.4 yes:0.6
+Frac: 0.095", fillcolor="#a1d8b2"] ;
+1 -- 0 [label=" never",penwidth=3] ;
+1 -- 3 [label=" often\n rarely\n sometimes\n very often",penwidth=3] ;
+3 -- 2 [label=" france\n french canada\n russia\n philippines\n non-span windies\n other european\n africa\n sweden\n czechoslovakia\n lithuania\n american only\n other canada\n poland\n germany\n greece\n norway\n other asian\n italy\n china\n austria",penwidth=3] ;
+3 -- 5 [label=" american indian\n denmark\n england & wales\n india\n ireland\n japan\n mexico\n netherlands\n other\n other spanish\n puerto rico\n scotland\n spain",penwidth=3] ;
+5 -- 4 [label=" mostly satisfied",penwidth=3] ;
+5 -- 6 [label=" completely dissatisfied\n completely satisfied\n neither satisfied nor dissatisfied\n somewhat dissatisfied\n somewhat satisfied",penwidth=3] ;
+7 -- 1 [label=" no",penwidth=3] ;
+7 -- 9 [label=" yes",penwidth=3] ;
+9 -- 8 [label=" b\n c",penwidth=3] ;
+9 -- 13 [label=" d\n e",penwidth=3] ;
+11 -- 10 [label=" head of household",penwidth=3] ;
+11 -- 12 [label=" child\n non-relative\n other relative\n son or daughter-in-law\n spouse",penwidth=3] ;
+13 -- 11 [label=" excellent",penwidth=3] ;
+13 -- 15 [label=" fair\n good\n poor\n very good",penwidth=3] ;
+15 -- 14 [label=" c",penwidth=3] ;
+15 -- 16 [label=" d\n e",penwidth=3] ;
+{rank = same;}}

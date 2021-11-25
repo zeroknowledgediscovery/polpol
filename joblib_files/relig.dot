@@ -1,0 +1,86 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="catholic
+Prob: buddhism:0.0 catholic:0.6 christian:0.0 hinduism:0.0 inter-nondenominational:0.0 jewish:0.0 moslem/islam:0.0 native american:0.0 none:0.2 orthodox-christian:0.0 other:0.0 protestant:0.1
+Frac: 0.189", fillcolor="#e5c785"] ;
+1 [label="RELIG16", fillcolor="#e6af8a"] ;
+2 [label="protestant
+Prob: buddhism:0.0 catholic:0.0 christian:0.0 hinduism:0.0 inter-nondenominational:0.0 jewish:0.0 moslem/islam:0.0 native american:0.0 none:0.3 orthodox-christian:0.0 other:0.0 protestant:0.6
+Frac: 0.059", fillcolor="#e9649b"] ;
+3 [label="RELIG16", fillcolor="#e3a694"] ;
+4 [label="none
+Prob: buddhism:0.0 catholic:0.0 christian:0.0 hinduism:0.0 inter-nondenominational:0.0 jewish:0.0 moslem/islam:0.0 native american:0.0 none:0.7 orthodox-christian:0.0 other:0.0 protestant:0.2
+Frac: 0.036", fillcolor="#cf63d7"] ;
+5 [label="parelkid", fillcolor="#eb838c"] ;
+6 [label="protestant
+Prob: buddhism:0.0 catholic:0.1 christian:0.0 hinduism:0.0 inter-nondenominational:0.0 jewish:0.0 moslem/islam:0.0 native american:0.0 none:0.0 orthodox-christian:0.0 other:0.0 protestant:0.9
+Frac: 0.076", fillcolor="#fd6469"] ;
+7 [label="reliten", fillcolor="#f95b74"] ;
+8 [label="protestant
+Prob: buddhism:0.0 catholic:0.0 christian:0.0 hinduism:0.0 inter-nondenominational:0.0 jewish:0.0 moslem/islam:0.0 native american:0.0 none:0.1 orthodox-christian:0.0 other:0.0 protestant:0.9
+Frac: 0.119", fillcolor="#f85778"] ;
+9 [label="RACECEN1", fillcolor="#f7577a"] ;
+10 [label="protestant
+Prob: buddhism:0.0 catholic:0.0 christian:0.0 hinduism:0.0 inter-nondenominational:0.0 jewish:0.0 moslem/islam:0.0 native american:0.0 none:0.2 orthodox-christian:0.0 other:0.0 protestant:0.8
+Frac: 0.029", fillcolor="#f55880"] ;
+11 [label="sprel", fillcolor="#ee7589"] ;
+12 [label="protestant
+Prob: buddhism:0.0 catholic:0.0 christian:0.0 hinduism:0.0 inter-nondenominational:0.0 jewish:0.0 moslem/islam:0.0 native american:0.0 none:0.0 orthodox-christian:0.0 other:0.0 protestant:1.0
+Frac: 0.104", fillcolor="#ff556a"] ;
+13 [label="fund", fillcolor="#e98092"] ;
+14 [label="none
+Prob: buddhism:0.0 catholic:0.0 christian:0.0 hinduism:0.0 inter-nondenominational:0.0 jewish:0.0 moslem/islam:0.0 native american:0.0 none:0.7 orthodox-christian:0.0 other:0.0 protestant:0.2
+Frac: 0.182", fillcolor="#ca5ddc"] ;
+15 [label="fund", fillcolor="#e48c9d"] ;
+16 [label="protestant
+Prob: buddhism:0.1 catholic:0.2 christian:0.1 hinduism:0.0 inter-nondenominational:0.0 jewish:0.0 moslem/islam:0.1 native american:0.0 none:0.0 orthodox-christian:0.0 other:0.1 protestant:0.4
+Frac: 0.031", fillcolor="#f4997a"] ;
+17 [label="sprel", fillcolor="#fbb665"] ;
+18 [label="catholic
+Prob: buddhism:0.0 catholic:0.6 christian:0.1 hinduism:0.0 inter-nondenominational:0.0 jewish:0.0 moslem/islam:0.0 native american:0.0 none:0.0 orthodox-christian:0.0 other:0.0 protestant:0.3
+Frac: 0.041", fillcolor="#f9c460"] ;
+19 [label="ETH1", fillcolor="#fbc95e"] ;
+20 [label="catholic
+Prob: buddhism:0.0 catholic:0.7 christian:0.0 hinduism:0.0 inter-nondenominational:0.0 jewish:0.0 moslem/islam:0.0 native american:0.0 none:0.0 orthodox-christian:0.0 other:0.0 protestant:0.3
+Frac: 0.044", fillcolor="#fdcd5c"] ;
+21 [label="ETH1", fillcolor="#fcc460"] ;
+22 [label="catholic
+Prob: buddhism:0.0 catholic:0.6 christian:0.0 hinduism:0.0 inter-nondenominational:0.0 jewish:0.0 moslem/islam:0.0 native american:0.0 none:0.0 orthodox-christian:0.0 other:0.0 protestant:0.4
+Frac: 0.029", fillcolor="#feb960"] ;
+23 [label="god", fillcolor="#febd64"] ;
+24 [label="catholic
+Prob: buddhism:0.0 catholic:0.6 christian:0.0 hinduism:0.0 inter-nondenominational:0.0 jewish:0.0 moslem/islam:0.0 native american:0.0 none:0.0 orthodox-christian:0.0 other:0.1 protestant:0.3
+Frac: 0.032", fillcolor="#ffc168"] ;
+25 [label="RACECEN1", fillcolor="#fcbb62"] ;
+26 [label="protestant
+Prob: buddhism:0.0 catholic:0.3 christian:0.0 hinduism:0.0 inter-nondenominational:0.0 jewish:0.0 moslem/islam:0.0 native american:0.0 none:0.0 orthodox-christian:0.0 other:0.0 protestant:0.6
+Frac: 0.031", fillcolor="#fb9167"] ;
+1 -- 0 [label=" buddhism\n native american\n hinduism\n moslem/islam\n other\n jewish\n orthodox-christian\n catholic",penwidth=3] ;
+1 -- 2 [label=" protestant",penwidth=3] ;
+3 -- 1 [label=" jewish\n catholic\n orthodox-christian\n native american\n hinduism\n moslem/islam\n protestant\n other\n buddhism",penwidth=3] ;
+3 -- 4 [label=" christian\n none",penwidth=3] ;
+5 -- 3 [label=" none\n moslem/islam\n hinduism\n other\n catholic\n buddhism\n jewish",penwidth=3] ;
+5 -- 11 [label=" christian\n protestant",penwidth=3] ;
+7 -- 6 [label=" not very strong",penwidth=3] ;
+7 -- 9 [label=" no religion\n somewhat strong\n strong",penwidth=3] ;
+9 -- 8 [label=" white\n other asian\n korean",penwidth=3] ;
+9 -- 10 [label=" american indian or alaska native\n asian indian\n black or african american\n hispanic\n some other race",penwidth=3] ;
+11 -- 7 [label=" protestant\n hinduism",penwidth=3] ;
+11 -- 13 [label=" buddhism\n catholic\n christian\n inter-nondenominational\n jewish\n moslem/islam\n none\n orthodox-christian\n other\n other eastern",penwidth=3] ;
+13 -- 12 [label=" fundamentalist",penwidth=3] ;
+13 -- 15 [label=" liberal\n moderate",penwidth=3] ;
+15 -- 14 [label=" liberal",penwidth=3] ;
+15 -- 17 [label=" moderate",penwidth=3] ;
+17 -- 16 [label=" jewish\n christian\n other\n moslem/islam\n other eastern\n none\n inter-nondenominational\n buddhism",penwidth=3] ;
+17 -- 25 [label=" catholic",penwidth=3] ;
+19 -- 18 [label=" germany\n hungary\n norway\n belgium\n japan\n arabic\n czechoslovakia\n rumania\n puerto rico\n austria",penwidth=3] ;
+19 -- 20 [label=" africa\n american indian\n china\n france\n french canada\n greece\n india\n lithuania\n mexico\n netherlands\n other asian\n other spanish\n poland\n russia\n sweden",penwidth=3] ;
+21 -- 19 [label=" russia\n africa\n greece\n french canada\n japan\n france\n other asian\n hungary\n lithuania\n other spanish\n rumania\n arabic\n netherlands\n china\n american indian\n norway\n austria\n poland\n puerto rico\n india\n czechoslovakia\n germany\n belgium\n mexico\n sweden",penwidth=3] ;
+21 -- 23 [label=" american only\n england & wales\n ireland\n italy\n other\n other canada\n other european\n philippines\n portugal\n scotland\n spain\n yugoslavia",penwidth=3] ;
+23 -- 22 [label=" know god exists",penwidth=3] ;
+23 -- 24 [label=" believe but doubts\n believe sometimes\n dont believe\n no way to find out\n some higher power",penwidth=3] ;
+25 -- 21 [label=" chinese\n japanese\n korean\n other asian\n hispanic\n white\n asian indian",penwidth=3] ;
+25 -- 26 [label=" american indian or alaska native\n black or african american\n filipino\n other pacific islander\n some other race",penwidth=3] ;
+{rank = same;}}

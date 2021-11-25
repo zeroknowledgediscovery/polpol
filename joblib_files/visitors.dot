@@ -1,0 +1,8 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="no visitors
+Prob: 1 visitor:0.0 2 visitors:0.0 no visitors:1.0
+Frac: 1.0", fillcolor="#c156fd"] ;
+{rank = same;}}

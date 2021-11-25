@@ -1,0 +1,38 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="extremely dangerous
+Prob: extremely dangerous:0.8 not dangerous:0.0 not very dangerous:0.0 somewhat dangerous:0.1 very dangerous:0.1
+Frac: 0.238", fillcolor="#f5ac75"] ;
+1 [label="hhtype", fillcolor="#f7ac77"] ;
+2 [label="extremely dangerous
+Prob: extremely dangerous:0.8 not dangerous:0.0 not very dangerous:0.0 somewhat dangerous:0.0 very dangerous:0.2
+Frac: 0.095", fillcolor="#faac7c"] ;
+3 [label="indusgen", fillcolor="#d988b7"] ;
+4 [label="very dangerous
+Prob: extremely dangerous:0.2 not dangerous:0.0 not very dangerous:0.1 somewhat dangerous:0.3 very dangerous:0.4
+Frac: 0.118", fillcolor="#bf79d8"] ;
+5 [label="RELHHD2", fillcolor="#ca77d7"] ;
+6 [label="very dangerous
+Prob: extremely dangerous:0.2 not dangerous:0.0 not very dangerous:0.0 somewhat dangerous:0.2 very dangerous:0.5
+Frac: 0.23", fillcolor="#d470dd"] ;
+7 [label="respnum", fillcolor="#cf72dc"] ;
+8 [label="very dangerous
+Prob: extremely dangerous:0.2 not dangerous:0.0 not very dangerous:0.1 somewhat dangerous:0.3 very dangerous:0.5
+Frac: 0.145", fillcolor="#c875db"] ;
+9 [label="ETH1", fillcolor="#cc76d7"] ;
+10 [label="very dangerous
+Prob: extremely dangerous:0.3 not dangerous:0.0 not very dangerous:0.0 somewhat dangerous:0.3 very dangerous:0.4
+Frac: 0.174", fillcolor="#c57ecb"] ;
+1 -- 0 [label=" 3adlts,0mar,ntrel,0kids\n 3adlts,2mar,rel,0kids\n 3adlts,2mar,sp,rel,0kids\n 4+adlts,2mar,0kids\n 2adlts,dkmar,0kids\n 1adlt,0kids\n 1adlt,1+kids\n 2as,ntmar,ntrel,smsex,0ks\n 4+adlts,2mar,1+kids\n 4+adlts,4+mar,1+kids\n 4+adlts,0mar,0kids\n 4+adlts,0mar,1+kids\n 2adlts,ntmar,rel,0kids\n 3adlts,2mar,sp,rel,1+kids\n 2adlts,mar,0kids\n 3adlts,3mar,sp,rel,1+kids\n 3adlts,0mar,ntrel,rel,1+kids\n 2as,ntmar,ntrel,opsex,1+ks",penwidth=3] ;
+1 -- 2 [label=" 2adlts,dkmar,1+kids\n 2adlts,mar,1+kids\n 2adlts,ntmar,rel,1+kids\n 2as,ntmar,ntrel,opsex,0ks\n 3adlts,0mar,rel,0kids\n 3adlts,0mar,rel,1+kids\n 3adlts,1mar,rel,ntrel,0kids",penwidth=3] ;
+3 -- 1 [label=" extremely dangerous",penwidth=3] ;
+3 -- 5 [label=" not dangerous\n not very dangerous\n somewhat dangerous\n very dangerous",penwidth=3] ;
+5 -- 4 [label=" friend\n child,natural or adopted,stepchild\n brother,sister-full,half, or step sibling-\n partner,fiance-e-,boyfriend,girlfriend,etc",penwidth=3] ;
+5 -- 9 [label=" grandchild,great-granchild\n parent\n roommate,housemate\n sibling-in-law\n son-in-law,daughter-in-law\n spouse",penwidth=3] ;
+7 -- 6 [label=" 1st person",penwidth=3] ;
+7 -- 8 [label=" 11th person\n 2nd person\n 3rd person\n 4th person",penwidth=3] ;
+9 -- 7 [label=" switzerland\n germany\n norway\n american only\n ireland\n china\n scotland\n american indian\n rumania\n austria\n france\n spain\n other asian\n hungary\n czechoslovakia\n french canada\n england & wales\n other canada\n arabic\n yugoslavia\n mexico\n belgium\n other\n italy\n finland",penwidth=3] ;
+9 -- 10 [label=" africa\n denmark\n greece\n india\n lithuania\n non-span windies\n other european\n other spanish\n philippines\n poland\n puerto rico\n russia\n sweden",penwidth=3] ;
+{rank = same;}}

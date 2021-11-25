@@ -1,0 +1,104 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="hispanic
+Prob: american indian or alaska native:0.0 asian indian:0.0 black or african american:0.2 chinese:0.0 filipino:0.0 hispanic:0.4 japanese:0.0 korean:0.0 other asian:0.0 other pacific islander:0.0 some other race:0.0 vietnamese:0.0 white:0.3
+Frac: 0.054", fillcolor="#bfc19a"] ;
+1 [label="ETH1", fillcolor="#dfcc78"] ;
+2 [label="black or african american
+Prob: american indian or alaska native:0.0 asian indian:0.0 black or african american:1.0 chinese:0.0 filipino:0.0 hispanic:0.0 japanese:0.0 korean:0.0 other asian:0.0 other pacific islander:0.0 some other race:0.0 vietnamese:0.0 white:0.0
+Frac: 0.08", fillcolor="#fffd56"] ;
+3 [label="race", fillcolor="#ecdb69"] ;
+4 [label="white
+Prob: american indian or alaska native:0.0 asian indian:0.0 black or african american:0.0 chinese:0.0 filipino:0.1 hispanic:0.2 japanese:0.0 korean:0.0 other asian:0.0 other pacific islander:0.0 some other race:0.1 vietnamese:0.0 white:0.6
+Frac: 0.037", fillcolor="#c69192"] ;
+5 [label="ETH1", fillcolor="#ebd06c"] ;
+6 [label="white
+Prob: american indian or alaska native:0.0 asian indian:0.2 black or african american:0.1 chinese:0.0 filipino:0.0 hispanic:0.1 japanese:0.1 korean:0.0 other asian:0.0 other pacific islander:0.0 some other race:0.0 vietnamese:0.0 white:0.5
+Frac: 0.032", fillcolor="#e4aa78"] ;
+7 [label="ETH1", fillcolor="#e0cc77"] ;
+8 [label="black or african american
+Prob: american indian or alaska native:0.0 asian indian:0.0 black or african american:0.9 chinese:0.0 filipino:0.0 hispanic:0.0 japanese:0.0 korean:0.0 other asian:0.0 other pacific islander:0.0 some other race:0.0 vietnamese:0.0 white:0.1
+Frac: 0.049", fillcolor="#ffef55"] ;
+9 [label="hhrace", fillcolor="#e5ca73"] ;
+10 [label="white
+Prob: american indian or alaska native:0.1 asian indian:0.0 black or african american:0.1 chinese:0.1 filipino:0.0 hispanic:0.0 japanese:0.0 korean:0.1 other asian:0.2 other pacific islander:0.0 some other race:0.1 vietnamese:0.1 white:0.2
+Frac: 0.029", fillcolor="#ba8ca4"] ;
+11 [label="hhrace", fillcolor="#f17c6c"] ;
+12 [label="white
+Prob: american indian or alaska native:0.0 asian indian:0.0 black or african american:0.0 chinese:0.0 filipino:0.0 hispanic:0.0 japanese:0.0 korean:0.0 other asian:0.0 other pacific islander:0.0 some other race:0.0 vietnamese:0.0 white:1.0
+Frac: 0.05", fillcolor="#fb5668"] ;
+13 [label="ETH1", fillcolor="#f85c67"] ;
+14 [label="white
+Prob: american indian or alaska native:0.0 asian indian:0.0 black or african american:0.0 chinese:0.0 filipino:0.0 hispanic:0.0 japanese:0.0 korean:0.0 other asian:0.0 other pacific islander:0.0 some other race:0.0 vietnamese:0.0 white:1.0
+Frac: 0.081", fillcolor="#ff5562"] ;
+15 [label="ethnic", fillcolor="#f55f6a"] ;
+16 [label="white
+Prob: american indian or alaska native:0.0 asian indian:0.0 black or african american:0.0 chinese:0.0 filipino:0.0 hispanic:0.0 japanese:0.0 korean:0.0 other asian:0.0 other pacific islander:0.0 some other race:0.0 vietnamese:0.0 white:0.9
+Frac: 0.045", fillcolor="#fa596b"] ;
+17 [label="ethnic", fillcolor="#f3626c"] ;
+18 [label="white
+Prob: american indian or alaska native:0.0 asian indian:0.0 black or african american:0.0 chinese:0.0 filipino:0.0 hispanic:0.2 japanese:0.0 korean:0.0 other asian:0.0 other pacific islander:0.0 some other race:0.0 vietnamese:0.0 white:0.7
+Frac: 0.029", fillcolor="#cf838b"] ;
+19 [label="ethnic", fillcolor="#f55e6a"] ;
+20 [label="white
+Prob: american indian or alaska native:0.0 asian indian:0.0 black or african american:0.0 chinese:0.0 filipino:0.0 hispanic:0.0 japanese:0.0 korean:0.0 other asian:0.0 other pacific islander:0.0 some other race:0.0 vietnamese:0.0 white:1.0
+Frac: 0.047", fillcolor="#fc5762"] ;
+21 [label="size", fillcolor="#fe5663"] ;
+22 [label="white
+Prob: american indian or alaska native:0.0 asian indian:0.0 black or african american:0.0 chinese:0.0 filipino:0.0 hispanic:0.0 japanese:0.0 korean:0.0 other asian:0.0 other pacific islander:0.0 some other race:0.0 vietnamese:0.0 white:1.0
+Frac: 0.077", fillcolor="#ff5563"] ;
+23 [label="ethnic", fillcolor="#f1636d"] ;
+24 [label="white
+Prob: american indian or alaska native:0.0 asian indian:0.0 black or african american:0.0 chinese:0.0 filipino:0.0 hispanic:0.0 japanese:0.0 korean:0.0 other asian:0.0 other pacific islander:0.0 some other race:0.0 vietnamese:0.0 white:1.0
+Frac: 0.069", fillcolor="#ff5561"] ;
+25 [label="ethnic", fillcolor="#ec6971"] ;
+26 [label="white
+Prob: american indian or alaska native:0.0 asian indian:0.0 black or african american:0.0 chinese:0.0 filipino:0.0 hispanic:0.2 japanese:0.0 korean:0.0 other asian:0.0 other pacific islander:0.0 some other race:0.0 vietnamese:0.0 white:0.7
+Frac: 0.056", fillcolor="#d48286"] ;
+27 [label="ethnic", fillcolor="#f2636c"] ;
+28 [label="white
+Prob: american indian or alaska native:0.0 asian indian:0.0 black or african american:0.1 chinese:0.0 filipino:0.0 hispanic:0.0 japanese:0.0 korean:0.0 other asian:0.0 other pacific islander:0.0 some other race:0.0 vietnamese:0.0 white:0.9
+Frac: 0.03", fillcolor="#ff6160"] ;
+29 [label="ethnic", fillcolor="#f85d67"] ;
+30 [label="white
+Prob: american indian or alaska native:0.0 asian indian:0.0 black or african american:0.0 chinese:0.0 filipino:0.0 hispanic:0.0 japanese:0.0 korean:0.0 other asian:0.0 other pacific islander:0.0 some other race:0.0 vietnamese:0.0 white:1.0
+Frac: 0.114", fillcolor="#fc5963"] ;
+31 [label="intage", fillcolor="#fc5963"] ;
+32 [label="white
+Prob: american indian or alaska native:0.0 asian indian:0.0 black or african american:0.0 chinese:0.0 filipino:0.0 hispanic:0.0 japanese:0.0 korean:0.0 other asian:0.0 other pacific islander:0.0 some other race:0.0 vietnamese:0.0 white:1.0
+Frac: 0.12", fillcolor="#fd5863"] ;
+1 -- 0 [label=" mexico\n american only",penwidth=3] ;
+1 -- 5 [label=" africa\n arabic\n czechoslovakia\n france\n germany\n hungary\n india\n ireland\n italy\n japan\n non-span windies\n norway\n other\n other spanish\n philippines\n poland\n portugal\n puerto rico\n russia\n scotland\n spain\n west indies\n yugoslavia",penwidth=3] ;
+3 -- 2 [label=" black",penwidth=3] ;
+3 -- 4 [label=" other\n white",penwidth=3] ;
+5 -- 3 [label=" arabic\n non-span windies\n russia\n poland\n other spanish\n west indies\n czechoslovakia\n spain\n philippines\n norway\n africa\n yugoslavia\n germany",penwidth=3] ;
+5 -- 6 [label=" france\n hungary\n india\n ireland\n italy\n japan\n other\n portugal\n puerto rico\n scotland",penwidth=3] ;
+7 -- 1 [label=" american only\n spain\n japan\n india\n other spanish\n arabic\n puerto rico\n philippines\n germany\n czechoslovakia\n norway\n ireland\n yugoslavia\n poland\n other\n france\n hungary\n africa\n italy\n west indies\n portugal\n russia\n mexico\n scotland\n non-span windies",penwidth=3] ;
+7 -- 9 [label=" american indian\n china\n england & wales\n other asian",penwidth=3] ;
+9 -- 8 [label=" black",penwidth=3] ;
+9 -- 10 [label=" amer indian\n asiatic, oriental\n other, mixed",penwidth=3] ;
+11 -- 7 [label=" amer indian\n asiatic, oriental\n black\n other, mixed",penwidth=3] ;
+11 -- 13 [label=" white",penwidth=3] ;
+13 -- 12 [label=" other european\n poland\n finland\n other canada\n other\n other asian\n yugoslavia",penwidth=3] ;
+13 -- 29 [label=" africa\n american indian\n american only\n arabic\n austria\n belgium\n china\n czechoslovakia\n denmark\n england & wales\n france\n french canada\n germany\n greece\n hungary\n india\n ireland\n italy\n lithuania\n mexico\n netherlands\n norway\n other spanish\n philippines\n portugal\n puerto rico\n rumania\n russia\n scotland\n spain\n sweden\n switzerland",penwidth=3] ;
+15 -- 14 [label=" ireland\n yugoslavia",penwidth=3] ;
+15 -- 17 [label=" africa\n american only\n arabic\n belgium\n china\n czechoslovakia\n denmark\n england & wales\n france\n french canada\n germany\n italy\n lithuania\n mexico\n norway\n other canada\n other european\n other spanish\n philippines\n portugal\n puerto rico\n spain\n sweden\n switzerland",penwidth=3] ;
+17 -- 16 [label=" italy\n american only",penwidth=3] ;
+17 -- 27 [label=" africa\n arabic\n belgium\n china\n czechoslovakia\n denmark\n england & wales\n france\n french canada\n germany\n lithuania\n mexico\n norway\n other canada\n other european\n other spanish\n philippines\n portugal\n puerto rico\n spain\n sweden\n switzerland",penwidth=3] ;
+19 -- 18 [label=" philippines\n denmark\n other spanish\n puerto rico\n other canada",penwidth=3] ;
+19 -- 21 [label=" germany\n norway\n other european\n portugal\n spain",penwidth=3] ;
+21 -- 20 [label=" 1198\n 13\n 23\n 11\n 285\n 3\n 32\n 34\n 206\n 30\n 46\n 15\n 100\n 64\n 60\n 62\n 6\n 88\n 8\n 49\n 26\n 70\n 111\n 67\n 4\n 2",penwidth=3] ;
+21 -- 22 [label=" 0\n 1\n 10\n 109\n 117\n 118\n 12\n 124\n 127\n 134\n 136\n 14\n 1526\n 153\n 154\n 16\n 165\n 17\n 19\n 198\n 20\n 209\n 2099\n 21\n 22\n 260\n 27\n 29\n 325\n 36\n 37\n 39\n 41\n 416\n 43\n 44\n 48\n 495\n 5\n 54\n 546\n 563\n 57\n 600\n 609\n 61\n 65\n 7\n 71\n 74\n 741\n 787\n 8175\n 822\n 83\n 830\n 9\n 90",penwidth=3] ;
+23 -- 19 [label=" other canada\n portugal\n puerto rico\n denmark\n norway\n germany\n other european\n philippines\n other spanish\n spain",penwidth=3] ;
+23 -- 25 [label=" china\n czechoslovakia\n england & wales\n france\n mexico",penwidth=3] ;
+25 -- 24 [label=" england & wales",penwidth=3] ;
+25 -- 26 [label=" china\n czechoslovakia\n france\n mexico",penwidth=3] ;
+27 -- 23 [label=" philippines\n other canada\n denmark\n mexico\n other spanish\n other european\n czechoslovakia\n germany\n norway\n portugal\n spain\n england & wales\n china\n france\n puerto rico",penwidth=3] ;
+27 -- 28 [label=" africa\n arabic\n belgium\n french canada\n lithuania\n sweden\n switzerland",penwidth=3] ;
+29 -- 15 [label=" puerto rico\n belgium\n denmark\n africa\n philippines\n french canada\n other spanish\n czechoslovakia\n other canada\n yugoslavia\n ireland\n american only\n sweden\n france\n switzerland\n norway\n spain\n germany\n china\n portugal\n other european\n italy\n england & wales\n mexico\n lithuania\n arabic",penwidth=3] ;
+29 -- 31 [label=" american indian\n austria\n greece\n hungary\n japan\n netherlands\n other\n poland\n rumania\n russia\n scotland",penwidth=3] ;
+31 -- 30 [label=" 62\n 71\n 35\n 42\n 46\n 75\n 57\n 64\n 68\n 67\n 52\n 59\n 28\n 37\n 74\n 54\n 38\n 20\n 78\n 50\n 85\n 56\n 27\n 40\n 81\n 69",penwidth=3] ;
+31 -- 32 [label=" 26\n 33\n 36\n 39\n 43\n 44\n 45\n 47\n 48\n 49\n 51\n 53\n 55\n 58\n 60\n 61\n 63\n 65\n 66\n 72",penwidth=3] ;
+{rank = same;}}

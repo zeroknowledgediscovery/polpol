@@ -1,0 +1,80 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="only some
+Prob: a great deal:0.2 hardly any:0.4 only some:0.5
+Frac: 0.102", fillcolor="#a4a3cd"] ;
+1 [label="consci", fillcolor="#8abbcf"] ;
+2 [label="hardly any
+Prob: a great deal:0.0 hardly any:0.7 only some:0.3
+Frac: 0.162", fillcolor="#7acacf"] ;
+3 [label="PRES16", fillcolor="#7acfcb"] ;
+4 [label="hardly any
+Prob: a great deal:0.0 hardly any:0.9 only some:0.1
+Frac: 0.116", fillcolor="#61ebc8"] ;
+5 [label="helppoor", fillcolor="#5feec6"] ;
+6 [label="hardly any
+Prob: a great deal:0.0 hardly any:0.9 only some:0.0
+Frac: 0.049", fillcolor="#5bf8c1"] ;
+7 [label="contv", fillcolor="#95b3cc"] ;
+8 [label="only some
+Prob: a great deal:0.4 hardly any:0.1 only some:0.4
+Frac: 0.088", fillcolor="#cc99ae"] ;
+9 [label="conmedic", fillcolor="#c98fbc"] ;
+10 [label="only some
+Prob: a great deal:0.2 hardly any:0.1 only some:0.7
+Frac: 0.043", fillcolor="#c27ad7"] ;
+11 [label="conjudge", fillcolor="#b691cc"] ;
+12 [label="only some
+Prob: a great deal:0.0 hardly any:0.4 only some:0.5
+Frac: 0.071", fillcolor="#95a3db"] ;
+13 [label="bible", fillcolor="#a096de"] ;
+14 [label="only some
+Prob: a great deal:0.1 hardly any:0.3 only some:0.7
+Frac: 0.079", fillcolor="#aa8ae0"] ;
+15 [label="natmass", fillcolor="#ae93d3"] ;
+16 [label="only some
+Prob: a great deal:0.3 hardly any:0.1 only some:0.5
+Frac: 0.054", fillcolor="#c88fbc"] ;
+17 [label="trcourts", fillcolor="#bd8fc7"] ;
+18 [label="only some
+Prob: a great deal:0.2 hardly any:0.2 only some:0.6
+Frac: 0.077", fillcolor="#b58fcf"] ;
+19 [label="PRES16", fillcolor="#a99ecc"] ;
+20 [label="hardly any
+Prob: a great deal:0.0 hardly any:0.7 only some:0.3
+Frac: 0.046", fillcolor="#7ac8d2"] ;
+21 [label="polviews", fillcolor="#7ecec8"] ;
+22 [label="hardly any
+Prob: a great deal:0.1 hardly any:0.7 only some:0.2
+Frac: 0.05", fillcolor="#82d4be"] ;
+23 [label="polviews", fillcolor="#88c0cc"] ;
+24 [label="only some
+Prob: a great deal:0.1 hardly any:0.4 only some:0.5
+Frac: 0.062", fillcolor="#97a9d3"] ;
+1 -- 0 [label=" a great deal",penwidth=3] ;
+1 -- 2 [label=" hardly any\n only some",penwidth=3] ;
+3 -- 1 [label=" iap\n don't know\n clinton\n didn't vote for president",penwidth=3] ;
+3 -- 5 [label=" no answer\n other candidate (specify)\n trump",penwidth=3] ;
+5 -- 4 [label=" c",penwidth=3] ;
+5 -- 6 [label=" b\n d\n e",penwidth=3] ;
+7 -- 3 [label=" hardly any",penwidth=3] ;
+7 -- 19 [label=" a great deal\n only some",penwidth=3] ;
+9 -- 8 [label=" a great deal\n hardly any",penwidth=3] ;
+9 -- 10 [label=" only some",penwidth=3] ;
+11 -- 9 [label=" a great deal",penwidth=3] ;
+11 -- 15 [label=" hardly any\n only some",penwidth=3] ;
+13 -- 12 [label=" inspired word",penwidth=3] ;
+13 -- 14 [label=" book of fables\n other\n word of god",penwidth=3] ;
+15 -- 13 [label=" about right",penwidth=3] ;
+15 -- 17 [label=" too little\n too much",penwidth=3] ;
+17 -- 16 [label=" c",penwidth=3] ;
+17 -- 18 [label=" a\n b\n d\n e",penwidth=3] ;
+19 -- 11 [label=" iap\n don't know\n clinton\n didn't vote for president",penwidth=3] ;
+19 -- 23 [label=" no answer\n other candidate (specify)\n trump",penwidth=3] ;
+21 -- 20 [label=" conservative",penwidth=3] ;
+21 -- 22 [label=" extremely liberal\n extrmly conservative\n liberal\n slghtly conservative\n slightly liberal",penwidth=3] ;
+23 -- 21 [label=" slightly liberal\n extrmly conservative\n liberal\n extremely liberal\n slghtly conservative\n conservative",penwidth=3] ;
+23 -- 24 [label=" moderate",penwidth=3] ;
+{rank = same;}}

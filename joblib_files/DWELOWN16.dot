@@ -1,0 +1,80 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="owned or was buying
+Prob: other (specify):0.0 owned or was buying:0.6 paid rent:0.3
+Frac: 0.15", fillcolor="#7ec3d2"] ;
+1 [label="PASEI10EDUC", fillcolor="#71d5cd"] ;
+2 [label="owned or was buying
+Prob: other (specify):0.0 owned or was buying:0.9 paid rent:0.1
+Frac: 0.13", fillcolor="#64e8c8"] ;
+3 [label="adults", fillcolor="#66e6c7"] ;
+4 [label="owned or was buying
+Prob: other (specify):0.0 owned or was buying:0.8 paid rent:0.1
+Frac: 0.102", fillcolor="#66e5c9"] ;
+5 [label="ethnic", fillcolor="#64e8c7"] ;
+6 [label="owned or was buying
+Prob: other (specify):0.0 owned or was buying:0.9 paid rent:0.1
+Frac: 0.045", fillcolor="#5df2c5"] ;
+7 [label="spwrksta", fillcolor="#62ebc7"] ;
+8 [label="owned or was buying
+Prob: other (specify):0.0 owned or was buying:0.8 paid rent:0.1
+Frac: 0.06", fillcolor="#66e6c8"] ;
+9 [label="intage", fillcolor="#63ebc6"] ;
+10 [label="owned or was buying
+Prob: other (specify):0.0 owned or was buying:0.9 paid rent:0.1
+Frac: 0.061", fillcolor="#65eac4"] ;
+11 [label="intage", fillcolor="#67e6c7"] ;
+12 [label="owned or was buying
+Prob: other (specify):0.0 owned or was buying:0.9 paid rent:0.1
+Frac: 0.066", fillcolor="#64ebc4"] ;
+13 [label="knowwhat", fillcolor="#6be1c7"] ;
+14 [label="owned or was buying
+Prob: other (specify):0.0 owned or was buying:0.8 paid rent:0.2
+Frac: 0.043", fillcolor="#6fd9cc"] ;
+15 [label="SATFAM7", fillcolor="#6fdcc9"] ;
+16 [label="owned or was buying
+Prob: other (specify):0.0 owned or was buying:0.8 paid rent:0.2
+Frac: 0.07", fillcolor="#6edec8"] ;
+17 [label="FAMILY16", fillcolor="#6fd8cc"] ;
+18 [label="owned or was buying
+Prob: other (specify):0.0 owned or was buying:0.7 paid rent:0.3
+Frac: 0.066", fillcolor="#77cad2"] ;
+19 [label="marelkid", fillcolor="#83bad7"] ;
+20 [label="paid rent
+Prob: other (specify):0.0 owned or was buying:0.4 paid rent:0.6
+Frac: 0.062", fillcolor="#9b95e3"] ;
+21 [label="hhrace", fillcolor="#86b5d9"] ;
+22 [label="owned or was buying
+Prob: other (specify):0.0 owned or was buying:0.7 paid rent:0.3
+Frac: 0.043", fillcolor="#7ac8d2"] ;
+23 [label="DENOM16", fillcolor="#7dc2d4"] ;
+24 [label="owned or was buying
+Prob: other (specify):0.0 owned or was buying:0.6 paid rent:0.4
+Frac: 0.103", fillcolor="#7fbfd5"] ;
+1 -- 0 [label=" b",penwidth=3] ;
+1 -- 17 [label=" c\n d\n e",penwidth=3] ;
+3 -- 2 [label=" 1",penwidth=3] ;
+3 -- 11 [label=" 2\n 3\n 4\n 5\n 6",penwidth=3] ;
+5 -- 4 [label=" american only\n spain\n finland\n africa\n denmark\n sweden\n non-span windies\n germany\n other asian\n mexico\n switzerland\n other european\n italy\n other spanish\n rumania",penwidth=3] ;
+5 -- 9 [label=" american indian\n austria\n belgium\n china\n czechoslovakia\n england & wales\n france\n french canada\n greece\n hungary\n india\n ireland\n netherlands\n norway\n other\n other canada\n philippines\n poland\n puerto rico\n russia\n scotland",penwidth=3] ;
+7 -- 6 [label=" working fulltime",penwidth=3] ;
+7 -- 8 [label=" keeping house\n other\n retired\n temp not working\n unempl, laid off\n working parttime",penwidth=3] ;
+9 -- 7 [label=" 77\n 33\n 75\n 66\n 43\n 36\n 44\n 56\n 48\n 52\n 31\n 63\n 81\n 67",penwidth=3] ;
+9 -- 10 [label=" 26\n 28\n 29\n 37\n 38\n 45\n 51\n 57\n 62\n 72\n 78\n 85",penwidth=3] ;
+11 -- 5 [label=" 66\n 26\n 33\n 29\n 67\n 36\n 28\n 57\n 72\n 62\n 37\n 44\n 51\n 61\n 45\n 56\n 38\n 78\n 77\n 43\n 81\n 85\n 31\n 52\n 63\n 75\n 48",penwidth=3] ;
+11 -- 13 [label=" 20\n 27\n 35\n 39\n 40\n 42\n 47\n 49\n 50\n 53\n 54\n 55\n 59\n 60\n 64\n 65\n 68\n 69\n 71\n 74",penwidth=3] ;
+13 -- 12 [label=" agree",penwidth=3] ;
+13 -- 15 [label=" disagree\n strongly agree\n strongly disagree",penwidth=3] ;
+15 -- 14 [label=" completely satisfied\n fairly satisfied\n neither satisfied nor dissatisfied",penwidth=3] ;
+15 -- 16 [label=" fairly dissatisfied\n very dissatisfied\n very satisfied",penwidth=3] ;
+17 -- 3 [label=" m and f relatives\n father & stpmother\n mother & father",penwidth=3] ;
+17 -- 19 [label=" father\n female relative\n male relative\n mother\n mother & stpfather\n other",penwidth=3] ;
+19 -- 18 [label=" catholic\n none\n jewish",penwidth=3] ;
+19 -- 21 [label=" hinduism\n native american\n orthodox-christian\n other\n protestant",penwidth=3] ;
+21 -- 20 [label=" black",penwidth=3] ;
+21 -- 23 [label=" amer indian\n asiatic, oriental\n other, mixed\n white",penwidth=3] ;
+23 -- 22 [label=" afr meth episcopal\n southern baptist\n am bapt ch in usa\n other presbyterian\n am lutheran\n presbyterian, merged\n baptist-dk which\n united methodist",penwidth=3] ;
+23 -- 24 [label=" am baptist asso\n episcopal\n evangelical luth\n lutheran-dk which\n methodist-dk which\n no denomination\n other\n other baptists\n presbyterian-dk wh\n wi evan luth synod",penwidth=3] ;
+{rank = same;}}

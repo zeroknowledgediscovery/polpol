@@ -1,0 +1,44 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="does not have
+Prob: does not have:1.0 has:0.0
+Frac: 0.189", fillcolor="#fdc156"] ;
+1 [label="wealth", fillcolor="#fdc156"] ;
+2 [label="does not have
+Prob: does not have:1.0 has:0.0
+Frac: 0.147", fillcolor="#ffc155"] ;
+3 [label="MAISCO08", fillcolor="#fec155"] ;
+4 [label="does not have
+Prob: does not have:1.0 has:0.0
+Frac: 0.116", fillcolor="#ffc155"] ;
+5 [label="MAISCO08", fillcolor="#fdc156"] ;
+6 [label="does not have
+Prob: does not have:1.0 has:0.0
+Frac: 0.122", fillcolor="#fcc157"] ;
+7 [label="quallife", fillcolor="#fdc156"] ;
+8 [label="does not have
+Prob: does not have:1.0 has:0.0
+Frac: 0.132", fillcolor="#ffc155"] ;
+9 [label="hlthmntl", fillcolor="#fdc156"] ;
+10 [label="does not have
+Prob: does not have:1.0 has:0.0
+Frac: 0.181", fillcolor="#fdc156"] ;
+11 [label="numpets", fillcolor="#fac259"] ;
+12 [label="does not have
+Prob: does not have:0.8 has:0.2
+Frac: 0.112", fillcolor="#e3c770"] ;
+1 -- 0 [label=" $40,000 to $75,000\n $2 million to $3 million\n $1 million to $2 million\n $4 million to $5 million\n $250,000 to $500,000",penwidth=3] ;
+1 -- 3 [label=" $100,000 to $150,000\n $150,000 to $250,000\n $20,000 to $40,000\n $3 million to $4 million\n $5 million to $10 million\n $5,000 to $20,000\n $500,000 to $1 million\n $75,000 to $100,000\n above $10 million\n less than $5,000",penwidth=3] ;
+3 -- 2 [label=" textile, fur and leather products machine operators not elsewhere classified\n primary school teachers\n civil engineers\n shop supervisors\n managing directors and chief executives\n police inspectors and detectives\n health care assistants\n buyers\n archivists and curators\n real estate agents and property managers\n protective services workers not elsewhere classified\n accountants\n interior designers and decorators\n butchers, fishmongers and related food preparers\n child care workers\n social work and counselling professionals\n bank tellers and related clerks\n photographers\n supply, distribution and related managers\n medical and pathology laboratory technicians\n manufacturing supervisors\n data entry clerks\n food service counter attendants\n business services agents not elsewhere classified\n university and higher education teachers\n photographic products machine operators\n hand packers\n messengers, package deliverers and luggage porters\n weaving and knitting machine operators\n personnel and careers professionals",penwidth=3] ;
+3 -- 5 [label=" accounting and bookkeeping clerks\n administrative and executive secretaries\n agricultural and forestry production managers\n applications programmers\n bakers, pastry-cooks and confectionery makers\n building and related electricians\n bus and tram drivers\n business services and administration managers not elsewhere classified\n cashiers and ticket clerks\n chefs\n chemists\n cleaners and helpers in offices, hotels and other establishments\n cleaning and housekeeping supervisors in offices, hotels and other establishments\n commercial sales representatives\n cooks\n credit and loans officers\n dental assistants and therapists\n dentists\n domestic cleaners and helpers\n early childhood educators\n finance managers\n general office clerks\n government social benefits officials\n hairdressers\n hand launderers and pressers\n health services managers\n heavy truck and lorry drivers\n home-based personal care workers\n insurance representatives\n kitchen helpers\n laundry machine operators\n mail carriers and sorting clerks\n manufacturing labourers not elsewhere classified\n motor vehicle mechanics and repairers\n nursing associate professionals\n nursing professionals\n office supervisors\n optometrists and ophthalmic opticians\n painters and related workers\n payroll clerks\n personal service workers\n pulp and papermaking plant operators\n receptionists (general)\n restaurant managers\n sales and marketing managers\n sales workers\n sales workers not elsewhere classified\n secondary education teachers\n sewing machine operators\n sewing, embroidery and related workers\n shoemakers and related workers\n shop sales assistants\n stock clerks\n teachers' aides\n teaching professionals not elsewhere classified\n telephone switchboard operators\n waiters",penwidth=3] ;
+5 -- 4 [label=" teachers' aides\n building and related electricians\n business services and administration managers not elsewhere classified\n nursing associate professionals\n restaurant managers\n hand launderers and pressers\n administrative and executive secretaries\n sewing, embroidery and related workers\n laundry machine operators\n manufacturing labourers not elsewhere classified\n teaching professionals not elsewhere classified\n cashiers and ticket clerks\n sales and marketing managers\n applications programmers\n shoemakers and related workers\n finance managers\n early childhood educators\n government social benefits officials\n sewing machine operators",penwidth=3] ;
+5 -- 7 [label=" accounting and bookkeeping clerks\n agricultural and forestry production managers\n bakers, pastry-cooks and confectionery makers\n bus and tram drivers\n chefs\n chemists\n cleaners and helpers in offices, hotels and other establishments\n cleaning and housekeeping supervisors in offices, hotels and other establishments\n commercial sales representatives\n cooks\n credit and loans officers\n dental assistants and therapists\n dentists\n domestic cleaners and helpers\n general office clerks\n hairdressers\n health services managers\n heavy truck and lorry drivers\n home-based personal care workers\n insurance representatives\n kitchen helpers\n mail carriers and sorting clerks\n motor vehicle mechanics and repairers\n nursing professionals\n office supervisors\n optometrists and ophthalmic opticians\n painters and related workers\n payroll clerks\n personal service workers\n pulp and papermaking plant operators\n receptionists (general)\n sales workers\n sales workers not elsewhere classified\n secondary education teachers\n shop sales assistants\n stock clerks\n telephone switchboard operators\n waiters",penwidth=3] ;
+7 -- 6 [label=" excellent\n fair",penwidth=3] ;
+7 -- 9 [label=" good\n poor\n very good",penwidth=3] ;
+9 -- 8 [label=" excellent\n good",penwidth=3] ;
+9 -- 10 [label=" fair\n poor\n very good",penwidth=3] ;
+11 -- 1 [label=" c",penwidth=3] ;
+11 -- 12 [label=" d\n e",penwidth=3] ;
+{rank = same;}}

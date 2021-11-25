@@ -1,0 +1,50 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="allowed
+Prob: allowed:1.0 not allowed:0.0
+Frac: 0.182", fillcolor="#fcc157"] ;
+1 [label="OTHLANG1", fillcolor="#f9c25a"] ;
+2 [label="allowed
+Prob: allowed:1.0 not allowed:0.0
+Frac: 0.082", fillcolor="#ffc155"] ;
+3 [label="life", fillcolor="#fdc156"] ;
+4 [label="allowed
+Prob: allowed:1.0 not allowed:0.0
+Frac: 0.061", fillcolor="#fcc157"] ;
+5 [label="marhisp", fillcolor="#fdc156"] ;
+6 [label="allowed
+Prob: allowed:1.0 not allowed:0.0
+Frac: 0.046", fillcolor="#ffc155"] ;
+7 [label="christns", fillcolor="#fcc157"] ;
+8 [label="allowed
+Prob: allowed:1.0 not allowed:0.0
+Frac: 0.279", fillcolor="#fcc157"] ;
+9 [label="colath", fillcolor="#f9c25a"] ;
+10 [label="allowed
+Prob: allowed:0.9 not allowed:0.1
+Frac: 0.161", fillcolor="#edc566"] ;
+11 [label="libhomo", fillcolor="#f7c25c"] ;
+12 [label="allowed
+Prob: allowed:0.8 not allowed:0.2
+Frac: 0.079", fillcolor="#dbc978"] ;
+13 [label="spkhomo", fillcolor="#ebc568"] ;
+14 [label="not allowed
+Prob: allowed:0.3 not allowed:0.7
+Frac: 0.11", fillcolor="#88decb"] ;
+1 -- 0 [label=" telugu\n nepali\n serbian\n amharic\n zuni\n hindi\n arabic\n german\n portuguese\n sign language\n shawnee\n spanish\n russian\n igbo\n hebrew",penwidth=3] ;
+1 -- 9 [label=" chinese\n creole\n dutch\n english\n farsi-persian\n french\n greek\n italian\n japanese\n kaien\n korean\n latin\n swahili\n tagalog\n thai\n urdu\n vietnamese\n yoruba",penwidth=3] ;
+3 -- 2 [label=" exciting",penwidth=3] ;
+3 -- 4 [label=" dull\n routine",penwidth=3] ;
+5 -- 3 [label=" neither favor nor oppose",penwidth=3] ;
+5 -- 7 [label=" favor\n oppose\n strongly favor\n strongly oppose",penwidth=3] ;
+7 -- 6 [label=" neither positive nor negative\n somewhat positive",penwidth=3] ;
+7 -- 8 [label=" somewhat negative\n very negative\n very positive",penwidth=3] ;
+9 -- 5 [label=" allowed",penwidth=3] ;
+9 -- 10 [label=" not allowed",penwidth=3] ;
+11 -- 1 [label=" not remove",penwidth=3] ;
+11 -- 12 [label=" remove",penwidth=3] ;
+13 -- 11 [label=" allowed",penwidth=3] ;
+13 -- 14 [label=" not allowed",penwidth=3] ;
+{rank = same;}}

@@ -1,0 +1,62 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="c
+Prob: a:0.0 b:0.0 c:0.9 d:0.1 e:0.0
+Frac: 0.045", fillcolor="#55e7ff"] ;
+1 [label="MAJOR1", fillcolor="#56e8fe"] ;
+2 [label="c
+Prob: a:0.0 b:0.0 c:0.9 d:0.1 e:0.0
+Frac: 0.077", fillcolor="#56e8fd"] ;
+3 [label="spdeg", fillcolor="#61e1f1"] ;
+4 [label="c
+Prob: a:0.3 b:0.3 c:0.4 d:0.0 e:0.0
+Frac: 0.039", fillcolor="#a2ec9d"] ;
+5 [label="educ", fillcolor="#66e7eb"] ;
+6 [label="c
+Prob: a:0.0 b:0.0 c:0.5 d:0.5 e:0.0
+Frac: 0.054", fillcolor="#57adff"] ;
+7 [label="SPSEI10EDUC", fillcolor="#5ee7f4"] ;
+8 [label="c
+Prob: a:0.0 b:0.0 c:0.9 d:0.1 e:0.0
+Frac: 0.12", fillcolor="#59f4f9"] ;
+9 [label="SPISCO88", fillcolor="#60f2f2"] ;
+10 [label="c
+Prob: a:0.1 b:0.1 c:0.8 d:0.0 e:0.0
+Frac: 0.032", fillcolor="#66f2ed"] ;
+11 [label="SPISCO08", fillcolor="#65f1ec"] ;
+12 [label="c
+Prob: a:0.0 b:0.1 c:0.7 d:0.1 e:0.0
+Frac: 0.028", fillcolor="#69e5ea"] ;
+13 [label="hlpsococ", fillcolor="#65f1ec"] ;
+14 [label="c
+Prob: a:0.0 b:0.1 c:0.8 d:0.0 e:0.0
+Frac: 0.095", fillcolor="#64f4ec"] ;
+15 [label="educ", fillcolor="#64dfed"] ;
+16 [label="c
+Prob: a:0.0 b:0.0 c:0.5 d:0.5 e:0.0
+Frac: 0.062", fillcolor="#5caafb"] ;
+17 [label="marcohab", fillcolor="#a8a2f7"] ;
+18 [label="e
+Prob: a:0.0 b:0.0 c:0.0 d:0.0 e:1.0
+Frac: 0.448", fillcolor="#ff55ff"] ;
+1 -- 0 [label=" journalism\n philosophy\n information technology\n finance\n computer science\n history\n educational administration\n education\n physics\n law\n theology\n social sciences\n food science/nutrition/culinary arts\n economics\n agriculture/horticulture\n dentistry\n other\n nursing\n biology\n architecture\n law enforcement\n child/human/family development\n physical education\n marketing",penwidth=3] ;
+1 -- 2 [label=" accounting/bookkeeping\n administrative science/public administration\n business administration\n chemistry\n communications/speech\n criminology/criminal justice\n electronics\n engineering\n english\n environmental science/ecology\n fashion\n fine arts\n general sciences\n geology\n health\n humanities\n library science\n medicine\n pharmacy\n political science/international relations\n psychology\n sociology\n veterinary medicine\n visual arts/graphic design/design and drafting",penwidth=3] ;
+3 -- 1 [label=" bachelor",penwidth=3] ;
+3 -- 15 [label=" graduate\n high school\n junior college\n lt high school",penwidth=3] ;
+5 -- 4 [label=" a\n b",penwidth=3] ;
+5 -- 7 [label=" c",penwidth=3] ;
+7 -- 6 [label=" d",penwidth=3] ;
+7 -- 9 [label=" b\n c\n e",penwidth=3] ;
+9 -- 8 [label=" c",penwidth=3] ;
+9 -- 11 [label=" b\n d\n e",penwidth=3] ;
+11 -- 10 [label=" metal working machine tool setters and operators\n finance managers\n upholsterers and related workers\n building and related electricians\n human resource managers\n cooks\n handicraft workers in wood, basketry and related materials\n aircraft engine mechanics and repairers\n manufacturing managers\n information and communications technology installers and servicers\n electrical and electronic trades workers\n motor vehicle mechanics and repairers\n plumbers and pipe fitters\n painters and related workers\n laundry machine operators\n vehicle cleaners\n cleaners and helpers in offices, hotels and other establishments",penwidth=3] ;
+11 -- 13 [label=" agricultural and forestry production managers\n agricultural and industrial machinery mechanics and repairers\n air conditioning and refrigeration mechanics\n armed forces occupations, other ranks\n assemblers not elsewhere classified\n bricklayers and related workers\n building construction labourers\n bus and tram drivers\n business services and administration managers not elsewhere classified\n cabinet-makers and related workers\n car, taxi and van drivers\n carpenters and joiners\n chemical processing plant controllers\n civil engineering labourers\n commissioned armed forces officers\n construction managers\n construction supervisors\n crop farm labourers\n domestic cleaners and helpers\n earthmoving and related plant operators\n electrical line installers and repairers\n electrical mechanics and fitters\n electronics mechanics and servicers\n field crop and vegetable growers\n food and related products machine operators\n fumigators and other pest and weed controllers\n garbage and recycling collectors\n garment and related pattern-makers and cutters\n government social benefits officials\n hand packers\n health services managers\n heavy truck and lorry drivers\n hotel managers\n incinerator and water treatment plant operators\n lifting truck operators\n managing directors and chief executives\n manufacturing labourers not elsewhere classified\n manufacturing supervisors\n messengers, package deliverers and luggage porters\n metal processing plant operators\n miners and quarriers\n odd job persons\n office supervisors\n paper products machine operators\n precision-instrument makers and repairers\n railway brake, signal and switch operators\n restaurant managers\n rubber products machine operators\n sales workers\n sheet-metal workers\n shop supervisors\n stationary plant and machine operators\n steam engine and boiler operators\n structural-metal preparers and erectors\n supply, distribution and related managers\n welders and flamecutters\n woodworking-machine tool setters and operators",penwidth=3] ;
+13 -- 12 [label=" no one\n close friend\n someone else\n more distant family member\n neighbor\n someone i work with",penwidth=3] ;
+13 -- 14 [label=" close family member",penwidth=3] ;
+15 -- 5 [label=" a\n b\n c",penwidth=3] ;
+15 -- 16 [label=" d\n e",penwidth=3] ;
+17 -- 3 [label=" married",penwidth=3] ;
+17 -- 18 [label=" na\n not married, cohabitating partner\n not married, missing on cohabitating\n not married, no cohabitating partner",penwidth=3] ;
+{rank = same;}}

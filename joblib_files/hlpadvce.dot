@@ -1,0 +1,26 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="close family member
+Prob: close family member:0.7 close friend:0.2 more distant family member:0.0 neighbor:0.0 no one:0.0 someone else:0.1 someone i work with:0.0
+Frac: 0.066", fillcolor="#f8c565"] ;
+1 [label="comprend", fillcolor="#f1d063"] ;
+2 [label="close family member
+Prob: close family member:0.5 close friend:0.3 more distant family member:0.0 neighbor:0.0 no one:0.0 someone else:0.0 someone i work with:0.0
+Frac: 0.494", fillcolor="#f0d163"] ;
+3 [label="hlpdown", fillcolor="#ebc96d"] ;
+4 [label="no one
+Prob: close family member:0.2 close friend:0.1 more distant family member:0.0 neighbor:0.0 no one:0.4 someone else:0.2 someone i work with:0.1
+Frac: 0.064", fillcolor="#b58ec9"] ;
+5 [label="hlpdown", fillcolor="#ecd26c"] ;
+6 [label="close friend
+Prob: close family member:0.2 close friend:0.7 more distant family member:0.0 neighbor:0.0 no one:0.1 someone else:0.0 someone i work with:0.0
+Frac: 0.376", fillcolor="#eee269"] ;
+1 -- 0 [label=" fair",penwidth=3] ;
+1 -- 2 [label=" good\n poor",penwidth=3] ;
+3 -- 1 [label=" close family member\n more distant family member",penwidth=3] ;
+3 -- 4 [label=" neighbor\n no one\n someone else\n someone i work with",penwidth=3] ;
+5 -- 3 [label=" neighbor\n more distant family member\n someone else\n someone i work with\n close family member\n no one",penwidth=3] ;
+5 -- 6 [label=" close friend",penwidth=3] ;
+{rank = same;}}

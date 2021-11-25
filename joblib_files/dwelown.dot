@@ -1,0 +1,50 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="pays rent
+Prob: other:0.0 own or is buying:0.2 pays rent:0.8
+Frac: 0.061", fillcolor="#a87eee"] ;
+1 [label="dwellpre", fillcolor="#6fd7cd"] ;
+2 [label="own or is buying
+Prob: other:0.0 own or is buying:0.8 pays rent:0.2
+Frac: 0.059", fillcolor="#67e1cb"] ;
+3 [label="satfin", fillcolor="#66e3ca"] ;
+4 [label="own or is buying
+Prob: other:0.0 own or is buying:0.8 pays rent:0.2
+Frac: 0.077", fillcolor="#65e5ca"] ;
+5 [label="MAISCO08", fillcolor="#63e8c8"] ;
+6 [label="own or is buying
+Prob: other:0.0 own or is buying:0.9 pays rent:0.1
+Frac: 0.178", fillcolor="#61ecc7"] ;
+7 [label="sprel", fillcolor="#6adfca"] ;
+8 [label="own or is buying
+Prob: other:0.0 own or is buying:0.8 pays rent:0.2
+Frac: 0.338", fillcolor="#71d7cc"] ;
+9 [label="hhtype", fillcolor="#70d7cd"] ;
+10 [label="own or is buying
+Prob: other:0.0 own or is buying:0.7 pays rent:0.2
+Frac: 0.045", fillcolor="#73d6ca"] ;
+11 [label="dwellpre", fillcolor="#75cfcf"] ;
+12 [label="pays rent
+Prob: other:0.0 own or is buying:0.4 pays rent:0.6
+Frac: 0.12", fillcolor="#959fe0"] ;
+13 [label="dwellpre", fillcolor="#7dc3d4"] ;
+14 [label="pays rent
+Prob: other:0.0 own or is buying:0.1 pays rent:0.9
+Frac: 0.122", fillcolor="#b766f6"] ;
+1 -- 0 [label=" 2-family house, 2 units side-by-side\n apartment house (5 or more units, 4 stories or more)",penwidth=3] ;
+1 -- 7 [label=" detached single family house",penwidth=3] ;
+3 -- 2 [label=" more or less",penwidth=3] ;
+3 -- 4 [label=" not at all sat\n satisfied",penwidth=3] ;
+5 -- 3 [label=" photographic products machine operators\n lifting truck operators\n health professionals not elsewhere classified\n sales workers\n child care workers\n medical and pharmaceutical technicians\n education managers\n special needs teachers\n health care assistants\n aircraft engine mechanics and repairers\n medical and pathology laboratory technicians\n packing, bottling and labelling machine operators\n assemblers not elsewhere classified\n bakers, pastry-cooks and confectionery makers\n manufacturing labourers not elsewhere classified\n shop sales assistants\n payroll clerks\n commercial sales representatives\n product graders and testers (excluding foods and beverages)\n sewing, embroidery and related workers\n data entry clerks\n insurance representatives\n office supervisors\n specialist medical practitioners\n domestic cleaners and helpers\n laundry machine operators\n information and communications technology operations technicians\n contact centre information clerks\n lawyers\n cleaning and housekeeping supervisors in offices, hotels and other establishments\n mail carriers and sorting clerks\n crop farm labourers\n announcers on radio, television and other media\n travel consultants and clerks\n general office clerks\n kitchen helpers\n teaching professionals not elsewhere classified\n pulp and papermaking plant operators\n filing and copying clerks\n receptionists (general)\n pre-press technicians\n bus and tram drivers\n visual artists\n early childhood educators\n health services managers\n administrative and executive secretaries\n university and higher education teachers\n sociologists, anthropologists and related professionals\n finance managers\n hairdressers\n electrical and electronic equipment assemblers\n information and communications technology user support technicians\n stock clerks\n cashiers and ticket clerks\n cooks\n service station attendants",penwidth=3] ;
+5 -- 6 [label=" accountants\n accounting and bookkeeping clerks\n bank tellers and related clerks\n business services agents not elsewhere classified\n business services and administration managers not elsewhere classified\n cartographers and surveyors\n cleaners and helpers in offices, hotels and other establishments\n clearing and forwarding agents\n clerical support workers not elsewhere classified\n credit and loans officers\n field crop and vegetable growers\n food service counter attendants\n government licensing officials\n interior designers and decorators\n library clerks\n locomotive engine drivers and related workers\n manufacturing managers\n manufacturing supervisors\n medical assistants\n nursing associate professionals\n nursing professionals\n personnel and careers professionals\n primary school teachers\n protective services workers not elsewhere classified\n real estate agents and property managers\n sales and marketing managers\n secondary education teachers\n sewing machine operators\n shoemaking and related machine operators\n shop supervisors\n social work and counselling professionals\n social work associate professionals\n statistical, finance and insurance clerks\n teachers' aides\n telephone switchboard operators\n waiters\n welders and flamecutters",penwidth=3] ;
+7 -- 5 [label=" protestant\n none\n buddhism\n moslem/islam\n orthodox-christian\n other eastern\n jewish",penwidth=3] ;
+7 -- 8 [label=" catholic\n christian\n native american\n other",penwidth=3] ;
+9 -- 1 [label=" 3adlts,0mar,ntrel,rel,0kids\n 2adlts,ntmar,dkrel,1+kids\n 3adlts,2mar,sp,rel,0kids\n 2adlts,mar,1+kids\n 4+adlts,2mar,0kids\n 2adlts,mar,0kids\n 4+adlts,2mar,1+kids\n 2as,ntmar,ntrel,opsex,1+ks\n 4+adlts,1mar,0kids\n 2adlts,dkmar,0kids\n 2adlts,ntmar,rel,1+kids\n 3adlts,0mar,rel,0kids\n 3adlts,2mar,ntrel,rel,0kids\n 4+adlts,0mar,0kids\n 2as,ntmar,ntrel,smsex,1+ks\n 3adlts,0mar,ntrel,rel,1+kids\n 4+adlts,4+mar,0kids\n 2as,ntmar,ntrel,smsex,0ks\n 3adlts,0mar,rel,1+kids\n 2adlts,ntmar,rel,0kids\n 3adlts,3mar,sp,rel,1+kids\n 1adlt,0kids\n 1adlt,1+kids\n 2as,ntmar,ntrel,opsex,0ks",penwidth=3] ;
+9 -- 10 [label=" 2adlts,dkmar,1+kids\n 3adlts,0mar,ntrel,0kids\n 3adlts,0mar,ntrel,1+kids\n 3adlts,1mar,rel,ntrel,0kids\n 3adlts,2mar,rel,0kids\n 3adlts,2mar,rel,1+kids\n 3adlts,2mar,sp,rel,1+kids\n 4+adlts,0mar,1+kids\n 4+adlts,4+mar,1+kids",penwidth=3] ;
+11 -- 9 [label=" detached single family house\n 2-family house, 2 units side-by-side\n apartment house (5 or more units, 4 stories or more)",penwidth=3] ;
+11 -- 12 [label=" 2-family house, 2 units one above the other\n apartment in a partly commercial structure\n other (specify on next page)\n row house (3 or more units in an attached row)\n trailer",penwidth=3] ;
+13 -- 11 [label=" detached single family house\n apartment in a partly commercial structure\n 2-family house, 2 units side-by-side\n trailer\n 2-family house, 2 units one above the other\n other (specify on next page)\n row house (3 or more units in an attached row)\n apartment house (5 or more units, 4 stories or more)",penwidth=3] ;
+13 -- 14 [label=" apartment house (5 or more units, 3 stories or less)\n detached 3-4 family house",penwidth=3] ;
+{rank = same;}}

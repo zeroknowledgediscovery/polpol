@@ -1,0 +1,38 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="a company whose stock is owned by the employees who appoint the management to run the company's operations
+Prob: a company in which the government owns the stock and appoints the management to run the company's operations:0.0 a company whose stock is owned by outside investors who appoint the management to run the company's operations:0.0 a company whose stock is owned by the employees who appoint the management to run the company's operations:0.9
+Frac: 0.051", fillcolor="#be5df9"] ;
+1 [label="workhard", fillcolor="#bb66f2"] ;
+2 [label="a company whose stock is owned by the employees who appoint the management to run the company's operations
+Prob: a company in which the government owns the stock and appoints the management to run the company's operations:0.1 a company whose stock is owned by outside investors who appoint the management to run the company's operations:0.1 a company whose stock is owned by the employees who appoint the management to run the company's operations:0.9
+Frac: 0.162", fillcolor="#ba69f0"] ;
+3 [label="buyesop", fillcolor="#b07ae9"] ;
+4 [label="a company whose stock is owned by the employees who appoint the management to run the company's operations
+Prob: a company in which the government owns the stock and appoints the management to run the company's operations:0.0 a company whose stock is owned by outside investors who appoint the management to run the company's operations:0.2 a company whose stock is owned by the employees who appoint the management to run the company's operations:0.7
+Frac: 0.321", fillcolor="#a884e8"] ;
+5 [label="sibs", fillcolor="#aa86e4"] ;
+6 [label="a company whose stock is owned by the employees who appoint the management to run the company's operations
+Prob: a company in which the government owns the stock and appoints the management to run the company's operations:0.2 a company whose stock is owned by outside investors who appoint the management to run the company's operations:0.2 a company whose stock is owned by the employees who appoint the management to run the company's operations:0.6
+Frac: 0.054", fillcolor="#b293ce"] ;
+7 [label="wordb", fillcolor="#b17ee4"] ;
+8 [label="a company whose stock is owned by the employees who appoint the management to run the company's operations
+Prob: a company in which the government owns the stock and appoints the management to run the company's operations:0.3 a company whose stock is owned by outside investors who appoint the management to run the company's operations:0.3 a company whose stock is owned by the employees who appoint the management to run the company's operations:0.4
+Frac: 0.064", fillcolor="#b5a7b8"] ;
+9 [label="tvhours", fillcolor="#b383dd"] ;
+10 [label="a company whose stock is owned by the employees who appoint the management to run the company's operations
+Prob: a company in which the government owns the stock and appoints the management to run the company's operations:0.1 a company whose stock is owned by outside investors who appoint the management to run the company's operations:0.2 a company whose stock is owned by the employees who appoint the management to run the company's operations:0.7
+Frac: 0.348", fillcolor="#b37ce4"] ;
+1 -- 0 [label=" 3rd important",penwidth=3] ;
+1 -- 2 [label=" 2nd important\n 4th important\n least important\n most important",penwidth=3] ;
+3 -- 1 [label=" i would be more likely to buy from an employee-owned company",penwidth=3] ;
+3 -- 5 [label=" i would be less likely to buy from an employee-owned company\n i would be neither more nor less likely to buy from an employee-owned company",penwidth=3] ;
+5 -- 4 [label=" c",penwidth=3] ;
+5 -- 6 [label=" b\n d\n e",penwidth=3] ;
+7 -- 3 [label=" correct",penwidth=3] ;
+7 -- 9 [label=" incorrect",penwidth=3] ;
+9 -- 8 [label=" c",penwidth=3] ;
+9 -- 10 [label=" b\n d\n e",penwidth=3] ;
+{rank = same;}}

@@ -1,0 +1,92 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="lt high school
+Prob: bachelor:0.0 graduate:0.0 high school:0.3 junior college:0.0 lt high school:0.7
+Frac: 0.061", fillcolor="#cf84ff"] ;
+1 [label="educ", fillcolor="#95d1c9"] ;
+2 [label="high school
+Prob: bachelor:0.1 graduate:0.0 high school:0.7 junior college:0.1 lt high school:0.2
+Frac: 0.179", fillcolor="#7cd3f5"] ;
+3 [label="SEI10EDUC", fillcolor="#91d6c5"] ;
+4 [label="high school
+Prob: bachelor:0.0 graduate:0.0 high school:0.8 junior college:0.1 lt high school:0.0
+Frac: 0.034", fillcolor="#64e9f6"] ;
+5 [label="relig", fillcolor="#71e0f1"] ;
+6 [label="high school
+Prob: bachelor:0.1 graduate:0.0 high school:0.7 junior college:0.1 lt high school:0.1
+Frac: 0.039", fillcolor="#7cd8ed"] ;
+7 [label="SEI10", fillcolor="#96d7ba"] ;
+8 [label="high school
+Prob: bachelor:0.2 graduate:0.0 high school:0.7 junior college:0.1 lt high school:0.0
+Frac: 0.044", fillcolor="#74dfe4"] ;
+9 [label="marital", fillcolor="#70e3ea"] ;
+10 [label="high school
+Prob: bachelor:0.1 graduate:0.0 high school:0.8 junior college:0.0 lt high school:0.1
+Frac: 0.038", fillcolor="#6de8f0"] ;
+11 [label="paeduc", fillcolor="#75e0ee"] ;
+12 [label="high school
+Prob: bachelor:0.1 graduate:0.0 high school:0.7 junior college:0.0 lt high school:0.2
+Frac: 0.073", fillcolor="#7adbf3"] ;
+13 [label="colsci", fillcolor="#9ad6b4"] ;
+14 [label="high school
+Prob: bachelor:0.1 graduate:0.1 high school:0.7 junior college:0.1 lt high school:0.0
+Frac: 0.029", fillcolor="#77e7de"] ;
+15 [label="PRESTG105PLUS", fillcolor="#a5d4a4"] ;
+16 [label="high school
+Prob: bachelor:0.3 graduate:0.1 high school:0.4 junior college:0.2 lt high school:0.0
+Frac: 0.166", fillcolor="#93cebd"] ;
+17 [label="incuspop", fillcolor="#9cceb3"] ;
+18 [label="high school
+Prob: bachelor:0.3 graduate:0.1 high school:0.4 junior college:0.2 lt high school:0.1
+Frac: 0.029", fillcolor="#9bbac3"] ;
+19 [label="dwellpre", fillcolor="#a7cea6"] ;
+20 [label="bachelor
+Prob: bachelor:0.5 graduate:0.2 high school:0.3 junior college:0.1 lt high school:0.0
+Frac: 0.053", fillcolor="#b9d48e"] ;
+21 [label="INCOME16", fillcolor="#abd39e"] ;
+22 [label="high school
+Prob: bachelor:0.3 graduate:0.1 high school:0.4 junior college:0.1 lt high school:0.0
+Frac: 0.046", fillcolor="#9ad3b0"] ;
+23 [label="PRESTG10", fillcolor="#a8d3a0"] ;
+24 [label="graduate
+Prob: bachelor:0.4 graduate:0.4 high school:0.1 junior college:0.0 lt high school:0.0
+Frac: 0.03", fillcolor="#c9e16b"] ;
+25 [label="phyeffrt", fillcolor="#bfd87a"] ;
+26 [label="bachelor
+Prob: bachelor:0.4 graduate:0.4 high school:0.2 junior college:0.1 lt high school:0.0
+Frac: 0.117", fillcolor="#bcd67e"] ;
+27 [label="INDUS10", fillcolor="#b8d986"] ;
+28 [label="high school
+Prob: bachelor:0.3 graduate:0.2 high school:0.4 junior college:0.0 lt high school:0.0
+Frac: 0.063", fillcolor="#a9dca1"] ;
+1 -- 0 [label=" b",penwidth=3] ;
+1 -- 3 [label=" a\n c\n d\n e",penwidth=3] ;
+3 -- 2 [label=" b",penwidth=3] ;
+3 -- 7 [label=" c\n d\n e",penwidth=3] ;
+5 -- 4 [label=" protestant\n jewish",penwidth=3] ;
+5 -- 6 [label=" buddhism\n catholic\n christian\n inter-nondenominational\n none\n other",penwidth=3] ;
+7 -- 5 [label=" b",penwidth=3] ;
+7 -- 13 [label=" c\n d\n e",penwidth=3] ;
+9 -- 8 [label=" married",penwidth=3] ;
+9 -- 10 [label=" divorced\n never married\n separated\n widowed",penwidth=3] ;
+11 -- 9 [label=" c",penwidth=3] ;
+11 -- 12 [label=" a\n b\n d\n e",penwidth=3] ;
+13 -- 11 [label=" no",penwidth=3] ;
+13 -- 15 [label=" yes",penwidth=3] ;
+15 -- 14 [label=" b",penwidth=3] ;
+15 -- 23 [label=" c\n d\n e",penwidth=3] ;
+17 -- 16 [label=" average",penwidth=3] ;
+17 -- 19 [label=" higher than average\n lower than average",penwidth=3] ;
+19 -- 18 [label=" 2-family house, 2 units one above the other\n other (specify on next page)\n trailer\n apartment house (5 or more units, 3 stories or less)\n apartment in a partly commercial structure\n 2-family house, 2 units side-by-side\n row house (3 or more units in an attached row)",penwidth=3] ;
+19 -- 21 [label=" apartment house (5 or more units, 4 stories or more)\n detached single family house",penwidth=3] ;
+21 -- 20 [label=" $8 000 to 9 999\n $170000 or over\n $90000 to $109999\n $3 000 to 3 999\n $20000 to 22499\n $30000 to 34999\n $15000 to 17499\n $12500 to 14999\n $150000 to $169999\n $75000 to $89999",penwidth=3] ;
+21 -- 22 [label=" $10000 to 12499\n $110000 to $129999\n $130000 to $149999\n $17500 to 19999\n $22500 to 24999\n $25000 to 29999\n $35000 to 39999\n $40000 to 49999\n $50000 to 59999\n $60000 to 74999",penwidth=3] ;
+23 -- 17 [label=" c",penwidth=3] ;
+23 -- 27 [label=" b\n d\n e",penwidth=3] ;
+25 -- 24 [label=" fairly light",penwidth=3] ;
+25 -- 26 [label=" hard\n somewhat hard\n very hard\n very light",penwidth=3] ;
+27 -- 25 [label=" c",penwidth=3] ;
+27 -- 28 [label=" a\n b\n d\n e",penwidth=3] ;
+{rank = same;}}

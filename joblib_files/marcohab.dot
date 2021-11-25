@@ -1,0 +1,68 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="not married, cohabitating partner
+Prob: married:0.0 na:0.0 not married, cohabitating partner:1.0 not married, missing on cohabitating:0.0 not married, no cohabitating partner:0.0
+Frac: 0.04", fillcolor="#55ffff"] ;
+1 [label="COSEI10INC", fillcolor="#cdd386"] ;
+2 [label="married
+Prob: married:1.0 na:0.0 not married, cohabitating partner:0.0 not married, missing on cohabitating:0.0 not married, no cohabitating partner:0.0
+Frac: 0.098", fillcolor="#ffc155"] ;
+3 [label="SPSEI10INC", fillcolor="#e8a6a1"] ;
+4 [label="not married, no cohabitating partner
+Prob: married:0.0 na:0.0 not married, cohabitating partner:0.0 not married, missing on cohabitating:0.0 not married, no cohabitating partner:1.0
+Frac: 0.154", fillcolor="#ff55ff"] ;
+5 [label="posslq", fillcolor="#f663f3"] ;
+6 [label="not married, no cohabitating partner
+Prob: married:0.3 na:0.0 not married, cohabitating partner:0.2 not married, missing on cohabitating:0.0 not married, no cohabitating partner:0.5
+Frac: 0.047", fillcolor="#d992cb"] ;
+7 [label="HHTYPE1", fillcolor="#efa29b"] ;
+8 [label="not married, cohabitating partner
+Prob: married:0.0 na:0.0 not married, cohabitating partner:0.8 not married, missing on cohabitating:0.0 not married, no cohabitating partner:0.1
+Frac: 0.047", fillcolor="#6fe8f8"] ;
+9 [label="RELHHD2", fillcolor="#d5c88a"] ;
+10 [label="married
+Prob: married:0.9 na:0.0 not married, cohabitating partner:0.0 not married, missing on cohabitating:0.0 not married, no cohabitating partner:0.1
+Frac: 0.122", fillcolor="#fdbb5f"] ;
+11 [label="hhtype", fillcolor="#ecbe76"] ;
+12 [label="married
+Prob: married:1.0 na:0.0 not married, cohabitating partner:0.0 not married, missing on cohabitating:0.0 not married, no cohabitating partner:0.0
+Frac: 0.254", fillcolor="#ffc155"] ;
+13 [label="HHTYPE1", fillcolor="#f9b86b"] ;
+14 [label="not married, no cohabitating partner
+Prob: married:0.1 na:0.0 not married, cohabitating partner:0.2 not married, missing on cohabitating:0.0 not married, no cohabitating partner:0.7
+Frac: 0.043", fillcolor="#d884ef"] ;
+15 [label="hhtype", fillcolor="#ec9fa5"] ;
+16 [label="married
+Prob: married:1.0 na:0.0 not married, cohabitating partner:0.0 not married, missing on cohabitating:0.0 not married, no cohabitating partner:0.0
+Frac: 0.035", fillcolor="#fcc257"] ;
+17 [label="posslq", fillcolor="#e294c5"] ;
+18 [label="married
+Prob: married:1.0 na:0.0 not married, cohabitating partner:0.0 not married, missing on cohabitating:0.0 not married, no cohabitating partner:0.0
+Frac: 0.033", fillcolor="#ffc155"] ;
+19 [label="marital", fillcolor="#dd8adc"] ;
+20 [label="not married, no cohabitating partner
+Prob: married:0.0 na:0.0 not married, cohabitating partner:0.2 not married, missing on cohabitating:0.0 not married, no cohabitating partner:0.8
+Frac: 0.129", fillcolor="#d47cff"] ;
+1 -- 0 [label=" b\n c",penwidth=3] ;
+1 -- 2 [label=" e",penwidth=3] ;
+3 -- 1 [label=" b",penwidth=3] ;
+3 -- 15 [label=" c\n d\n e",penwidth=3] ;
+5 -- 4 [label=" no steady partner",penwidth=3] ;
+5 -- 6 [label=" living as married\n married with partner\n partner, not together",penwidth=3] ;
+7 -- 5 [label=" unsure, no children\n other fam., no children\n single adult",penwidth=3] ;
+7 -- 11 [label=" cohab couple, no children\n married couple w children\n married couple, no children\n non-family w children\n other family w children\n single parent\n unsure w children",penwidth=3] ;
+9 -- 8 [label=" partner,fiance-e-,boyfriend,girlfriend,etc",penwidth=3] ;
+9 -- 10 [label=" child,natural or adopted,stepchild\n niece or nephew\n parent\n roommate,housemate\n spouse",penwidth=3] ;
+11 -- 9 [label=" 2adlts,mar,1+kids\n 2as,ntmar,ntrel,opsex,0ks\n 3adlts,0mar,rel,1+kids",penwidth=3] ;
+11 -- 13 [label=" 1adlt,1+kids\n 2adlts,dkmar,1+kids\n 2adlts,mar,0kids\n 2as,ntmar,ntrel,smsex,1+ks\n 3adlts,3mar,sp,rel,0kids\n 4+adlts,2mar,1+kids",penwidth=3] ;
+13 -- 12 [label=" married couple, no children",penwidth=3] ;
+13 -- 14 [label=" married couple w children\n non-family w children\n single parent\n unsure w children",penwidth=3] ;
+15 -- 7 [label=" 4+adlts,1mar,0kids\n 3adlts,3mar,sp,rel,0kids\n 3adlts,0mar,rel,1+kids\n 2adlts,mar,0kids\n 2adlts,dkmar,1+kids\n 1adlt,1+kids\n 1adlt,0kids\n 2adlts,mar,1+kids\n 2as,ntmar,ntrel,opsex,0ks\n 3adlts,0mar,ntrel,rel,0kids\n 4+adlts,2mar,1+kids\n 2as,ntmar,ntrel,smsex,1+ks",penwidth=3] ;
+15 -- 17 [label=" 2adlts,dkmar,0kids\n 2adlts,ntmar,dkrel,0kids\n 2adlts,ntmar,dkrel,1+kids\n 2adlts,ntmar,rel,0kids\n 2adlts,ntmar,rel,1+kids\n 2as,ntmar,ntrel,opsex,1+ks\n 2as,ntmar,ntrel,smsex,0ks\n 3adlts,0mar,ntrel,0kids\n 3adlts,0mar,ntrel,1+kids\n 3adlts,0mar,ntrel,rel,1+kids\n 3adlts,0mar,rel,0kids\n 3adlts,0mar,sp,rel,0kids\n 3adlts,1mar,ntrel,0kids\n 3adlts,1mar,rel,rel,0kids\n 3adlts,2mar,rel,0kids\n 3adlts,2mar,rel,1+kids\n 3adlts,2mar,sp,rel,0kids\n 3adlts,2mar,sp,rel,1+kids\n 3adlts,3mar,sp,rel,1+kids\n 4+adlts,0mar,0kids\n 4+adlts,0mar,1+kids\n 4+adlts,2mar,0kids\n 4+adlts,4+mar,0kids\n 4+adlts,4+mar,1+kids",penwidth=3] ;
+17 -- 16 [label=" married with partner",penwidth=3] ;
+17 -- 19 [label=" living as married\n no steady partner\n partner, not together",penwidth=3] ;
+19 -- 18 [label=" married",penwidth=3] ;
+19 -- 20 [label=" divorced\n never married\n separated\n widowed",penwidth=3] ;
+{rank = same;}}

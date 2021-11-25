@@ -1,0 +1,32 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="agree
+Prob: agree:0.5 disagree:0.4 strongly agree:0.1 strongly disagree:0.0
+Frac: 0.361", fillcolor="#bad964"] ;
+1 [label="toofast", fillcolor="#b3d965"] ;
+2 [label="disagree
+Prob: agree:0.4 disagree:0.5 strongly agree:0.0 strongly disagree:0.1
+Frac: 0.376", fillcolor="#acda65"] ;
+3 [label="scientbe", fillcolor="#afd771"] ;
+4 [label="disagree
+Prob: agree:0.3 disagree:0.5 strongly agree:0.2 strongly disagree:0.1
+Frac: 0.111", fillcolor="#9cde7b"] ;
+5 [label="inttech", fillcolor="#a3d195"] ;
+6 [label="disagree
+Prob: agree:0.3 disagree:0.4 strongly agree:0.2 strongly disagree:0.2
+Frac: 0.08", fillcolor="#a8cb93"] ;
+7 [label="marblk", fillcolor="#a8c8a7"] ;
+8 [label="strongly agree
+Prob: agree:0.3 disagree:0.1 strongly agree:0.4 strongly disagree:0.2
+Frac: 0.072", fillcolor="#a9c5be"] ;
+1 -- 0 [label=" agree\n strongly agree",penwidth=3] ;
+1 -- 2 [label=" disagree\n strongly disagree",penwidth=3] ;
+3 -- 1 [label=" agree\n disagree",penwidth=3] ;
+3 -- 5 [label=" strongly agree\n strongly disagree",penwidth=3] ;
+5 -- 4 [label=" moderately interested",penwidth=3] ;
+5 -- 7 [label=" not at all interested\n very interested",penwidth=3] ;
+7 -- 6 [label=" neither favor nor oppose",penwidth=3] ;
+7 -- 8 [label=" favor\n oppose\n strongly favor\n strongly oppose",penwidth=3] ;
+{rank = same;}}

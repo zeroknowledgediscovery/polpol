@@ -1,0 +1,68 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="c
+Prob: a:0.0 b:0.1 c:0.8 d:0.1 e:0.0
+Frac: 0.138", fillcolor="#66e5f0"] ;
+1 [label="firstyou", fillcolor="#69e4ea"] ;
+2 [label="c
+Prob: a:0.0 b:0.1 c:0.7 d:0.1 e:0.0
+Frac: 0.06", fillcolor="#66dfed"] ;
+3 [label="popular", fillcolor="#69e4e9"] ;
+4 [label="c
+Prob: a:0.0 b:0.1 c:0.8 d:0.1 e:0.0
+Frac: 0.053", fillcolor="#69eee5"] ;
+5 [label="thnkself", fillcolor="#6ae5e8"] ;
+6 [label="c
+Prob: a:0.0 b:0.1 c:0.7 d:0.2 e:0.1
+Frac: 0.091", fillcolor="#64d4f5"] ;
+7 [label="degree", fillcolor="#6ae4e9"] ;
+8 [label="c
+Prob: a:0.0 b:0.0 c:0.7 d:0.2 e:0.0
+Frac: 0.033", fillcolor="#5fd0f9"] ;
+9 [label="spdeg", fillcolor="#6be8e6"] ;
+10 [label="c
+Prob: a:0.0 b:0.1 c:0.7 d:0.1 e:0.0
+Frac: 0.092", fillcolor="#67e7e6"] ;
+11 [label="PAISCO08", fillcolor="#69e9e8"] ;
+12 [label="c
+Prob: a:0.0 b:0.1 c:0.8 d:0.1 e:0.1
+Frac: 0.103", fillcolor="#6aebea"] ;
+13 [label="incuspop", fillcolor="#6deae4"] ;
+14 [label="c
+Prob: a:0.0 b:0.2 c:0.7 d:0.1 e:0.0
+Frac: 0.07", fillcolor="#70ebde"] ;
+15 [label="relig", fillcolor="#73ecdd"] ;
+16 [label="c
+Prob: a:0.0 b:0.2 c:0.7 d:0.0 e:0.1
+Frac: 0.062", fillcolor="#75eddd"] ;
+17 [label="childs", fillcolor="#91bfee"] ;
+18 [label="e
+Prob: a:0.0 b:0.0 c:0.0 d:0.0 e:1.0
+Frac: 0.263", fillcolor="#ff55ff"] ;
+19 [label="childs", fillcolor="#ef67f8"] ;
+20 [label="c
+Prob: a:0.0 b:0.3 c:0.6 d:0.0 e:0.0
+Frac: 0.035", fillcolor="#7df1c8"] ;
+1 -- 0 [label=" agree",penwidth=3] ;
+1 -- 3 [label=" disagree\n neither agree nor disagree\n strongly agree\n strongly disagree",penwidth=3] ;
+3 -- 2 [label=" 4th important",penwidth=3] ;
+3 -- 5 [label=" 2nd important\n 3rd important\n least important\n most important",penwidth=3] ;
+5 -- 4 [label=" 2nd important",penwidth=3] ;
+5 -- 7 [label=" 3rd important\n 4th important\n least important\n most important",penwidth=3] ;
+7 -- 6 [label=" bachelor",penwidth=3] ;
+7 -- 9 [label=" graduate\n high school\n junior college\n lt high school",penwidth=3] ;
+9 -- 8 [label=" bachelor",penwidth=3] ;
+9 -- 13 [label=" graduate\n high school\n junior college\n lt high school",penwidth=3] ;
+11 -- 10 [label=" crop farm labourers\n railway brake, signal and switch operators\n chemical processing plant controllers\n shoemakers and related workers\n training and staff development professionals\n wood processing plant operators\n office supervisors\n stock clerks\n air conditioning and refrigeration mechanics\n crane, hoist and related plant operators\n interior designers and decorators\n sales workers not elsewhere classified\n electrical line installers and repairers\n civil engineers\n sewing, embroidery and related workers\n mail carriers and sorting clerks\n industrial and production engineers\n hand packers\n cooks\n structural-metal preparers and erectors\n bakers, pastry-cooks and confectionery makers\n ships' deck officers and pilots\n roofers\n heavy truck and lorry drivers\n manufacturing supervisors\n sewing machine operators\n religious professionals\n ambulance workers\n security guards\n general office clerks\n managing directors and chief executives\n insurance representatives\n lawyers\n metal processing plant operators\n bartenders\n cabinet-makers and related workers\n steam engine and boiler operators\n fire-fighters\n civil engineering technicians\n farming, forestry and fisheries advisers\n food and beverage tasters and graders\n floor layers and tile setters\n textile, fur and leather products machine operators not elsewhere classified\n building construction labourers\n nursing professionals\n miners and quarriers\n cleaners and helpers in offices, hotels and other establishments\n messengers, package deliverers and luggage porters\n toolmakers and related workers\n forestry labourers\n mineral and stone processing plant operators\n mechanical machinery assemblers\n armed forces occupations, other ranks\n real estate agents and property managers\n specialist medical practitioners\n secondary education teachers\n statistical, finance and insurance clerks\n building and related electricians\n agricultural and industrial machinery mechanics and repairers\n commissioned armed forces officers\n electronics mechanics and servicers\n plumbers and pipe fitters\n education managers\n odd job persons\n environmental engineers\n garbage and recycling collectors\n manufacturing labourers not elsewhere classified\n electrical mechanics and fitters\n medical imaging and therapeutic equipment technicians\n product graders and testers (excluding foods and beverages)\n production clerks",penwidth=3] ;
+11 -- 12 [label=" accountants\n agricultural and forestry production managers\n assemblers not elsewhere classified\n bricklayers and related workers\n building frame and related trades workers not elsewhere classified\n bus and tram drivers\n business services and administration managers not elsewhere classified\n butchers, fishmongers and related food preparers\n car, taxi and van drivers\n carpenters and joiners\n cartographers and surveyors\n chefs\n commercial sales representatives\n construction managers\n construction supervisors\n earthmoving and related plant operators\n field crop and vegetable growers\n garden and horticultural labourers\n geologists and geophysicists\n hand launderers and pressers\n health services managers\n insulation workers\n lifting truck operators\n mechanical engineers\n metal finishing, plating and coating machine operators\n metal working machine tool setters and operators\n motor vehicle mechanics and repairers\n packing, bottling and labelling machine operators\n personnel clerks\n printers\n restaurant managers\n shop sales assistants\n shop supervisors\n supply, distribution and related managers\n teaching professionals not elsewhere classified\n upholsterers and related workers\n waiters\n welders and flamecutters",penwidth=3] ;
+13 -- 11 [label=" average",penwidth=3] ;
+13 -- 15 [label=" higher than average\n lower than average",penwidth=3] ;
+15 -- 14 [label=" jewish\n moslem/islam\n protestant\n buddhism",penwidth=3] ;
+15 -- 16 [label=" catholic\n christian\n hinduism\n none\n other",penwidth=3] ;
+17 -- 1 [label=" c\n d",penwidth=3] ;
+17 -- 19 [label=" b\n e",penwidth=3] ;
+19 -- 18 [label=" b",penwidth=3] ;
+19 -- 20 [label=" e",penwidth=3] ;
+{rank = same;}}

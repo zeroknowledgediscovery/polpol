@@ -1,0 +1,80 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="d
+Prob: b:0.1 c:0.2 d:0.7 e:0.0
+Frac: 0.072", fillcolor="#65ebcc"] ;
+1 [label="helppoor", fillcolor="#80eb7f"] ;
+2 [label="c
+Prob: b:0.1 c:0.7 d:0.2 e:0.0
+Frac: 0.036", fillcolor="#76f374"] ;
+3 [label="coop", fillcolor="#77f26f"] ;
+4 [label="c
+Prob: b:0.1 c:0.8 d:0.0 e:0.1
+Frac: 0.044", fillcolor="#84ec62"] ;
+5 [label="RACECEN1", fillcolor="#74f46b"] ;
+6 [label="c
+Prob: b:0.0 c:0.8 d:0.1 e:0.0
+Frac: 0.14", fillcolor="#6ff66e"] ;
+7 [label="eqwlth", fillcolor="#78f16e"] ;
+8 [label="c
+Prob: b:0.1 c:0.6 d:0.2 e:0.0
+Frac: 0.07", fillcolor="#82eb78"] ;
+9 [label="helpsick", fillcolor="#83eb75"] ;
+10 [label="c
+Prob: b:0.2 c:0.5 d:0.3 e:0.0
+Frac: 0.047", fillcolor="#80ea88"] ;
+11 [label="numpets", fillcolor="#84e48b"] ;
+12 [label="c
+Prob: b:0.1 c:0.6 d:0.2 e:0.2
+Frac: 0.028", fillcolor="#89da92"] ;
+13 [label="partyid", fillcolor="#90e57c"] ;
+14 [label="c
+Prob: b:0.3 c:0.6 d:0.1 e:0.0
+Frac: 0.04", fillcolor="#9ae36c"] ;
+15 [label="partyid", fillcolor="#94e576"] ;
+16 [label="c
+Prob: b:0.4 c:0.5 d:0.1 e:0.0
+Frac: 0.032", fillcolor="#9de56c"] ;
+17 [label="intage", fillcolor="#9ae475"] ;
+18 [label="c
+Prob: b:0.3 c:0.4 d:0.2 e:0.0
+Frac: 0.033", fillcolor="#97e37d"] ;
+19 [label="prvdold", fillcolor="#93e578"] ;
+20 [label="c
+Prob: b:0.2 c:0.5 d:0.2 e:0.0
+Frac: 0.094", fillcolor="#8ee67a"] ;
+21 [label="helpnot", fillcolor="#abb8aa"] ;
+22 [label="e
+Prob: b:0.0 c:0.0 d:0.0 e:1.0
+Frac: 0.335", fillcolor="#ff55ff"] ;
+23 [label="ballot", fillcolor="#f75ef6"] ;
+24 [label="c
+Prob: b:0.2 c:0.4 d:0.2 e:0.2
+Frac: 0.03", fillcolor="#a0cb97"] ;
+1 -- 0 [label=" d",penwidth=3] ;
+1 -- 9 [label=" b\n c\n e",penwidth=3] ;
+3 -- 2 [label=" cooperative",penwidth=3] ;
+3 -- 7 [label=" friendly,interested\n restless,impatient",penwidth=3] ;
+5 -- 4 [label=" chinese\n hispanic\n american indian or alaska native\n japanese\n black or african american\n asian indian\n vietnamese\n some other race\n other pacific islander\n korean",penwidth=3] ;
+5 -- 6 [label=" filipino\n other asian\n white",penwidth=3] ;
+7 -- 5 [label=" c",penwidth=3] ;
+7 -- 8 [label=" b\n d\n e",penwidth=3] ;
+9 -- 3 [label=" c",penwidth=3] ;
+9 -- 13 [label=" b\n d\n e",penwidth=3] ;
+11 -- 10 [label=" c",penwidth=3] ;
+11 -- 12 [label=" d\n e",penwidth=3] ;
+13 -- 11 [label=" independent\n strong republican",penwidth=3] ;
+13 -- 15 [label=" ind,near dem\n ind,near rep\n not str democrat\n not str republican\n other party\n strong democrat",penwidth=3] ;
+15 -- 14 [label=" ind,near dem",penwidth=3] ;
+15 -- 19 [label=" ind,near rep\n not str democrat\n not str republican\n other party\n strong democrat",penwidth=3] ;
+17 -- 16 [label=" 63\n 52\n 75\n 48\n 27\n 39\n 67\n 72\n 74\n 53\n 54\n 35\n 38\n 60\n 58\n 55",penwidth=3] ;
+17 -- 18 [label=" 26\n 31\n 37\n 42\n 43\n 45\n 49\n 50\n 51\n 56\n 57\n 59\n 61\n 64\n 66\n 68\n 69\n 81",penwidth=3] ;
+19 -- 17 [label=" government",penwidth=3] ;
+19 -- 20 [label=" family, relatives or friends\n non-profit organizations/charities/cooperatives\n private companies/for-profit organizations\n religious organizations",penwidth=3] ;
+21 -- 1 [label=" b\n c\n d",penwidth=3] ;
+21 -- 23 [label=" e",penwidth=3] ;
+23 -- 22 [label=" ballot a",penwidth=3] ;
+23 -- 24 [label=" ballot b\n ballot c",penwidth=3] ;
+{rank = same;}}

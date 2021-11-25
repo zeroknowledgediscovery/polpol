@@ -1,0 +1,110 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="names 1
+Prob: cannot choose 1:0.0 cannot name any:0.0 chooses 1 of 2+:0.2 names 1:0.8
+Frac: 0.073", fillcolor="#e271fb"] ;
+1 [label="ETH1", fillcolor="#c495ce"] ;
+2 [label="cannot name any
+Prob: cannot choose 1:0.0 cannot name any:0.5 chooses 1 of 2+:0.1 names 1:0.4
+Frac: 0.07", fillcolor="#a6ba9f"] ;
+3 [label="race", fillcolor="#b6a3da"] ;
+4 [label="names 1
+Prob: cannot choose 1:0.1 cannot name any:0.3 chooses 1 of 2+:0.2 names 1:0.4
+Frac: 0.052", fillcolor="#adaec4"] ;
+5 [label="comprend", fillcolor="#a5b5d6"] ;
+6 [label="names 1
+Prob: cannot choose 1:0.0 cannot name any:0.0 chooses 1 of 2+:0.5 names 1:0.5
+Frac: 0.037", fillcolor="#ab9eff"] ;
+7 [label="ETH1", fillcolor="#9fa9ff"] ;
+8 [label="chooses 1 of 2+
+Prob: cannot choose 1:0.0 cannot name any:0.0 chooses 1 of 2+:0.6 names 1:0.4
+Frac: 0.044", fillcolor="#95b2ff"] ;
+9 [label="ethnic", fillcolor="#a8b3db"] ;
+10 [label="chooses 1 of 2+
+Prob: cannot choose 1:0.2 cannot name any:0.1 chooses 1 of 2+:0.4 names 1:0.4
+Frac: 0.033", fillcolor="#afaddc"] ;
+11 [label="marelkid", fillcolor="#b3add5"] ;
+12 [label="names 1
+Prob: cannot choose 1:0.2 cannot name any:0.1 chooses 1 of 2+:0.4 names 1:0.4
+Frac: 0.05", fillcolor="#b6acd1"] ;
+13 [label="wordsum", fillcolor="#adb8ca"] ;
+14 [label="chooses 1 of 2+
+Prob: cannot choose 1:0.3 cannot name any:0.1 chooses 1 of 2+:0.4 names 1:0.2
+Frac: 0.088", fillcolor="#a7c2c0"] ;
+15 [label="intid", fillcolor="#a5b6d8"] ;
+16 [label="chooses 1 of 2+
+Prob: cannot choose 1:0.1 cannot name any:0.0 chooses 1 of 2+:0.5 names 1:0.3
+Frac: 0.096", fillcolor="#9ebbde"] ;
+17 [label="consci", fillcolor="#a1b8d6"] ;
+18 [label="chooses 1 of 2+
+Prob: cannot choose 1:0.1 cannot name any:0.2 chooses 1 of 2+:0.6 names 1:0.2
+Frac: 0.029", fillcolor="#83cfd7"] ;
+19 [label="region", fillcolor="#a3b6d2"] ;
+20 [label="chooses 1 of 2+
+Prob: cannot choose 1:0.1 cannot name any:0.1 chooses 1 of 2+:0.4 names 1:0.4
+Frac: 0.078", fillcolor="#abafd9"] ;
+21 [label="MASEI10EDUC", fillcolor="#a9b2d1"] ;
+22 [label="names 1
+Prob: cannot choose 1:0.1 cannot name any:0.2 chooses 1 of 2+:0.3 names 1:0.4
+Frac: 0.087", fillcolor="#a7b5ca"] ;
+23 [label="granborn", fillcolor="#b4a5dc"] ;
+24 [label="names 1
+Prob: cannot choose 1:0.1 cannot name any:0.0 chooses 1 of 2+:0.3 names 1:0.6
+Frac: 0.033", fillcolor="#ca8bf3"] ;
+25 [label="intyrs", fillcolor="#cd8ee8"] ;
+26 [label="names 1
+Prob: cannot choose 1:0.2 cannot name any:0.0 chooses 1 of 2+:0.3 names 1:0.6
+Frac: 0.045", fillcolor="#d091e1"] ;
+27 [label="ETH1", fillcolor="#d97df3"] ;
+28 [label="names 1
+Prob: cannot choose 1:0.0 cannot name any:0.0 chooses 1 of 2+:0.2 names 1:0.8
+Frac: 0.035", fillcolor="#e06fff"] ;
+29 [label="tax", fillcolor="#e270fb"] ;
+30 [label="names 1
+Prob: cannot choose 1:0.0 cannot name any:0.0 chooses 1 of 2+:0.2 names 1:0.8
+Frac: 0.066", fillcolor="#e370f9"] ;
+31 [label="ETH1", fillcolor="#d582e9"] ;
+32 [label="names 1
+Prob: cannot choose 1:0.1 cannot name any:0.2 chooses 1 of 2+:0.1 names 1:0.6
+Frac: 0.05", fillcolor="#c697cb"] ;
+33 [label="REG16", fillcolor="#ce8dd5"] ;
+34 [label="names 1
+Prob: cannot choose 1:0.0 cannot name any:0.1 chooses 1 of 2+:0.1 names 1:0.7
+Frac: 0.033", fillcolor="#d97de5"] ;
+1 -- 0 [label=" germany\n africa\n hungary",penwidth=3] ;
+1 -- 2 [label=" american indian\n american only\n england & wales\n france\n india\n ireland\n mexico\n non-span windies\n other asian\n other spanish\n puerto rico\n west indies",penwidth=3] ;
+3 -- 1 [label=" black",penwidth=3] ;
+3 -- 23 [label=" other\n white",penwidth=3] ;
+5 -- 4 [label=" fair",penwidth=3] ;
+5 -- 15 [label=" good\n poor",penwidth=3] ;
+7 -- 6 [label=" russia\n mexico\n american indian\n switzerland\n spain\n other spanish\n other european\n czechoslovakia\n africa\n italy\n other asian\n american only",penwidth=3] ;
+7 -- 8 [label=" denmark\n england & wales\n france\n germany\n greece\n ireland\n japan\n lithuania\n norway\n other canada\n philippines\n poland\n scotland\n yugoslavia",penwidth=3] ;
+9 -- 7 [label=" american indian\n american only\n poland\n england & wales\n other asian\n other spanish\n arabic\n greece\n other canada\n spain\n switzerland\n mexico\n japan\n africa\n philippines\n russia\n yugoslavia\n denmark\n norway\n other european\n lithuania",penwidth=3] ;
+9 -- 13 [label=" austria\n belgium\n czechoslovakia\n finland\n france\n french canada\n germany\n hungary\n ireland\n italy\n netherlands\n other\n portugal\n puerto rico\n scotland\n sweden",penwidth=3] ;
+11 -- 10 [label=" catholic\n hinduism",penwidth=3] ;
+11 -- 12 [label=" jewish\n protestant",penwidth=3] ;
+13 -- 11 [label=" c",penwidth=3] ;
+13 -- 14 [label=" a\n b\n d\n e",penwidth=3] ;
+15 -- 9 [label=" 8\n 1\n 22\n 111\n 43\n 136\n 47\n 46\n 11\n 55\n 6\n 94\n 30\n 104\n 118\n 35\n 32\n 71\n 10\n 44\n 88\n 60\n 83\n 110\n 102\n 58\n 138\n 98\n 48\n 121\n 91\n 131\n 34\n 90\n 95\n 37\n 96\n 74\n 62\n 4\n 113\n 26\n 33\n 5\n 66\n 73\n 51\n 124\n 28\n 14\n 107\n 126\n 3\n 103\n 81\n 132\n 80",penwidth=3] ;
+15 -- 17 [label=" 100\n 105\n 106\n 108\n 109\n 112\n 114\n 115\n 117\n 119\n 12\n 120\n 122\n 123\n 125\n 127\n 128\n 129\n 13\n 130\n 133\n 135\n 137\n 139\n 15\n 17\n 18\n 19\n 20\n 21\n 23\n 24\n 27\n 29\n 39\n 40\n 42\n 49\n 50\n 52\n 53\n 54\n 56\n 59\n 61\n 64\n 7\n 70\n 72\n 76\n 77\n 78\n 79\n 82\n 84\n 85\n 86\n 87\n 89\n 9\n 92\n 93\n 97",penwidth=3] ;
+17 -- 16 [label=" a great deal",penwidth=3] ;
+17 -- 19 [label=" hardly any\n only some",penwidth=3] ;
+19 -- 18 [label=" e. nor. central",penwidth=3] ;
+19 -- 21 [label=" e. sou. central\n middle atlantic\n mountain\n new england\n pacific\n south atlantic\n w. nor. central\n w. sou. central",penwidth=3] ;
+21 -- 20 [label=" c",penwidth=3] ;
+21 -- 22 [label=" b\n d\n e",penwidth=3] ;
+23 -- 5 [label=" c",penwidth=3] ;
+23 -- 31 [label=" d\n e",penwidth=3] ;
+25 -- 24 [label=" 4\n 1\n 5\n 7\n 8\n 2\n 15\n 10",penwidth=3] ;
+25 -- 26 [label=" 0\n 11\n 12\n 14\n 21\n 23\n 6\n 9",penwidth=3] ;
+27 -- 25 [label=" japan\n china\n england & wales\n india\n africa\n other canada\n yugoslavia\n czechoslovakia\n spain\n french canada\n scotland\n american indian\n non-span windies\n other\n germany",penwidth=3] ;
+27 -- 29 [label=" arabic\n austria\n denmark\n finland\n ireland\n mexico\n netherlands\n norway\n puerto rico\n rumania\n russia\n sweden",penwidth=3] ;
+29 -- 28 [label=" too high",penwidth=3] ;
+29 -- 30 [label=" about right\n too low",penwidth=3] ;
+31 -- 27 [label=" england & wales\n puerto rico\n yugoslavia\n india\n germany\n netherlands\n scotland\n mexico\n czechoslovakia\n non-span windies\n french canada\n other canada\n china\n russia\n denmark\n norway\n austria\n arabic\n rumania\n spain\n other\n japan\n ireland\n sweden\n finland\n american indian\n africa",penwidth=3] ;
+31 -- 33 [label=" american only\n france\n greece\n hungary\n italy\n lithuania\n other asian\n other european\n other spanish\n philippines\n poland\n portugal\n switzerland",penwidth=3] ;
+33 -- 32 [label=" south atlantic\n pacific\n mountain\n w. nor. central\n middle atlantic\n e. nor. central",penwidth=3] ;
+33 -- 34 [label=" foreign\n new england\n w. sou. central",penwidth=3] ;
+{rank = same;}}

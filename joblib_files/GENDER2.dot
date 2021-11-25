@@ -1,0 +1,50 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="male
+Prob: female:0.0 male:1.0
+Frac: 0.084", fillcolor="#57eafc"] ;
+1 [label="HHTYPE1", fillcolor="#88decb"] ;
+2 [label="female
+Prob: female:0.6 male:0.4
+Frac: 0.084", fillcolor="#b8d29b"] ;
+3 [label="HHTYPE1", fillcolor="#74e3df"] ;
+4 [label="male
+Prob: female:0.0 male:1.0
+Frac: 0.133", fillcolor="#5ce9f7"] ;
+5 [label="hhtype", fillcolor="#67e6ec"] ;
+6 [label="male
+Prob: female:0.0 male:1.0
+Frac: 0.057", fillcolor="#5be9f8"] ;
+7 [label="hhtype", fillcolor="#75e2de"] ;
+8 [label="male
+Prob: female:0.3 male:0.7
+Frac: 0.057", fillcolor="#8fdcc4"] ;
+9 [label="GENDER1", fillcolor="#bed095"] ;
+10 [label="female
+Prob: female:0.9 male:0.1
+Frac: 0.082", fillcolor="#f0c463"] ;
+11 [label="RELHH2", fillcolor="#f2c461"] ;
+12 [label="male
+Prob: female:0.4 male:0.6
+Frac: 0.041", fillcolor="#94dbbf"] ;
+13 [label="RELHH2", fillcolor="#f3c360"] ;
+14 [label="female
+Prob: female:1.0 male:0.0
+Frac: 0.461", fillcolor="#fbc158"] ;
+1 -- 0 [label=" married couple w children",penwidth=3] ;
+1 -- 2 [label=" other fam., no children\n other family w children\n single parent",penwidth=3] ;
+3 -- 1 [label=" other fam., no children\n other family w children\n single parent\n married couple w children",penwidth=3] ;
+3 -- 5 [label=" cohab couple w children\n cohab couple, no children\n married couple, no children\n non-family w children\n non-family, no children\n single adult\n unsure w children\n unsure, no children",penwidth=3] ;
+5 -- 4 [label=" 2adlts,mar,0kids\n 2adlts,dkmar,1+kids\n 4+adlts,4+mar,0kids\n 3adlts,3mar,sp,rel,0kids",penwidth=3] ;
+5 -- 7 [label=" 1adlt,0kids\n 2adlts,dkmar,0kids\n 2adlts,ntmar,dkrel,1+kids\n 2as,ntmar,ntrel,opsex,0ks\n 2as,ntmar,ntrel,opsex,1+ks\n 2as,ntmar,ntrel,smsex,0ks\n 2as,ntmar,ntrel,smsex,1+ks\n 3adlts,0mar,ntrel,0kids\n 3adlts,2mar,rel,0kids\n 3adlts,2mar,sp,rel,0kids\n 4+adlts,0mar,0kids\n 4+adlts,0mar,1+kids\n 4+adlts,1mar,0kids\n 4+adlts,2mar,0kids\n 4+adlts,3mar,0kids",penwidth=3] ;
+7 -- 6 [label=" 2as,ntmar,ntrel,opsex,1+ks\n 2adlts,ntmar,dkrel,1+kids\n 2as,ntmar,ntrel,smsex,1+ks\n 2as,ntmar,ntrel,opsex,0ks\n 4+adlts,2mar,0kids",penwidth=3] ;
+7 -- 8 [label=" 1adlt,0kids\n 2adlts,dkmar,0kids\n 2as,ntmar,ntrel,smsex,0ks\n 3adlts,0mar,ntrel,0kids\n 3adlts,2mar,rel,0kids\n 3adlts,2mar,sp,rel,0kids\n 4+adlts,0mar,0kids\n 4+adlts,0mar,1+kids\n 4+adlts,1mar,0kids\n 4+adlts,3mar,0kids",penwidth=3] ;
+9 -- 3 [label=" female",penwidth=3] ;
+9 -- 11 [label=" male",penwidth=3] ;
+11 -- 10 [label=" cousin\n brother, sister\n partner,girl(boy)friend",penwidth=3] ;
+11 -- 13 [label=" biological child\n child, unsp\n friend\n niece or nephew\n parent\n parent-in-law\n roommate, housemate\n sibling-in-law\n spouse",penwidth=3] ;
+13 -- 12 [label=" sibling-in-law\n parent\n child, unsp\n roommate, housemate\n parent-in-law\n biological child\n niece or nephew\n friend",penwidth=3] ;
+13 -- 14 [label=" spouse",penwidth=3] ;
+{rank = same;}}

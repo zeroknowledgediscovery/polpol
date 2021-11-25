@@ -1,0 +1,122 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="yes
+Prob: no:0.1 yes:0.9
+Frac: 0.046", fillcolor="#6ce5e7"] ;
+1 [label="region", fillcolor="#82dfd2"] ;
+2 [label="yes
+Prob: no:0.4 yes:0.6
+Frac: 0.035", fillcolor="#9ed8b5"] ;
+3 [label="region", fillcolor="#8addc9"] ;
+4 [label="yes
+Prob: no:0.4 yes:0.6
+Frac: 0.031", fillcolor="#a0d8b3"] ;
+5 [label="sampcode", fillcolor="#85dece"] ;
+6 [label="yes
+Prob: no:0.2 yes:0.8
+Frac: 0.054", fillcolor="#7ce1d7"] ;
+7 [label="sampcode", fillcolor="#89ddca"] ;
+8 [label="yes
+Prob: no:0.3 yes:0.7
+Frac: 0.055", fillcolor="#88decb"] ;
+9 [label="size", fillcolor="#93dbc0"] ;
+10 [label="yes
+Prob: no:0.5 yes:0.5
+Frac: 0.04", fillcolor="#a2d7b1"] ;
+11 [label="size", fillcolor="#8edcc5"] ;
+12 [label="yes
+Prob: no:0.2 yes:0.8
+Frac: 0.031", fillcolor="#7fe0d4"] ;
+13 [label="xnorcsiz", fillcolor="#7be1d8"] ;
+14 [label="yes
+Prob: no:0.2 yes:0.8
+Frac: 0.043", fillcolor="#73e3e0"] ;
+15 [label="hispanic", fillcolor="#63e7f0"] ;
+16 [label="yes
+Prob: no:0.1 yes:0.9
+Frac: 0.129", fillcolor="#5ee8f5"] ;
+17 [label="xnorcsiz", fillcolor="#76e2dd"] ;
+18 [label="yes
+Prob: no:0.2 yes:0.8
+Frac: 0.16", fillcolor="#77e2dc"] ;
+19 [label="sampcode", fillcolor="#7ce1d7"] ;
+20 [label="yes
+Prob: no:0.1 yes:0.9
+Frac: 0.037", fillcolor="#62e7f1"] ;
+21 [label="natmass", fillcolor="#70e4e3"] ;
+22 [label="yes
+Prob: no:0.2 yes:0.8
+Frac: 0.039", fillcolor="#7ee0d5"] ;
+23 [label="size", fillcolor="#71e4e2"] ;
+24 [label="yes
+Prob: no:0.2 yes:0.8
+Frac: 0.035", fillcolor="#71e3e2"] ;
+25 [label="size", fillcolor="#73e3e0"] ;
+26 [label="yes
+Prob: no:0.2 yes:0.8
+Frac: 0.043", fillcolor="#7ae1d9"] ;
+27 [label="sampcode", fillcolor="#81e0d2"] ;
+28 [label="no
+Prob: no:0.5 yes:0.5
+Frac: 0.036", fillcolor="#b0d4a3"] ;
+29 [label="vstrat", fillcolor="#9fd8b4"] ;
+30 [label="yes
+Prob: no:0.3 yes:0.7
+Frac: 0.036", fillcolor="#8dddc6"] ;
+31 [label="sampcode", fillcolor="#7ee0d5"] ;
+32 [label="yes
+Prob: no:0.1 yes:0.9
+Frac: 0.033", fillcolor="#6ae5e9"] ;
+33 [label="srcbelt", fillcolor="#77e2dc"] ;
+34 [label="yes
+Prob: no:0.3 yes:0.7
+Frac: 0.035", fillcolor="#83dfd0"] ;
+35 [label="sampcode", fillcolor="#78e2db"] ;
+36 [label="yes
+Prob: no:0.2 yes:0.8
+Frac: 0.035", fillcolor="#7ee0d5"] ;
+37 [label="size", fillcolor="#79e1da"] ;
+38 [label="yes
+Prob: no:0.2 yes:0.8
+Frac: 0.048", fillcolor="#77e2dd"] ;
+1 -- 0 [label=" south atlantic",penwidth=3] ;
+1 -- 2 [label=" e. nor. central\n e. sou. central\n mountain\n w. sou. central",penwidth=3] ;
+3 -- 1 [label=" mountain\n w. sou. central\n e. sou. central\n south atlantic\n e. nor. central",penwidth=3] ;
+3 -- 4 [label=" middle atlantic\n new england\n pacific\n w. nor. central",penwidth=3] ;
+5 -- 3 [label=" 604\n 606\n 669\n 629\n 643\n 633\n 657\n 647\n 611\n 610\n 635\n 673\n 637\n 653\n 661\n 665\n 617\n 623\n 640\n 602\n 652",penwidth=3] ;
+5 -- 6 [label=" 618\n 645\n 649\n 650\n 651\n 656\n 670\n 674",penwidth=3] ;
+7 -- 5 [label=" 661\n 657\n 611\n 670\n 673\n 669\n 637\n 633\n 635\n 629\n 623\n 618\n 604\n 640\n 656\n 617\n 610\n 651\n 647\n 652\n 645\n 649\n 650\n 653\n 602\n 643\n 665\n 606\n 674",penwidth=3] ;
+7 -- 11 [label=" 601\n 605\n 607\n 608\n 609\n 612\n 613\n 615\n 619\n 620\n 621\n 626\n 627\n 628\n 631\n 632\n 634\n 636\n 644\n 646\n 655\n 660\n 663\n 666\n 667\n 668\n 671\n 675\n 676",penwidth=3] ;
+9 -- 8 [label=" 3\n 6\n 61\n 11\n 48\n 22\n 40\n 19\n 2\n 60\n 75\n 5",penwidth=3] ;
+9 -- 10 [label=" 1\n 10\n 14\n 17\n 31\n 37\n 41\n 43\n 56\n 7\n 90",penwidth=3] ;
+11 -- 9 [label=" 7\n 75\n 19\n 56\n 3\n 5\n 41\n 14\n 60\n 1\n 48\n 11\n 43\n 61\n 2\n 31\n 90\n 17\n 22\n 40\n 6\n 10\n 37",penwidth=3] ;
+11 -- 12 [label=" 15\n 16\n 25\n 27\n 29\n 4\n 563\n 8\n 9\n 95",penwidth=3] ;
+13 -- 7 [label=" suburb, med city\n smaller areas\n uninc,lrg city\n town gt 2500\n city,10-49999",penwidth=3] ;
+13 -- 17 [label=" city gt 250000\n city,50-250000\n open country\n suburb, lrg city\n uninc,med city",penwidth=3] ;
+15 -- 14 [label=" guatemalan\n cuban\n mexican, mexican american, chicano/a\n hispanic",penwidth=3] ;
+15 -- 16 [label=" central american\n columbian\n costa rican\n dominican\n equadorian\n honduran\n not hispanic\n puerto rican\n salvadorian\n spanish",penwidth=3] ;
+17 -- 15 [label=" city gt 250000",penwidth=3] ;
+17 -- 19 [label=" city,50-250000\n open country\n suburb, lrg city\n uninc,med city",penwidth=3] ;
+19 -- 18 [label=" 602\n 610\n 643\n 603\n 629\n 649\n 618\n 647\n 637\n 638\n 631\n 665\n 636\n 656\n 652\n 672\n 639\n 628\n 615\n 624\n 644",penwidth=3] ;
+19 -- 31 [label=" 601\n 604\n 605\n 606\n 607\n 608\n 609\n 611\n 612\n 613\n 614\n 616\n 617\n 619\n 621\n 622\n 623\n 625\n 626\n 627\n 630\n 632\n 633\n 634\n 635\n 640\n 641\n 642\n 645\n 646\n 648\n 650\n 653\n 654\n 655\n 657\n 658\n 659\n 661\n 662\n 663\n 664\n 666\n 667\n 668\n 669\n 670\n 671\n 673\n 675\n 676",penwidth=3] ;
+21 -- 20 [label=" about right",penwidth=3] ;
+21 -- 22 [label=" too little\n too much",penwidth=3] ;
+23 -- 21 [label=" 10\n 105\n 8\n 179\n 23\n 19\n 7\n 36\n 12\n 117\n 198\n 88\n 20\n 5\n 70\n 71\n 134\n 17\n 21\n 1\n 49",penwidth=3] ;
+23 -- 24 [label=" 16\n 32\n 4\n 44\n 48\n 63\n 86\n 9",penwidth=3] ;
+25 -- 23 [label=" 88\n 7\n 179\n 63\n 20\n 17\n 105\n 44\n 10\n 49\n 48\n 12\n 71\n 86\n 117\n 4\n 5\n 8\n 32\n 23\n 19\n 70\n 198\n 1\n 36\n 21\n 134\n 9\n 16",penwidth=3] ;
+25 -- 26 [label=" 153\n 2\n 245\n 26\n 27\n 28\n 29\n 3\n 39\n 43\n 46\n 6",penwidth=3] ;
+27 -- 25 [label=" 605\n 606\n 669\n 621\n 646\n 626\n 663\n 650\n 612\n 607\n 633\n 673\n 640\n 661\n 664\n 666\n 613\n 619\n 642\n 604\n 658",penwidth=3] ;
+27 -- 29 [label=" 617\n 648\n 654\n 655\n 657\n 662\n 671\n 675",penwidth=3] ;
+29 -- 28 [label=" 3368\n 3364\n 3378\n 3341\n 3376",penwidth=3] ;
+29 -- 30 [label=" 3367\n 3369\n 3371",penwidth=3] ;
+31 -- 27 [label=" 612\n 650\n 664\n 605\n 669\n 662\n 663\n 661\n 655\n 633\n 619\n 642\n 626\n 640\n 621\n 613\n 666\n 654\n 658\n 604\n 673\n 607\n 675\n 606\n 617\n 648\n 671\n 657\n 646",penwidth=3] ;
+31 -- 35 [label=" 601\n 608\n 609\n 611\n 614\n 616\n 622\n 623\n 625\n 627\n 630\n 632\n 634\n 635\n 641\n 645\n 653\n 659\n 667\n 668\n 670\n 676",penwidth=3] ;
+33 -- 32 [label=" other urban",penwidth=3] ;
+33 -- 34 [label=" 12 lrgst smsa's\n other rural\n suburb, 13-100",penwidth=3] ;
+35 -- 33 [label=" 609\n 622\n 623\n 641\n 668\n 616\n 625\n 667\n 645\n 635\n 632\n 627",penwidth=3] ;
+35 -- 37 [label=" 601\n 608\n 611\n 614\n 630\n 634\n 653\n 659\n 670\n 676",penwidth=3] ;
+37 -- 36 [label=" 40\n 32\n 92\n 49\n 30\n 14\n 154\n 1\n 118",penwidth=3] ;
+37 -- 38 [label=" 11\n 12\n 125\n 166\n 2\n 20\n 24\n 28\n 43\n 46\n 5\n 57\n 6\n 61\n 7\n 8\n 84\n 9",penwidth=3] ;
+{rank = same;}}

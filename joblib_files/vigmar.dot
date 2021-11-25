@@ -1,0 +1,32 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="definitely willing
+Prob: definitely unwilling:0.1 definitely willing:0.6 probably unwilling:0.1 probably willing:0.2
+Frac: 0.121", fillcolor="#96d087"] ;
+1 [label="vigwork", fillcolor="#b3b5c2"] ;
+2 [label="definitely unwilling
+Prob: definitely unwilling:0.7 definitely willing:0.0 probably unwilling:0.2 probably willing:0.1
+Frac: 0.116", fillcolor="#dfbf81"] ;
+3 [label="vigsoc", fillcolor="#b7b2ca"] ;
+4 [label="probably unwilling
+Prob: definitely unwilling:0.4 definitely willing:0.0 probably unwilling:0.5 probably willing:0.1
+Frac: 0.19", fillcolor="#a3d0bc"] ;
+5 [label="vigfrnd", fillcolor="#b1b0d5"] ;
+6 [label="probably willing
+Prob: definitely unwilling:0.1 definitely willing:0.3 probably unwilling:0.3 probably willing:0.4
+Frac: 0.105", fillcolor="#a9b4c2"] ;
+7 [label="vigfrnd", fillcolor="#b6a5de"] ;
+8 [label="probably willing
+Prob: definitely unwilling:0.1 definitely willing:0.0 probably unwilling:0.4 probably willing:0.5
+Frac: 0.467", fillcolor="#b9a2e4"] ;
+1 -- 0 [label=" definitely willing",penwidth=3] ;
+1 -- 3 [label=" definitely unwilling\n probably unwilling\n probably willing",penwidth=3] ;
+3 -- 2 [label=" definitely unwilling",penwidth=3] ;
+3 -- 5 [label=" definitely willing\n probably unwilling\n probably willing",penwidth=3] ;
+5 -- 4 [label=" definitely unwilling\n probably unwilling",penwidth=3] ;
+5 -- 7 [label=" definitely willing\n probably willing",penwidth=3] ;
+7 -- 6 [label=" definitely willing",penwidth=3] ;
+7 -- 8 [label=" probably willing",penwidth=3] ;
+{rank = same;}}

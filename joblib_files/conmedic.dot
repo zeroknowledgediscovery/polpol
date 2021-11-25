@@ -1,0 +1,62 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="a great deal
+Prob: a great deal:0.7 hardly any:0.1 only some:0.2
+Frac: 0.048", fillcolor="#e4b17f"] ;
+1 [label="contv", fillcolor="#da95a5"] ;
+2 [label="only some
+Prob: a great deal:0.5 hardly any:0.0 only some:0.5
+Frac: 0.172", fillcolor="#da8dac"] ;
+3 [label="trbigbus", fillcolor="#d892a9"] ;
+4 [label="a great deal
+Prob: a great deal:0.5 hardly any:0.1 only some:0.4
+Frac: 0.066", fillcolor="#cfa0a5"] ;
+5 [label="neisafe", fillcolor="#d795a8"] ;
+6 [label="a great deal
+Prob: a great deal:0.5 hardly any:0.0 only some:0.5
+Frac: 0.155", fillcolor="#db90a9"] ;
+7 [label="consci", fillcolor="#c892b9"] ;
+8 [label="a great deal
+Prob: a great deal:0.5 hardly any:0.1 only some:0.4
+Frac: 0.083", fillcolor="#d5a19d"] ;
+9 [label="confinan", fillcolor="#bb8fc9"] ;
+10 [label="only some
+Prob: a great deal:0.1 hardly any:0.4 only some:0.5
+Frac: 0.102", fillcolor="#9da6d0"] ;
+11 [label="conjudge", fillcolor="#b68cd1"] ;
+12 [label="only some
+Prob: a great deal:0.5 hardly any:0.0 only some:0.5
+Frac: 0.059", fillcolor="#d98fac"] ;
+13 [label="coneduc", fillcolor="#bd85d1"] ;
+14 [label="only some
+Prob: a great deal:0.2 hardly any:0.1 only some:0.7
+Frac: 0.141", fillcolor="#c17ed5"] ;
+15 [label="conarmy", fillcolor="#bc7ed9"] ;
+16 [label="only some
+Prob: a great deal:0.1 hardly any:0.2 only some:0.7
+Frac: 0.128", fillcolor="#b87ede"] ;
+17 [label="preteen", fillcolor="#b884d8"] ;
+18 [label="only some
+Prob: a great deal:0.1 hardly any:0.4 only some:0.5
+Frac: 0.046", fillcolor="#9ba6d2"] ;
+1 -- 0 [label=" a great deal",penwidth=3] ;
+1 -- 3 [label=" hardly any\n only some",penwidth=3] ;
+3 -- 2 [label=" c",penwidth=3] ;
+3 -- 5 [label=" a\n b\n d\n e",penwidth=3] ;
+5 -- 4 [label=" somewhat safe",penwidth=3] ;
+5 -- 6 [label=" somewhat unsafe\n very safe\n very unsafe",penwidth=3] ;
+7 -- 1 [label=" a great deal",penwidth=3] ;
+7 -- 9 [label=" hardly any\n only some",penwidth=3] ;
+9 -- 8 [label=" a great deal",penwidth=3] ;
+9 -- 11 [label=" hardly any\n only some",penwidth=3] ;
+11 -- 10 [label=" hardly any",penwidth=3] ;
+11 -- 13 [label=" a great deal\n only some",penwidth=3] ;
+13 -- 12 [label=" a great deal",penwidth=3] ;
+13 -- 17 [label=" hardly any\n only some",penwidth=3] ;
+15 -- 14 [label=" a great deal\n hardly any",penwidth=3] ;
+15 -- 16 [label=" only some",penwidth=3] ;
+17 -- 15 [label=" c",penwidth=3] ;
+17 -- 18 [label=" d\n e",penwidth=3] ;
+{rank = same;}}

@@ -1,0 +1,26 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="excellent
+Prob: excellent:0.5 fair:0.0 good:0.5 poor:0.0
+Frac: 0.415", fillcolor="#aed5a2"] ;
+1 [label="wrkstat", fillcolor="#b0d4a0"] ;
+2 [label="excellent
+Prob: excellent:0.6 fair:0.0 good:0.4 poor:0.0
+Frac: 0.092", fillcolor="#b8d199"] ;
+3 [label="wrkstat", fillcolor="#abd5a4"] ;
+4 [label="good
+Prob: excellent:0.4 fair:0.1 good:0.5 poor:0.0
+Frac: 0.162", fillcolor="#9cd9b1"] ;
+5 [label="physacts", fillcolor="#a2d8a6"] ;
+6 [label="good
+Prob: excellent:0.3 fair:0.2 good:0.5 poor:0.0
+Frac: 0.33", fillcolor="#91deaa"] ;
+1 -- 0 [label=" working fulltime",penwidth=3] ;
+1 -- 2 [label=" other\n school\n temp not working\n unempl, laid off\n working parttime",penwidth=3] ;
+3 -- 1 [label=" working parttime\n unempl, laid off\n other\n working fulltime\n temp not working\n school",penwidth=3] ;
+3 -- 4 [label=" keeping house\n retired",penwidth=3] ;
+5 -- 3 [label=" completely",penwidth=3] ;
+5 -- 6 [label=" a little\n moderately\n mostly\n not at all",penwidth=3] ;
+{rank = same;}}

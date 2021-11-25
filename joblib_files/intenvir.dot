@@ -1,0 +1,74 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="not at all interested
+Prob: moderately interested:0.3 not at all interested:0.6 very interested:0.1
+Frac: 0.051", fillcolor="#97dca1"] ;
+1 [label="intmed", fillcolor="#d196ad"] ;
+2 [label="very interested
+Prob: moderately interested:0.4 not at all interested:0.0 very interested:0.5
+Frac: 0.091", fillcolor="#d987b3"] ;
+3 [label="watergen", fillcolor="#e0999b"] ;
+4 [label="moderately interested
+Prob: moderately interested:0.7 not at all interested:0.1 very interested:0.2
+Frac: 0.096", fillcolor="#e6a984"] ;
+5 [label="conbiz", fillcolor="#e3a988"] ;
+6 [label="moderately interested
+Prob: moderately interested:0.6 not at all interested:0.1 very interested:0.3
+Frac: 0.057", fillcolor="#dea78f"] ;
+7 [label="intecon", fillcolor="#e39f92"] ;
+8 [label="moderately interested
+Prob: moderately interested:0.6 not at all interested:0.0 very interested:0.4
+Frac: 0.117", fillcolor="#e2929f"] ;
+9 [label="intfarm", fillcolor="#d8a19b"] ;
+10 [label="moderately interested
+Prob: moderately interested:0.5 not at all interested:0.3 very interested:0.2
+Frac: 0.053", fillcolor="#b8c19b"] ;
+11 [label="natenvir", fillcolor="#c9b09b"] ;
+12 [label="moderately interested
+Prob: moderately interested:0.5 not at all interested:0.2 very interested:0.3
+Frac: 0.056", fillcolor="#cab397"] ;
+13 [label="polviews", fillcolor="#cfaa9b"] ;
+14 [label="moderately interested
+Prob: moderately interested:0.5 not at all interested:0.1 very interested:0.3
+Frac: 0.107", fillcolor="#d2a59d"] ;
+15 [label="intfarm", fillcolor="#d69e9f"] ;
+16 [label="very interested
+Prob: moderately interested:0.4 not at all interested:0.1 very interested:0.5
+Frac: 0.12", fillcolor="#d08db7"] ;
+17 [label="intspace", fillcolor="#d492ae"] ;
+18 [label="very interested
+Prob: moderately interested:0.3 not at all interested:0.0 very interested:0.7
+Frac: 0.099", fillcolor="#d477c8"] ;
+19 [label="FAMILY16", fillcolor="#d175ce"] ;
+20 [label="very interested
+Prob: moderately interested:0.2 not at all interested:0.0 very interested:0.8
+Frac: 0.051", fillcolor="#cc70d8"] ;
+21 [label="scientbe", fillcolor="#ce71d4"] ;
+22 [label="very interested
+Prob: moderately interested:0.2 not at all interested:0.0 very interested:0.8
+Frac: 0.104", fillcolor="#ca6cde"] ;
+1 -- 0 [label=" not at all interested",penwidth=3] ;
+1 -- 17 [label=" moderately interested\n very interested",penwidth=3] ;
+3 -- 2 [label=" extremely dangerous",penwidth=3] ;
+3 -- 7 [label=" not dangerous\n not very dangerous\n somewhat dangerous\n very dangerous",penwidth=3] ;
+5 -- 4 [label=" some confidence",penwidth=3] ;
+5 -- 6 [label=" a great deal of confidence\n complete confidence\n very little confidence",penwidth=3] ;
+7 -- 5 [label=" moderately interested\n not at all interested",penwidth=3] ;
+7 -- 8 [label=" very interested",penwidth=3] ;
+9 -- 3 [label=" moderately interested",penwidth=3] ;
+9 -- 11 [label=" not at all interested",penwidth=3] ;
+11 -- 10 [label=" about right",penwidth=3] ;
+11 -- 13 [label=" too little\n too much",penwidth=3] ;
+13 -- 12 [label=" extrmly conservative\n slghtly conservative\n extremely liberal\n conservative",penwidth=3] ;
+13 -- 14 [label=" liberal\n moderate\n slightly liberal",penwidth=3] ;
+15 -- 9 [label=" moderately interested\n not at all interested",penwidth=3] ;
+15 -- 16 [label=" very interested",penwidth=3] ;
+17 -- 15 [label=" moderately interested\n not at all interested",penwidth=3] ;
+17 -- 21 [label=" very interested",penwidth=3] ;
+19 -- 18 [label=" father\n other\n mother & father\n female relative",penwidth=3] ;
+19 -- 20 [label=" m and f relatives\n male relative\n mother\n mother & stpfather",penwidth=3] ;
+21 -- 19 [label=" agree",penwidth=3] ;
+21 -- 22 [label=" disagree\n strongly agree\n strongly disagree",penwidth=3] ;
+{rank = same;}}

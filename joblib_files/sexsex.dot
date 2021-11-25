@@ -1,0 +1,14 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="exclusively female
+Prob: both male and female:0.0 exclusively female:1.0 exclusively male:0.0
+Frac: 0.473", fillcolor="#55fec1"] ;
+1 [label="SEXSEX5", fillcolor="#8ea7de"] ;
+2 [label="exclusively male
+Prob: both male and female:0.0 exclusively female:0.0 exclusively male:1.0
+Frac: 0.527", fillcolor="#c25af8"] ;
+1 -- 0 [label=" exclusively female",penwidth=3] ;
+1 -- 2 [label=" both male and female\n exclusively male",penwidth=3] ;
+{rank = same;}}

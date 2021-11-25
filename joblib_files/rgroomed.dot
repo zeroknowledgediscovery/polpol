@@ -1,0 +1,122 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="very well groomed
+Prob: about average:0.2 poorly groomed:0.0 very poorly groomed:0.0 very well groomed:0.8 well groomed:0.0
+Frac: 0.034", fillcolor="#7965e5"] ;
+1 [label="intage", fillcolor="#b880bb"] ;
+2 [label="about average
+Prob: about average:0.6 poorly groomed:0.0 very poorly groomed:0.0 very well groomed:0.1 well groomed:0.3
+Frac: 0.036", fillcolor="#f49a92"] ;
+3 [label="intid", fillcolor="#da9899"] ;
+4 [label="about average
+Prob: about average:0.7 poorly groomed:0.0 very poorly groomed:0.0 very well groomed:0.0 well groomed:0.3
+Frac: 0.044", fillcolor="#fca189"] ;
+5 [label="intid", fillcolor="#f4ab80"] ;
+6 [label="about average
+Prob: about average:0.6 poorly groomed:0.2 very poorly groomed:0.0 very well groomed:0.0 well groomed:0.2
+Frac: 0.049", fillcolor="#edb478"] ;
+7 [label="intid", fillcolor="#e09d92"] ;
+8 [label="about average
+Prob: about average:0.8 poorly groomed:0.0 very poorly groomed:0.0 very well groomed:0.0 well groomed:0.2
+Frac: 0.044", fillcolor="#f7af75"] ;
+9 [label="intid", fillcolor="#eca485"] ;
+10 [label="about average
+Prob: about average:0.8 poorly groomed:0.0 very poorly groomed:0.0 very well groomed:0.0 well groomed:0.2
+Frac: 0.091", fillcolor="#faab78"] ;
+11 [label="huclean", fillcolor="#f6aa7c"] ;
+12 [label="about average
+Prob: about average:0.6 poorly groomed:0.0 very poorly groomed:0.0 very well groomed:0.0 well groomed:0.3
+Frac: 0.032", fillcolor="#f59e8e"] ;
+13 [label="condemnd", fillcolor="#f5a97e"] ;
+14 [label="about average
+Prob: about average:0.7 poorly groomed:0.0 very poorly groomed:0.0 very well groomed:0.1 well groomed:0.2
+Frac: 0.047", fillcolor="#f3a583"] ;
+15 [label="intyrs", fillcolor="#f6ad78"] ;
+16 [label="about average
+Prob: about average:0.8 poorly groomed:0.1 very poorly groomed:0.0 very well groomed:0.0 well groomed:0.1
+Frac: 0.055", fillcolor="#f8b36f"] ;
+17 [label="hefinfo", fillcolor="#f4a97e"] ;
+18 [label="about average
+Prob: about average:0.7 poorly groomed:0.0 very poorly groomed:0.0 very well groomed:0.1 well groomed:0.2
+Frac: 0.034", fillcolor="#efa87e"] ;
+19 [label="intid", fillcolor="#eea585"] ;
+20 [label="about average
+Prob: about average:0.7 poorly groomed:0.0 very poorly groomed:0.0 very well groomed:0.0 well groomed:0.2
+Frac: 0.084", fillcolor="#f8aa81"] ;
+21 [label="rlooks", fillcolor="#e395a0"] ;
+22 [label="well groomed
+Prob: about average:0.2 poorly groomed:0.1 very poorly groomed:0.0 very well groomed:0.3 well groomed:0.3
+Frac: 0.04", fillcolor="#c185c2"] ;
+23 [label="rhlthend", fillcolor="#cd81c8"] ;
+24 [label="well groomed
+Prob: about average:0.2 poorly groomed:0.1 very poorly groomed:0.0 very well groomed:0.2 well groomed:0.5
+Frac: 0.075", fillcolor="#d380cb"] ;
+25 [label="intid", fillcolor="#d480c4"] ;
+26 [label="well groomed
+Prob: about average:0.3 poorly groomed:0.0 very poorly groomed:0.0 very well groomed:0.2 well groomed:0.5
+Frac: 0.04", fillcolor="#de71d2"] ;
+27 [label="intyrs", fillcolor="#d670d4"] ;
+28 [label="well groomed
+Prob: about average:0.2 poorly groomed:0.0 very poorly groomed:0.0 very well groomed:0.3 well groomed:0.5
+Frac: 0.038", fillcolor="#ce6fd5"] ;
+29 [label="rweight", fillcolor="#d77cc6"] ;
+30 [label="about average
+Prob: about average:0.4 poorly groomed:0.1 very poorly groomed:0.0 very well groomed:0.1 well groomed:0.3
+Frac: 0.04", fillcolor="#da95ab"] ;
+31 [label="intid", fillcolor="#d880c3"] ;
+32 [label="about average
+Prob: about average:0.4 poorly groomed:0.0 very poorly groomed:0.0 very well groomed:0.1 well groomed:0.4
+Frac: 0.061", fillcolor="#e389b4"] ;
+33 [label="intid", fillcolor="#d983bf"] ;
+34 [label="well groomed
+Prob: about average:0.2 poorly groomed:0.1 very poorly groomed:0.0 very well groomed:0.2 well groomed:0.5
+Frac: 0.056", fillcolor="#cf7ecb"] ;
+35 [label="intid", fillcolor="#d682c1"] ;
+36 [label="well groomed
+Prob: about average:0.4 poorly groomed:0.1 very poorly groomed:0.0 very well groomed:0.2 well groomed:0.4
+Frac: 0.064", fillcolor="#df86b8"] ;
+37 [label="HHTYPE1", fillcolor="#dc88b6"] ;
+38 [label="well groomed
+Prob: about average:0.3 poorly groomed:0.1 very poorly groomed:0.0 very well groomed:0.2 well groomed:0.4
+Frac: 0.035", fillcolor="#d88bb3"] ;
+1 -- 0 [label=" 39",penwidth=3] ;
+1 -- 2 [label=" 42\n 45\n 51\n 55\n 81",penwidth=3] ;
+3 -- 1 [label=" 21\n 29\n 11\n 76\n 114\n 92\n 15\n 119",penwidth=3] ;
+3 -- 5 [label=" 101\n 102\n 108\n 111\n 117\n 124\n 128\n 20\n 23\n 24\n 27\n 3\n 47\n 48\n 50\n 51\n 53\n 59\n 62\n 67\n 68\n 70\n 74\n 78",penwidth=3] ;
+5 -- 4 [label=" 67\n 108\n 51\n 20\n 3\n 50\n 111\n 124",penwidth=3] ;
+5 -- 6 [label=" 101\n 102\n 117\n 128\n 23\n 24\n 27\n 47\n 48\n 53\n 59\n 62\n 68\n 70\n 74\n 78",penwidth=3] ;
+7 -- 3 [label=" 53\n 117\n 124\n 92\n 11\n 67\n 62\n 74\n 128\n 108\n 111\n 47\n 119\n 21\n 29\n 76\n 102\n 70\n 20\n 15\n 23\n 27\n 68\n 59\n 78\n 3\n 114\n 51\n 24\n 101\n 48\n 50",penwidth=3] ;
+7 -- 8 [label=" 100\n 12\n 19\n 34\n 37\n 72\n 8\n 83\n 90",penwidth=3] ;
+9 -- 7 [label=" 72\n 50\n 68\n 108\n 48\n 27\n 21\n 62\n 23\n 15\n 102\n 74\n 37\n 67\n 124\n 119\n 3\n 78\n 100\n 29\n 128\n 83\n 59\n 101\n 53\n 76\n 51\n 70\n 47\n 19\n 92\n 34\n 117\n 90\n 11\n 20\n 111\n 114\n 8\n 24\n 12",penwidth=3] ;
+9 -- 11 [label=" 10\n 103\n 104\n 105\n 106\n 107\n 109\n 112\n 113\n 115\n 120\n 126\n 13\n 131\n 133\n 135\n 136\n 137\n 138\n 139\n 16\n 17\n 18\n 22\n 25\n 30\n 33\n 35\n 39\n 4\n 40\n 41\n 43\n 5\n 54\n 55\n 58\n 6\n 63\n 64\n 65\n 69\n 75\n 80\n 84\n 85\n 86\n 87\n 88\n 89\n 9\n 94\n 96\n 97\n 98",penwidth=3] ;
+11 -- 10 [label=" clean",penwidth=3] ;
+11 -- 17 [label=" dirty\n interviewer never saw the interior of the respondent's hu\n not very clean\n so-so\n very clean",penwidth=3] ;
+13 -- 12 [label=" not at all true\n somewhat true",penwidth=3] ;
+13 -- 15 [label=" not too true\n very true",penwidth=3] ;
+15 -- 14 [label=" 8\n 21\n 14\n 2\n 4\n 6\n 11\n 1",penwidth=3] ;
+15 -- 16 [label=" 0\n 25\n 5\n 7\n 9",penwidth=3] ;
+17 -- 13 [label=" 1st person",penwidth=3] ;
+17 -- 18 [label=" 2nd person\n 3rd person\n 4th person\n not in household",penwidth=3] ;
+19 -- 9 [label=" 12\n 62\n 111\n 47\n 107\n 48\n 102\n 30\n 120\n 27\n 137\n 74\n 78\n 8\n 119\n 22\n 41\n 100\n 58\n 6\n 50\n 126\n 108\n 101\n 53\n 70\n 131\n 67\n 83\n 80\n 138\n 96\n 39\n 115\n 88\n 17\n 64\n 87\n 136\n 63\n 10\n 33\n 40\n 97\n 72\n 4\n 16\n 113\n 21\n 98\n 75\n 114\n 9\n 109\n 90\n 15\n 34\n 19\n 11\n 18\n 112\n 3\n 68\n 89\n 54\n 117\n 106\n 124\n 29\n 23\n 35\n 24\n 25\n 103\n 139\n 94\n 105\n 69\n 76\n 5\n 37\n 84\n 104\n 85\n 59\n 51\n 135\n 43\n 86\n 128\n 13\n 133\n 92\n 20\n 55\n 65",penwidth=3] ;
+19 -- 20 [label=" 1\n 110\n 118\n 122\n 123\n 129\n 130\n 132\n 14\n 26\n 28\n 32\n 36\n 38\n 46\n 49\n 52\n 57\n 60\n 61\n 66\n 7\n 71\n 73\n 77\n 91\n 93\n 95",penwidth=3] ;
+21 -- 19 [label=" about average",penwidth=3] ;
+21 -- 35 [label=" attractive\n unattractive\n very attractive\n very unattractive",penwidth=3] ;
+23 -- 22 [label=" excellent\n fair",penwidth=3] ;
+23 -- 24 [label=" good\n poor",penwidth=3] ;
+25 -- 23 [label=" 75\n 50\n 72\n 109\n 49\n 3\n 24\n 6\n 27\n 16\n 103\n 76\n 38\n 7\n 126\n 122\n 32\n 79\n 101\n 30\n 13\n 83\n 58\n 102\n 52\n 78\n 51\n 74\n 48\n 20\n 95\n 36\n 121\n 93\n 111\n 22\n 113\n 119\n 8\n 28\n 123",penwidth=3] ;
+25 -- 31 [label=" 100\n 104\n 105\n 106\n 107\n 108\n 110\n 115\n 118\n 12\n 124\n 129\n 130\n 132\n 135\n 137\n 138\n 139\n 14\n 15\n 18\n 19\n 2\n 26\n 29\n 34\n 35\n 37\n 39\n 4\n 42\n 44\n 46\n 5\n 54\n 55\n 56\n 59\n 60\n 64\n 66\n 73\n 77\n 81\n 84\n 85\n 87\n 89\n 90\n 91\n 92\n 96\n 97\n 98\n 99",penwidth=3] ;
+27 -- 26 [label=" 10\n 2\n 6\n 4\n 5",penwidth=3] ;
+27 -- 28 [label=" 0\n 14\n 21\n 9",penwidth=3] ;
+29 -- 27 [label=" about the right weight",penwidth=3] ;
+29 -- 30 [label=" slightly overweight\n slightly underweight\n very overweight\n very underweight",penwidth=3] ;
+31 -- 29 [label=" 14\n 104\n 89\n 107\n 90\n 26\n 124\n 129\n 39\n 59\n 46\n 115\n 73\n 97\n 98\n 84\n 99\n 60\n 137\n 15\n 54\n 42\n 106\n 108\n 55\n 118\n 105\n 85\n 81\n 135\n 130\n 138",penwidth=3] ;
+31 -- 33 [label=" 100\n 110\n 12\n 132\n 139\n 18\n 19\n 2\n 29\n 34\n 35\n 37\n 4\n 44\n 5\n 56\n 64\n 66\n 77\n 87\n 91\n 92\n 96",penwidth=3] ;
+33 -- 32 [label=" 87\n 12\n 56\n 2\n 37\n 5\n 132\n 18",penwidth=3] ;
+33 -- 34 [label=" 100\n 110\n 139\n 19\n 29\n 34\n 35\n 4\n 44\n 64\n 66\n 77\n 91\n 92\n 96",penwidth=3] ;
+35 -- 25 [label=" 126\n 98\n 32\n 19\n 123\n 93\n 2\n 77\n 108\n 91\n 27\n 101\n 97\n 46\n 90\n 38\n 59\n 83\n 84\n 6\n 109\n 102\n 26\n 75\n 135\n 139\n 13\n 14\n 72\n 12\n 64\n 51\n 7\n 99\n 66\n 100\n 15\n 39\n 96\n 36\n 118\n 8\n 48\n 119\n 92\n 110\n 18\n 49\n 22\n 111\n 20\n 115\n 73\n 52\n 35\n 121\n 55\n 107\n 44\n 124\n 129\n 103\n 113\n 78\n 34\n 28\n 4\n 29\n 3\n 104\n 16\n 81\n 106\n 74\n 79\n 54\n 42\n 85\n 105\n 87\n 56\n 138\n 5\n 89\n 130\n 132\n 137\n 95\n 24\n 60\n 122\n 76\n 58\n 30\n 50\n 37",penwidth=3] ;
+35 -- 37 [label=" 1\n 112\n 127\n 128\n 131\n 133\n 136\n 17\n 33\n 40\n 43\n 53\n 61\n 70\n 71\n 82\n 9\n 94",penwidth=3] ;
+37 -- 36 [label=" married couple w children\n non-family, no children\n married couple, no children\n non-family w children\n other fam., no children\n other family w children",penwidth=3] ;
+37 -- 38 [label=" cohab couple w children\n cohab couple, no children\n single adult\n single parent\n unsure w children",penwidth=3] ;
+{rank = same;}}

@@ -1,0 +1,74 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="strongly oppose pref
+Prob: oppose pref:0.4 strongly oppose pref:0.5 strongly support pref:0.0 support pref:0.0
+Frac: 0.11", fillcolor="#aedc61"] ;
+1 [label="courts", fillcolor="#bad16f"] ;
+2 [label="oppose pref
+Prob: oppose pref:0.5 strongly oppose pref:0.2 strongly support pref:0.1 support pref:0.2
+Frac: 0.075", fillcolor="#cbc083"] ;
+3 [label="fejobaff", fillcolor="#a1d97e"] ;
+4 [label="strongly oppose pref
+Prob: oppose pref:0.3 strongly oppose pref:0.5 strongly support pref:0.1 support pref:0.1
+Frac: 0.225", fillcolor="#a5da73"] ;
+5 [label="wrkwayup", fillcolor="#9cdb81"] ;
+6 [label="strongly oppose pref
+Prob: oppose pref:0.3 strongly oppose pref:0.4 strongly support pref:0.3 support pref:0.0
+Frac: 0.052", fillcolor="#97e189"] ;
+7 [label="RACECEN1", fillcolor="#95e66a"] ;
+8 [label="strongly oppose pref
+Prob: oppose pref:0.2 strongly oppose pref:0.8 strongly support pref:0.0 support pref:0.0
+Frac: 0.083", fillcolor="#82f35c"] ;
+9 [label="partyid", fillcolor="#94e763"] ;
+10 [label="strongly oppose pref
+Prob: oppose pref:0.4 strongly oppose pref:0.5 strongly support pref:0.0 support pref:0.1
+Frac: 0.069", fillcolor="#abd968"] ;
+11 [label="rgroomed", fillcolor="#9de267"] ;
+12 [label="strongly oppose pref
+Prob: oppose pref:0.3 strongly oppose pref:0.6 strongly support pref:0.1 support pref:0.0
+Frac: 0.097", fillcolor="#94e866"] ;
+13 [label="RACDIF1", fillcolor="#98db87"] ;
+14 [label="strongly oppose pref
+Prob: oppose pref:0.2 strongly oppose pref:0.3 strongly support pref:0.3 support pref:0.2
+Frac: 0.052", fillcolor="#9ccea7"] ;
+15 [label="partyid", fillcolor="#9bd0a6"] ;
+16 [label="strongly oppose pref
+Prob: oppose pref:0.3 strongly oppose pref:0.3 strongly support pref:0.3 support pref:0.2
+Frac: 0.063", fillcolor="#a8c7a2"] ;
+17 [label="helpblk", fillcolor="#9bd0a5"] ;
+18 [label="strongly oppose pref
+Prob: oppose pref:0.2 strongly oppose pref:0.3 strongly support pref:0.3 support pref:0.2
+Frac: 0.045", fillcolor="#a5c6aa"] ;
+19 [label="LETIN1A", fillcolor="#97d4a6"] ;
+20 [label="strongly support pref
+Prob: oppose pref:0.2 strongly oppose pref:0.3 strongly support pref:0.4 support pref:0.1
+Frac: 0.047", fillcolor="#8bdba8"] ;
+21 [label="LETIN1A", fillcolor="#92d8a5"] ;
+22 [label="strongly support pref
+Prob: oppose pref:0.2 strongly oppose pref:0.3 strongly support pref:0.4 support pref:0.1
+Frac: 0.082", fillcolor="#96d7a4"] ;
+1 -- 0 [label=" not harsh enough",penwidth=3] ;
+1 -- 2 [label=" about right\n too harsh",penwidth=3] ;
+3 -- 1 [label=" against",penwidth=3] ;
+3 -- 5 [label=" for\n strongly against\n strongly for",penwidth=3] ;
+5 -- 4 [label=" agree somewhat",penwidth=3] ;
+5 -- 13 [label=" agree strongly\n disagree somewhat\n disagree strongly\n neither agree nor disagree",penwidth=3] ;
+7 -- 6 [label=" other asian\n chinese\n some other race\n filipino\n black or african american\n asian indian\n hispanic",penwidth=3] ;
+7 -- 9 [label=" american indian or alaska native\n japanese\n white",penwidth=3] ;
+9 -- 8 [label=" other party\n strong republican\n strong democrat",penwidth=3] ;
+9 -- 11 [label=" ind,near dem\n ind,near rep\n independent\n not str democrat\n not str republican",penwidth=3] ;
+11 -- 10 [label=" about average",penwidth=3] ;
+11 -- 12 [label=" poorly groomed\n very poorly groomed\n very well groomed\n well groomed",penwidth=3] ;
+13 -- 7 [label=" no",penwidth=3] ;
+13 -- 15 [label=" yes",penwidth=3] ;
+15 -- 14 [label=" independent",penwidth=3] ;
+15 -- 17 [label=" ind,near dem\n ind,near rep\n not str democrat\n not str republican\n other party\n strong democrat\n strong republican",penwidth=3] ;
+17 -- 16 [label=" c",penwidth=3] ;
+17 -- 19 [label=" b\n d\n e",penwidth=3] ;
+19 -- 18 [label=" increased a little",penwidth=3] ;
+19 -- 21 [label=" increased a lot\n reduced a little\n reduced a lot, or\n remain the same as it is",penwidth=3] ;
+21 -- 20 [label=" increased a lot\n reduced a little",penwidth=3] ;
+21 -- 22 [label=" reduced a lot, or\n remain the same as it is",penwidth=3] ;
+{rank = same;}}

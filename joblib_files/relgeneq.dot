@@ -1,0 +1,62 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="treats men and women equally
+Prob: i don't belong to or follow any religion:0.0 treats men and women equally:0.5 treats men better than women:0.3 treats women better than men:0.2
+Frac: 0.054", fillcolor="#7ddaa8"] ;
+1 [label="intenvir", fillcolor="#7ce094"] ;
+2 [label="treats men and women equally
+Prob: i don't belong to or follow any religion:0.0 treats men and women equally:0.7 treats men better than women:0.1 treats women better than men:0.1
+Frac: 0.063", fillcolor="#7be583"] ;
+3 [label="astrosci", fillcolor="#76e49c"] ;
+4 [label="treats men and women equally
+Prob: i don't belong to or follow any religion:0.0 treats men and women equally:0.5 treats men better than women:0.4 treats women better than men:0.1
+Frac: 0.089", fillcolor="#6deaa6"] ;
+5 [label="reliten", fillcolor="#72d7e4"] ;
+6 [label="treats men better than women
+Prob: i don't belong to or follow any religion:0.0 treats men and women equally:0.0 treats men better than women:0.9 treats women better than men:0.1
+Frac: 0.059", fillcolor="#61e2fb"] ;
+7 [label="feelrel", fillcolor="#6ed6f9"] ;
+8 [label="treats men better than women
+Prob: i don't belong to or follow any religion:0.1 treats men and women equally:0.0 treats men better than women:0.8 treats women better than men:0.1
+Frac: 0.053", fillcolor="#70d9f1"] ;
+9 [label="HHTYPE1", fillcolor="#6bd9fb"] ;
+10 [label="treats men better than women
+Prob: i don't belong to or follow any religion:0.0 treats men and women equally:0.0 treats men better than women:0.9 treats women better than men:0.1
+Frac: 0.178", fillcolor="#6ad8fd"] ;
+11 [label="hhtype", fillcolor="#6cd7fc"] ;
+12 [label="treats men better than women
+Prob: i don't belong to or follow any religion:0.0 treats men and women equally:0.0 treats men better than women:0.9 treats women better than men:0.1
+Frac: 0.068", fillcolor="#5fe1ff"] ;
+13 [label="nihilism", fillcolor="#6cd6fe"] ;
+14 [label="treats men better than women
+Prob: i don't belong to or follow any religion:0.0 treats men and women equally:0.0 treats men better than women:0.8 treats women better than men:0.2
+Frac: 0.16", fillcolor="#72d1fd"] ;
+15 [label="heaven", fillcolor="#6fd5f9"] ;
+16 [label="treats men better than women
+Prob: i don't belong to or follow any religion:0.0 treats men and women equally:0.1 treats men better than women:0.7 treats women better than men:0.2
+Frac: 0.149", fillcolor="#7bceed"] ;
+17 [label="feelrel", fillcolor="#71d4f7"] ;
+18 [label="treats men better than women
+Prob: i don't belong to or follow any religion:0.0 treats men and women equally:0.1 treats men better than women:0.7 treats women better than men:0.2
+Frac: 0.126", fillcolor="#80c8ed"] ;
+1 -- 0 [label=" moderately interested\n not at all interested",penwidth=3] ;
+1 -- 2 [label=" very interested",penwidth=3] ;
+3 -- 1 [label=" not at all scientific",penwidth=3] ;
+3 -- 4 [label=" sort of scientific\n very scientific",penwidth=3] ;
+5 -- 3 [label=" no religion",penwidth=3] ;
+5 -- 17 [label=" not very strong\n somewhat strong\n strong",penwidth=3] ;
+7 -- 6 [label=" extreme relgious",penwidth=3] ;
+7 -- 15 [label=" extreme non-rel\n somwhat relgious\n very non-rel\n very religious",penwidth=3] ;
+9 -- 8 [label=" single parent\n unsure w children\n unsure, no children\n married couple w children\n cohab couple, no children",penwidth=3] ;
+9 -- 10 [label=" married couple, no children\n non-family w children\n non-family, no children\n other fam., no children\n other family w children",penwidth=3] ;
+11 -- 9 [label=" 1adlt,1+kids\n 3adlts,0mar,ntrel,1+kids\n 2adlts,mar,0kids\n 2adlts,dkmar,0kids\n 2adlts,ntmar,rel,0kids\n 2adlts,ntmar,dkrel,0kids\n 3adlts,0mar,ntrel,rel,1+kids\n 2as,ntmar,ntrel,opsex,0ks\n 2adlts,ntmar,rel,1+kids\n 3adlts,0mar,rel,0kids\n 3adlts,2mar,sp,rel,0kids\n 4+adlts,2mar,1+kids\n 4+adlts,0mar,1+kids\n 3adlts,2mar,rel,0kids\n 4+adlts,4+mar,1+kids\n 3adlts,0mar,ntrel,rel,0kids\n 3adlts,0mar,ntrel,0kids\n 4+adlts,4+mar,0kids",penwidth=3] ;
+11 -- 13 [label=" 1adlt,0kids\n 2adlts,dkmar,1+kids\n 2adlts,mar,1+kids\n 2as,ntmar,ntrel,opsex,1+ks\n 2as,ntmar,ntrel,smsex,0ks\n 3adlts,0mar,rel,1+kids\n 3adlts,0mar,sp,rel,0kids\n 3adlts,2mar,sp,rel,1+kids\n 3adlts,3mar,sp,rel,1+kids\n 4+adlts,0mar,0kids\n 4+adlts,2mar,0kids",penwidth=3] ;
+13 -- 12 [label=" disagree",penwidth=3] ;
+13 -- 14 [label=" agree\n neither agree nor disagree\n strongly agree\n strongly disagree",penwidth=3] ;
+15 -- 11 [label=" yes, definitely",penwidth=3] ;
+15 -- 16 [label=" no, definitely not\n no, probably not\n yes, probably",penwidth=3] ;
+17 -- 7 [label=" somwhat relgious\n extreme non-rel\n extreme relgious\n very non-rel\n very religious",penwidth=3] ;
+17 -- 18 [label=" not rel or non\n somewhat non-rel",penwidth=3] ;
+{rank = same;}}

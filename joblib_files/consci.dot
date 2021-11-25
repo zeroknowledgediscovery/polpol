@@ -1,0 +1,56 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="a great deal
+Prob: a great deal:0.7 hardly any:0.0 only some:0.3
+Frac: 0.311", fillcolor="#eca682"] ;
+1 [label="conjudge", fillcolor="#d691ad"] ;
+2 [label="only some
+Prob: a great deal:0.4 hardly any:0.2 only some:0.4
+Frac: 0.052", fillcolor="#c69faf"] ;
+3 [label="race", fillcolor="#da96a3"] ;
+4 [label="a great deal
+Prob: a great deal:0.6 hardly any:0.0 only some:0.4
+Frac: 0.145", fillcolor="#e2939f"] ;
+5 [label="conmedic", fillcolor="#cc87c0"] ;
+6 [label="only some
+Prob: a great deal:0.4 hardly any:0.0 only some:0.6
+Frac: 0.054", fillcolor="#d482bd"] ;
+7 [label="polviews", fillcolor="#c682cc"] ;
+8 [label="only some
+Prob: a great deal:0.2 hardly any:0.1 only some:0.7
+Frac: 0.084", fillcolor="#c875d6"] ;
+9 [label="natrace", fillcolor="#c481ce"] ;
+10 [label="only some
+Prob: a great deal:0.3 hardly any:0.0 only some:0.6
+Frac: 0.077", fillcolor="#d47bc4"] ;
+11 [label="compwage", fillcolor="#cf85bf"] ;
+12 [label="only some
+Prob: a great deal:0.4 hardly any:0.1 only some:0.5
+Frac: 0.091", fillcolor="#ca8ebc"] ;
+13 [label="abinspay", fillcolor="#c384cc"] ;
+14 [label="only some
+Prob: a great deal:0.2 hardly any:0.3 only some:0.5
+Frac: 0.069", fillcolor="#b295cc"] ;
+15 [label="coneduc", fillcolor="#b884d8"] ;
+16 [label="only some
+Prob: a great deal:0.1 hardly any:0.1 only some:0.7
+Frac: 0.118", fillcolor="#bc79df"] ;
+1 -- 0 [label=" a great deal",penwidth=3] ;
+1 -- 5 [label=" hardly any\n only some",penwidth=3] ;
+3 -- 2 [label=" black\n other",penwidth=3] ;
+3 -- 4 [label=" white",penwidth=3] ;
+5 -- 3 [label=" a great deal",penwidth=3] ;
+5 -- 7 [label=" hardly any\n only some",penwidth=3] ;
+7 -- 6 [label=" slightly liberal",penwidth=3] ;
+7 -- 9 [label=" conservative\n extremely liberal\n extrmly conservative\n liberal\n moderate\n slghtly conservative",penwidth=3] ;
+9 -- 8 [label=" about right",penwidth=3] ;
+9 -- 13 [label=" too little\n too much",penwidth=3] ;
+11 -- 10 [label=" c",penwidth=3] ;
+11 -- 12 [label=" b\n d\n e",penwidth=3] ;
+13 -- 11 [label=" people should be able",penwidth=3] ;
+13 -- 15 [label=" people should not be able",penwidth=3] ;
+15 -- 14 [label=" a great deal\n hardly any",penwidth=3] ;
+15 -- 16 [label=" only some",penwidth=3] ;
+{rank = same;}}

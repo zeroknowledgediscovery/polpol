@@ -1,0 +1,98 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="moderate
+Prob: conservative:0.2 extremely liberal:0.0 extrmly conservative:0.0 liberal:0.0 moderate:0.4 slghtly conservative:0.2 slightly liberal:0.1
+Frac: 0.041", fillcolor="#ac8acf"] ;
+1 [label="marhisp", fillcolor="#a78dd4"] ;
+2 [label="moderate
+Prob: conservative:0.1 extremely liberal:0.0 extrmly conservative:0.1 liberal:0.0 moderate:0.4 slghtly conservative:0.3 slightly liberal:0.0
+Frac: 0.082", fillcolor="#a58ed7"] ;
+3 [label="partyid", fillcolor="#a49ccc"] ;
+4 [label="liberal
+Prob: conservative:0.0 extremely liberal:0.2 extrmly conservative:0.0 liberal:0.4 moderate:0.2 slghtly conservative:0.0 slightly liberal:0.2
+Frac: 0.095", fillcolor="#97c6d2"] ;
+5 [label="bible", fillcolor="#98a3da"] ;
+6 [label="liberal
+Prob: conservative:0.1 extremely liberal:0.1 extrmly conservative:0.0 liberal:0.4 moderate:0.2 slghtly conservative:0.1 slightly liberal:0.2
+Frac: 0.044", fillcolor="#94b6db"] ;
+7 [label="ABSTATE2", fillcolor="#9893de"] ;
+8 [label="moderate
+Prob: conservative:0.1 extremely liberal:0.1 extrmly conservative:0.0 liberal:0.1 moderate:0.4 slghtly conservative:0.1 slightly liberal:0.2
+Frac: 0.058", fillcolor="#9996da"] ;
+9 [label="dwellpre", fillcolor="#998bde"] ;
+10 [label="moderate
+Prob: conservative:0.1 extremely liberal:0.0 extrmly conservative:0.0 liberal:0.1 moderate:0.5 slghtly conservative:0.1 slightly liberal:0.2
+Frac: 0.114", fillcolor="#9985e1"] ;
+11 [label="PRES16", fillcolor="#a39ecb"] ;
+12 [label="moderate
+Prob: conservative:0.1 extremely liberal:0.1 extrmly conservative:0.0 liberal:0.1 moderate:0.5 slghtly conservative:0.1 slightly liberal:0.2
+Frac: 0.032", fillcolor="#9c86de"] ;
+13 [label="natcity", fillcolor="#9797dc"] ;
+14 [label="moderate
+Prob: conservative:0.0 extremely liberal:0.0 extrmly conservative:0.0 liberal:0.2 moderate:0.4 slghtly conservative:0.1 slightly liberal:0.1
+Frac: 0.06", fillcolor="#8e97e8"] ;
+15 [label="ETH1", fillcolor="#969bdc"] ;
+16 [label="moderate
+Prob: conservative:0.1 extremely liberal:0.1 extrmly conservative:0.0 liberal:0.1 moderate:0.4 slghtly conservative:0.1 slightly liberal:0.2
+Frac: 0.054", fillcolor="#9e9fce"] ;
+17 [label="IF12WHO", fillcolor="#9b94d9"] ;
+18 [label="moderate
+Prob: conservative:0.2 extremely liberal:0.0 extrmly conservative:0.0 liberal:0.0 moderate:0.4 slghtly conservative:0.2 slightly liberal:0.1
+Frac: 0.079", fillcolor="#a88fce"] ;
+19 [label="courts", fillcolor="#9f91d5"] ;
+20 [label="moderate
+Prob: conservative:0.1 extremely liberal:0.1 extrmly conservative:0.0 liberal:0.1 moderate:0.5 slghtly conservative:0.1 slightly liberal:0.1
+Frac: 0.068", fillcolor="#9595dd"] ;
+21 [label="PRES16", fillcolor="#a99cc2"] ;
+22 [label="moderate
+Prob: conservative:0.3 extremely liberal:0.0 extrmly conservative:0.0 liberal:0.1 moderate:0.4 slghtly conservative:0.1 slightly liberal:0.1
+Frac: 0.094", fillcolor="#b09eb9"] ;
+23 [label="eqwlth", fillcolor="#b8a4ab"] ;
+24 [label="conservative
+Prob: conservative:0.4 extremely liberal:0.0 extrmly conservative:0.0 liberal:0.0 moderate:0.3 slghtly conservative:0.2 slightly liberal:0.0
+Frac: 0.031", fillcolor="#be95b7"] ;
+25 [label="sprtprsn", fillcolor="#baa2ad"] ;
+26 [label="conservative
+Prob: conservative:0.4 extremely liberal:0.0 extrmly conservative:0.2 liberal:0.1 moderate:0.2 slghtly conservative:0.2 slightly liberal:0.0
+Frac: 0.037", fillcolor="#b7ada4"] ;
+27 [label="nextgen", fillcolor="#bda7a3"] ;
+28 [label="conservative
+Prob: conservative:0.7 extremely liberal:0.0 extrmly conservative:0.1 liberal:0.0 moderate:0.1 slghtly conservative:0.1 slightly liberal:0.0
+Frac: 0.029", fillcolor="#d9bb73"] ;
+29 [label="helpblk", fillcolor="#beaa9e"] ;
+30 [label="conservative
+Prob: conservative:0.4 extremely liberal:0.0 extrmly conservative:0.1 liberal:0.0 moderate:0.3 slghtly conservative:0.1 slightly liberal:0.0
+Frac: 0.082", fillcolor="#b5a4ad"] ;
+1 -- 0 [label=" neither favor nor oppose",penwidth=3] ;
+1 -- 2 [label=" favor\n oppose\n strongly favor\n strongly oppose",penwidth=3] ;
+3 -- 1 [label=" ind,near rep",penwidth=3] ;
+3 -- 11 [label=" ind,near dem\n independent\n not str democrat\n not str republican\n other party\n strong democrat\n strong republican",penwidth=3] ;
+5 -- 4 [label=" book of fables",penwidth=3] ;
+5 -- 7 [label=" inspired word\n other\n word of god",penwidth=3] ;
+7 -- 6 [label=" make it easier",penwidth=3] ;
+7 -- 9 [label=" make it harder\n stay the same as now",penwidth=3] ;
+9 -- 8 [label=" other (specify on next page)\n trailer\n apartment house (5 or more units, 3 stories or less)\n apartment in a partly commercial structure\n 2-family house, 2 units one above the other\n apartment house (5 or more units, 4 stories or more)\n detached 3-4 family house\n 2-family house, 2 units side-by-side\n row house (3 or more units in an attached row)",penwidth=3] ;
+9 -- 10 [label=" detached single family house",penwidth=3] ;
+11 -- 5 [label=" clinton\n don't know\n didn't vote for president",penwidth=3] ;
+11 -- 21 [label=" iap\n no answer\n other candidate (specify)\n trump",penwidth=3] ;
+13 -- 12 [label=" about right",penwidth=3] ;
+13 -- 15 [label=" too little\n too much",penwidth=3] ;
+15 -- 14 [label=" american only\n china\n finland\n puerto rico\n spain\n other european\n sweden\n american indian\n russia\n greece\n mexico\n ireland\n poland\n italy",penwidth=3] ;
+15 -- 16 [label=" africa\n czechoslovakia\n england & wales\n france\n germany\n india\n japan\n lithuania\n non-span windies\n other\n other asian\n other spanish\n philippines\n portugal\n rumania\n scotland\n switzerland",penwidth=3] ;
+17 -- 13 [label=" obama",penwidth=3] ;
+17 -- 19 [label=" other\n romney",penwidth=3] ;
+19 -- 18 [label=" not harsh enough",penwidth=3] ;
+19 -- 20 [label=" about right\n too harsh",penwidth=3] ;
+21 -- 17 [label=" iap",penwidth=3] ;
+21 -- 23 [label=" no answer\n other candidate (specify)\n trump",penwidth=3] ;
+23 -- 22 [label=" c",penwidth=3] ;
+23 -- 27 [label=" b\n d\n e",penwidth=3] ;
+25 -- 24 [label=" modeate spirtual\n not spiritual",penwidth=3] ;
+25 -- 26 [label=" slight spiritual\n very spiritual",penwidth=3] ;
+27 -- 25 [label=" agree",penwidth=3] ;
+27 -- 29 [label=" disagree\n strongly agree\n strongly disagree",penwidth=3] ;
+29 -- 28 [label=" c",penwidth=3] ;
+29 -- 30 [label=" b\n d\n e",penwidth=3] ;
+{rank = same;}}

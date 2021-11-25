@@ -1,0 +1,32 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="yes
+Prob: no:0.5 yes:0.5
+Frac: 0.065", fillcolor="#a6d6ad"] ;
+1 [label="imprvtrt", fillcolor="#94dbbf"] ;
+2 [label="yes
+Prob: no:0.3 yes:0.7
+Frac: 0.066", fillcolor="#83dfd0"] ;
+3 [label="mentldoc", fillcolor="#6be5e8"] ;
+4 [label="yes
+Prob: no:0.0 yes:1.0
+Frac: 0.163", fillcolor="#55ebff"] ;
+5 [label="dofirst", fillcolor="#61e8f2"] ;
+6 [label="yes
+Prob: no:0.1 yes:0.9
+Frac: 0.166", fillcolor="#6ce5e7"] ;
+7 [label="dofirst", fillcolor="#65e6ee"] ;
+8 [label="yes
+Prob: no:0.1 yes:0.9
+Frac: 0.54", fillcolor="#67e6ec"] ;
+1 -- 0 [label=" somewhat likely\n somewhat unlikely",penwidth=3] ;
+1 -- 2 [label=" not likely at all\n very likely",penwidth=3] ;
+3 -- 1 [label=" no",penwidth=3] ;
+3 -- 7 [label=" yes",penwidth=3] ;
+5 -- 4 [label=" go to a general medical doctor for help",penwidth=3] ;
+5 -- 6 [label=" go to a psychiatrist for help\n go to a spiritual or a natural healer for help\n go to a therapist, or counselor, like a psychologist, social worker, or other mental health professional for help\n join a self-help group where people with similar problems help each other\n talk to a minister, priest, rabbi or other religious leader",penwidth=3] ;
+7 -- 5 [label=" go to a psychiatrist for help\n talk to a minister, priest, rabbi or other religious leader\n go to a general medical doctor for help\n join a self-help group where people with similar problems help each other\n go to a spiritual or a natural healer for help\n go to a therapist, or counselor, like a psychologist, social worker, or other mental health professional for help",penwidth=3] ;
+7 -- 8 [label=" check into a mental hospital\n talk to family and friends about it",penwidth=3] ;
+{rank = same;}}

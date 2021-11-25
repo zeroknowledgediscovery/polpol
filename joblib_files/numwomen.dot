@@ -1,0 +1,62 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="c
+Prob: c:1.0 d:0.0 e:0.0
+Frac: 0.092", fillcolor="#ffc155"] ;
+1 [label="MAJOR1", fillcolor="#fec056"] ;
+2 [label="c
+Prob: c:1.0 d:0.0 e:0.0
+Frac: 0.04", fillcolor="#febf57"] ;
+3 [label="hlploan", fillcolor="#fec055"] ;
+4 [label="c
+Prob: c:1.0 d:0.0 e:0.0
+Frac: 0.099", fillcolor="#ffc155"] ;
+5 [label="partners", fillcolor="#febf56"] ;
+6 [label="c
+Prob: c:1.0 d:0.0 e:0.0
+Frac: 0.067", fillcolor="#fdbe59"] ;
+7 [label="sex", fillcolor="#fbbc5c"] ;
+8 [label="c
+Prob: c:0.9 d:0.0 e:0.1
+Frac: 0.084", fillcolor="#f9b763"] ;
+9 [label="dateintv", fillcolor="#f7b765"] ;
+10 [label="c
+Prob: c:0.9 d:0.0 e:0.1
+Frac: 0.028", fillcolor="#f7b469"] ;
+11 [label="PRES16", fillcolor="#f6b767"] ;
+12 [label="c
+Prob: c:0.9 d:0.0 e:0.1
+Frac: 0.029", fillcolor="#f7b469"] ;
+13 [label="PRES16", fillcolor="#f5b866"] ;
+14 [label="c
+Prob: c:0.9 d:0.0 e:0.1
+Frac: 0.041", fillcolor="#f3bc65"] ;
+15 [label="dateintv", fillcolor="#f8b863"] ;
+16 [label="c
+Prob: c:0.9 d:0.0 e:0.1
+Frac: 0.091", fillcolor="#fbba5f"] ;
+17 [label="nummen", fillcolor="#e3929f"] ;
+18 [label="e
+Prob: c:0.0 d:0.0 e:1.0
+Frac: 0.429", fillcolor="#c359f7"] ;
+1 -- 0 [label=" other vocational\n nursing\n comm. disorders\n english\n other\n dance\n human services/human resources\n political science/international relations\n child/human/family development\n fine arts\n law\n marketing\n philosophy\n art\n psychology\n social sciences\n finance\n environmental science/ecology\n food science/nutrition/culinary arts\n general sciences\n chemistry\n physical education\n aviation/aeronatics\n educational administration\n statistics/biostatistics\n computer science\n sociology\n criminology/criminal justice\n business administration\n general studies\n veterinary medicine\n accounting/bookkeeping\n biology\n economics\n foreign language\n industrial relations\n visual arts/graphic design/design and drafting",penwidth=3] ;
+1 -- 5 [label=" anthropolgy\n communications/speech\n counseling\n education\n engineering\n health\n history\n information technology\n journalism\n liberal arts\n medicine\n theater arts",penwidth=3] ;
+3 -- 2 [label=" public services\n other persons\n no person or organization\n other organizations\n non-profit or religious organizations\n private companies",penwidth=3] ;
+3 -- 4 [label=" family members or close friends",penwidth=3] ;
+5 -- 3 [label=" 1 partner",penwidth=3] ;
+5 -- 6 [label=" 2 partners\n 3 partners\n 4 partners\n 5-10 partners\n no partners",penwidth=3] ;
+7 -- 1 [label=" female",penwidth=3] ;
+7 -- 15 [label=" male",penwidth=3] ;
+9 -- 8 [label=" 510\n 507\n 505\n 720\n 523\n 506\n 604\n 526\n 414\n 426\n 603\n 716\n 519\n 920\n 806\n 812\n 504\n 904\n 923\n 509\n 914\n 705\n 416\n 917\n 620\n 508\n 611\n 428\n 911\n 624\n 927\n 730\n 725\n 626\n 415\n 613\n 501",penwidth=3] ;
+9 -- 11 [label=" 1009\n 1010\n 1011\n 1013\n 1016\n 1024\n 1029\n 417\n 418\n 419\n 420\n 421\n 429\n 430\n 502\n 503\n 512\n 514\n 515\n 517\n 518\n 521\n 531\n 608\n 616\n 617\n 621\n 622\n 623\n 625\n 630\n 701\n 703\n 706\n 709\n 712\n 713\n 714\n 715\n 717\n 719\n 722\n 729\n 804\n 807\n 813\n 814\n 815\n 816\n 820\n 822\n 824\n 907\n 909\n 918\n 921\n 925\n 930",penwidth=3] ;
+11 -- 10 [label=" clinton",penwidth=3] ;
+11 -- 13 [label=" don't know\n iap\n no answer\n other candidate (specify)\n trump",penwidth=3] ;
+13 -- 12 [label=" iap",penwidth=3] ;
+13 -- 14 [label=" don't know\n no answer\n other candidate (specify)\n trump",penwidth=3] ;
+15 -- 9 [label=" 730\n 921\n 706\n 920\n 911\n 703\n 617\n 623\n 415\n 426\n 815\n 608\n 613\n 521\n 505\n 1013\n 816\n 807\n 616\n 503\n 421\n 729\n 611\n 428\n 523\n 806\n 923\n 630\n 622\n 822\n 713\n 720\n 804\n 502\n 417\n 904\n 420\n 701\n 918\n 716\n 626\n 914\n 418\n 907\n 603\n 705\n 519\n 930\n 625\n 814\n 621\n 813\n 717\n 927\n 501\n 1009\n 531\n 1024\n 620\n 514\n 824\n 719\n 1010\n 419\n 1011\n 414\n 416\n 518\n 508\n 515\n 820\n 917\n 507\n 512\n 712\n 714\n 517\n 709\n 722\n 604\n 526\n 509\n 506\n 430\n 925\n 1016\n 909\n 812\n 510\n 504\n 624\n 715\n 1029\n 429\n 725",penwidth=3] ;
+15 -- 16 [label=" 1001\n 1002\n 1005\n 1006\n 1008\n 1012\n 1014\n 1018\n 1019\n 1021\n 1101\n 1106\n 1109\n 412\n 413\n 422\n 423\n 424\n 425\n 427\n 511\n 516\n 520\n 522\n 524\n 525\n 527\n 528\n 529\n 530\n 601\n 602\n 605\n 606\n 607\n 610\n 612\n 614\n 615\n 618\n 619\n 627\n 628\n 629\n 702\n 710\n 711\n 718\n 723\n 724\n 727\n 731\n 801\n 803\n 810\n 817\n 823\n 828\n 831\n 906\n 908\n 910\n 912\n 913\n 915\n 924\n 929",penwidth=3] ;
+17 -- 7 [label=" c",penwidth=3] ;
+17 -- 18 [label=" e",penwidth=3] ;
+{rank = same;}}

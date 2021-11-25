@@ -1,0 +1,38 @@
+graph Tree {
+node [shape=box, style="filled, rounded",color="black",penwidth="3",fontcolor="black",                 fontname=helvetica] ;
+graph [ranksep="0 equally", splines=straight,                 bgcolor=transparent, dpi=200] ;
+edge [fontname=helvetica, color=black] ;
+0 [label="never married
+Prob: never married:1.0 no:0.0 yes:0.0
+Frac: 0.251", fillcolor="#ffc155"] ;
+1 [label="marital", fillcolor="#8cdbad"] ;
+2 [label="no
+Prob: never married:0.0 no:0.7 yes:0.3
+Frac: 0.086", fillcolor="#72d0d1"] ;
+3 [label="premarsx", fillcolor="#66e4ca"] ;
+4 [label="no
+Prob: never married:0.0 no:0.9 yes:0.1
+Frac: 0.181", fillcolor="#60edc7"] ;
+5 [label="sexsex", fillcolor="#61eac8"] ;
+6 [label="no
+Prob: never married:0.0 no:0.9 yes:0.1
+Frac: 0.304", fillcolor="#5ef0c6"] ;
+7 [label="partners", fillcolor="#66e3ca"] ;
+8 [label="no
+Prob: never married:0.0 no:0.8 yes:0.2
+Frac: 0.124", fillcolor="#67e1cb"] ;
+9 [label="sexfreq", fillcolor="#73ced2"] ;
+10 [label="yes
+Prob: never married:0.0 no:0.5 yes:0.5
+Frac: 0.054", fillcolor="#8fa2e2"] ;
+1 -- 0 [label=" never married",penwidth=3] ;
+1 -- 7 [label=" divorced\n married\n separated\n widowed",penwidth=3] ;
+3 -- 2 [label=" not wrong at all",penwidth=3] ;
+3 -- 4 [label=" almst always wrg\n always wrong\n sometimes wrong",penwidth=3] ;
+5 -- 3 [label=" exclusively female",penwidth=3] ;
+5 -- 6 [label=" both male and female\n exclusively male",penwidth=3] ;
+7 -- 5 [label=" 1 partner",penwidth=3] ;
+7 -- 9 [label=" 1 or more, # unknown\n 2 partners\n 3 partners\n 4 partners\n 5-10 partners\n no partners",penwidth=3] ;
+9 -- 8 [label=" not at all",penwidth=3] ;
+9 -- 10 [label=" 2-3 per week\n 2-3 times a month\n 4+ per week\n once a month\n once or twice\n weekly",penwidth=3] ;
+{rank = same;}}

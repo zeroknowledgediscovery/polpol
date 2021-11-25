@@ -2,7 +2,6 @@ import pygraphviz as pgv
 import networkx as nx
 import numpy as np
 import re
-import sys
 import os
 from scipy import stats
 import warnings
@@ -12,13 +11,6 @@ from tqdm import tqdm
 warnings.filterwarnings('ignore')
 
 class Hypothesis(object):
-
-# Original parameters (for qbiome data):
-####    def __init__(self,qnet_orchestrator,
-#    model_path=None,
-#    no_self_loops=True,
-#    total_samples=100,
-#    detailed_labels=False):
 
     def __init__(self,
                  mapfile=None,

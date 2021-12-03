@@ -62,7 +62,7 @@ class Hypothesis(object):
 
         self.LABELS = lbl_dict
 
-        self.gsss_interval = [x for x in self.variable_bin_map.keys()]
+        self.gsss_interval = [x for x in self.NMAP.keys()]
 
         self.gsss = list(set(['_'.join(x.split('_')[:-1])
                                 for x in self.gsss_interval]))

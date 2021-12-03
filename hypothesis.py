@@ -20,20 +20,53 @@ class Hypothesis(object):
                  detailed_labels=False):
 
         self.model_path = model_path
-        
-        # Provide mapfile to load parameters analogously to quantizer.variable_bin_map
-        self.variable_bin_map = np.load(mapfile, allow_pickle=True)
 
         self.gsss_interval = [x for x in self.variable_bin_map.keys()]
 
         self.gsss = list(set(['_'.join(x.split('_')[:-1])
                                 for x in self.gsss_interval]))
+        
+        variable_bin_map = dict()
+        tag_list = ['abany','abdefctw', 'abdefect', 'abhlth', 'abnomore', 'abpoor', 'abpoorw',
+            'abrape', 'absingle','bible','colcom','colmil','comfort','conlabor','godchnge','grass','gunlaw','intmil',
+            'libcom','libmil','libhomo','libmslm','maboygrl','owngun','pillok','pilloky','polabuse','pray','prayer',
+            'prayfreq', 'religcon','religint','reliten','rowngun','shotgun','spkcom','spkmil','taxrich','viruses'
+        ]
 
-        self.NMAP = self.variable_bin_map
+        ## All answers are either left-leaning (-1) or right-leaning (+1).
+        # Thus, similarly to the variable_bin_map for the quantizer, I can create
+        # arrays with two numbers for each parameter analyzed in the GSS survey
+        # and included in the list above.
 
-        # Using manually coded labels, since there is no quantizer for GSS data
+        for param in tag_list:
+            # Prameters with clear agree / disagree opinions
+            if param in ["comfort", 'pillok','pilloky', 'religcon','religint','religint']:
+                variable_bin_map[param] = np.array([-4, 4])
+            # Parameters with strong indications of frequency or opinion, but no explicit
+            # 'strongly agree' / 'strongly disagree'. Examples responses
+            #  - 'never'/'always', 'very good', 'very bad' 
+            if param in ['abdefctw',"abpoor","bible", "godchnge", "intmil", "pray", "prayfreq", "viruses"]:
+                variable_bin_map[param] = np.array([-3, 3])
+            # Parameters with clear positioning, but no indication of intensity. Ex: "not fired", "fired" 
+            elif param in ['colcom',"colmil", "conlabor", "grass", 'libcom','libmil','libhomo',
+            'libmslm', 'spkcom','spkmil','taxrich']:
+                variable_bin_map[param] = np.array([-2, 2])
+            # Yes / No, Support / Don't support options
+            else:
+                variable_bin_map[param] = np.array([-1, 1])
+        
+        self.NMAP = variable_bin_map
+
+        # Using manually encoded labels, since there is no quantizer for GSS data
         # In qbiome data, this can be obtained from quantizer.labels
-        self.LABELS = {'A':0, 'B':1, 'C':2, 'D':3, 'E':4}
+        lbl_dict = dict()
+        
+        # Each element in self.NMAP only has two options, so I will include two
+        # choices for each parameter, for now.
+        for param in tag_list:
+            lbl_dict[param] = [0, 1]
+
+        self.LABELS = lbl_dict
 
         self.total_samples = total_samples
         self.detailed_labels = detailed_labels
@@ -86,12 +119,12 @@ class Hypothesis(object):
         return decision_trees_
 
     def deQuantize_lowlevel(self,
-                    letter,
+                    key,
                     bin_arr):
         """Low level dequantizer function
 
         Args:
-          letter (str): quantized level (str) or nan
+          key (str): quantized level (str) or nan
           bin_arr (numpy.ndarray): 1D array of floats
 
         Returns:
@@ -99,21 +132,20 @@ class Hypothesis(object):
 
         """
 
-        if letter is np.nan or letter == 'nan':
+        if key is np.nan or key == 'nan':
             return np.nan
-        lo = self.LABELS[letter]
-        hi = lo + 1
-        val = (bin_arr[lo] + bin_arr[hi]) / 2
+        lo = self.LABELS[key]
+        val = (bin_arr[lo[0]] + bin_arr[lo[1]]) / 2
         return val
 
     def deQuantizer(self,
-                    letter,
+                    key,
                     gss_prefix):
         """Dequantizer function calling low level deQuantize_lowlevel to 
         operate with incomplete gss names.
 
         Args:
-          letter (str): quantized level (str) or nan
+          key (str): quantized level (str) or nan
           gss_prefix (str): prefix of gss name
 
         Returns:
@@ -125,7 +157,7 @@ class Hypothesis(object):
         for gss_key in self.NMAP:
             if gss_prefix in gss_key:
                 vals.append(
-                    self.deQuantize_lowlevel(letter,
+                    self.deQuantize_lowlevel(key,
                                         self.NMAP[gss_key]))
 
         return np.median(vals)
@@ -183,7 +215,7 @@ class Hypothesis(object):
 
         ## cLeaf is the set of leaf nodes reachable from nodeset
         # oLabels is the output labels for target and
-        # is a dict mapping leafnode id to output label letter
+        # is a dict mapping leafnode id to output label key
         #
         # frac and prob are sample fraction and probability of
         # output label in leaf node, parsed from dotfile
@@ -228,7 +260,7 @@ class Hypothesis(object):
         """Dequantize labels on graph non-leaf nodes
 
         Args:
-          dict_id_reached_by_edgelabel (dict[int,list[str]]): dict mapping nodeid to array of letters with str type
+          dict_id_reached_by_edgelabel (dict[int,list[str]]): dict mapping nodeid to array of keys with str type
           bin_name (str): gss name
 
         Returns:
@@ -282,7 +314,7 @@ class Hypothesis(object):
             edgeProp[nn]=res
             SUM=SUM+list(s)[0]
         
-        # nextedge is dict: {nodeid nn: letter array by which child nn is reached}
+        # nextedge is dict: {nodeid nn:  key array by which child nn is reached}
         num_nextedge=self.getNumeric_internal(
             nextedge,
             bin_name

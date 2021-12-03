@@ -324,7 +324,7 @@ class Hypothesis(object):
                 num_nextedge[k],[v[0],v[1]])
 
         RF=pd.DataFrame(num_nextedge)
-        RF.index=['x', 'y','sigmay']
+        #RF.index=['x', 'y','sigmay']
         return RF
 
     def get_lowlevel(self,

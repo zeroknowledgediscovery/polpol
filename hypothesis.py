@@ -13,7 +13,6 @@ warnings.filterwarnings('ignore')
 class Hypothesis(object):
 
     def __init__(self,
-                 mapfile=None,
                  model_path=None,
                  no_self_loops=True,
                  total_samples=100,
@@ -21,11 +20,6 @@ class Hypothesis(object):
 
         self.model_path = model_path
 
-        self.gsss_interval = [x for x in self.variable_bin_map.keys()]
-
-        self.gsss = list(set(['_'.join(x.split('_')[:-1])
-                                for x in self.gsss_interval]))
-        
         variable_bin_map = dict()
         tag_list = ['abany','abdefctw', 'abdefect', 'abhlth', 'abnomore', 'abpoor', 'abpoorw',
             'abrape', 'absingle','bible','colcom','colmil','comfort','conlabor','godchnge','grass','gunlaw','intmil',
@@ -67,6 +61,11 @@ class Hypothesis(object):
             lbl_dict[param] = [0, 1]
 
         self.LABELS = lbl_dict
+
+        self.gsss_interval = [x for x in self.variable_bin_map.keys()]
+
+        self.gsss = list(set(['_'.join(x.split('_')[:-1])
+                                for x in self.gsss_interval]))
 
         self.total_samples = total_samples
         self.detailed_labels = detailed_labels

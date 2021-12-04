@@ -416,7 +416,7 @@ class Hypothesis(object):
             if isinstance(target,str):
                 target=[target]
 
-        return (source, target)
+        return (self.gsss)
         for tgt_gss_ in tqdm(target):
             for src_gss_ in source:
                 if (src_gss_ == tgt_gss_) and self.no_self_loops:

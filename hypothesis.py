@@ -98,12 +98,12 @@ class Hypothesis(object):
                 else:
                     variable_bin_map[param] = np.array([-1, 1])
 
-        self.gsss_timestamp = [x for x in self.variable_bin_map.keys()]
+        self.gsss_timestamp = [x for x in variable_bin_map.keys()]
 
         self.gsss = list(set(['_'.join(x.split('_')[:-1])
                                 for x in self.gsss_timestamp]))
 
-        self.NMAP = self.variable_bin_map
+        self.NMAP = variable_bin_map
 
         if self.quantizer is not None:
             self.LABELS = quantizer.labels

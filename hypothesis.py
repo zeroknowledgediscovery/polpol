@@ -60,8 +60,7 @@ class Hypothesis(object):
 
         self.gsss_interval = [x for x in self.NMAP.keys()]
 
-        self.gsss = list(set(['_'.join(x.split('_')[:-1])
-                                for x in self.gsss_interval]))
+        self.gsss = list(set(self.gsss_interval))
 
         self.total_samples = total_samples
         self.detailed_labels = detailed_labels
@@ -415,8 +414,6 @@ class Hypothesis(object):
         else:
             if isinstance(target,str):
                 target=[target]
-
-        return (self.gsss)
         for tgt_gss_ in tqdm(target):
             for src_gss_ in source:
                 if (src_gss_ == tgt_gss_) and self.no_self_loops:

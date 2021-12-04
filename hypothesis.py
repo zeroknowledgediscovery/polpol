@@ -519,7 +519,10 @@ class Hypothesis(object):
 
         for x in vec_alph_val:
             y=x.split(':')
-            dict_label_float[y[0]]=float(y[1])
+            try:
+                dict_label_float[y[0]]=float(y[1])
+            except:
+                dict_label_float[y[0]]=0
 
         prob_dist = np.zeros(len(self.LABELS.keys()))
         for i in dict_label_float:

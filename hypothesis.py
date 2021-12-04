@@ -426,7 +426,7 @@ class Hypothesis(object):
         if self.no_self_loops:
             self.hypotheses=self.hypotheses[~(self.hypotheses.src==self.hypotheses.tgt)]
 
-        return
+        return (src_gss_, tgt_gss_)
 
 
     def to_csv(self, *args, **kwargs):

@@ -60,7 +60,7 @@ class Hypothesis(object):
         for param in tag_list:
             lbl_dict[param] = [0, 1]
 
-        self.LABELS = lbl_dict
+        self.LABELS = {'A':0, 'B':1}
 
         self.gsss_interval = [x for x in self.NMAP.keys()]
 
@@ -134,7 +134,8 @@ class Hypothesis(object):
         if key is np.nan or key == 'nan':
             return np.nan
         lo = self.LABELS[key]
-        val = (bin_arr[lo[0]] + bin_arr[lo[1]]) / 2
+        hi = lo + 1
+        val = (bin_arr[lo] + bin_arr[hi]) / 2
         return val
 
     def deQuantizer(self,
@@ -324,7 +325,7 @@ class Hypothesis(object):
                 num_nextedge[k],[v[0],v[1]])
 
         RF=pd.DataFrame(num_nextedge)
-        #RF.index=['x', 'y','sigmay']
+        RF.index=['x', 'y','sigmay']
         return RF
 
     def get_lowlevel(self,

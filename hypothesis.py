@@ -171,7 +171,7 @@ class Hypothesis(object):
 
         """
         bin_name=self.TGT
-        gss_prefix = '_'.join(bin_name.split('_')[:-1])
+        gss_prefix = ''
 
         # ----------------------------------------
         # Q is 1D array of dequantized values
@@ -263,7 +263,7 @@ class Hypothesis(object):
 
         """
 
-        gss_prefix = '_'.join(bin_name.split('_')[:-1])
+        gss_prefix = ''
 
         R={}
         for k in dict_id_reached_by_edgelabel:

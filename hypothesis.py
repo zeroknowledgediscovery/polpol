@@ -56,7 +56,7 @@ class Hypothesis(object):
         # Each element in self.NMAP only has two options, so I will include two
         # choices for each parameter, for now.
 
-        self.LABELS = {'A':0}
+        self.LABELS = {'A':0, 'B':1}
 
         self.gsss_interval = [x for x in self.NMAP.keys()]
 
@@ -519,15 +519,18 @@ class Hypothesis(object):
 
         for x in vec_alph_val:
             y=x.split(':')
+
+            ## Added this try / except to qbiome code to avoid list handling errors
             try:
                 dict_label_float[y[0]]=float(y[1])
             except:
                 dict_label_float[y[0]]=0
 
         prob_dist = np.zeros(len(self.LABELS.keys()))
+        index = 0
         for i in dict_label_float:
-            prob_dist[self.LABELS[i]] = dict_label_float[i]
-
+            prob_dist[self.LABELS[list(let for let in list(self.LABELS.keys()))[index]]] = dict_label_float[i]
+            index += 1
 
         return prob_dist/prob_dist.sum()
 

@@ -416,6 +416,7 @@ class Hypothesis(object):
             if isinstance(target,str):
                 target=[target]
 
+        return (source, target)
         for tgt_gss_ in tqdm(target):
             for src_gss_ in source:
                 if (src_gss_ == tgt_gss_) and self.no_self_loops:
@@ -426,7 +427,7 @@ class Hypothesis(object):
         if self.no_self_loops:
             self.hypotheses=self.hypotheses[~(self.hypotheses.src==self.hypotheses.tgt)]
 
-        return (src_gss_, tgt_gss_)
+        return 
 
 
     def to_csv(self, *args, **kwargs):

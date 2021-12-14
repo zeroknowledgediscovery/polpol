@@ -227,7 +227,7 @@ class Hypothesis(object):
               for (k,v) in self.tree_labels.items()
               if k in cLeaf}
         if not self.detailed_labels:
-            prob={k:float(v.split(':')[2])
+            prob={k:float(v.split(':')[2].split(" ")[0])
                   for (k,v) in self.tree_labels.items()
                   if k in cLeaf}
 
@@ -238,7 +238,7 @@ class Hypothesis(object):
                     for k in prob}
             prob=prob__
         else:
-            prob={k:self.get_vector_from_dict(v.split(':')[2])
+            prob={k:self.get_vector_from_dict(v.split(':')[2].split(" ")[0])
                   for (k,v) in self.tree_labels.items()
                   if k in cLeaf}
 

@@ -227,7 +227,7 @@ class Hypothesis(object):
               for (k,v) in self.tree_labels.items()
               if k in cLeaf}
         if not self.detailed_labels:
-            prob={k:float(v.split('\n')[1].replace('Prob:',''))
+            prob={k:float(v.split(':')[2])
                   for (k,v) in self.tree_labels.items()
                   if k in cLeaf}
 
@@ -238,7 +238,7 @@ class Hypothesis(object):
                     for k in prob}
             prob=prob__
         else:
-            prob={k:self.get_vector_from_dict(v.split('\n')[1].replace('Prob:',''))
+            prob={k:self.get_vector_from_dict(v.split(':')[2])
                   for (k,v) in self.tree_labels.items()
                   if k in cLeaf}
 
@@ -519,18 +519,11 @@ class Hypothesis(object):
 
         for x in vec_alph_val:
             y=x.split(':')
-
-            ## Added this try / except to qbiome code to avoid list handling errors
-            try:
-                dict_label_float[y[0]]=float(y[1])
-            except:
-                dict_label_float[y[0]]=0
+            dict_label_float[y[0]]=float(y[1])
 
         prob_dist = np.zeros(len(self.LABELS.keys()))
-        index = 0
         for i in dict_label_float:
-            prob_dist[self.LABELS[list(let for let in list(self.LABELS.keys()))[index]]] = dict_label_float[i]
-            index += 1
+            prob_dist[self.LABELS[i]] = dict_label_float[i]
 
         return prob_dist/prob_dist.sum()
 

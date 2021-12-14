@@ -219,9 +219,15 @@ class Hypothesis(object):
         cLeaf=[x for x in nodeset
                if self.decision_tree.out_degree(x)==0
                and self.decision_tree.in_degree(x)==1]
-        oLabels={k:str(v.split('\n')[0])
+        
+        oLabels = {k:float(v)
                  for (k,v) in self.tree_labels.items()
                  if k in cLeaf}
+
+
+        #oLabels={k:str(v.split('\n')[0])
+                 #for (k,v) in self.tree_labels.items()
+                 #if k in cLeaf}
 
         frac={k:float(v.split('\n')[2].replace('Frac:',''))
               for (k,v) in self.tree_labels.items()
@@ -235,9 +241,9 @@ class Hypothesis(object):
             # self.alphabet=['A',...,'E']
             # prob is regularize_distributioned to get a dict {nodeid: [p1,..,pm]}
             
-            #prob__={k:self.regularize_distribution(prob[k],oLabels[k])
-                    #for k in prob}
-            #prob=prob__
+            prob__={k:self.regularize_distribution(prob[k],oLabels[k])
+                    for k in prob}
+            prob=prob__
         else:
             prob={k:self.get_vector_from_dict(v.split(':')[2].split(" ")[0])
                   for (k,v) in self.tree_labels.items()

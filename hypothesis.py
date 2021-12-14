@@ -234,9 +234,10 @@ class Hypothesis(object):
             ## Get a kernel based distribution here.
             # self.alphabet=['A',...,'E']
             # prob is regularize_distributioned to get a dict {nodeid: [p1,..,pm]}
-            prob__={k:self.regularize_distribution(prob[k],oLabels[k])
+            
+            #prob__={k:self.regularize_distribution(prob[k],oLabels[k])
                     for k in prob}
-            prob=prob__
+            #prob=prob__
         else:
             prob={k:self.get_vector_from_dict(v.split(':')[2].split(" ")[0])
                   for (k,v) in self.tree_labels.items()

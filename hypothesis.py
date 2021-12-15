@@ -32,6 +32,8 @@ class Hypothesis(object):
         # arrays with two numbers for each parameter analyzed in the GSS survey
         # and included in the list above.
 
+        labels = {}
+        i = 0
         for param in tag_list:
             # Prameters with clear agree / disagree opinions
             if param in ["comfort", 'pillok','pilloky', 'religcon','religint','religint']:
@@ -48,6 +50,10 @@ class Hypothesis(object):
             # Yes / No, Support / Don't support options
             else:
                 variable_bin_map[param] = np.array([-1, 1])
+
+            labels[param] = i 
+
+            i+= 1
         
         self.NMAP = variable_bin_map
 
@@ -56,7 +62,7 @@ class Hypothesis(object):
         # Each element in self.NMAP only has two options, so I will include two
         # choices for each parameter, for now.
 
-        self.LABELS = {'A':0, 'B':1}
+        self.LABELS = labels
 
         self.gsss_interval = [x for x in self.NMAP.keys()]
 
@@ -89,7 +95,6 @@ class Hypothesis(object):
 
         """
         labels=np.array(list(self.LABELS.keys()))
-        float(labels)
         yy=np.ones(len(labels))*((1-prob-e)/(len(labels)-1))
         yy[np.where(labels==l)[0][0]]=prob-e
         dy=pd.DataFrame(yy).ewm(alpha=.8).mean()

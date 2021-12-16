@@ -95,7 +95,7 @@ class Hypothesis(object):
             denominator = 1
         else:
             denominator = (len(labels)-1)
-            
+
         yy=np.ones(len(labels))*((1-prob-e)/denominator)
         yy[np.where(labels==l)[0][0]]=prob-e
         dy=pd.DataFrame(yy).ewm(alpha=.8).mean()
@@ -244,8 +244,12 @@ class Hypothesis(object):
             # self.alphabet=['A',...,'E']
             # prob is regularize_distribution to get a dict {nodeid: [p1,..,pm]}
             
-            prob__={k:self.regularize_distribution(prob[k],oLabels[k])
+            #prob__={k:self.regularize_distribution(prob[k],oLabels[k])
+                    #for k in prob}
+            prob__ = {k:prob[k]
                     for k in prob}
+
+
             prob=prob__
         else:
             prob={k:self.get_vector_from_dict(v.split(oLabels[k]+':')[1].split(' ')[0])

@@ -93,9 +93,11 @@ class Hypothesis(object):
           numpy.ndarray: probability distribution
 
         """
+
+        float(l)
         labels=np.array(list(self.LABELS.keys()))
         yy=np.ones(len(labels))*((1-prob-e)/(len(labels)-1))
-        yy[np.where(labels==l)[0]]=prob-e
+        yy[np.where(labels==l)[0][0]]=prob-e
         dy=pd.DataFrame(yy).ewm(alpha=.8).mean()
         dy=dy/dy.sum()
         return dy.values

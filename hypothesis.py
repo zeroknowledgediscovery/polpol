@@ -226,7 +226,7 @@ class Hypothesis(object):
                if self.decision_tree.out_degree(x)==0
                and self.decision_tree.in_degree(x)==1]
 
-        oLabels={k:float(v.split('\n'))
+        oLabels={k:float(v)
                  for (k,v) in self.tree_labels.items()
                  if k in cLeaf}
 

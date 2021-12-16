@@ -130,7 +130,7 @@ class Hypothesis(object):
 
         if key is np.nan or key == 'nan':
             return np.nan
-        lo = self.LABELS[key]
+        lo = 0
         hi = lo + 1
         val = (bin_arr[lo] + bin_arr[hi]) / 2
         return val
@@ -244,7 +244,6 @@ class Hypothesis(object):
             prob__ = {k:prob[k]
                     for k in prob}
 
-
             prob=prob__
         else:
             prob={k:self.get_vector_from_dict(v.split(oLabels[k]+':')[1].split(' ')[0].split('\n')[0])
@@ -259,13 +258,11 @@ class Hypothesis(object):
 
     
     def getNumeric_internal(self,
-               dict_id_reached_by_edgelabel,
-               bin_name):
+               dict_id_reached_by_edgelabel):
         """Dequantize labels on graph non-leaf nodes
 
         Args:
           dict_id_reached_by_edgelabel (dict[int,list[str]]): dict mapping nodeid to array of keys with str type
-          bin_name (str): gss name
 
         Returns:
           dict[int,float]: dict mapping nodeid to  dequantized values of float type

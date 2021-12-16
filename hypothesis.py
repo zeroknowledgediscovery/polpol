@@ -47,7 +47,6 @@ class Hypothesis(object):
 #    detailed_labels=False):
 
     def __init__(self,
-                 quantizer=None,
                  model_path=None,
                  no_self_loops=True,
                  causal_constraint=0,
@@ -58,55 +57,50 @@ class Hypothesis(object):
         self.time_end = None
 
         self.model_path = model_path
-        self.quantizer = quantizer
+        variable_bin_map = dict()
+        tag_list = ['abany','abdefctw', 'abdefect', 'abhlth', 'abnomore', 'abpoor', 'abpoorw',
+            'abrape', 'absingle','bible','colcom','colmil','comfort','conlabor','godchnge','grass','gunlaw','intmil',
+            'libcom','libmil','libhomo','libmslm','maboygrl','owngun','pillok','pilloky','polabuse','pray','prayer',
+            'prayfreq', 'religcon','religint','reliten','rowngun','shotgun','spkcom','spkmil','taxrich','viruses'
+        ]
 
-        if self.quantizer is not None:
-            self.variable_bin_map = self.quantizer.variable_bin_map
-        else:
-            variable_bin_map = dict()
-            tag_list = ['abany','abdefctw', 'abdefect', 'abhlth', 'abnomore', 'abpoor', 'abpoorw',
-                'abrape', 'absingle','bible','colcom','colmil','comfort','conlabor','godchnge','grass','gunlaw','intmil',
-                'libcom','libmil','libhomo','libmslm','maboygrl','owngun','pillok','pilloky','polabuse','pray','prayer',
-                'prayfreq', 'religcon','religint','reliten','rowngun','shotgun','spkcom','spkmil','taxrich','viruses'
-            ]
+        ## All answers are either left-leaning (-1) or right-leaning (+1).
+        # Thus, similarly to the variable_bin_map for the quantizer, I can create
+        # arrays with two numbers for each parameter analyzed in the GSS survey
+        # and included in the list above.
 
-            ## All answers are either left-leaning (-1) or right-leaning (+1).
-            # Thus, similarly to the variable_bin_map for the quantizer, I can create
-            # arrays with two numbers for each parameter analyzed in the GSS survey
-            # and included in the list above.
+        labels = {}
+        for param in tag_list:
+            # Prameters with clear agree / disagree opinions
+            if param in ["comfort", 'pillok','pilloky', 'religcon','religint','religint']:
+                variable_bin_map[param] = np.array([-4, 4])
+                labels[param] = 4
+            # Parameters with strong indications of frequency or opinion, but no explicit
+            # 'strongly agree' / 'strongly disagree'. Examples responses
+            #  - 'never'/'always', 'very good', 'very bad' 
+            if param in ['abdefctw',"abpoor","bible", "godchnge", "intmil", "pray", "prayfreq", "viruses"]:
+                variable_bin_map[param] = np.array([-3, 3])
+                labels[param] = 4
+            # Parameters with clear positioning, but no indication of intensity. Ex: "not fired", "fired" 
+            elif param in ['colcom',"colmil", "conlabor", "grass", 'libcom','libmil','libhomo',
+            'libmslm', 'spkcom','spkmil','taxrich']:
+                variable_bin_map[param] = np.array([-2, 2])
+                labels[param] = 2
+            # Yes / No, Support / Don't support options
+            else:
+                variable_bin_map[param] = np.array([-1, 1])
+                labels[param] = 1
+        
+        self.NMAP = variable_bin_map
 
-            labels = {}
-            for param in tag_list:
-                # Prameters with clear agree / disagree opinions
-                if param in ["comfort", 'pillok','pilloky', 'religcon','religint','religint']:
-                    variable_bin_map[param] = np.array([-4, 4])
-                    labels[param] = 4
-                # Parameters with strong indications of frequency or opinion, but no explicit
-                # 'strongly agree' / 'strongly disagree'. Examples responses
-                #  - 'never'/'always', 'very good', 'very bad' 
-                if param in ['abdefctw',"abpoor","bible", "godchnge", "intmil", "pray", "prayfreq", "viruses"]:
-                    variable_bin_map[param] = np.array([-3, 3])
-                    labels[param] = 4
-                # Parameters with clear positioning, but no indication of intensity. Ex: "not fired", "fired" 
-                elif param in ['colcom',"colmil", "conlabor", "grass", 'libcom','libmil','libhomo',
-                'libmslm', 'spkcom','spkmil','taxrich']:
-                    variable_bin_map[param] = np.array([-2, 2])
-                    labels[param] = 2
-                # Yes / No, Support / Don't support options
-                else:
-                    variable_bin_map[param] = np.array([-1, 1])
-                    labels[param] = 1
-            
-            self.NMAP = variable_bin_map
+        # Using manually encoded labels, since there is no quantizer for GSS data
+        # In qbiome data, this can be obtained from quantizer.labels 
+        # Each element in self.NMAP only has two options, so I will include two
+        # choices for each parameter, for now.
 
-            # Using manually encoded labels, since there is no quantizer for GSS data
-            # In qbiome data, this can be obtained from quantizer.labels 
-            # Each element in self.NMAP only has two options, so I will include two
-            # choices for each parameter, for now.
+        self.LABELS = labels
 
-            self.LABELS = labels
-
-        self.gsss_timestamp = [x for x in self.variable_bin_map.keys()]
+        self.gsss_timestamp = [x for x in variable_bin_map.keys()]
 
         self.gsss = list(set(['_'.join(x.split('_')[:-1])
                                 for x in self.gsss_timestamp]))

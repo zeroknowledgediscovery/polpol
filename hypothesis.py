@@ -32,27 +32,22 @@ class Hypothesis(object):
         # arrays with two numbers for each parameter analyzed in the GSS survey
         # and included in the list above.
 
-        labels = {}
         for param in tag_list:
             # Prameters with clear agree / disagree opinions
             if param in ["comfort", 'pillok','pilloky', 'religcon','religint','religint']:
                 variable_bin_map[param] = np.array([-4, 4])
-                labels[param] = 4
             # Parameters with strong indications of frequency or opinion, but no explicit
             # 'strongly agree' / 'strongly disagree'. Examples responses
             #  - 'never'/'always', 'very good', 'very bad' 
             if param in ['abdefctw',"abpoor","bible", "godchnge", "intmil", "pray", "prayfreq", "viruses"]:
                 variable_bin_map[param] = np.array([-3, 3])
-                labels[param] = 4
             # Parameters with clear positioning, but no indication of intensity. Ex: "not fired", "fired" 
             elif param in ['colcom',"colmil", "conlabor", "grass", 'libcom','libmil','libhomo',
             'libmslm', 'spkcom','spkmil','taxrich']:
                 variable_bin_map[param] = np.array([-2, 2])
-                labels[param] = 2
             # Yes / No, Support / Don't support options
             else:
                 variable_bin_map[param] = np.array([-1, 1])
-                labels[param] = 1
         
         self.NMAP = variable_bin_map
 
@@ -61,6 +56,7 @@ class Hypothesis(object):
         # Each element in self.NMAP only has two options, so I will include two
         # choices for each parameter, for now.
 
+        labels = {'yes' : 1, 'no': -1}
         self.LABELS = labels
 
         self.gsss_interval = [x for x in self.NMAP.keys()]
@@ -226,7 +222,7 @@ class Hypothesis(object):
                if self.decision_tree.out_degree(x)==0
                and self.decision_tree.in_degree(x)==1]
 
-        oLabels={k:float(v)
+        oLabels={k:v.split('\n')[0]
                  for (k,v) in self.tree_labels.items()
                  if k in cLeaf}
 
@@ -235,7 +231,7 @@ class Hypothesis(object):
               if k in cLeaf}
               
         if not self.detailed_labels:
-            prob={k:float(v.split(':')[2].split(' ')[0])
+            prob={k:float(v.split(oLabels[k]+':')[1].split(' ')[0])
                   for (k,v) in self.tree_labels.items()
                   if k in cLeaf}
 
@@ -247,7 +243,7 @@ class Hypothesis(object):
                     for k in prob}
             prob=prob__
         else:
-            prob={k:self.get_vector_from_dict(v.split(':')[2].split(' ')[0])
+            prob={k:self.get_vector_from_dict(v.split(oLabels[k]+':')[1].split(' ')[0])
                   for (k,v) in self.tree_labels.items()
                   if k in cLeaf}
 

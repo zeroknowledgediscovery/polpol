@@ -56,7 +56,7 @@ class Hypothesis(object):
         # Each element in self.NMAP only has two options, so I will include two
         # choices for each parameter, for now.
 
-        labels = {'yes' : 0, 'no': 1}
+        labels = {'no': 0}
         self.LABELS = labels
 
         self.gsss_interval = [x for x in self.NMAP.keys()]

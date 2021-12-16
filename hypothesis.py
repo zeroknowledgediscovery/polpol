@@ -16,7 +16,7 @@ class Hypothesis(object):
                  model_path=None,
                  no_self_loops=True,
                  total_samples=100,
-                 detailed_labels=False):
+                 detailed_labels=True):
 
         self.model_path = model_path
 
@@ -37,22 +37,22 @@ class Hypothesis(object):
             # Prameters with clear agree / disagree opinions
             if param in ["comfort", 'pillok','pilloky', 'religcon','religint','religint']:
                 variable_bin_map[param] = np.array([-4, 4])
-                labels[param] = 2
+                labels[param] = 4
             # Parameters with strong indications of frequency or opinion, but no explicit
             # 'strongly agree' / 'strongly disagree'. Examples responses
             #  - 'never'/'always', 'very good', 'very bad' 
             if param in ['abdefctw',"abpoor","bible", "godchnge", "intmil", "pray", "prayfreq", "viruses"]:
                 variable_bin_map[param] = np.array([-3, 3])
-                labels[param] = 1.5
+                labels[param] = 4
             # Parameters with clear positioning, but no indication of intensity. Ex: "not fired", "fired" 
             elif param in ['colcom',"colmil", "conlabor", "grass", 'libcom','libmil','libhomo',
             'libmslm', 'spkcom','spkmil','taxrich']:
                 variable_bin_map[param] = np.array([-2, 2])
-                labels[param] = 1
+                labels[param] = 2
             # Yes / No, Support / Don't support options
             else:
                 variable_bin_map[param] = np.array([-1, 1])
-                labels[param] = 0.5
+                labels[param] = 1
         
         self.NMAP = variable_bin_map
 
@@ -93,10 +93,6 @@ class Hypothesis(object):
           numpy.ndarray: probability distribution
 
         """
-
-        a = float(l)
-        b = float(prob)
-
 
         labels=np.array(list(self.LABELS.keys()))
         yy=np.ones(len(labels))*((1-prob-e)/(len(labels)-1))
@@ -245,7 +241,7 @@ class Hypothesis(object):
 
             ## Get a kernel based distribution here.
             # self.alphabet=['A',...,'E']
-            # prob is regularize_distributioned to get a dict {nodeid: [p1,..,pm]}
+            # prob is regularize_distribution to get a dict {nodeid: [p1,..,pm]}
             
             prob__={k:self.regularize_distribution(prob[k],oLabels[k])
                     for k in prob}

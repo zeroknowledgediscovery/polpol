@@ -33,27 +33,26 @@ class Hypothesis(object):
         # and included in the list above.
 
         labels = {}
-        i = 0
         for param in tag_list:
             # Prameters with clear agree / disagree opinions
             if param in ["comfort", 'pillok','pilloky', 'religcon','religint','religint']:
                 variable_bin_map[param] = np.array([-4, 4])
+                labels[param] = 2
             # Parameters with strong indications of frequency or opinion, but no explicit
             # 'strongly agree' / 'strongly disagree'. Examples responses
             #  - 'never'/'always', 'very good', 'very bad' 
             if param in ['abdefctw',"abpoor","bible", "godchnge", "intmil", "pray", "prayfreq", "viruses"]:
                 variable_bin_map[param] = np.array([-3, 3])
+                labels[param] = 1.5
             # Parameters with clear positioning, but no indication of intensity. Ex: "not fired", "fired" 
             elif param in ['colcom',"colmil", "conlabor", "grass", 'libcom','libmil','libhomo',
             'libmslm', 'spkcom','spkmil','taxrich']:
                 variable_bin_map[param] = np.array([-2, 2])
+                labels[param] = 1
             # Yes / No, Support / Don't support options
             else:
                 variable_bin_map[param] = np.array([-1, 1])
-
-            labels[param] = i 
-
-            i+= 1
+                labels[param] = 0.5
         
         self.NMAP = variable_bin_map
 
@@ -96,6 +95,7 @@ class Hypothesis(object):
         """
         labels=np.array(list(self.LABELS.keys()))
         yy=np.ones(len(labels))*((1-prob-e)/(len(labels)-1))
+        print(labels, np.where(labels==l))
         yy[np.where(labels==l)[0][0]]=prob-e
         dy=pd.DataFrame(yy).ewm(alpha=.8).mean()
         dy=dy/dy.sum()

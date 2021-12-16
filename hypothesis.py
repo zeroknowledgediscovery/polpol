@@ -226,7 +226,7 @@ class Hypothesis(object):
                if self.decision_tree.out_degree(x)==0
                and self.decision_tree.in_degree(x)==1]
 
-        oLabels={k:v.split('\n')[0]
+        oLabels={k:float(v.split('\n'))
                  for (k,v) in self.tree_labels.items()
                  if k in cLeaf}
 
@@ -242,8 +242,6 @@ class Hypothesis(object):
             ## Get a kernel based distribution here.
             # self.alphabet=['A',...,'E']
             # prob is regularize_distribution to get a dict {nodeid: [p1,..,pm]}
-
-            g = {k: (bool(prob[k]), int(oLabels[k])) for k in prob}
             
             prob__={k:self.regularize_distribution(prob[k],oLabels[k])
                     for k in prob}

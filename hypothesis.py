@@ -94,7 +94,10 @@ class Hypothesis(object):
 
         """
 
-        float(l)
+        a = float(l)
+        b = float(prob)
+
+
         labels=np.array(list(self.LABELS.keys()))
         yy=np.ones(len(labels))*((1-prob-e)/(len(labels)-1))
         yy[np.where(labels==l)[0][0]]=prob-e

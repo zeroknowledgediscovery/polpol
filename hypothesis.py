@@ -258,7 +258,7 @@ class Hypothesis(object):
 
     
     def getNumeric_internal(self,
-               dict_id_reached_by_edgelabel):
+               dict_id_reached_by_edgelabel, bin_name):
         """Dequantize labels on graph non-leaf nodes
 
         Args:

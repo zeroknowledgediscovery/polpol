@@ -30,7 +30,6 @@ class Hypothesis(object):
       We estimate the sign of \( \\alpha_t\) in a locally linear marginalized relationship \( \\nu_t = \\alpha_t u_{t'} + c \) with \(t' \in [ t-\delta, t] \) as follows:
 
     Attributes:
-       qnet_orchestrator (qgss.QnetOrchestrator): instance of qgss.QnetOrchestrator with trained qnet model
        model_path (str, optional): path to directory containing generated decision trees in dot format (Default value = None)
        no_self_loops (bool, optional): If True do not report self-loops in hypotheses  (Default value = True)
        causal_constraint (float, optional): lag of source inputs from target effects. >= 0 is causal  (Default value = 0)
@@ -48,9 +47,7 @@ class Hypothesis(object):
 #    detailed_labels=False):
 
     def __init__(self,
-                 qnet_orchestrator=None,
                  quantizer=None,
-                 quantizer_mapfile=None,
                  model_path=None,
                  no_self_loops=True,
                  causal_constraint=0,
@@ -61,14 +58,8 @@ class Hypothesis(object):
         self.time_end = None
 
         self.model_path = model_path
-        self.qnet_orchestrator = qnet_orchestrator
         self.quantizer = quantizer
 
-        if all(v is None for v in[qnet_orchestrator,quantizer,quantizer_mapfile]):
-            raise Exception('Either qnet_orchestrator or quantizer or quantizer_mapfile must be provided to Hypothesis')
-
-        if self.qnet_orchestrator is not None:
-            self.quantizer = self.qnet_orchestrator.quantizer
         if self.quantizer is not None:
             self.variable_bin_map = self.quantizer.variable_bin_map
         else:

@@ -190,8 +190,8 @@ class Hypothesis(object):
         for k in Probability_distribution_dict:
             p = Probability_distribution_dict[k]
 
-            mu_k=np.dot(p,Q)
-            var_k=np.dot(p,(Q*Q))-mu_k*mu_k
+            mu_k=np.dot(np.array(p),Q)
+            var_k=np.dot(np.array(p),(Q*Q))-mu_k*mu_k
 
             mux = mux + Sample_fraction[k]*mu_k
             varx = varx + Sample_fraction[k]*var_k

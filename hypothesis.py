@@ -352,8 +352,9 @@ class Hypothesis(object):
                 self.decision_tree,"label")
 
             nodes_with_src=[]
-            for k in self.tree_labels.items():
-                nodes_with_src=nodes_with_src+[k]
+            for (k,v) in self.tree_labels.items():
+                if self.SRC in v:
+                    nodes_with_src=nodes_with_src+[k]
 
             if len(nodes_with_src)==0:
                 continue

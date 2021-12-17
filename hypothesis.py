@@ -186,7 +186,10 @@ class Hypothesis(object):
 
         """
         labels=np.array(list(LABELS.keys()))
-        yy=np.ones(len(labels))*((1-prob-e)/(len(labels)-1))
+        denominator = (len(labels)-1)
+        if denominator == 0:
+            denominator = 1
+        yy=np.ones(len(labels))*((1-prob-e)/denominator)
         yy[np.where(labels==l)[0][0]]=prob-e
         dy=pd.DataFrame(yy).ewm(alpha=.8).mean()
         dy=dy/dy.sum()

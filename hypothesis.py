@@ -2,6 +2,7 @@ import pygraphviz as pgv
 import networkx as nx
 import numpy as np
 import re
+import sys
 import os
 from scipy import stats
 import warnings
@@ -11,6 +12,40 @@ from tqdm import tqdm
 warnings.filterwarnings('ignore')
 
 class Hypothesis(object):
+    """Generate and analyze hypotheses from models inferred.  Assume gsss_timestamp format is gss_timestamp.
+       Also assume that dotname or decision tree name format is gss_timestamp.dot
+
+       Mathematical model of causal hypothesis:
+
+       ---
+
+       ```
+       Local Marginal Regulation Coefficient: Aiming to estimate the up-regulatory/down-regulatory influence of a source organism/entity on a target organism/entity, where regulation effects are causally localized in time (future cannot affect the past) with limited memory, and potential confounding effects from other entities/organisms are marginalized out.
+       ```
+
+       Let us assume a general dependency between stochastic processes \(\\nu,u, \omega \) :
+
+       $$ \\nu_t = \\phi(u_{\leftarrow t},\omega_{\leftarrow t}) $$
+
+      We estimate the sign of \( \\alpha_t\) in a locally linear marginalized relationship \( \\nu_t = \\alpha_t u_{t'} + c \) with \(t' \in [ t-\delta, t] \) as follows:
+
+    Attributes:
+       qnet_orchestrator (qgss.QnetOrchestrator): instance of qgss.QnetOrchestrator with trained qnet model
+       model_path (str, optional): path to directory containing generated decision trees in dot format (Default value = None)
+       no_self_loops (bool, optional): If True do not report self-loops in hypotheses  (Default value = True)
+       causal_constraint (float, optional): lag of source inputs from target effects. >= 0 is causal  (Default value = 0)
+       total_samples (int, optional): total number of samples used to construct decision model  (Default value = 100)
+       detailed_labels (bool, optional): if True, decision tree models have detailed output  (Default value = False)
+       MAPNAME (str): path to dequantization map
+
+    """
+
+####    def __init__(self,qnet_orchestrator,
+#    model_path=None,
+#    no_self_loops=True,
+#    causal_constraint=0,
+#    total_samples=100,
+#    detailed_labels=False):
 
     def __init__(self,
                  model_path=None,
@@ -21,6 +56,7 @@ class Hypothesis(object):
         self.model_path = model_path
 
         variable_bin_map = dict()
+
         tag_list = ['abany','abdefctw', 'abdefect', 'abhlth', 'abnomore', 'abpoor', 'abpoorw',
             'abrape', 'absingle','bible','colcom','colmil','comfort','conlabor','godchnge','grass','gunlaw','intmil',
             'libcom','libmil','libhomo','libmslm','maboygrl','owngun','pillok','pilloky','polabuse','pray','prayer',
@@ -51,17 +87,7 @@ class Hypothesis(object):
         
         self.NMAP = variable_bin_map
 
-        # Using manually encoded labels, since there is no quantizer for GSS data
-        # In qbiome data, this can be obtained from quantizer.labels 
-        # Each element in self.NMAP only has two options, so I will include two
-        # choices for each parameter, for now.
-
-        labels = {'no': 0}
-        self.LABELS = labels
-
-        self.gsss_interval = [x for x in self.NMAP.keys()]
-
-        self.gsss = list(set(self.gsss_interval))
+        self.gsss = list(set([x for x in self.NMAP]))
 
         self.total_samples = total_samples
         self.detailed_labels = detailed_labels
@@ -74,76 +100,37 @@ class Hypothesis(object):
         self.no_self_loops = no_self_loops
         self.hypotheses=pd.DataFrame(columns=['src','tgt','lomar','pvalue'])
 
-    def regularize_distribution(self,prob,l,e=0.005):
-        """Regularize probability distribution
-           using exponential decay to map non-detailed output of a
-           single maximum likelihood label to a probability distribution.
-           Used when detailed output is not available.
-
-        Args:
-          prob (float): probability of single output label of type str
-          e (float, optional): small value to regularize return probability of 1.0 (Default value = 0.005)
-          l (str): output label
-
-        Returns:
-          numpy.ndarray: probability distribution
-
-        """
-
-        labels=np.array(list(self.LABELS.keys()))
-        yy=np.ones(len(labels))*((1-prob-e)/(len(labels)-1))
-        yy[np.where(labels==l)[0][0]]=prob-e
-        dy=pd.DataFrame(yy).ewm(alpha=.8).mean()
-        dy=dy/dy.sum()
-        return dy.values
-
-
-    def createTargetList(self):
-        """Create list of decision trees
-
-        Returns:
-          list[str]: list of paths to decision tree models in qnet
-
-        """
-
-        if self.model_path is not None:
-            decision_trees = glob.glob(
-                self.model_path+'*.dot')
-            decision_trees_ = [x for x in decision_trees]
-        else:
-            raise Exception('self.model_path is not set')
-        return decision_trees_
 
     def deQuantize_lowlevel(self,
-                    key,
+                    letter,
                     bin_arr):
         """Low level dequantizer function
 
         Args:
-          key (str): quantized level (str) or nan
-          bin_arr (numpy.ndarray): 1D array of floats
+          letter (str): quantized level (str) or nan
+          bin_arr (numpy.ndarray): 1D array of floats, which are quantization levels from trained quantizer.
 
         Returns:
           float: dequantized value
 
         """
 
-        if key is np.nan or key == 'nan':
+        if letter is np.nan or letter == 'nan' or letter == '':
             return np.nan
         lo = 0
         hi = lo + 1
         val = (bin_arr[lo] + bin_arr[hi]) / 2
         return val
 
+
     def deQuantizer(self,
-                    key,
-                    gss_prefix):
-        """Dequantizer function calling low level deQuantize_lowlevel to 
-        operate with incomplete gss names.
+                    letter):
+        """Dequantizer function calling low level deQuantize_lowlevel to account
+           for the possibility of multiple timestamps being averaged over,
+           and ability to operate with incomplete gss names.
 
         Args:
-          key (str): quantized level (str) or nan
-          gss_prefix (str): prefix of gss name
+          letter (str): quantized level (str) or nan
 
         Returns:
           float: median of dequantized value
@@ -152,12 +139,33 @@ class Hypothesis(object):
         vals = []
         # average over all
         for gss_key in self.NMAP:
-            if gss_prefix in gss_key:
-                vals.append(
-                    self.deQuantize_lowlevel(key,
-                                        self.NMAP[gss_key]))
+            vals.append(
+                self.deQuantize_lowlevel(letter,
+                    self.NMAP[gss_key]))
 
         return np.median(vals)
+
+
+    def getNumeric_internal(self,
+               dict_id_reached_by_edgelabel):
+        """Dequantize labels on graph non-leaf nodes
+
+        Args:
+          dict_id_reached_by_edgelabel (dict[int,list[str]]): dict mapping nodeid to array of letters with str type
+          bin_name (str): gss name in gss_timestamp format
+
+        Returns:
+          dict[int,float]: dict mapping nodeid to  dequantized values of float type
+
+        """
+        R={}
+        for k in dict_id_reached_by_edgelabel:
+            v = dict_id_reached_by_edgelabel[k]
+            R[k]=np.median(
+                np.array([self.deQuantizer(
+                    str(x).strip()) for x in v]))
+        return R
+
 
     def getNumeric_at_leaf(self,
                     Probability_distribution_dict,
@@ -172,31 +180,49 @@ class Hypothesis(object):
           float,float: mean and sample standard deviation
 
         """
-        bin_name=self.TGT
-        gss_prefix = ''
 
         # ----------------------------------------
         # Q is 1D array of dequantized values
         # corresponding to levels for TGT
         # ----------------------------------------
-        Q=np.array([self.deQuantizer(
-            str(x).strip(),
-            gss_prefix)
-                    for x in self.LABELS.keys()]).reshape(
-                            len(self.LABELS),1)
+        Q=np.array([self.deQuantizer('random letter')])
 
         mux=0
         varx=0
         for k in Probability_distribution_dict:
             p = Probability_distribution_dict[k]
 
-            mu_k=np.dot(np.array(p),Q)
-            var_k=np.dot(np.array(p),(Q*Q))-mu_k*mu_k
+            mu_k=np.dot(p.transpose(),Q)
+            var_k=np.dot(p.transpose(),(Q*Q))-mu_k*mu_k
 
             mux = mux + Sample_fraction[k]*mu_k
             varx = varx + Sample_fraction[k]*var_k
         return mux,np.sqrt(varx/self.total_samples)
-    
+
+
+    def regularize_distribution(self,prob,l,LABELS,e=0.005):
+        """Regularize probability distribution
+           using exponential decay to map non-detailed output of a
+           single maximum likelihood label to a probability distribution.
+           Used when detailed output is not available.
+
+        Args:
+          prob (float): probability of single output label of type str
+          e (float, optional): small value to regularize return probability of 1.0 (Default value = 0.005)
+          l (str): output label
+
+        Returns:
+          numpy.ndarray: probability distribution
+
+        """
+        labels=np.array(list(LABELS.keys()))
+        yy=np.ones(len(labels))*((1-prob-e)/(len(labels)-1))
+        yy[np.where(labels==l)[0][0]]=prob-e
+        dy=pd.DataFrame(yy).ewm(alpha=.8).mean()
+        dy=dy/dy.sum()
+        return dy.values
+
+
     def leaf_output_on_subgraph(self,nodeset):
         """Find the mean and sample standard deviation of output
            in leafnodes reachable from nodeset, along with fraction of samples
@@ -212,7 +238,7 @@ class Hypothesis(object):
 
         ## cLeaf is the set of leaf nodes reachable from nodeset
         # oLabels is the output labels for target and
-        # is a dict mapping leafnode id to output label key
+        # is a dict mapping leafnode id to output label letter
         #
         # frac and prob are sample fraction and probability of
         # output label in leaf node, parsed from dotfile
@@ -221,32 +247,26 @@ class Hypothesis(object):
         cLeaf=[x for x in nodeset
                if self.decision_tree.out_degree(x)==0
                and self.decision_tree.in_degree(x)==1]
-
-        oLabels={k:v.split('\n')[0]
+        oLabels={k:str(v.split('\n')[0])
                  for (k,v) in self.tree_labels.items()
                  if k in cLeaf}
 
         frac={k:float(v.split('\n')[2].replace('Frac:',''))
               for (k,v) in self.tree_labels.items()
               if k in cLeaf}
-              
         if not self.detailed_labels:
-            prob={k:float(v.split(oLabels[k]+':')[1].split(' ')[0].split('\n')[0])
+            prob={k:float(v.split('\n')[1].split(oLabels[k]+':').split(' ')[0])
                   for (k,v) in self.tree_labels.items()
                   if k in cLeaf}
 
             ## Get a kernel based distribution here.
             # self.alphabet=['A',...,'E']
-            # prob is regularize_distribution to get a dict {nodeid: [p1,..,pm]}
-            
-            #prob__={k:self.regularize_distribution(prob[k],oLabels[k])
-                    #for k in prob}
-            prob__ = {k:prob[k]
+            # prob is regularize_distributioned to get a dict {nodeid: [p1,..,pm]}
+            prob__={k:self.regularize_distribution(prob[k],oLabels[k], oLabels)
                     for k in prob}
-
             prob=prob__
         else:
-            prob={k:self.get_vector_from_dict(v.split(oLabels[k]+':')[1].split(' ')[0].split('\n')[0])
+            prob={k:self.get_vector_from_dict(v.split('\n')[1].replace('Prob:',''))
                   for (k,v) in self.tree_labels.items()
                   if k in cLeaf}
 
@@ -256,35 +276,9 @@ class Hypothesis(object):
         mu_X,sigma_X=self.getNumeric_at_leaf(prob,frac)
         return (mu_X,sigma_X),SUM
 
-    
-    def getNumeric_internal(self,
-               dict_id_reached_by_edgelabel, bin_name):
-        """Dequantize labels on graph non-leaf nodes
 
-        Args:
-          dict_id_reached_by_edgelabel (dict[int,list[str]]): dict mapping nodeid to array of keys with str type
-
-        Returns:
-          dict[int,float]: dict mapping nodeid to  dequantized values of float type
-
-        """
-
-        gss_prefix = ''
-
-        R={}
-        for k in dict_id_reached_by_edgelabel:
-            v = dict_id_reached_by_edgelabel[k]
-            R[k]=np.median(
-                np.array([self.deQuantizer(
-                    str(x).strip(),
-                    gss_prefix) for x in v]))
-        return R
-
-
-    
     def getHypothesisSlice(self,nid):
-        """Generating impact of node nid with source label prefix. Note that there can be multiple
-           nodes in the tree with label that match with the source label prefix.
+        """Generating impact of node nid with source label.
 
         Args:
           nid (int): nodeid
@@ -314,13 +308,10 @@ class Hypothesis(object):
                     nx.descendants(self.decision_tree,nn)))
             edgeProp[nn]=res
             SUM=SUM+list(s)[0]
-        
-        # nextedge is dict: {nodeid nn:  key array by which child nn is reached}
+
+        # nextedge is dict: {nodeid nn: letter array by which child nn is reached}
         num_nextedge=self.getNumeric_internal(
-            nextedge,
-            bin_name
-            =self.tree_labels[str(
-                nid)])
+            nextedge)
         for (k,v) in edgeProp.items():
             num_nextedge[k]=np.append(
                 num_nextedge[k],[v[0],v[1]])
@@ -328,6 +319,33 @@ class Hypothesis(object):
         RF=pd.DataFrame(num_nextedge)
         RF.index=['x', 'y','sigmay']
         return RF
+
+
+    def createTargetList(self,
+                      source,
+                      target):
+        """Create list of decision trees available within time points in model_path
+
+        Args:
+          source (str): source name in gss_timestamp format
+          target (str): target name in gss_timestamp format
+
+        Returns:
+          list[str]: list of paths to decision tree models in qnet
+
+        """
+        self.TGT = target
+        self.SRC = source
+
+        if self.model_path is not None:
+            decision_trees = glob.glob(
+                os.path.join(self.model_path,
+                             target)+'*.dot')
+            decision_trees_ = [x for x in decision_trees]
+        else:
+            raise Exception('self.model_path is not set')
+        return decision_trees_
+
 
     def get_lowlevel(self,
             source,
@@ -337,15 +355,18 @@ class Hypothesis(object):
         Args:
           source (str): source
           target (str): target
-          
+
         Returns:
 
         """
         self.TGT = target
         self.SRC = source
 
-        decision_trees = self.createTargetList()
+        decision_trees = self.createTargetList(
+            source,
+            target)
 
+        grad_=[]
         # can we do this in parallel
         for tree in decision_trees:
             self.TGT = os.path.basename(tree).replace('.dot','')
@@ -361,9 +382,8 @@ class Hypothesis(object):
                 self.decision_tree,"label")
 
             nodes_with_src=[]
-            for (k,v) in self.tree_labels.items():
-                if self.SRC in v:
-                        nodes_with_src=nodes_with_src+[k]
+            for k in self.tree_labels.items():
+                nodes_with_src=nodes_with_src+[k]
 
             if len(nodes_with_src)==0:
                 continue
@@ -395,8 +415,8 @@ class Hypothesis(object):
                  'pvalue':pvalue},
                 ignore_index = True)
         return
-    
-    
+
+
     def get(self,
             source=None,
             target=None):
@@ -420,6 +440,7 @@ class Hypothesis(object):
         else:
             if isinstance(target,str):
                 target=[target]
+
         for tgt_gss_ in tqdm(target):
             for src_gss_ in source:
                 if (src_gss_ == tgt_gss_) and self.no_self_loops:
@@ -430,7 +451,7 @@ class Hypothesis(object):
         if self.no_self_loops:
             self.hypotheses=self.hypotheses[~(self.hypotheses.src==self.hypotheses.tgt)]
 
-        return 
+        return
 
 
     def to_csv(self, *args, **kwargs):
@@ -485,7 +506,7 @@ class Hypothesis(object):
 
 
     def getAlpha(self,dataframe_x_y_sigmay,N=500):
-        """Carry out regression to estimate   \( \\alpha \). Given mean and variance of each y observation, we
+        """Carryout regression to estimate   \( \\alpha \). Given mean and variance of each y observation, we
            increase the number of pints by drawing N samples from a normal distribution of mean y and std dev sigma_y.
            The slope and p-value of a linear regression fit is returned
 
@@ -516,20 +537,29 @@ class Hypothesis(object):
 
     def get_vector_from_dict(self,str_alph_val):
         """Calculate a probability distribution from string representation of
-           alphabet : value read from decision tree models
+           labels : value read from decision tree models
 
         """
-        vec_alph_val=str_alph_val.split()
+        vec_alph_val=str_alph_val.split(':')
 
         dict_label_float={}
 
         for x in vec_alph_val:
-            y=x.split(':')
-            dict_label_float[y[0]]=float(y[1])
+            if '.' not in x:
+                dict_label_float[x] = float(vec_alph_val[vec_alph_val.index(x) +1].split()[0])
+            else:
+                d_k = x.split()
+                df_k = ''
+                if len(d_k) > 1:
+                    for i in d_k[1:]:
+                        df_k += i
+                    dict_label_float[df_k] = float(vec_alph_val[vec_alph_val.index(x) +1].split()[0])
 
-        prob_dist = np.zeros(len(self.LABELS.keys()))
+        prob_dist = np.zeros(len(dict_label_float))
+        index = 0
         for i in dict_label_float:
-            prob_dist[self.LABELS[i]] = dict_label_float[i]
+            prob_dist[index] = dict_label_float[i]
+            index += 1
 
         return prob_dist/prob_dist.sum()
 

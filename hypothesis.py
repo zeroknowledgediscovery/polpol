@@ -100,48 +100,20 @@ class Hypothesis(object):
         self.no_self_loops = no_self_loops
         self.hypotheses=pd.DataFrame(columns=['src','tgt','lomar','pvalue'])
 
-
-    def deQuantize_lowlevel(self,
-                    letter,
-                    bin_arr):
-        """Low level dequantizer function
+    def deQuantizer(self):
+        """Dequantizer function
 
         Args:
-          letter (str): quantized level (str) or nan
-          bin_arr (numpy.ndarray): 1D array of floats, which are quantization levels from trained quantizer.
-
-        Returns:
-          float: dequantized value
-
-        """
-
-        if letter is np.nan or letter == 'nan' or letter == '':
-            return np.nan
-        lo = 0
-        hi = lo + 1
-        val = (bin_arr[lo] + bin_arr[hi]) / 2
-        return val
-
-
-    def deQuantizer(self,
-                    letter):
-        """Dequantizer function calling low level deQuantize_lowlevel to account
-           for the possibility of multiple timestamps being averaged over,
-           and ability to operate with incomplete gss names.
-
-        Args:
-          letter (str): quantized level (str) or nan
 
         Returns:
           float: median of dequantized value
 
         """
         vals = []
-        # average over all
+        # Return positive value in the list of each variable_bin_map key
         for gss_key in self.NMAP:
             vals.append(
-                self.deQuantize_lowlevel(letter,
-                    self.NMAP[gss_key]))
+                self.NMAP[gss_key][1])
 
         return np.median(vals)
 
@@ -152,7 +124,6 @@ class Hypothesis(object):
 
         Args:
           dict_id_reached_by_edgelabel (dict[int,list[str]]): dict mapping nodeid to array of letters with str type
-          bin_name (str): gss name in gss_timestamp format
 
         Returns:
           dict[int,float]: dict mapping nodeid to  dequantized values of float type
@@ -162,8 +133,7 @@ class Hypothesis(object):
         for k in dict_id_reached_by_edgelabel:
             v = dict_id_reached_by_edgelabel[k]
             R[k]=np.median(
-                np.array([self.deQuantizer(
-                    str(x).strip()) for x in v]))
+                np.array([self.deQuantizer()]))
         return R
 
 
@@ -185,7 +155,7 @@ class Hypothesis(object):
         # Q is 1D array of dequantized values
         # corresponding to levels for TGT
         # ----------------------------------------
-        Q=np.array([self.deQuantizer('random letter')])
+        Q=np.array([self.deQuantizer()])
 
         mux=0
         varx=0

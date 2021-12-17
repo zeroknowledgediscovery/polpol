@@ -133,7 +133,7 @@ class Hypothesis(object):
         for k in dict_id_reached_by_edgelabel:
             v = dict_id_reached_by_edgelabel[k]
             R[k]=np.median(
-                np.array([self.deQuantizer()]))
+                np.array([self.deQuantizer() for x in v]))
         return R
 
 
@@ -155,7 +155,7 @@ class Hypothesis(object):
         # Q is 1D array of dequantized values
         # corresponding to levels for TGT
         # ----------------------------------------
-        Q=np.array([self.deQuantizer()])
+        Q=np.array([self.deQuantizer() for k in Probability_distribution_dict])
 
         mux=0
         varx=0

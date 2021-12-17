@@ -235,7 +235,7 @@ class Hypothesis(object):
             ## Get a kernel based distribution here.
             # self.alphabet=['A',...,'E']
             # prob is regularize_distributioned to get a dict {nodeid: [p1,..,pm]}
-            prob__={k:self.regularize_distribution(prob[k],oLabels[k], oLabels)
+            prob__={k:self.regularize_distribution(prob[k],k, oLabels)
                     for k in prob}
             prob=prob__
         else:

@@ -175,22 +175,22 @@ class Hypothesis(object):
         # Q is 1D array of dequantized values
         # corresponding to levels for TGT
         # ----------------------------------------
-        
-        Q=np.array([self.deQuantizer(
-            str(x).strip())
-                    for x in Probability_distribution_dict]).reshape(
-                            len(Probability_distribution_dict),1)
 
         mux=0
         varx=0
-        for k in Probability_distribution_dict:
-            p = Probability_distribution_dict[k]
+        for (k, p) in Probability_distribution_dict:
+
+            Q=np.array([self.deQuantizer(
+            str(x).strip())
+                    for x in p]).reshape(
+                            len(p),1)
 
             mu_k=np.dot(p.transpose(),Q)
             var_k=np.dot(p.transpose(),(Q*Q))-mu_k*mu_k
 
-            mux = mux + Sample_fraction[k]*mu_k
-            varx = varx + Sample_fraction[k]*var_k
+            mux += Sample_fraction[k]*mu_k
+            varx += Sample_fraction[k]*var_k
+
         return mux,np.sqrt(varx/self.total_samples)
 
 

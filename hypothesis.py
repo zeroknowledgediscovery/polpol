@@ -259,7 +259,7 @@ class Hypothesis(object):
                 initial = v.split('\n')[1].replace('Prob:', '').split(':')
                 for item in initial:
                     if initial.index(item) != (len(initial) - 1) and '.' in item:
-                        total_labels[k].append((''.join(item.split()[1:])).strip())
+                        total_labels[k].append((' '.join(item.split()[1:])).strip())
                     elif initial.index(item) != (len(initial) - 1):
                         total_labels[k].append(item.split()[0].strip())
 

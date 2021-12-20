@@ -214,7 +214,7 @@ class Hypothesis(object):
 
         labels=np.array(LABELS)
         yy=np.ones(len(labels))*((1-prob-e)/(len(labels)-1))
-        yy[np.where(labels==l.strip())[0][0]]=prob-e
+        yy[np.where(labels==l)[0][0]]=prob-e
         dy=pd.DataFrame(yy).ewm(alpha=.8).mean()
         dy=dy/dy.sum()
         return dy.values
@@ -255,6 +255,9 @@ class Hypothesis(object):
         total_labels = dict()
         for (k,v) in self.tree_labels.items():
             if k in cLeaf:
+
+                print(float(k))
+
                 total_labels[k] = list()
                 initial = v.split('\n')[1].replace('Prob:', '').split(':')
                 for item in initial:

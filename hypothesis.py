@@ -178,7 +178,7 @@ class Hypothesis(object):
 
         mux=0
         varx=0
-        for (k, p) in Probability_distribution_dict:
+        for (k, p) in Probability_distribution_dict.items():
 
             Q=np.array([self.deQuantizer(
             str(x).strip())

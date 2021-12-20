@@ -71,19 +71,19 @@ class Hypothesis(object):
         for param in tag_list:
             # Prameters with clear agree / disagree opinions
             if param in ["comfort", 'pillok','pilloky', 'religcon','religint','religint']:
-                variable_bin_map[param] = np.array([-4, 4])
+                variable_bin_map[param] = np.array([0, 1])
             # Parameters with strong indications of frequency or opinion, but no explicit
             # 'strongly agree' / 'strongly disagree'. Examples responses
             #  - 'never'/'always', 'very good', 'very bad' 
             if param in ['abdefctw',"abpoor","bible", "godchnge", "intmil", "pray", "prayfreq", "viruses"]:
-                variable_bin_map[param] = np.array([-3, 3])
+                variable_bin_map[param] = np.array([0.2, 0.8])
             # Parameters with clear positioning, but no indication of intensity. Ex: "not fired", "fired" 
             elif param in ['colcom',"colmil", "conlabor", "grass", 'libcom','libmil','libhomo',
             'libmslm', 'spkcom','spkmil','taxrich']:
-                variable_bin_map[param] = np.array([-2, 2])
+                variable_bin_map[param] = np.array([0.3, 0.7])
             # Yes / No, Support / Don't support options
             else:
-                variable_bin_map[param] = np.array([-1, 1])
+                variable_bin_map[param] = np.array([0.4, 0.6])
         
         self.NMAP = variable_bin_map
 
@@ -99,21 +99,42 @@ class Hypothesis(object):
         self.SRC = None
         self.no_self_loops = no_self_loops
         self.hypotheses=pd.DataFrame(columns=['src','tgt','lomar','pvalue'])
-
-    def deQuantizer(self):
+    
+    def deQuantizer(self, name):
         """Dequantizer function
 
         Args:
+            name: name to be verified on self.NMAP keys. If corresponding to
+            no keys, then quantize based on response.
 
         Returns:
           float: median of dequantized value
 
         """
         vals = []
-        # Return positive value in the list of each variable_bin_map key
-        for gss_key in self.NMAP:
-            vals.append(
-                self.NMAP[gss_key][1])
+        splitted = name.split()
+
+        if 'strong' in name or 'always' in name or 'never' in name:
+            intensity = 1.5
+        else:
+            intensity = 1
+
+        if name in self.gsss:
+            vals = [r for r in self.NMAP[name]]
+        elif 'no' in splitted and 'yes' not in splitted:
+            vals.append(0.6*intensity)
+        elif 'yes' in splitted and 'no' not in splitted:
+            vals.append(0.4*(intensity - 1))
+        elif 'agree' in splitted and 'disagree' not in splitted:
+            vals.append(0.4*(intensity - 1))
+        elif 'disagree' in splitted and 'agree' not in splitted:
+            vals.append(0.6*intensity)
+        elif 'should' in splitted and 'not' not in splitted:
+            vals.append(0.8*intensity)
+        elif 'should' in splitted and 'not' in splitted:
+            vals.append(0.2*(intensity - 1))
+        else:
+            vals.append(0.5)
 
         return np.median(vals)
 
@@ -123,17 +144,16 @@ class Hypothesis(object):
         """Dequantize labels on graph non-leaf nodes
 
         Args:
-          dict_id_reached_by_edgelabel (dict[int,list[str]]): dict mapping nodeid to array of letters with str type
+          dict_id_reached_by_edgelabel (dict[int,list[str]]): dict mapping nodeid to array of names with str type
 
         Returns:
           dict[int,float]: dict mapping nodeid to  dequantized values of float type
 
         """
         R={}
-        for k in dict_id_reached_by_edgelabel:
-            v = dict_id_reached_by_edgelabel[k]
+        for (k,v) in dict_id_reached_by_edgelabel:
             R[k]=np.median(
-                np.array([self.deQuantizer() for x in v]))
+                np.array([self.deQuantizer(str(x).strip()) for x in v]))
         return R
 
 
@@ -155,7 +175,11 @@ class Hypothesis(object):
         # Q is 1D array of dequantized values
         # corresponding to levels for TGT
         # ----------------------------------------
-        Q=np.array([self.deQuantizer() for k in Probability_distribution_dict])
+        
+        Q=np.array([self.deQuantizer(
+            str(x).strip())
+                    for x in Probability_distribution_dict]).reshape(
+                            len(Probability_distribution_dict),1)
 
         mux=0
         varx=0
@@ -180,16 +204,14 @@ class Hypothesis(object):
           prob (float): probability of single output label of type str
           e (float, optional): small value to regularize return probability of 1.0 (Default value = 0.005)
           l (str): output label
+          LABELS: list of possible answers to GSS parameter analyzed  
 
         Returns:
           numpy.ndarray: probability distribution
 
         """
         labels=np.array(list(LABELS.keys()))
-        denominator = (len(labels)-1)
-        if denominator == 0:
-            denominator = 1
-        yy=np.ones(len(labels))*((1-prob-e)/denominator)
+        yy=np.ones(len(labels))*((1-prob-e)/(len(labels)-1))
         yy[np.where(labels==l)[0][0]]=prob-e
         dy=pd.DataFrame(yy).ewm(alpha=.8).mean()
         dy=dy/dy.sum()
@@ -223,6 +245,13 @@ class Hypothesis(object):
         oLabels={k:str(v.split('\n')[0])
                  for (k,v) in self.tree_labels.items()
                  if k in cLeaf}
+        
+        total_labels = dict()
+        for (k,v) in self.tree_labels.items():
+            if k in cLeaf:
+                initial = v.split('\n')[1].split(' ')
+                total_labels[k] = [a.split(':')[0] for a in initial
+                if initial.index(a) != 0]
 
         frac={k:float(v.split('\n')[2].replace('Frac:',''))
               for (k,v) in self.tree_labels.items()
@@ -235,7 +264,7 @@ class Hypothesis(object):
             ## Get a kernel based distribution here.
             # self.alphabet=['A',...,'E']
             # prob is regularize_distributioned to get a dict {nodeid: [p1,..,pm]}
-            prob__={k:self.regularize_distribution(prob[k],k, oLabels)
+            prob__={k:self.regularize_distribution(prob[k],oLabels[k], total_labels[k])
                     for k in prob}
             prob=prob__
         else:
@@ -381,10 +410,9 @@ class Hypothesis(object):
                     RES.y.values)/np.median(
                         RES.x.values)
 
-            ns_ = re.split(r'(.*)_(\d+)', self.TGT)
             self.hypotheses = self.hypotheses.append(
                 {'src':self.SRC,
-                 'tgt':''.join(ns_[:-2]),
+                 'tgt': self.TGT,
                  'lomar':float(grad),
                  'pvalue':pvalue},
                 ignore_index = True)

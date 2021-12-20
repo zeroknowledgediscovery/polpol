@@ -255,10 +255,11 @@ class Hypothesis(object):
         total_labels = dict()
         for (k,v) in self.tree_labels.items():
             if k in cLeaf:
+                total_labels[k] = list()
                 initial = v.split('\n')[1].split(':')
                 for item in initial:
                     if initial.index(item) != 0 and initial.index(item) != (len(initial) - 1):
-                        total_labels[k] = ''.join(item.split()[1:])
+                        total_labels[k].append(''.join(item.split()[1:]))
 
         frac={k:float(v.split('\n')[2].replace('Frac:',''))
               for (k,v) in self.tree_labels.items()

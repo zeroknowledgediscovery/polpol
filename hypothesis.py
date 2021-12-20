@@ -210,7 +210,7 @@ class Hypothesis(object):
           prob (float): probability of single output label of type str
           e (float, optional): small value to regularize return probability of 1.0 (Default value = 0.005)
           l (str): output label
-          LABELS: list of possible answers to GSS parameter analyzed  
+          LABELS (list of str): list of possible answers to GSS parameter analyzed  
 
         Returns:
           numpy.ndarray: probability distribution

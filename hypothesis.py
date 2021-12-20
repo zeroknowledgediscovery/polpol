@@ -262,8 +262,6 @@ class Hypothesis(object):
                         total_labels[k].append((''.join(item.split()[1:])).strip())
                     elif initial.index(item) != (len(initial) - 1):
                         total_labels[k].append(item.split()[0].strip())
-            
-            print(oLabels[k], total_labels[k])
 
         frac={k:float(v.split('\n')[2].replace('Frac:',''))
               for (k,v) in self.tree_labels.items()
@@ -273,7 +271,11 @@ class Hypothesis(object):
             prob={k:float(v.split('\n')[1].split(oLabels[k]+':')[1].split(' ')[0])
                   for (k,v) in self.tree_labels.items()
                   if k in cLeaf}
+            
+            for k in prob:
+                print(oLabels[k], total_labels[k])
 
+                
             ## Get a kernel based distribution here.
             # self.alphabet=['A',...,'E']
             # prob is regularize_distributioned to get a dict {nodeid: [p1,..,pm]}

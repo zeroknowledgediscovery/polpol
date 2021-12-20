@@ -151,7 +151,7 @@ class Hypothesis(object):
 
         """
         R={}
-        for (k,v) in dict_id_reached_by_edgelabel:
+        for (k,v) in dict_id_reached_by_edgelabel.items():
             R[k]=np.median(
                 np.array([self.deQuantizer(str(x).strip()) for x in v]))
         return R
@@ -210,7 +210,7 @@ class Hypothesis(object):
           numpy.ndarray: probability distribution
 
         """
-        labels=np.array(list(LABELS))
+        labels=np.array(LABELS)
         yy=np.ones(len(labels))*((1-prob-e)/(len(labels)-1))
         yy[np.where(labels==l)[0][0]]=prob-e
         dy=pd.DataFrame(yy).ewm(alpha=.8).mean()

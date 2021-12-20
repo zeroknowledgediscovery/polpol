@@ -275,7 +275,6 @@ class Hypothesis(object):
             for k in prob:
                 print(oLabels[k], total_labels[k])
 
-                
             ## Get a kernel based distribution here.
             # self.alphabet=['A',...,'E']
             # prob is regularize_distributioned to get a dict {nodeid: [p1,..,pm]}

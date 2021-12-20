@@ -12,40 +12,33 @@ from tqdm import tqdm
 warnings.filterwarnings('ignore')
 
 class Hypothesis(object):
-    """Generate and analyze hypotheses from models inferred.  Assume gsss_timestamp format is gss_timestamp.
-       Also assume that dotname or decision tree name format is gss_timestamp.dot
+
+    """
+    Generate and analyze hypotheses from models inferred.
 
        Mathematical model of causal hypothesis:
 
        ---
 
        ```
-       Local Marginal Regulation Coefficient: Aiming to estimate the up-regulatory/down-regulatory influence of a source organism/entity on a target organism/entity, where regulation effects are causally localized in time (future cannot affect the past) with limited memory, and potential confounding effects from other entities/organisms are marginalized out.
+       Local Marginal Regulation Coefficient: Aiming to estimate the up-regulatory/down-regulatory influence of a 
+       source variable (such as gun ownership) on a target variable (such as position on gun regulation), 
+       where potential confounding effects from other variables are marginalized out.
        ```
 
        Let us assume a general dependency between stochastic processes \(\\nu,u, \omega \) :
 
        $$ \\nu_t = \\phi(u_{\leftarrow t},\omega_{\leftarrow t}) $$
 
-      We estimate the sign of \( \\alpha_t\) in a locally linear marginalized relationship \( \\nu_t = \\alpha_t u_{t'} + c \) with \(t' \in [ t-\delta, t] \) as follows:
+      We estimate the sign of \( \\alpha_t\) in a locally linear marginalized relationship 
+      \( \\nu_t = \\alpha_t u_{t'} + c \) with \(t' \in [ t-\delta, t] \) as follows:
 
     Attributes:
-       qnet_orchestrator (qgss.QnetOrchestrator): instance of qgss.QnetOrchestrator with trained qnet model
        model_path (str, optional): path to directory containing generated decision trees in dot format (Default value = None)
        no_self_loops (bool, optional): If True do not report self-loops in hypotheses  (Default value = True)
-       causal_constraint (float, optional): lag of source inputs from target effects. >= 0 is causal  (Default value = 0)
        total_samples (int, optional): total number of samples used to construct decision model  (Default value = 100)
        detailed_labels (bool, optional): if True, decision tree models have detailed output  (Default value = False)
-       MAPNAME (str): path to dequantization map
-
     """
-
-####    def __init__(self,qnet_orchestrator,
-#    model_path=None,
-#    no_self_loops=True,
-#    causal_constraint=0,
-#    total_samples=100,
-#    detailed_labels=False):
 
     def __init__(self,
                  model_path=None,
@@ -63,8 +56,8 @@ class Hypothesis(object):
             'prayfreq', 'religcon','religint','reliten','rowngun','shotgun','spkcom','spkmil','taxrich','viruses'
         ]
 
-        ## All answers are either left-leaning (-1) or right-leaning (+1).
-        # Thus, similarly to the variable_bin_map for the quantizer, I can create
+        ## All answers are either left-leaning (0) or right-leaning (+1).
+        # Thus, similarly to the variable_bin_map for the quantizer in the qbiome package, we can create
         # arrays with two numbers for each parameter analyzed in the GSS survey
         # and included in the list above.
 
@@ -101,7 +94,9 @@ class Hypothesis(object):
         self.hypotheses=pd.DataFrame(columns=['src','tgt','lomar','pvalue'])
     
     def deQuantizer(self, name):
-        """Dequantizer function
+
+        """
+        Dequantizer function
 
         Args:
             name: name to be verified on self.NMAP keys. If corresponding to
@@ -109,8 +104,8 @@ class Hypothesis(object):
 
         Returns:
           float: median of dequantized value
-
         """
+
         vals = []
         splitted = name.split()
 
@@ -141,7 +136,9 @@ class Hypothesis(object):
 
     def getNumeric_internal(self,
                dict_id_reached_by_edgelabel):
-        """Dequantize labels on graph non-leaf nodes
+
+        """
+        Dequantize labels on graph non-leaf nodes
 
         Args:
           dict_id_reached_by_edgelabel (dict[int,list[str]]): dict mapping nodeid to array of names with str type
@@ -150,6 +147,7 @@ class Hypothesis(object):
           dict[int,float]: dict mapping nodeid to  dequantized values of float type
 
         """
+
         R={}
         for (k,v) in dict_id_reached_by_edgelabel.items():
             R[k]=np.median(
@@ -160,15 +158,17 @@ class Hypothesis(object):
     def getNumeric_at_leaf(self,
                     Probability_distribution_dict,
                     Sample_fraction):
-        """Dequantize labels on graph leaf nodes to return mean and sample standard deviation of outputs
+
+        """
+        Dequantize labels on graph leaf nodes to return mean and sample standard deviation of outputs
 
         Args:
-          Probability_distribution_dict (dict[int, numpy.ndarray[float]]): dict mapping nodeid to probability distribution over output labels at that leaf node
+          Probability_distribution_dict (dict[int, numpy.ndarray[float]]): dict mapping nodeid to probability 
+          distribution over output labels at that leaf node
           Sample_fraction (dict[int,float]): dict mapping nodeids to sample fraction captured by that leaf node
 
         Returns:
           float,float: mean and sample standard deviation
-
         """
 
         # ----------------------------------------
@@ -195,7 +195,9 @@ class Hypothesis(object):
 
 
     def regularize_distribution(self,prob,l,LABELS,e=0.005):
-        """Regularize probability distribution
+
+        """
+        Regularize probability distribution
            using exponential decay to map non-detailed output of a
            single maximum likelihood label to a probability distribution.
            Used when detailed output is not available.
@@ -208,8 +210,8 @@ class Hypothesis(object):
 
         Returns:
           numpy.ndarray: probability distribution
-
         """
+
         labels=np.array(LABELS)
         yy=np.ones(len(labels))*((1-prob-e)/(len(labels)-1))
         yy[np.where(labels==l)[0][0]]=prob-e
@@ -219,7 +221,9 @@ class Hypothesis(object):
 
 
     def leaf_output_on_subgraph(self,nodeset):
-        """Find the mean and sample standard deviation of output
+
+        """
+        Find the mean and sample standard deviation of output
            in leafnodes reachable from nodeset, along with fraction of samples
            captures by this subgraph
 
@@ -239,9 +243,11 @@ class Hypothesis(object):
         # output label in leaf node, parsed from dotfile
         #
         # SUM is the total sample fraction captured by nodeset
+
         cLeaf=[x for x in nodeset
                if self.decision_tree.out_degree(x)==0
                and self.decision_tree.in_degree(x)==1]
+
         oLabels={k:str(v.split('\n')[0])
                  for (k,v) in self.tree_labels.items()
                  if k in cLeaf}
@@ -249,13 +255,15 @@ class Hypothesis(object):
         total_labels = dict()
         for (k,v) in self.tree_labels.items():
             if k in cLeaf:
-                initial = v.split('\n')[1].split(' ')
-                total_labels[k] = [a.split(':')[0] for a in initial
-                if initial.index(a) != 0]
+                initial = v.split('\n')[1].split(':')
+                for item in initial:
+                    if initial.index(item) != 0 and initial.index(item) != (len(initial) - 1):
+                        total_labels[k] = ''.join(item.split()[1:])
 
         frac={k:float(v.split('\n')[2].replace('Frac:',''))
               for (k,v) in self.tree_labels.items()
               if k in cLeaf}
+
         if not self.detailed_labels:
             prob={k:float(v.split('\n')[1].split(oLabels[k]+':')[1].split(' ')[0])
                   for (k,v) in self.tree_labels.items()
@@ -264,7 +272,8 @@ class Hypothesis(object):
             ## Get a kernel based distribution here.
             # self.alphabet=['A',...,'E']
             # prob is regularize_distributioned to get a dict {nodeid: [p1,..,pm]}
-            prob__={k:self.regularize_distribution(prob[k],oLabels[k], total_labels[k])
+
+            prob__={k:self.regularize_distribution(prob[k], oLabels[k], total_labels[k])
                     for k in prob}
             prob=prob__
         else:
@@ -280,13 +289,16 @@ class Hypothesis(object):
 
 
     def getHypothesisSlice(self,nid):
-        """Generating impact of node nid with source label.
+
+        """
+        Generating impact of node nid with source label.
 
         Args:
           nid (int): nodeid
 
         Returns:
-          [pandas.DataFrame](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html): dataframe of hypotheses fragment with xvalue, ymean and y std dev
+          [pandas.DataFrame](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html): 
+          dataframe of hypotheses fragment with xvalue, ymean and y std dev
 
         """
 
@@ -326,16 +338,19 @@ class Hypothesis(object):
     def createTargetList(self,
                       source,
                       target):
-        """Create list of decision trees available within time points in model_path
+
+        """
+        Create list of decision trees available in model_path
 
         Args:
-          source (str): source name in gss_timestamp format
-          target (str): target name in gss_timestamp format
+          source (str): source name 
+          target (str): target name 
 
         Returns:
           list[str]: list of paths to decision tree models in qnet
 
         """
+
         self.TGT = target
         self.SRC = source
 
@@ -345,14 +360,16 @@ class Hypothesis(object):
                              target)+'*.dot')
             decision_trees_ = [x for x in decision_trees]
         else:
-            raise Exception('self.model_path is not set')
+            raise Exception('A model path was not provided to the hypothesis generator')
         return decision_trees_
 
 
     def get_lowlevel(self,
             source,
             target):
-        """Low level evaluation call to estimate local marginal regulation  \( \\alpha \)
+
+        """
+        Low level evaluation call to estimate local marginal regulation  \( \\alpha \)
 
         Args:
           source (str): source
@@ -361,6 +378,7 @@ class Hypothesis(object):
         Returns:
 
         """
+
         self.TGT = target
         self.SRC = source
 
@@ -422,7 +440,11 @@ class Hypothesis(object):
     def get(self,
             source=None,
             target=None):
-        """Calculate local marginal regulation  \( \\alpha \). When source or target is not specified, we calculate for all entities available on model path. Populates self.hypotheses.
+
+        """
+        Calculate local marginal regulation  \( \\alpha \). 
+        When source or target is not specified, we calculate for all entities available on model path. 
+        Populates self.hypotheses.
 
         Args:
           source (str, optional): source (Default value = None)
@@ -457,30 +479,34 @@ class Hypothesis(object):
 
 
     def to_csv(self, *args, **kwargs):
-        """Output csv of hypotheses inferred. Arguments are passed to pandas.DataFrame.to_csv()
+
+        """
+        Output csv of hypotheses inferred. Arguments are passed to pandas.DataFrame.to_csv()
 
         Args:
           *args: optional arguments to [pandas.to_csv()]( https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_csv.html)
           **kwargs: optional keywords to [pandas.to_csv()]( https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_csv.html)
 
         Returns:
-
         """
+
         self.hypotheses.to_csv(*args, **kwargs)
 
 
     def to_dot(self,filename='tmp.dot',
                hypotheses=None,
                square_mat=False):
-        """Output dot file of hypotheses inferred.
+
+        """
+        Output dot file of hypotheses inferred.
 
         Args:
           filename (str, optional): filename of dot outpt (Default value = 'tmp.dot')
-          hypotheses ([pandas.DataFrame](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html), optional): If provided use this instead of self.hypotheses (Default value = None)
+          hypotheses ([pandas.DataFrame](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html), optional): 
+          If provided use this instead of self.hypotheses (Default value = None)
           square_mat (bool, optional): If True resturn a heatmap matrix as filename+'sq.csv' (Default value = False)
 
         Returns:
-
         """
 
         if hypotheses is None:
@@ -508,7 +534,9 @@ class Hypothesis(object):
 
 
     def getAlpha(self,dataframe_x_y_sigmay,N=500):
-        """Carryout regression to estimate   \( \\alpha \). Given mean and variance of each y observation, we
+
+        """
+        Carry out regression to estimate   \( \\alpha \). Given mean and variance of each y observation, we
            increase the number of pints by drawing N samples from a normal distribution of mean y and std dev sigma_y.
            The slope and p-value of a linear regression fit is returned
 
@@ -518,8 +546,8 @@ class Hypothesis(object):
 
         Returns:
           float,float: slope and p-value of fit
-
         """
+
         gf=pd.DataFrame(np.random.normal
                         (dataframe_x_y_sigmay.y,
                          dataframe_x_y_sigmay.sigmay,
@@ -538,24 +566,26 @@ class Hypothesis(object):
 
 
     def get_vector_from_dict(self,str_alph_val):
-        """Calculate a probability distribution from string representation of
-           labels : value read from decision tree models
 
         """
+        Calculate a probability distribution from string representation of
+           labels : value read from decision tree models
+        """
+
         vec_alph_val=str_alph_val.split(':')
 
         dict_label_float={}
 
         for x in vec_alph_val:
             if '.' not in x:
-                dict_label_float[x] = float(vec_alph_val[vec_alph_val.index(x) +1].split()[0])
+                dict_label_float[x] = float(vec_alph_val[vec_alph_val.index(x) + 1].split()[0])
             else:
                 d_k = x.split()
                 df_k = ''
                 if len(d_k) > 1:
                     for i in d_k[1:]:
                         df_k += i
-                    dict_label_float[df_k] = float(vec_alph_val[vec_alph_val.index(x) +1].split()[0])
+                    dict_label_float[df_k] = float(vec_alph_val[vec_alph_val.index(x) + 1].split()[0])
 
         prob_dist = np.zeros(len(dict_label_float))
         index = 0
@@ -564,21 +594,3 @@ class Hypothesis(object):
             index += 1
 
         return prob_dist/prob_dist.sum()
-
-
-    def trim_hypothesis(self,alternate_hypothesis_dataframe):
-        """Compate current hypothesis dataframe with alternate_hypothesis_dataframe
-
-        Args:
-          alternate_hypothesis_dataframe ([pandas.DataFrame](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html)): alternate dataframe
-
-        Returns:
-          [pandas.DataFrame](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html): manipulated dataframe
-
-        """
-        df=self.hypotheses.copy()
-
-        #df.set_index(['src','tgt']).merge
-
-
-        return df

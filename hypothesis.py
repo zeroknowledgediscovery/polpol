@@ -261,7 +261,7 @@ class Hypothesis(object):
                     if initial.index(item) != (len(initial) - 1) and '.' in item:
                         total_labels[k].append((' '.join(item.split()[1:])).strip())
                     elif initial.index(item) != (len(initial) - 1):
-                        total_labels[k].append(item.split()[0].strip())
+                        total_labels[k].append((' '.join(item.split())).strip())
 
         frac={k:float(v.split('\n')[2].replace('Frac:',''))
               for (k,v) in self.tree_labels.items()

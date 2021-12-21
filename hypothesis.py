@@ -107,15 +107,21 @@ class Hypothesis(object):
         """
 
         vals = []
+        '''
         splitted = name.split()
 
         if 'strong' in name or 'always' in name or 'never' in name:
             intensity = 1.5
         else:
             intensity = 1
+        '''
 
         if name in self.gsss:
             vals = [r for r in self.NMAP[name]]
+        else:
+            print(name)
+        
+        '''
         elif 'no' in splitted and 'yes' not in splitted:
             vals.append(0.6*intensity)
         elif 'yes' in splitted and 'no' not in splitted:
@@ -130,6 +136,7 @@ class Hypothesis(object):
             vals.append(0.2*(intensity - 1))
         else:
             vals.append(0.5)
+        '''
 
         return np.median(vals)
 

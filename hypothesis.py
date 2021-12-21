@@ -107,21 +107,18 @@ class Hypothesis(object):
         """
 
         vals = []
-        '''
         splitted = name.split()
 
         if 'strong' in name or 'always' in name or 'never' in name:
             intensity = 1.5
         else:
             intensity = 1
-        '''
+
+        print(name)
 
         if name in self.gsss:
             vals = [r for r in self.NMAP[name]]
-        else:
-            print(name)
         
-        '''
         elif 'no' in splitted and 'yes' not in splitted:
             vals.append(0.6*intensity)
         elif 'yes' in splitted and 'no' not in splitted:
@@ -136,7 +133,6 @@ class Hypothesis(object):
             vals.append(0.2*(intensity - 1))
         else:
             vals.append(0.5)
-        '''
 
         return np.median(vals)
 
@@ -164,7 +160,9 @@ class Hypothesis(object):
 
     def getNumeric_at_leaf(self,
                     Probability_distribution_dict,
-                    Sample_fraction):
+                    Sample_fraction, 
+                    LABELS
+                    ):
 
         """
         Dequantize labels on graph leaf nodes to return mean and sample standard deviation of outputs
@@ -173,6 +171,7 @@ class Hypothesis(object):
           Probability_distribution_dict (dict[int, numpy.ndarray[float]]): dict mapping nodeid to probability 
           distribution over output labels at that leaf node
           Sample_fraction (dict[int,float]): dict mapping nodeids to sample fraction captured by that leaf node
+          LABELS (dict[int, numpy.ndarray[string]]): dict mapping nodeid to response possibilities
 
         Returns:
           float,float: mean and sample standard deviation
@@ -189,8 +188,8 @@ class Hypothesis(object):
 
             Q=np.array([self.deQuantizer(
             str(x).strip())
-                    for x in p]).reshape(
-                            len(p),1)
+                    for x in LABELS[k]]).reshape(
+                            len(LABELS[k]),1)
 
             mu_k=np.dot(p.transpose(),Q)
             var_k=np.dot(p.transpose(),(Q*Q))-mu_k*mu_k
@@ -278,9 +277,6 @@ class Hypothesis(object):
             prob={k:float(v.split('\n')[1].split(oLabels[k]+':')[1].split(' ')[0])
                   for (k,v) in self.tree_labels.items()
                   if k in cLeaf}
-            
-            for k in prob:
-                print(oLabels[k], total_labels[k])
 
             ## Get a kernel based distribution here.
             # self.alphabet=['A',...,'E']
@@ -297,7 +293,7 @@ class Hypothesis(object):
         SUM=np.array(frac.values()).sum()
 
         ## mean and sample estimate of standard deviation
-        mu_X,sigma_X=self.getNumeric_at_leaf(prob,frac)
+        mu_X,sigma_X=self.getNumeric_at_leaf(prob,frac, total_labels)
         return (mu_X,sigma_X),SUM
 
 

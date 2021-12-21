@@ -114,8 +114,6 @@ class Hypothesis(object):
         else:
             intensity = 1
 
-        print(name)
-
         if name in self.gsss:
             vals = [r for r in self.NMAP[name]]
         
